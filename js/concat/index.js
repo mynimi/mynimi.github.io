@@ -11351,7 +11351,7 @@ $(document).ready(function () {
             path.attr('d', curve);
             anim.attr('from', curve);
             anim.attr('to', straight);
-            anim[0].beginElement();
+            $('.triangle path animate')[0].beginElement();
             if ($(trigger).children('i').hasClass('fa-eye-slash')) {
                 $(trigger).children('i').removeClass('fa-eye-slash').addClass('fa-eye');
             } else {
