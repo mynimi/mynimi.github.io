@@ -44,6 +44,9 @@ div.highlighter-rouge {
 }
 
 .highlight{
+    overflow-x: auto;
+    max-width: 100%;
+    
     code,
     pre{
         background: $color-1;
