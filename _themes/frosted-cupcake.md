@@ -16,7 +16,6 @@ id: frosted-cupcake
 lang: de
 ---
 
-Deutsch version 
 Die Idee bei Frosted Cupcake war es, etwas anders zu machen. Es sollte ein mädchenhaftes und verspieltes Template werden, das dabei aber nicht wie alle anderen aussah. Also - asymmetrisch und mit einem runden Header.
 
 Das Theme ist im Moment nicht mit dem Vorlagendesigner kompatibel.

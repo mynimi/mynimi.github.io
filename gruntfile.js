@@ -132,6 +132,9 @@ module.exports = function(grunt) {
         },
 
         uglify: {
+            options: {
+                beautify: true,
+            },
             dist: {
                 files:{
                     'js/build/index.min.js': 'js/concat/index.js',
