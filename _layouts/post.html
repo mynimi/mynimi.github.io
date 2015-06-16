@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ site.name }}{% if page.title %} - {{ page.title }} {% endif%}</title>{% if page.description %}
+    <meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Myriam Frisano">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url | replace: '//', '/' }}/feed.xml">
+  </head>
+  <!-- head end-->
+  <body class="page post {% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}">
+    <nav class="open">
+      <div class="menu">
+        <div class="left">{% if page.lang == "de" %}<a href="/" class="homelink">
+            <svg id="hap-icon" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 478.36136 407.60321" class="logo">
+              <g transform="translate(-370.26663,-281.64625)">
+                <g transform="translate(2.1898424,0)" class="hap">
+                  <path d="M 514.19481,664.8729 590.21786,581.24053 546.2964,472.16361 622.1262,423.78152 605.41204,324.77154 449.38297,293.15295 379.58348,637.59453 Z" class="icon icon-left"></path>
+                  <path d="m 836.64362,678.72265 -214.09408,0.70775 57.57731,-97.25601 -65.03429,-97.96636 64.50319,-62.69229 -36.35501,-93.59836 192.2411,-0.6355 z" class="icon icon-right"></path>
+                </g>
+              </g>
+            </svg></a>{% else %}<a href="/en" class="homelink">
+            <svg id="hap-icon" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 478.36136 407.60321" class="logo">
+              <g transform="translate(-370.26663,-281.64625)">
+                <g transform="translate(2.1898424,0)" class="hap">
+                  <path d="M 514.19481,664.8729 590.21786,581.24053 546.2964,472.16361 622.1262,423.78152 605.41204,324.77154 449.38297,293.15295 379.58348,637.59453 Z" class="icon icon-left"></path>
+                  <path d="m 836.64362,678.72265 -214.09408,0.70775 57.57731,-97.25601 -65.03429,-97.96636 64.50319,-62.69229 -36.35501,-93.59836 192.2411,-0.6355 z" class="icon icon-right"></path>
+                </g>
+              </g>
+            </svg></a>{% endif %}
+          <div class="responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
+            {% assign group = 'navigation' %}
+            {% include pages_list.html %}
+          </div>
+          <!-- .responsive end-->
+        </div>
+        <div class="center"><span class="toggle">Menu</span></div>
+        <div class="right"><span class="backtotop">up?</span>{% assign pages=site.pages | where:"id", page.id | sort: 'path' %}{% for page in pages %}<a href="{{ page.url | replace: "index.html", "" }}" class="{{ page.lang }}">{{ page.lang }}</a>{% endfor %}      
+          {% assign themes = site.themes | where:"id", page.id | sort: 'path' %}{% for theme in themes %}<li class="lang"><a href="{{ theme.url | replace: "index.html", "" }}" class="{{ theme.lang }}">{{ theme.lang }}</a></li>{% endfor %}       
+          {% assign posts=site.posts | where:"name", page.name %}{% for post in posts %}<li class="lang"><a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">{{ post.lang }}</a></li>{% endfor %}    <span id="trigger"><i class="fa fa-eye-slash"></i></span>
+        </div>
+      </div>
+      <!-- .menu end-->
+      <div class="svg_wrapper">
+        <svg version="1.1" viewBox="0 0 769.4693 45.8125" class="triangle">
+          <path id="ruffle">
+            <animate attributeName="d" dur="300ms" fill="freeze" begin="indefinite"></animate>
+          </path>
+        </svg>
+      </div>
+    </nav>
+    <!-- nav end-->
+    <header class="header">
+      <div class="container">
+        <h1>{% if page.lang == "de" %}<a href="/">½ a px.</a>{% else %}<a href="/en/">½ a px.</a>{% endif %}</h1>
+      </div>
+      <!-- .container end-->
+    </header>
+    <!-- header end-->
+    <div class="triangle_reverse_container">
+      <svg version="1.1" viewBox="0 0 770 63" class="triangle_reverse">
+        <path d="M 769.0766,61.53043 0.5,61.629255 0.55974186,0.520315 C 0.23440393,30.221569 359.00793,14.210549 384.80814,45.029889 412.33508,14.210549 769.38188,30.328689 769.04308,0.5 z"></path>
+      </svg>
+    </div>
+    <div class="wrapper">
+      <section class="main_container">
+        <div class="container">
+          <article>
+            <div class="title">
+              <div>
+                <h1>{{ page.title }}</h1>{% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+              </div>
+              <div class="date"> <span class="month">{{ page.date | date: "%B" | slice: 0, 3 }}</span><span class="day">{{ page.date | date: "%d" }}</span><span class="year">{{ page.date | date: "%Y" }}</span></div>
+            </div>
+            <div class="meta"><span class="date">
+                {% include date.html %}
+                {% if post.tags %} &nbsp;&bull;&nbsp;{% endif %}</span>{% if page.tags %}<span class="tags"><i class="fa fa-tags"></i>{% for tag in page.tags limit:10 offset:0 %} <a href="{{ site.tag_dir}}/{{ tag }}">{{ tag }}</a> {% endfor %}</span>{% endif %}</div>
+            <div class="content">{{ content }}</div>{% include disqus.html %}
+            {% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
+            {% for links in document %}
+            {% if links.title == page.title %}
+            {% unless forloop.first %}
+            {% assign prevurl = prev.url %}
+            {% assign prevtitle = prev.title %}
+            {% endunless %}
+            {% unless forloop.last %}
+            {% assign next = document[forloop.index] %}
+            {% assign nexturl = next.url %}
+            {% assign nexttitle = next.title %}
+            {% endunless %}
+            {% endif %}
+            {% assign prev = links %}
+            {% endfor %}
+            {% if prevurl or nexturl %}
+            <div class="pagination">
+              {% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-left"></i> {{ prevtitle}}</a>{% endif %}                    
+              {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-right"></i></a>{% endif %}
+            </div>{% endif %}
+          </article>
+          <!-- article end-->
+        </div>
+        <!-- .container end-->
+      </section>
+      <!-- section end-->
+    </div>
+    <!-- .wrapper end-->
+    <footer>
+      <div class="svg_wrapper">
+        <svg version="1.1" viewBox="0 0 769.4693 45.8125" class="triangle_up">
+          <path d="M 0.49749557,0.533884 C 0.17215764,30.235138 358.94568,14.224118 384.74589,45.043458 412.27283,14.224118 769.31963,30.342258 768.98083,0.513569 z"></path>
+        </svg>
+      </div>
+      <div class="foot">
+        <div class="container">
+          <div class="left"><span class="copyright">&copy; content by 1/2 a px.</span>&nbsp;&middot;&nbsp;<span class="year">2015</span>
+          </div>
+          <div class="right"><a href="https://github.com/mynimi"> <i class="fa fa-github"></i></a><a href="http://codepen.io/mynimi/"><i class="fa fa-codepen"></i></a>&nbsp;<span class="backtotop">back to top</span></div>
+        </div>
+        <!-- .container end-->
+      </div>
+      <!-- .foot end-->
+    </footer>
+    <!-- footer end-->{% include analytics.html %}
+    <script src="/js/build/page.min.js"></script>
+  </body>
+  <!-- body end-->
+</html>
+<!-- html end-->

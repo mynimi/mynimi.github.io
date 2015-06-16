@@ -1,0 +1,150 @@
+// FONT-FACE STUFF HERE
+//-----------------------
+
+// PT Sans
+//---------
+// normal
+@font-face {
+    font-family: 'PT Sans';
+    $path-part: 'Regular';
+    src: url('../fonts/PT-Sans-#{$path-part}.eot');
+    src: url('../fonts/PT-Sans-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PT-Sans-#{$path-part}.woff') format('woff'),
+         url('../fonts/PT-Sans-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/PT-Sans-#{$path-part}.svg#PTSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// italic
+@font-face {
+    font-family: 'PT Sans';
+    $path-part: 'Italic';
+    src: url('../fonts/PT-Sans-#{$path-part}.eot');
+    src: url('../fonts/PT-Sans-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PT-Sans-#{$path-part}.woff') format('woff'),
+         url('../fonts/PT-Sans-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/PT-Sans-#{$path-part}.svg#PTSans') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+// bold
+@font-face {
+    font-family: 'PT Sans';
+    $path-part: 'Bold';
+    src: url('../fonts/PT-Sans-#{$path-part}.eot');
+    src: url('../fonts/PT-Sans-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PT-Sans-#{$path-part}.woff') format('woff'),
+         url('../fonts/PT-Sans-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/PT-Sans-#{$path-part}.svg#PTSans') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// bold italic
+@font-face {
+    font-family: 'PT Sans';
+    $path-part: 'BoldItalic';
+    src: url('../fonts/PT-Sans-#{$path-part}.eot');
+    src: url('../fonts/PT-Sans-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PT-Sans-#{$path-part}.woff') format('woff'),
+         url('../fonts/PT-Sans-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/PT-Sans-#{$path-part}.svg#PTSans') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+// Special Elite
+//---------------
+@font-face {
+    font-family: 'Special Elite';
+    $path: 'SpecialElite';
+    src: url('../fonts/#{$path}.eot');
+    src: url('../fonts/#{$path}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/#{$path}.woff') format('woff'),
+         url('../fonts/#{$path}.ttf') format('truetype'),
+         url('../fonts/#{$path}.svg#SpecialElite') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Latin Modern Mono
+//-------------------
+// regular
+@font-face {
+    font-family: 'Latin Modern Mono';
+    $path-part: 'Regular';
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot');
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.woff') format('woff'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.svg#LatinModernMono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// italic
+@font-face {
+    font-family: 'Latin Modern Mono';
+    $path-part: 'Italic';
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot');
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.woff') format('woff'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.svg#LatinModernMono') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+// light
+@font-face {
+    font-family: 'Latin Modern Mono';
+    $path-part: 'Light';
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot');
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.woff') format('woff'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.svg#LatinModernMono') format('svg');
+    font-weight: light;
+    font-style: normal;
+}
+
+// light oblique
+@font-face {
+    font-family: 'Latin Modern Mono';
+    $path-part: 'LightOblique';
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot');
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.woff') format('woff'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.svg#LatinModernMono') format('svg');
+    font-weight: light;
+    font-style: oblique;
+}
+
+// bold
+@font-face {
+    font-family: 'Latin Modern Mono';
+    $path-part: 'Bold';
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot');
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.woff') format('woff'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.svg#LatinModernMono') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// bold oblique
+@font-face {
+    font-family: 'Latin Modern Mono';
+    $path-part: 'BoldOblique';
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot');
+    src: url('../fonts/Latin-Modern-Mono-#{$path-part}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.woff') format('woff'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.ttf') format('truetype'),
+         url('../fonts/Latin-Modern-Mono-#{$path-part}.svg#LatinModernMono') format('svg');
+    font-weight: bold;
+    font-style: oblique;
+}

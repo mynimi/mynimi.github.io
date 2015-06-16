@@ -1,0 +1,271 @@
+.pagination{
+    @include clearfix();
+    
+    .prev{
+        float: left;
+        @extend .btn;
+        line-height: 1.5 !important;
+    }
+    
+    .next{
+        float: right;
+        @extend .btn;
+        line-height: 1.5 !important;
+    }
+}
+
+.triangle_up {
+    transform: rotate(180deg),
+}
+
+.tags a,
+.tag {
+    &:after {
+        content: ",";
+    }
+    
+    &:last-of-type:after{
+        content: "";
+    }
+    
+}
+
+.btn {
+    color: $color-2;
+    text-transform: uppercase;
+    border: 2px solid currentColor;
+    padding: 7px 13px;
+    line-height: 2.5;
+    margin: 7px;
+    &:hover {
+        color: $color-3;
+    }
+}
+
+// Tables
+table,
+th,
+td {
+    border: none;
+}
+
+table {
+    width: 100%;
+    display: table;
+    tr {
+        border-bottom: 1px solid $table-border-color;
+    }
+    tbody tr:nth-child(odd) {
+        background-color: $table-striped-color;
+    }
+    tbody tr {
+        transition: background-color .25s ease;
+        &:hover {
+            background-color: darken($table-striped-color, 50%);
+        }
+    }
+}
+
+thead {
+    border-bottom: 3px solid $table-border-color;
+}
+
+td,
+th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+// Responsive Table
+@media screen and (max-width: $table-collapse) {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: block;
+        position: relative;
+        th, td {
+            margin: 0;
+            vertical-align: top;
+        }
+        th {
+            text-align: left;
+        }
+        thead {
+            display: block;
+            float: left;
+            tr {
+                display: block;
+                padding: 0 10px 0 0;
+                th::before {
+                    content: "\00a0";
+                }
+            }
+        }
+        tbody {
+            display: block;
+            width: auto;
+            position: relative;
+            overflow-x: auto;
+            white-space: nowrap;
+            tr {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+        th {
+            display: block;
+            text-align: right;
+        }
+        td {
+            display: block;
+            min-height: 1.25em;
+            text-align: left;
+        }
+        tr {
+            padding: 0 10px;
+        }
+        /* sort out borders */
+
+        thead {
+            border: 0;
+            border-right: 1px solid $table-border-color;
+        }
+        th {
+            border-bottom: 0;
+            border-left: 0;
+        }
+        td {
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+        }
+        tr {
+            border: 0;
+        }
+        tbody tr {
+            border-right: 1px solid $table-border-color;
+        }
+    }
+}
+
+
+.index{
+    .main_container{
+        .content{
+            > h1{
+                font-size: 2.6em;
+                margin: 30px 0;
+            }
+        }
+    }
+}
+
+.main_container{
+    padding-bottom: 35px;
+}
+
+.highlighter-rouge{
+    .highlight{
+        @include center();
+        max-width: $container-max-width;
+        width: 80%;
+    }
+}
+
+code,
+pre{
+    white-space:pre-wrap;
+}
+
+p + {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        margin-top: 20px;
+    }
+}
+
+blockquote{
+    font-family: $latin-modern-mono;
+}
+
+.post{
+    .title{
+        @include flexbox(row, wrap, space-between, flex-start);
+        
+        > div{
+            width: calc(100% - 90px);
+        }
+        
+        .date{
+            width: 70px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+        
+        @media screen and (max-width: $date-collapse){
+            > div{
+                width: 100%;
+            }
+            
+            .date{
+                display: none;
+            }
+        }
+        .month{
+            font-weight: 300;
+            text-transform: uppercase;
+            display: block;
+            width: 100%;
+            background: $color-2;
+            color: $white;
+        }
+        
+        .day{
+            display: block;
+            font-size: 2em;
+            font-family: $latin-modern-mono;
+            color: $color-3;
+            line-height: 1;
+            padding: 5px 0px;
+            font-weight: bold;
+        }
+        
+        .year{
+            display: block;
+            margin-top: 0px;
+            line-height: 1.1;        
+        }
+    }
+    
+    .meta{
+        @media screen and (min-width: $date-collapse+1){
+            .date{
+                display: none;
+            }
+        }
+    }
+}
+
+.posts-container{
+    article{
+        padding-bottom: 30px;
+        border-bottom: $line;
+        margin-bottom: 30px;
+    }
+}
+
+.video{
+    @include paddinghack(100%, 16, 9, "iframe");
+}

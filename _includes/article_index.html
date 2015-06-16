@@ -1,0 +1,49 @@
+<article>
+    {% if post.header-pic %}
+    <div class="feat-img">
+        <a href="{{ post.url }}">
+            {% if post.header-pic contains '.png'%}
+                {% assign featimg = post.header-pic | replace: '.png', '' %}
+                <img src="{{ site.img-folder }}/{{ featimg | append: '-300x300.png' }}" alt="{{ image.alttext }}">
+            {% elsif post.header-pic contains '.jpg'%}
+                {% assign featimg = post.header-pic | replace: '.jpg', '' %}
+                <img src="{{ site.img-folder }}/{{ featimg | append: '-300x300.jpg' }}" alt="{{ image.alttext }}">
+            {% endif %}
+        </a>
+    </div>
+    {% endif %}
+    <div class="post-info">
+        <h1>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h1>
+        {% if post.subtitle %}
+        <h2>
+            <a href="{{ post.url }}">{{ post.subtitle }}</a>
+        </h2>
+        {% endif %}
+        <p class="meta">
+            <span class="date">{% include date.html %}</span> 
+            {% if post.tags %} &nbsp;&bull;&nbsp;
+            <span class="tags">
+                <i class="fa fa-tags"></i>
+                {% for tag in post.tags limit:5 offset:0 %}
+                    <a href="{{ site.tag_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ tag }}">{{ tag }}</a>
+                {% endfor %}
+            </span> {% endif %}
+        </p>
+        <p class="post_content">
+        {% if post.content contains site.excerpt_separator %}
+            {{ post.excerpt | markdownify }}
+        {% else %}
+            {{ post.content | markdownify | strip_html | truncatewords: 50 }}
+        {% endif %}
+        </p>
+        <a href="{{ post.url }}" class="btn">
+            {% if page.lang == "en" %}
+                Read More
+            {% else %}
+                Weiterlesen
+            {% endif %}
+        </a>
+    </div>
+</article>

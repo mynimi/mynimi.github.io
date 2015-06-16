@@ -1,0 +1,24 @@
+---
+layout: page
+group: "navigation-02"
+title: Blog
+page-title: no
+id: blog
+lang: de
+---
+<div class="posts-container">
+{% assign posts = site.posts | where:"lang", page.lang %}
+{% for post in posts limit: 30 %}
+    {% include article_index.html %}
+{% endfor %}
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="prev"><i class="fa fa-arrow-left"></i></a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-arrow-right"></i></a>
+  {% endif %}
+</div>

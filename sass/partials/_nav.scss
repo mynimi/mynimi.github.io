@@ -1,0 +1,180 @@
+#trigger,
+.toggle {
+    margin-right: 20px;
+    
+    &:hover{
+        opacity: .8;
+        cursor: pointer;
+    }
+}
+
+.backtotop{
+    @extend a;
+    opacity: 1;
+
+    &.hidden{
+        opacity: 0;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: .3s all ease-in-out;
+    color: $nav-color;
+    text-transform: uppercase;
+    line-height: 1;
+
+
+    a{
+        margin-right: 20px;
+        color: $nav-color;
+
+        &:hover{
+            color: $nav-color;
+            opacity: .8;
+        }
+        
+        &.active{
+            &:before{
+                content: '♦ ';
+            }
+        }
+    }
+
+    .menu{
+        @include flexbox(row, wrap, space-between, center);
+        background: $nav-bg;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        .homelink{
+            line-height: 1;
+            margin-right: 0;
+        }
+
+        svg{
+            height: 30px;
+
+            .icon{
+                fill: $nav-color;
+                stroke: $nav-color;
+            }
+
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+
+    .left,
+    .right {
+        @include flexbox(row, wrap, flex-start, center);
+        
+        li{
+            list-style: none;
+            display: inline;
+        }
+    }
+
+    .responsive{
+        @media screen and (min-width: $nav-toggle + 1){
+            .toggle{
+                display: none;
+            }
+
+            a:first-of-type{
+                margin-left: 20px;
+            }
+        }
+
+        @media screen and (max-width: $nav-toggle){
+            @include flexbox(column, nowrap, flex-start, center);
+            position: fixed;
+            z-index: 11;
+            left: -320px;
+            top: 0;
+            height: 100%;
+            width: 320px;
+            background: $responsive-nav-bg;
+            transition: .3s all ease;
+
+            &.active{
+                transform: translate(320px, 0);
+            }
+
+            a{
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid rgba(white, .1);
+                padding: 10px 5px;
+                box-sizing: border-box;
+                margin: 0;
+                position: relative;
+
+                &:hover{
+                    background: rgba(white, .2);
+                }
+            }
+
+            .toggle{
+                text-align: right;
+                width: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .center{
+        @media screen and (max-width: $nav-toggle){
+
+        }
+        @media screen and (min-width: $nav-toggle + 1){
+            display: none;
+        }
+    }
+
+    .svg_wrapper{
+        @include paddinghack(100%, 769.4693, 45.8125, '.triangle');
+
+        .triangle{
+
+            path{
+                fill: $nav-bg;
+                transform: translateY(-1px);
+            }
+        }
+    }
+}
+
+.lang-de {
+    .menu {
+        .de {
+            &:before{
+                content: '♦ ';
+            }
+        }
+    }    
+}
+
+.lang-en {
+    .menu {
+        .en {
+            &:before{
+                content: '♦ ';
+            }
+        }
+    }    
+}

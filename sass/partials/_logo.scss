@@ -1,0 +1,31 @@
+.logo {
+    .shadow {
+        stroke: $black;
+        stroke-width: 40;
+    }
+
+    .main-circle {
+        fill: white;
+        stroke: $black;
+        stroke-width: 39;
+    }
+
+    .icon {
+        fill: $black;
+        stroke: $black;
+        stroke-width: 20;
+    }
+
+    .name {
+        font-size: 237px;
+        line-height: 125%;
+        font-family: $special-elite;
+        text-align: start;
+        fill: $black;
+        stroke: none;
+    }
+
+    .phonetic {
+        fill: $black;
+    }
+}

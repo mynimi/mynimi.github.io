@@ -1,0 +1,60 @@
+doctype html
+html(lang="{{page.lang}}")
+    include includes/head.jade
+
+    body.page.theme(class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}")
+        include includes/nav.jade
+        header.header
+            .container
+                img(src="{{ site.img_dir }}/{{ page.theme-img}}")
+                {% if page.title %}
+                h1.
+                    <b>{{ page.title }}</b>
+                    {% if page.subtitle%}
+                    <span class="subtitle">{{ page.subtitle }}</span>
+                    {% endif %}
+                {% endif %}
+
+            // .container end
+        // header end
+
+        div(class="triangle_reverse_container")
+            svg(version="1.1", viewBox="0 0 770 63", class="triangle_reverse")
+                path(d="M 769.0766,61.53043 0.5,61.629255 0.55974186,0.520315 C 0.23440393,30.221569 359.00793,14.210549 384.80814,45.029889 412.33508,14.210549 769.38188,30.328689 769.04308,0.5 z")
+
+        .wrapper
+            section.main_container
+                header
+                    h1 {{ page.theme-desc-head }}
+                    h2 {{ page.theme-desc }}
+
+                .container
+                    .btns
+                        span
+                            a.btn(href="{{ page.theme-demo }}") Demopage
+                        span
+                            a.btn(href="{{ page.theme-source }}") Source
+                        span
+                            a.btn(href="{{ page.theme-docs }}") Docs &amp; Tuts
+
+                    article
+                        .meta
+                            span.date {% include date.html %}
+                            &nbsp;&middot;&nbsp;
+                            span.cat category: {{ page.category }}
+                            {% if page.tags %}
+                            &nbsp;&middot;&nbsp;
+                            span.tags tags:
+                                {% for tag in page.tags %} <span>{{ tag }}</span> {% endfor %}
+                            {% endif %}
+
+                        .content {{ content }}
+                            {% include collection_navigator.html %}
+                    // article end
+                // .container end
+            // section end
+        // .wrapper end
+        include includes/footer.jade
+        script(src="/js/build/page.min.js")
+    // body end
+// html end

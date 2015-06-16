@@ -1,0 +1,46 @@
+footer {
+    position: relative;
+    .svg_wrapper {
+        @include paddinghack(100%, 769.4693, 45.8125, 'svg');
+        svg {
+            fill: $footer-bg;
+        }
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .foot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $footer-bg;
+        color: $footer-color;
+        width: 100%;
+        min-height: 80px;
+        a {
+            color: $footer-color;
+            text-decoration: underline;
+            &:hover {
+                color: $footer-color;
+                opacity: .8;
+                text-decoration: none;
+            }
+        }
+        .backtotop {
+            &.hidden {
+                display: inline-block;
+                opacity: 1;
+            }
+            &:hover {
+                opacity: .8;
+            }
+        }
+        .fa {
+            font-size: 2em;
+            margin-right: 10px;
+        }
+        .container {
+            @include flexbox(row, wrap, space-between, center);
+        }
+    }
+}

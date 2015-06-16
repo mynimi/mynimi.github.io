@@ -1,0 +1,74 @@
+doctype html
+html(lang="{{page.lang}}")
+    include includes/head.jade
+
+    body.page.post(class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}")
+        include includes/nav.jade
+        header.header
+            .container
+                h1
+                    {% if page.lang == "de" %}
+                    a(href="/") ½ a px.
+                    {% else %}
+                    a(href="/en/") ½ a px.
+                    {% endif %}
+            // .container end
+        // header end
+
+        div(class="triangle_reverse_container")
+            svg(version="1.1", viewBox="0 0 770 63", class="triangle_reverse")
+                path(d="M 769.0766,61.53043 0.5,61.629255 0.55974186,0.520315 C 0.23440393,30.221569 359.00793,14.210549 384.80814,45.029889 412.33508,14.210549 769.38188,30.328689 769.04308,0.5 z")
+
+        .wrapper
+            section.main_container
+                .container
+                    article
+                        .title
+                            div
+                                h1 {{ page.title }}
+                                {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+                            .date 
+                                span.month {{ page.date | date: "%B" | slice: 0, 3 }}
+                                span.day {{ page.date | date: "%d" }}
+                                span.year {{ page.date | date: "%Y" }}
+                        .meta
+                            span.date {% include date.html %}
+                                {% if post.tags %} &nbsp;&bull;&nbsp;{% endif %}
+                            {% if page.tags %}
+                            span.tags
+                                 i.fa.fa-tags
+                                 {% for tag in page.tags limit:10 offset:0 %} <a href="{{ site.tag_dir}}/{{ tag }}">{{ tag }}</a> {% endfor %}
+                            {% endif %}
+                        .content {{ content }}
+
+                        {% include disqus.html %}
+                        
+                        {% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
+                        {% for links in document %}
+                        {% if links.title == page.title %}
+                        {% unless forloop.first %}
+                        {% assign prevurl = prev.url %}
+                        {% assign prevtitle = prev.title %}
+                        {% endunless %}
+                        {% unless forloop.last %}
+                        {% assign next = document[forloop.index] %}
+                        {% assign nexturl = next.url %}
+                        {% assign nexttitle = next.title %}
+                        {% endunless %}
+                        {% endif %}
+                        {% assign prev = links %}
+                        {% endfor %}
+
+                        {% if prevurl or nexturl %}
+                        .pagination
+                            {% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-left"></i> {{ prevtitle}}</a>{% endif %}                    
+                            {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-right"></i></a>{% endif %}
+                        {% endif %}
+                    // article end
+                // .container end
+            // section end
+        // .wrapper end
+        include includes/footer.jade
+        script(src="/js/build/page.min.js")
+    // body end
+// html end

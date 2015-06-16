@@ -1,0 +1,43 @@
+$bg: 'geometric';
+
+.header {
+    width: 100%;
+    position: relative;
+    background: {
+        image: url(../media/compressed/#{$bg}.jpg);
+        color: $background-color;
+        size: cover;
+        position: center center;
+        attachment: fixed;
+    }
+    text-align: center;
+    .container {
+        padding-top: 50px;
+        max-width: 300px;
+    }
+    .logo-wrapper {
+        @include center();
+        @include paddinghack(100%, 1154.2257, 1157.5458, '.logo');
+    }
+
+    .page &{
+        h1{
+            font-family: $special-elite;
+            background: $white;
+            border: 5px solid $black;
+            font-size: 4.5em;
+            font-weight: normal;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+    }
+}
+.triangle_reverse_container {
+    @include paddinghack(100%, 770, 63, '.triangle_reverse');
+    .triangle_reverse {
+        fill: white;
+        stroke: white;
+        width: 100%;
+        stroke-width: 2px;
+    }
+}
