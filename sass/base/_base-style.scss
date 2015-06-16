@@ -4,6 +4,12 @@ html{
         size: $root-font-size;
         weight: $main-font-weight;
     }
+    
+    .container{
+        @media screen and (max-width: 900px){
+            font-size: $root-font-size - 4;
+        }
+    }
 }
 
 body{
