@@ -4,6 +4,7 @@ title: About
 permalink: /en/about/
 lang: en
 id: about
+description: a few words about me.
 ---
 So that's it. The About Page.
 You are supposed to present yourself, say what it's all about?

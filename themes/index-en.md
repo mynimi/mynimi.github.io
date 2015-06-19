@@ -4,6 +4,7 @@ group: navigation-03
 lang: en
 id: themes
 permalink: /en/themes/
+description: all of my themes. responsive blogger and jekyll themes for free
 ---
 <!--<div class="filtering">
     <span class="filter" data-filter="all">show all</span> &bull;

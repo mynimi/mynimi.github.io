@@ -3,6 +3,7 @@ group: "navigation-01"
 title: Über Mich
 id: about
 lang: de
+description: Ein paar Worte über mich.
 ---
 Das ist sie also. Die About Page.
 Hier soll man sich vorstellen, präsentieren, sagen, um was es geht?

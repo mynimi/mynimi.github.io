@@ -3,6 +3,7 @@ title: Themes
 group: navigation-03
 lang: de
 id: themes
+description: Alle meine themes und templates. Kostenlos responsive Blogger und jekyll themes
 ---
 <!--<div class="filtering">
     <span class="filter" data-filter="all">Alle Anzeigen</span> &bull;

@@ -4,6 +4,7 @@ title: Contact
 lang: en
 id: contact
 permalink: /en/contact/
+description: A place to drop me a line.
 ---
 Any Questions about tutorials, requests, other questions or just some feedback - feel free to drop me a line.
 

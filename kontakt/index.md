@@ -3,6 +3,7 @@ group: "navigation-05"
 title: Kontakt
 lang: de
 id: contact
+description: Kontaktseite von halfapx.com
 ---
 Bei Fragen zu Tutorials, Anfragen für Hilfestellungen oder sonstigem Feedback - einfach mal melden.
 
