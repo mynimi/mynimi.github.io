@@ -4,9 +4,9 @@
   "homepage": "http://halfapx.com",
   "author": "Myriam Frisano",
   "version": "1.0.0",
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/mynimi/mynimi.github.io"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mynimi/mynimi.github.io"
   },
   "devDependencies": {
     "deep-extend": "^0.3.3",
@@ -22,6 +22,7 @@
     "grunt-minify-html": "^2.0.0",
     "grunt-newer": "^1.1.0",
     "grunt-open": "^0.2.3",
+    "grunt-prettify": "^0.4.0",
     "grunt-responsive-images": "^0.1.6",
     "grunt-sass": "^0.18.1",
     "grunt-shell": "^1.1.2",

@@ -3,6 +3,7 @@ group: "navigation-04"
 title: Archive
 lang: en
 id: archive
+permalink: /en/archive/
 ---
 {% assign posts = site.posts | where:"lang", page.lang %}
 Date | Title | Tags

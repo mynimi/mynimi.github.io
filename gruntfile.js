@@ -216,7 +216,9 @@ module.exports = function(grunt) {
 
         minifyHtml: {
             options: {
-                cdata: true
+                cdata: true,
+                removeComments: true,
+                
             },
             dist: {
                 files: [{
@@ -229,6 +231,23 @@ module.exports = function(grunt) {
             }
         },
 
+        prettify: {
+            options: {
+                indent: 4,
+                brace_style: 'end-expand',
+                unformatted: ['code', 'pre']
+            },
+            html: {
+                files: [{
+                    expand: true,
+                    cwd: '',
+                    src: ['jekyllbuild/{,*/}{,*/}{,*/}*.html'],
+                    dest: '',
+                    ext: '.html'
+                }]
+            }
+        },
+        
         watch: {
             options: {
                 livereload: true
@@ -263,5 +282,5 @@ module.exports = function(grunt) {
     grunt.registerTask("default", ["responsive_images", "newer:imagemin", "newer:concat", "newer:uglify", "sass", "autoprefixer", "newer:jade", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("serve", ["shell:jekyllServe"]);
     grunt.registerTask("build", ["responsive_images", "newer:imagemin", "newer:concat", "newer:uglify", "sass", "autoprefixer", "newer:jade", "shell:jekyllBuild", "copy"]);
-    grunt.registerTask("deploy", ["buildcontrol:pages"]);
+    grunt.registerTask("deploy", ["prettify", "buildcontrol:pages"]);
 };

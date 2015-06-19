@@ -1,6 +1,7 @@
 ---
 group: "navigation-01"
 title: About
+permalink: /en/about/
 lang: en
 id: about
 ---
