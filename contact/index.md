@@ -13,6 +13,5 @@ Any Questions about tutorials, requests, other questions or just some feedback -
     <input type="text" name="_replyto" placeholder="E-Mail" />
     <textarea type="text" name="message" placeholder="Message" rows="5"></textarea>
     <input class="btn" type="submit" value="Send">
-    <input type="hidden" name="_next" value="http://halfapx.com/gotit/" />
     <input type="text" name="_gotcha" style="display:none" />
 </form>

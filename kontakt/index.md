@@ -12,6 +12,5 @@ Bei Fragen zu Tutorials, Anfragen für Hilfestellungen oder sonstigem Feedback -
     <input type="text" name="_replyto" placeholder="E-Mail" />
     <textarea type="text" name="message" placeholder="Nachricht" rows="5"></textarea>
     <input class="btn" type="submit" value="Abschicken">
-    <input type="hidden" name="_next" value="http://halfapx.com/angekommen/" />
     <input type="text" name="_gotcha" style="display:none" />
 </form>
