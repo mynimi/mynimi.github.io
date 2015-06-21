@@ -10,12 +10,11 @@ Nachdem ich vor einigen Jahren in Informatik eine Einführung in Java erhielt, h
 Ich hatte einen Tag ruby gelernt, als ich die erste Version dieses Generators schrieb. Nach einem Jahr Java konnte ich nicht einmal so viel programmieren, wie ich es mit ein bisschen Javascript und CSS heute kann.
 Und das was ich mit ruby geschrieben habe, ist eindeutig brauchbarer. Denn es bedeutet, dass ich nie wieder meine Front Matter Deklarationen einer jekyll-Page selbst schreiben werde.
 <br>
-
+<!-- more -->
 <div class="video">
     <iframe src="https://www.youtube.com/embed/oVUMEKLBLw0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<!-- more -->
 Vor einer Weile hab ich schon über einen Front Matter Generator geschrieben. Dort eine Webbasierte Version mit Javascript und jQuery[^1], die zwar gut funktionierte, doch sie erforderte mir persönlich noch zu viele Schritte. Ich wollte die Datei nicht speichern und verschieben müssen. Ich wollte einfach nur meine Daten eingeben und die Datei dann am liebsten gleich in meinem liebsten Editor geöffnet haben. Das war doch nicht zu viel verlangt?
 
 Inspiration kam, als ich die Plugins für Jekyll ansah. Es gab welche, die neue Seiten generierten. Ruby war also wohl die Lösung. Gedacht, getan. Den Kurs auf [Codecademy](http://www.codecademy.com/en/tracks/ruby) begonnen und nach 60% des Kurses, schrieb sich der Generator praktisch von selbst.

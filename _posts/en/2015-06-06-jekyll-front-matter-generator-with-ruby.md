@@ -11,12 +11,12 @@ After an Introduction to Java a few years ago in school I decided to leave the p
 I had studied ruby for one day, when I wrote the first version of this generator. After a year of Java I was not even able to program as much functionality as I can with just a few lines of JavaScript and CSS today.
 And the thing I wrote in ruby is definitely more useful. Because It means that I will never again write front matter declarations in a jekyll page.
 
-<br>
+<br><!-- more -->
 <div class="video">
     <iframe src="https://www.youtube.com/embed/oVUMEKLBLw0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<!-- more -->
+
 I have written another front matter generator a while ago[^1], it worked pretty good, but for me too many steps were involved until the file was at the right place. I just wanted to enter my data and then - preferably - have the file opened in my favourite editor so I could just go on write the content.
 
 I got inspired, when I had a look at some jekyll plugins, that did generate new files. So I thought Ruby is the way to go. I started the course at [Codecademy](http://www.codecademy.com/en/tracks/ruby) and 60% into it, decided to give this generator a go and it basically wrote itself.

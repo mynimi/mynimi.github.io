@@ -10,10 +10,10 @@ Als ich begonnen habe, responsive Websites zu bauen, war die Navigation immer da
 
 Für all die unter euch, die am gleichen Punkt sind, wie ich damals, dann bleibt dran. Denn hier erfahrt ihr, wie ihr mit einem Linklistengadget ein responsives 3-Level Dropdown bauen könnt.
 
-<br>
+<br><!-- more -->
 <p data-height="304" data-theme-id="7132" data-slug-hash="NPOKYP" data-default-tab="result" data-user="mynimi" class='codepen'>See the Pen <a href='http://codepen.io/mynimi/pen/NPOKYP/'>3-Level Dropdown from 1-Level Menu</a> by Myri (<a href='http://codepen.io/mynimi'>@mynimi</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-<!-- more -->
+
 
 In diesem Tutorial soll es nicht darum gehen, wie das Menü funktioniert, sondern, wie ihr es einbindet. (Ich plane allerdings noch ein Tutorial zum DropDown Menu selbst)
 

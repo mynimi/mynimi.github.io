@@ -12,9 +12,9 @@ When I first started creating responsive Websites, navigation was always one of 
 For all of you out there that are in the same position I was, when I started, I created this menu. It is a three level navigation, that will be generated from a simple link list.
 
 <br>
+<!-- more -->
 <p data-height="304" data-theme-id="7132" data-slug-hash="NPOKYP" data-default-tab="result" data-user="mynimi" class='codepen'>See the Pen <a href='http://codepen.io/mynimi/pen/NPOKYP/'>3-Level Dropdown from 1-Level Menu</a> by Myri (<a href='http://codepen.io/mynimi'>@mynimi</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-<!-- more -->
 
 In this Tutorial I don't want to go over how this menu works, but how to integrate it into the blog (I do plan on writing a tutorial on the dropdown, though).
 

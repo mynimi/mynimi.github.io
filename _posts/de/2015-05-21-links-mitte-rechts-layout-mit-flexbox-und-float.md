@@ -10,10 +10,9 @@ Ich bin ein grosser Grid-Fan. Ein "links-mitte-rechts"-Layout ist in meinem täg
 
 Wie ihr es aber dennoch schnell beheben könnt, möchte ich euch hier zeigen.
 
-<br>
+<br><!-- more -->
 <p data-height="409" data-theme-id="7132" data-slug-hash="WvGdZL" data-default-tab="result" data-user="mynimi" class='codepen'>See the Pen <a href='http://codepen.io/mynimi/pen/WvGdZL/'>WvGdZL</a> by Myri (<a href='http://codepen.io/mynimi'>@mynimi</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-<!-- more -->
 <br>
 
 Wie ihr oben im Beispiel sehen könnt, wird das Problem schnell klar. Die Beispiele Float1 und Flex1 sind so geschrieben, wie ich es für gewöhnlich tun würde, mit kurzem Markup und kurzen Style-Angaben. Wenn wir aber eines der beiden Worte deutlich länger machen, wird klar was genau gemacht wird.

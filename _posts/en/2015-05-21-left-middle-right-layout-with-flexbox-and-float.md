@@ -11,10 +11,9 @@ I'm a big grid fan. A "left-middle-right"-layout is something I've used hundreds
 
 But a solution was found and that's what I want to talk about today.
 
-<br>
+<br><!-- more -->
 <p data-height="409" data-theme-id="7132" data-slug-hash="WvGdZL" data-default-tab="result" data-user="mynimi" class='codepen'>See the Pen <a href='http://codepen.io/mynimi/pen/WvGdZL/'>WvGdZL</a> by Myri (<a href='http://codepen.io/mynimi'>@mynimi</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-<!-- more -->
 <br>
 
 As you can see in the example above the problem becomes obvious. The examples float1 and flex1 are written how I'd normally tackle this problem, because it's fast and easy. But if we increment the length of one of the sides you can see that the middle element is not really centered.
