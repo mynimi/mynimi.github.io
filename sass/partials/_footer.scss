@@ -18,12 +18,10 @@ footer {
         width: 100%;
         min-height: 80px;
         a {
-            color: $footer-color;
-            text-decoration: underline;
+            color: darken($footer-color, 20%);
             &:hover {
                 color: $footer-color;
                 opacity: .8;
-                text-decoration: none;
             }
         }
         .backtotop {
