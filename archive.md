@@ -1,4 +1,5 @@
 ---
+permalink: /archiv/
 group: "navigation-04"
 title: Archiv
 lang: de

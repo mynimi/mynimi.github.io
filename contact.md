@@ -1,4 +1,5 @@
 ---
+permalink: /kontakt/
 group: "navigation-05"
 title: Kontakt
 lang: de
