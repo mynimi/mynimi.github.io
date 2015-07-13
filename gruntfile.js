@@ -48,18 +48,27 @@ module.exports = function(grunt) {
         },
 
         imagemin: {
+            gif: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: '',
+                        src: ['img/*.gif', 'img/**/*.gif', 'img/**/**/*.gif'],
+                        dest: 'media/compressed/',
+                        flatten: true,
+                        ext: '.gif'
+                    }
+                ]
+            },
             png: {
                 options: {
-                    optimizationLevel: 7
+                    optimizationLevel: 5
                 },
                 files: [
                     {
-                        // Set to true to enable the following options…
                         expand: true,
-                        // cwd is 'current working directory'
                         cwd: '',
                         src: ['img/*.png', 'img/**/*.png', 'img/**/**/*.png'],
-                        // Could also match cwd line above. i.e. project-directory/img/
                         dest: 'media/compressed/',
                         flatten: true,
                         ext: '.png'
@@ -119,26 +128,13 @@ module.exports = function(grunt) {
             }
         },
 
-
-        concat: {
-            index: {
-                src: ['js/shared/*.js', 'js/index/*.js'],
-                dest: 'js/concat/index.js',
-            },
-            page: {
-                src: ['js/shared/*.js', 'js/page/*.js'],
-                dest: 'js/concat/page.js',
-            },
-        },
-
         uglify: {
             options: {
-                beautify: true,
+                preserveComments: false,
             },
             dist: {
                 files:{
-                    'js/build/index.min.js': 'js/concat/index.js',
-                    'js/build/page.min.js': 'js/concat/page.js',
+                    'js/build/main.min.js': ['js/*.js']
                 }
             }
         },
@@ -254,7 +250,7 @@ module.exports = function(grunt) {
             },
             scripts: {
                 files: ['js/{,*/}*.js'],
-                tasks: ["newer:concat", "newer:uglify", "copy:js"]
+                tasks: ["uglify", "copy:js"]
             },
             jade: {
                 files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html", "!jekyllbuild/{,*/}{,*/}*.jade"],
@@ -269,7 +265,7 @@ module.exports = function(grunt) {
                 tasks: ["shell:jekyllBuild"]
             },
             images: {
-                files: ["img/{,*/}*.{png,jpg}", "!img/compressed/{,*/}*.*"],
+                files: ["img/{,*/}*.{png,jpg,gif}", "!img/compressed/{,*/}*.*"],
                 tasks: ["responsive_images", "newer:imagemin", "shell:jekyllBuild", "copy"]
             }
         }
@@ -279,8 +275,8 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Default task(s).
-    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "newer:concat", "newer:uglify", "sass", "autoprefixer", "newer:jade", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "uglify", "sass", "autoprefixer", "newer:jade", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("build", ["responsive_images", "newer:imagemin", "newer:concat", "newer:uglify", "sass", "autoprefixer", "newer:jade", "shell:jekyllBuild", "copy"]);
-    grunt.registerTask("deploy", ["prettify", "buildcontrol:pages"]);
+    grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "autoprefixer", "newer:jade", "shell:jekyllBuild", "copy"]);
+    grunt.registerTask("deploy", ["minifyHtml", "buildcontrol:pages"]);
 };
