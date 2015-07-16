@@ -78,5 +78,6 @@ scss,
 package.json,
 gruntfile.js,
 node_modules,
-jekyllbuild
+jekyllbuild,
+jade
 ]

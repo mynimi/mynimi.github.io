@@ -53,7 +53,7 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: '',
-                        src: ['img/*.gif', 'img/**/*.gif', 'img/**/**/*.gif'],
+                        src: ['img/{,*/}{,*/}{,*/}*.gif'],
                         dest: 'media/compressed/',
                         flatten: true,
                         ext: '.gif'
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: '',
-                        src: ['img/*.png', 'img/**/*.png', 'img/**/**/*.png'],
+                        src: ['img/{,*/}{,*/}{,*/}*.png'],
                         dest: 'media/compressed/',
                         flatten: true,
                         ext: '.png'
@@ -81,36 +81,15 @@ module.exports = function(grunt) {
                 },
                 files: [
                     {
-                        // Set to true to enable the following options…
                         expand: true,
-                        // cwd is 'current working directory'
                         cwd: '',
-                        src: ['img/*.jpg', 'img/**/*.jpg', 'img/**/**/*.jpg', 'img/*.jpeg', 'img/**/*.jpeg', 'img/**/**/*.jpeg'],
-                        // Could also match cwd. i.e. project-directory/img/
+                        src: ['img/{,*/}{,*/}{,*/}*.{jpg,jpeg}'],
                         dest: 'media/compressed/',
                         flatten: true,
                         ext: '.jpg'
                     }
                 ]
             },
-            gif: {
-                options: {
-                    progressive: true
-                },
-                files: [
-                    {
-                        // Set to true to enable the following options…
-                        expand: true,
-                        // cwd is 'current working directory'
-                        cwd: '',
-                        src: ['img/*.gif', 'img/**/*.gif', 'img/**/**/*.gif'],
-                        // Could also match cwd. i.e. project-directory/img/
-                        dest: 'media/compressed/',
-                        flatten: true,
-                        ext: '.gif'
-                    }
-                ]
-            }
         },
 
         buildcontrol: {
@@ -150,10 +129,16 @@ module.exports = function(grunt) {
             }
         },
 
-        autoprefixer: {
-            global: {
-                src: 'css/main.css',
-                dest: 'css/main.css'
+        postcss: {
+            options: {
+                processors: [
+                    require('autoprefixer-core')({browsers: '> 1%'}), // add vendor prefixes
+                ]
+            },
+            dist: {
+                files: {
+                    'css/main.css': 'css/main.css'
+                }
             }
         },
 
@@ -187,7 +172,7 @@ module.exports = function(grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['js/**'],
+                        src: ['js/build/**'],
                         dest: 'jekyllbuild/'
                     },
                 ]
@@ -214,7 +199,6 @@ module.exports = function(grunt) {
             options: {
                 cdata: true,
                 removeComments: true,
-                
             },
             dist: {
                 files: [{
@@ -237,7 +221,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '',
-                    src: ['jekyllbuild/{,*/}{,*/}{,*/}*.html'],
+                    src: ['jekyllbuild/{,*/}{,*/}{,*/}{,*/}*.html'],
                     dest: '',
                     ext: '.html'
                 }]
@@ -253,16 +237,16 @@ module.exports = function(grunt) {
                 tasks: ["uglify", "copy:js"]
             },
             jade: {
-                files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html", "!jekyllbuild/{,*/}{,*/}*.jade"],
-                tasks: ["jade"]
+                files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html"],
+                tasks: ["newer:jade"]
             },
             css: {
                 files: ["sass/{,*/}{,*/}{,*/}*.scss"],
-                tasks: ["sass", "autoprefixer", "copy:css"]
+                tasks: ["sass", "postcss", "copy:css"]
             },
             site: {
-                files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!jekyllbuild/{,*/}{,*/}*.*", "!node_modules/{,*/}*.*"],
-                tasks: ["shell:jekyllBuild"]
+                files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml"],
+                tasks: ["shell:jekyllBuild", "copy"]
             },
             images: {
                 files: ["img/{,*/}*.{png,jpg,gif}", "!img/compressed/{,*/}*.*"],
@@ -275,8 +259,9 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Default task(s).
-    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "uglify", "sass", "autoprefixer", "newer:jade", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "newer:jade", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "autoprefixer", "newer:jade", "shell:jekyllBuild", "copy"]);
+    grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "newer:jade", "shell:jekyllBuild", "copy"]);
     grunt.registerTask("deploy", ["minifyHtml", "buildcontrol:pages"]);
+    grunt.registerTask("deploy-pretty", ["prettify", "buildcontrol:pages"]);
 };
