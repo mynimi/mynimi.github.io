@@ -3,7 +3,9 @@
 $noborder: 0 solid transparent;
 
 $pt-sans: 'PT Sans', 'Lato', 'Calibri', sans-serif;
+$work-sans: 'Work Sans', 'Open Sans', 'Calibri', sans-serif;
 $latin-modern-mono: 'Latin Modern Mono', 'Source Code Pro', 'Courier New', monospace;
+$source-code-pro: 'Source Code Pro', 'Courier New', monospace;
 $special-elite: 'Special Elite', monospace;
 
 // SETTINGS FOR BASE-STYLE
@@ -53,15 +55,15 @@ $link-hover-color: $color-2;
 // String Variables (use strings as values | for Font Variables: Don't forget to include the fonts)
 //------------------------------------------
 
-$main-font: $pt-sans;
+$main-font: $work-sans;
 
 // set to $main-font if you don't want your headings to use another font
-$headings-font: $latin-modern-mono;
+$headings-font: $source-code-pro;
 
 // use values from text-transform [none|capitalize|uppercase|lowercase|initial|inherit]
 $headings-text-transform: none;
 
-$code-font: $latin-modern-mono;
+$code-font: $source-code-pro;
 
 // size variables (use numbers as values (units as indicated ))
 
@@ -69,10 +71,10 @@ $code-font: $latin-modern-mono;
 $main-font-weight: 300;
 
 // set $main-font-weight if you don't want your headings to use another font-weight
-$headings-font-weight: 700;
+$headings-font-weight: 400;
 
 // use px here
-$root-font-size: 18px;
+$root-font-size: 19px;
 
 // do not add a unit here
 $basic-line-height: 1.6;

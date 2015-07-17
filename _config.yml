@@ -73,11 +73,10 @@ defaults:
 exclude: [
 .git,
 .gitignore,
-scss,
+sass,
 .sass-cache,
 package.json,
 gruntfile.js,
 node_modules,
-jekyllbuild,
-jade
+jekyllbuild
 ]

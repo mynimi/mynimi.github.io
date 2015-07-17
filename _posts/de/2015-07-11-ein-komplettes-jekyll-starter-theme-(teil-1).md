@@ -11,27 +11,27 @@ In dieser Serie möchte ich ein Jekyll Starter Theme schreiben. Also ein Anfang,
 
 <!-- more -->
 
-### 1. Der Anfang
+## 1. Der Anfang
 
-#### 1.1 Installation
+### 1.1 Installation
 Bevor wir wirklich loslegen können, brauchen wir natürlich jekyll. Ich verwende für meine jekyll Seiten Grunt, weil ich damit noch einiges automatisieren kann. Zum Beispiel Bilder verkleinern, javascript minification oder liveSchaltung der Seite (mit Plugins) auf GitHub Pages mit nur einem Command. Da ich auch jade für meine Templates verwende, installiere ich ebenfalls nodejs.
 
 Oh und ich bin auf einem Windows unterwegs und jekyll läuft. Version 3.0.0 von jekyll ist im Moment des Schreibens noch in der Beta, ich verwende diese Version, ihr könnt aber auch die aktuell stabile Version verwenden, womöglich funktioniert dann einiges vom Code nicht ganz identisch, weil 3.0.0 mit der neueren liquid-Version _geshipt_ wird.
 
 Also installiert [jekyll](http://jekyllrb.com/docs/installation/), [grunt](http://gruntjs.com/getting-started) und [node](https://nodejs.org/). Dann könnt ihr loslegen.
 
-#### 1.2 Git
+### 1.2 Git
 Ich weiss ja nicht, wie es mit anderen steht, aber ich bin immer ein grosser Fan von kostenlosem Hosting. Wenn ihr kein Problem damit habt, eure Seite Open Source zu haben, dann würde ich GitHub als Hoster verwenden. GitHub Pages hat jekyll installiert. Da ich allerdings immer das live haben will, was ich lokal sehen kann (also nicht auf eine alte Version zurückgehen will, oder mit einem syntax highlighter, den ich nicht mag, arbeiten möchte, oder auf Plugins verzichten will) pushe ich meinen Code auf einen `source` branch und verwende grunt um den generierten Ordner mit der statischen Seite, auf den `master` oder `gh-pages` branch zu pushen. Das läuft sehr gut.
 
 Falls Git noch nicht installiert ist, solltet ihr das natürlich dann auch noch nachholen ([bitte hier klicken, zum installieren](https://git-scm.com/)). Wie ihr das managen wollt, ist euch überlassen. GitHub stellt Programme zu Verfügung ([Win](https://windows.github.com/) &bull; [Mac](https://mac.github.com/)), die das Terminal nicht verwenden und der [Brackets Editor](http://brackets.io), hat eine nette [Extension](https://github.com/zaggino/brackets-git), die ich auch verwende, aber gewisse Dinge, laufen über das Terminal einfach schneller (und das von mir, deklarierte Erzfeindin des Terminals, die in gewisser Weise aufgegeben hat zu kämpfen und sich den Commands gefügt hat).
 
-#### 1.3 URL Situation
+### 1.3 URL Situation
 Bevor ihr überhaupt mit der Seite anfangt, solltet ihr euch über die URL im Klaren sein, die die Seite am Ende haben wird, wenn sie live ist. Falls ihr in einem Sub-Folder arbeiten werdet, müsst ihr nämlich jeweils mit der `baseurl` Variable von jekyll arbeiten, bei eigenen Domains könnt ihr das lassen.
 Für dieses Beispiel werde ich mit Base-URL arbeiten, da es einfacher ist.
 
-### 2 Set Up
+## 2 Set Up
 
-#### 2.1 Git Initiation
+### 2.1 Git Initiation
 Nachdem alles installiert ist, kann es losgehen. Ich starte meist gleich mit einem Git-Repo, weil ich dann alle Schritte mal zwischenspeichern kann.
 Dafür erstellt ihr ein neues Repo auf GitHub und kopiert die URL. Default ist hier HTTPS, ich verwende SSH, weil das erfahrungsgemäss einfach besser läuft, vor allem wenn man relativ grosse Commits hochladen will, man braucht allerdings etwas mehr Config, also SSH key generieren und hinterlegen (dafür hat GitHub eine [nette Anleitung](https://help.github.com/articles/generating-ssh-keys/#platform-all))
 
@@ -51,7 +51,7 @@ nach origin folgt die clone URL.
 
 Wenn das steht, ist mein Repo bereit und es kann mit der Ordner-Struktur begonnen werden.
 
-#### 2.2 Ordnerstruktur
+### 2.2 Ordnerstruktur
 Jekyll hat eine festgelegte Ordnerstruktur, die ich im Grunde befolgen werde.
 
 Hier ein paar Screenshots, wie diese nach dem ersten Schritt aussieht.

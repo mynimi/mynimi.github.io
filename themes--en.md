@@ -31,9 +31,9 @@ description: all of my themes. responsive blogger and jekyll themes for free
                         <h1>{{ theme.title }}</h1>
                     {% endif %}
                     {% if theme.subtitle %}
-                        <h3>{{ theme.subtitle }}</h3>
+                        <h2 class="subtitle">{{ theme.subtitle }}</h2>
                     {% endif %}
-                        <h6>{% include date.html %}</h6>
+                        <p>{% include date.html %}</p>
                 </a>
             {% endif %}
         </div>

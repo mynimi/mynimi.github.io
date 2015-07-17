@@ -245,7 +245,7 @@ module.exports = function(grunt) {
                 tasks: ["sass", "postcss", "copy:css"]
             },
             site: {
-                files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml"],
+                files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!jekyllbuild/**"],
                 tasks: ["shell:jekyllBuild", "copy"]
             },
             images: {

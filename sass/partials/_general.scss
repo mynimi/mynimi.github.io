@@ -38,6 +38,8 @@
     padding: 7px 13px;
     line-height: 2.5;
     margin: 7px;
+    font-weight: $main-font-weight;
+    
     &:hover {
         color: $color-3;
         cursor: pointer; 
@@ -48,6 +50,7 @@ input,
 textarea {
     font-family: $main-font;
     font-size: $root-font-size;
+    font-weight: $main-font-weight;
     
     &.btn{
         line-height: $basic-line-height;     
@@ -294,4 +297,18 @@ blockquote{
         width: 100%;
         margin: 7px;
     }
+}
+
+.subtitle{
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 1.6em;
+}
+
+p{
+    font-size: 20px;
+}
+
+b, strong{
+    font-weight: 500;
 }
