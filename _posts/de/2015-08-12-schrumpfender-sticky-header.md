@@ -6,7 +6,7 @@ subtitle: Wie ein Header smooth sticky fixiert wird und ein Element bei Scroll s
 tags: [header, jquery, javascript, tutorial, ♦♦]
 description: Wie ein Header smooth sticky fixiert wird und ein Element bei Scroll schrumpft
 ---
-Ich wurde vor einer Weile gefragt, wie man eine Navigationsbar [wie diese](boxer-soratemplates.blogspot.com) hinbekommt. Als ich mir den Code der Seite angesehen habe, war ich eher weniger begeistert, wie das Problem gelöst wurde und habe versucht das möglichst schneller und einfacher zu lösen. Was dabei herausgekommen ist, könnt ihr euch im [Demo](http://halfapx.com/shrinking-sticky-header/) ansehen.
+Ich wurde vor einer Weile gefragt, wie man eine Navigationsbar [wie diese](http://boxer-soratemplates.blogspot.com) hinbekommt. Als ich mir den Code der Seite angesehen habe, war ich eher weniger begeistert, wie das Problem gelöst wurde und habe versucht das möglichst schneller und einfacher zu lösen. Was dabei herausgekommen ist, könnt ihr euch im [Demo](http://halfapx.com/shrinking-sticky-header/) ansehen.
 
 <!-- more -->
 <br>

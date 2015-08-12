@@ -7,7 +7,7 @@ tags: [header, jquery, javascript, tutorial, ♦♦]
 description: how a header is fixed smoothly and part of the element is shrunk
 category: en
 ---
-A while ago I was asked how to get a similar effect for the navbar like [in this template](boxer-soratemplates.blogspot.com). After taking a look at the code I was not super happy with how they solved the problem and decided to do it a little faster and easiert. The result can be seen on the [demo page](http://halfapx.com/shrinking-sticky-header/).
+A while ago I was asked how to get a similar effect for the navbar like [in this template](http://boxer-soratemplates.blogspot.com). After taking a look at the code I was not super happy with how they solved the problem and decided to do it a little faster and easiert. The result can be seen on the [demo page](http://halfapx.com/shrinking-sticky-header/).
 
 <!-- more -->
 <br>
