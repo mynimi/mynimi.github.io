@@ -122,10 +122,23 @@ module.exports = function(grunt) {
             options: {
                 outputStyle: 'compressed',
             },
-            dist: {
-                files: {
-                    'css/main.css': 'sass/main.scss'
-                }
+            demo: {
+                files: [{
+                    expand: true,
+                    cwd: 'demo',
+                    src: ['{,*/}*.scss'],
+                    dest: 'demo',
+                    ext: '.css'
+                }]
+            },
+            main: {
+                files: [{
+                    expand: true,
+                    cwd: 'sass',
+                    src: ['*.scss'],
+                    dest: 'css',
+                    ext: '.css'
+                }]
             }
         },
 
@@ -136,9 +149,13 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-                files: {
-                    'css/main.css': 'css/main.css'
-                }
+                files: [{
+                    expand: true,
+                    cwd: '',
+                    src: ['{,*/}{,*/}{,*/}{,*/}*.css'],
+                    dest: '',
+                    ext: '.css'
+                }]
             }
         },
 
@@ -153,6 +170,18 @@ module.exports = function(grunt) {
                     src: [ '_layouts/jade/*.jade' ],
                     dest: '_layouts',
                     flatten: true,
+                    ext: '.html'
+                }]
+            },
+            compile_demo: {
+                options: {
+                    pretty: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'demo',
+                    src: ['{,*/}*.jade'],
+                    dest: 'demo',
                     ext: '.html'
                 }]
             }
@@ -237,11 +266,11 @@ module.exports = function(grunt) {
                 tasks: ["uglify", "copy:js"]
             },
             jade: {
-                files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html"],
+                files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html", "demo/{,*/}*.jade"],
                 tasks: ["newer:jade"]
             },
             css: {
-                files: ["sass/{,*/}{,*/}{,*/}*.scss"],
+                files: ["sass/{,*/}{,*/}{,*/}*.scss", "demo/{,*/}{,*/}*.scss"],
                 tasks: ["sass", "postcss", "copy:css"]
             },
             site: {
