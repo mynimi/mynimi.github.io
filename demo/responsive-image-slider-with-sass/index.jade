@@ -1,11 +1,20 @@
-- var page = { title: "Title", subtitle: "Subtitle", author: "author", description: "description", tags: ["tag1", "tag2", "tag3"] }
+- var page = { title: "Demo: Responsive Image Slider with Sass", subtitle: false, author: "Myriam Frisano", description: "A tutorial on how to write a flexible responsive image slider with Sass", tags: false }
 - var cssSource = 'style.css'
 
 doctype html
-html(lang="de")
+html(lang="en")
     include includes/head.jade
 
     body
-        span Slider here
+        .size-control
+            #slider
+                .wrap
+                    .img(style="background-image: url(/media/compressed/responsive-slider-with-sass-1.png)")
+                    .img(style="background-image: url(/media/compressed/responsive-slider-with-sass-2.png)")
+                    .img(style="background-image: url(/media/compressed/responsive-slider-with-sass-3.png)")
+                    .img(style="background-image: url(/media/compressed/responsive-slider-with-sass-4.png)")
+                    .img(style="background-image: url(/media/compressed/responsive-slider-with-sass-5.png)")
+                    .img(style="background-image: url(/media/compressed/responsive-slider-with-sass-6.png)")
+                    .img(style="background-image: url(/media/compressed/responsive-slider-with-sass-1.png)")
     // body end
 // html end

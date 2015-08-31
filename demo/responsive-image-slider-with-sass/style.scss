@@ -1,3 +1,83 @@
-a{
-    transform: .3s all ease;
+// Settings
+$amount-slider-imgs: 7;
+$animation-time: 6s * $amount-slider-imgs;
+
+// keyframes mixin
+@mixin generate-slide-keyframes($pics){
+    @for $i from 0 to $pics{
+        $img-width: (100 / $pics);
+        $dur: 100 / ($pics * ($pics - 1));
+        $p: (($i * $img-width) + ($i * $dur)) * 1%;
+        $l: ($i * 100 * -1%);
+        $s: $p + $img-width;
+        
+        @if $p <= 100% {
+           #{$p} { left: $l; }
+        }
+        @if $s <= 100% {
+            #{$s} { left: $l; }
+        }
+    }
+}
+
+// paddinghack mixin
+@mixin paddinghack($cw, $rw, $rh, $c:null){
+    position: relative;
+    width: $cw;
+    height: 0;
+    padding: (($rh / $rw) * $cw) 0 0 0;
+
+    @if $c != null{
+        #{$c} {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// the smallest reset ever
+body{ margin: 0; padding: 0; background: black; }
+
+.size-control{
+    @include paddinghack(60%, 1500, 1000, "#slider");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// slider style, this one will cover the whole screen, with a small border
+#slider{
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    .wrap{
+        position: relative;
+        width: $amount-slider-imgs * 100%; // calculate the width of the image strip
+        height: 100%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: $animation-time slidy infinite;
+        
+        .img{
+            width: 100% / $amount-slider-imgs; 
+            float: left;
+            height: 100%;
+            background: {
+                size: cover;
+                position: center;
+            }
+        }
+    }
+}
+
+@keyframes slidy {
+    @include generate-slide-keyframes($amount-slider-imgs);
 }

@@ -192,7 +192,7 @@ module.exports = function(grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['css/**'],
+                        src: ['{,*/}{,*/}{,*/}*.css'],
                         dest: 'jekyllbuild/'
                     },
                 ]
@@ -201,7 +201,7 @@ module.exports = function(grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['js/build/**'],
+                        src: ['{,*/}{,*/}{,*/}*.js'],
                         dest: 'jekyllbuild/'
                     },
                 ]
@@ -217,7 +217,7 @@ module.exports = function(grunt) {
             }
         },
 
-        open : {
+        open: {
             build: {
                 path: 'http://localhost:4000',
                 app: 'Firefox'
@@ -265,8 +265,12 @@ module.exports = function(grunt) {
                 files: ['js/{,*/}*.js'],
                 tasks: ["uglify", "copy:js"]
             },
+            demo_js: {
+                files: ['demo/{,*/}{,*/}*.js'],
+                taks: ["copy:js"]
+            },
             jade: {
-                files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html", "demo/{,*/}*.jade"],
+                files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html", "demo/{,*/}*.jade", "!jekyllbuild/**"],
                 tasks: ["newer:jade"]
             },
             css: {
