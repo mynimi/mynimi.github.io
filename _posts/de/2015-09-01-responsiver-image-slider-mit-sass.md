@@ -266,4 +266,4 @@ Und um unser Stylesheet zu beenden, ergänzen wir es um die folgende Stelle:
 
 Den Code für das Demo könnt ihr euch auch noch ansehen.
 
-<a class="btn" href="#"><i class="fa fa-github"></i> Demo Code</a>
+<a class="btn" href="https://github.com/mynimi/mynimi.github.io/tree/source/demo/responsive-image-slider-with-sass"><i class="fa fa-github"></i> Demo Code</a>

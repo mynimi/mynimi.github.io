@@ -266,4 +266,4 @@ To end our stylesheet, just add the following:
 
 And if you want to check out the code for the demo.
 
-<a class="btn" href="#"><i class="fa fa-github"></i> Demo Code</a>
+<a class="btn" href="https://github.com/mynimi/mynimi.github.io/tree/source/demo/responsive-image-slider-with-sass"><i class="fa fa-github"></i> Demo Code</a>
