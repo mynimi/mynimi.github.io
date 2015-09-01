@@ -295,6 +295,6 @@ module.exports = function(grunt) {
     grunt.registerTask("default", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("serve", ["shell:jekyllServe"]);
     grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "copy"]);
-    grunt.registerTask("deploy", ["minifyHtml", "buildcontrol:pages"]);
-    grunt.registerTask("deploy-pretty", ["prettify", "buildcontrol:pages"]);
+    grunt.registerTask("deploy-mini", ["minifyHtml", "buildcontrol:pages"]);
+    grunt.registerTask("deploy", ["prettify", "buildcontrol:pages"]);
 };
