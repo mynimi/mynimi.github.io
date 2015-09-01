@@ -1,5 +1,5 @@
 ---
-date: 2015-08-31 17:10:22 +0200
+date: 2015-09-01 17:10:22 +0200
 title: Ein responsiver Image-Slider mit Sass ♦♦♦♦
 name: ErImS
 subtitle: Mit einem Sass Mixin JavaScript Arbeit machen
