@@ -192,7 +192,7 @@ module.exports = function(grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['{,*/}{,*/}{,*/}*.css'],
+                        src: ['{,*/}{,*/}{,*/}*.css', "!jekyllbuild/**", "!node_modules/**", "!js/*.js", "js/build/**"],
                         dest: 'jekyllbuild/'
                     },
                 ]
@@ -201,7 +201,7 @@ module.exports = function(grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['{,*/}{,*/}{,*/}*.js'],
+                        src: ['{,*/}{,*/}{,*/}*.js', "!jekyllbuild/**", "!node_modules/**"],
                         dest: 'jekyllbuild/'
                     },
                 ]
@@ -271,7 +271,7 @@ module.exports = function(grunt) {
             },
             jade: {
                 files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html", "demo/{,*/}*.jade", "!jekyllbuild/**"],
-                tasks: ["newer:jade"]
+                tasks: ["jade", "shell:jekyllBuild", "copy"]
             },
             css: {
                 files: ["sass/{,*/}{,*/}{,*/}*.scss", "demo/{,*/}{,*/}*.scss"],
@@ -292,9 +292,9 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Default task(s).
-    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "newer:jade", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "newer:jade", "shell:jekyllBuild", "copy"]);
+    grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "copy"]);
     grunt.registerTask("deploy", ["minifyHtml", "buildcontrol:pages"]);
     grunt.registerTask("deploy-pretty", ["prettify", "buildcontrol:pages"]);
 };
