@@ -180,12 +180,10 @@ $$ l = -(i \cdot 100\%) $$
 Die beiden keyframe Prozente sind auch einfach. Ich nenne sie `$p` (percentage) und `$s` (step), aber verwendet was auch immer ihr wollt.
 `$dur` ist noch immer unsere Unbekannte ($$ x $$).
 
-$$
-\begin{align*}
+$$ \begin{align*}
 p &= (i \cdot \frac{100\%}{\sum pics}) + (i \cdot x) \\ 
 s &=  ((i \cdot \frac{100\%}{\sum pics}) + (i \cdot x)) + \frac{100\%}{\sum pics} 
-\end{align*}
-$$
+\end{align*} $$
 
 Das Ganze lässt sich dann natürlich auch zusammenfassen, wenn wir die Variabeln in der richtigen Reihenfolge schreiben. Folglich ergibt sich auch das Keyframe-Paar.
 

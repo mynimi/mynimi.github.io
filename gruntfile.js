@@ -244,7 +244,7 @@ module.exports = function(grunt) {
             options: {
                 indent: 4,
                 brace_style: 'end-expand',
-                unformatted: ['code', 'pre']
+                unformatted: ['code', 'pre', 'script']
             },
             html: {
                 files: [{
