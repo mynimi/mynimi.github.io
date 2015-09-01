@@ -271,7 +271,7 @@ module.exports = function(grunt) {
             },
             jade: {
                 files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html", "demo/{,*/}*.jade", "!jekyllbuild/**"],
-                tasks: ["jade", "shell:jekyllBuild", "copy"]
+                tasks: ["jade"]
             },
             css: {
                 files: ["sass/{,*/}{,*/}{,*/}*.scss", "demo/{,*/}{,*/}*.scss"],
