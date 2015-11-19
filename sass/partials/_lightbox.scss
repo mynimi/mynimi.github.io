@@ -219,7 +219,7 @@
 }
 
 .masonry{
-    // @include flexbox(row, wrap, flex-start, flex-start);
+    @include flexbox(row, wrap, flex-start, flex-start);
     width: 100%;
     max-width: 1200px;
     margin: 50px auto;
@@ -230,17 +230,21 @@
     column-gap: 7px;
     
     a{
-        // width: calc((100% / 3) - 20px );
-        width: 100%;
+        width: calc((100% / 3) - 20px );
         padding: 0;
-        // margin: 10px;
+        margin: 10px;
         line-height: 0;
         font-size: 0;
-        box-sizing: border-box;
 
         img{
             width: 100%;
-//            border-radius: 50%;
+            opacity: .8;
+        }
+
+        &:hover{
+            img{
+                opacity: 1;
+            }
         }
     }
 }

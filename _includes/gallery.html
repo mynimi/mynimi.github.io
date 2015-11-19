@@ -14,6 +14,9 @@
                 {% elsif image.filename contains '.jpg'%}
                     {% assign thumb = image.filename | replace: '.jpg', '' %}
                     <img src="{{ site.img_dir | prepend: base }}/{{ thumb | append: '-450.jpg' }}" alt="{{ image.alttext }}">
+                {% elsif image.filename contains '.gif'%}
+                    {% assign thumb = image.filename | replace: '.gif', '' %}
+                    <img src="{{ site.img_dir | prepend: base }}/{{ thumb | append: '-450.gif' }}" alt="{{ image.alttext }}">
                 {% endif %}
             </a>
         {% endfor %}
