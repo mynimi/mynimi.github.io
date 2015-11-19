@@ -51,12 +51,6 @@ defaults:
       type: posts
     values:
       layout: post
-      lang: de
-  -
-    scope:
-      path: _posts/en
-    values:
-      lang: en
   -
     scope:
       path: ""

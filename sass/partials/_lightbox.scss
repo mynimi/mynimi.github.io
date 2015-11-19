@@ -221,10 +221,9 @@
 .masonry{
     @include flexbox(row, wrap, flex-start, flex-start);
     width: 100%;
-    max-width: 1200px;
     margin: 50px auto;
     box-sizing: border-box;
-    // background: $darkgray;
+    background: $darkgray;
     padding: 15px;
     column-count: 3;
     column-gap: 7px;
@@ -239,6 +238,8 @@
         img{
             width: 100%;
             opacity: .8;
+            border-radius: 50%;
+            transition: .3s all ease;
         }
 
         &:hover{
