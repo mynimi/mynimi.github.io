@@ -263,11 +263,11 @@ module.exports = function(grunt) {
             },
             scripts: {
                 files: ['js/{,*/}*.js'],
-                tasks: ["uglify", "copy:js"]
+                tasks: ["uglify", "shell:jekyllBuild"]
             },
             demo_js: {
                 files: ['demo/{,*/}{,*/}*.js'],
-                taks: ["copy:js"]
+                taks: ["shell:jekyllBuild"]
             },
             jade: {
                 files: ["{,*/}{,*/}{,*/}*.jade", "_layouts/jade/{,*/}*.html", "demo/{,*/}*.jade", "!jekyllbuild/**"],
@@ -275,15 +275,15 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ["sass/{,*/}{,*/}{,*/}*.scss", "demo/{,*/}{,*/}*.scss"],
-                tasks: ["sass", "postcss", "copy:css"]
+                tasks: ["sass", "postcss", "shell:jekyllBuild"]
             },
             site: {
                 files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!jekyllbuild/**"],
-                tasks: ["shell:jekyllBuild", "copy"]
+                tasks: ["shell:jekyllBuild"]
             },
             images: {
                 files: ["img/{,*/}*.{png,jpg,gif}", "!img/compressed/{,*/}*.*"],
-                tasks: ["responsive_images", "newer:imagemin", "shell:jekyllBuild", "copy"]
+                tasks: ["responsive_images", "newer:imagemin", "shell:jekyllBuild"]
             }
         }
     });
@@ -292,9 +292,9 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Default task(s).
-    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "open", "watch"]);
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "copy"]);
+    grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild"]);
     grunt.registerTask("deploy-mini", ["minifyHtml", "buildcontrol:pages"]);
     grunt.registerTask("deploy", ["prettify", "buildcontrol:pages"]);
 };
