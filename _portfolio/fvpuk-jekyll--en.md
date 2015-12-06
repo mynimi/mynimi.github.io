@@ -16,6 +16,7 @@ gallery:
     - filename: fvpuk_team.png
       alttext: example of a page
 permalink: /en/portfolio/fvpuk-jekyll/
+item-preview: fvpuk_frontpage.png
 ---
 The website for the student organization of the Communications major at the University in Zurich. The page is a simple static website, that was written using jekyll and hosted on GitHub.
 It was written with bootstrap as well as some of my own sass.

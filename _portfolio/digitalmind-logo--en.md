@@ -7,6 +7,7 @@ tags: [logo, design, vector]
 lang: en
 id: dmlogo
 permalink: /en/portfolio/digitalmind-logo/
+item-preview: dm_logo_preview.jpg
 ---
 While redesigning the site, I also gave the logo a refresh. The idea was to base it on the existing one, but make it a little more minimalistic and abstract
 

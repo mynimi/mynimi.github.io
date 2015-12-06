@@ -32,13 +32,13 @@
         .btns{
             padding: 35px 20px;
             border-bottom: 1px solid $lightgray;
-            
+
             span{
                 display: block;
                 text-align: center;
                 padding: 5px 0;
             }
-            
+
             @media screen and (min-width: 513px){
                 @include flexbox(row, wrap, flex-start, center);
 
@@ -74,24 +74,30 @@
 .filtering{
     text-align: center;
     padding-bottom: 40px;
+
+    span{
+      &:hover{
+        cursor: pointer;
+      }
+    }
 }
 
 
 .portfolio-wrapper{
     @include flexbox(row, wrap, flex-start, stretch);
-    
+
     .theme-wrapper{
         text-align: center;
         @include rowMachine(3, 30px);
-        
+
         h3, h6{
             font:{
-                family: $main-font; 
+                family: $main-font;
                 weight: normal;
             }
             padding: 3px;
         }
-        
+
         h6{
             opacity: .7;
             font-size: .8em;

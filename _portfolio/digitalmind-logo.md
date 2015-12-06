@@ -6,6 +6,7 @@ category: design
 tags: [logo, design, vector]
 lang: de
 id: dmlogo
+item-preview: dm_logo_preview.jpg
 ---
 Im Zuge des Webseiten-Redesigns hat auch das Logo einen neuen Look bekommen. Die Idee war es, vom existierenden auszugehen, aber das ganze etwas minimalistischer und abstrakter zu gestalten.
 

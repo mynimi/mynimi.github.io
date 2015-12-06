@@ -15,6 +15,7 @@ gallery:
       alttext: Beispiel einer Page
     - filename: fvpuk_team.png
       alttext: Beispiel einer Page
+item-preview: fvpuk_frontpage.png
 ---
 Die Seite für den Fachverein des Studienganges Publizistik und Kommunikationswissenschaft der Universität Zürich. Die Seite ist eine einfache statische Website, die mit jekyll geschrieben und auf GitHub gehostet wurde.
 Geschrieben wurde sie mit Hilfe des Frameworks Bootstrap sowie eigenem Code, der in Sass gechrieben wurde.

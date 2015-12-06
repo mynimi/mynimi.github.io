@@ -22,6 +22,7 @@ gallery:
     - filename: digitalmind_lightbox.gif
       alttext: Detailpage des Portfolios, inklusive Gallerie
 livesite: http://digitalmind.ch
+item-preview: digitalmind_preview.jpg
 ---
 Das Redesign der Website für digitalmind.ch. Die neue Seite wurde mit dem statischen Seitengenerator jekyll geschrieben. Sie sollte minimalistisch, funktional und dennoch ästhetisch ansprechen.
 

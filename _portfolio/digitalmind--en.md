@@ -23,6 +23,7 @@ gallery:
       alttext: detail page of portfolio including lightbox
 permalink: /en/portfolio/digitalmind/
 livesite: http://digitalmind.ch
+item-preview: digitalmind_preview.jpg
 ---
 The redesign of the website for digitalmind.ch The new page was written using the static page generator jekyll. It should be minimalistic, functional and still esthetic.
 

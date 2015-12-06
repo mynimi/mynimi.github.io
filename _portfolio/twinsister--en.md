@@ -16,6 +16,7 @@ gallery:
       alttext: early version
     - filename: twinsister_logo_v6.png
       alttext: final icon
+item-preview: twinsister_preview.jpg
 ---
 I have a lot of memories with this logo. it was one of the first ones I did. Also with this logo it was the first time I used a vector programm.
 

@@ -15,6 +15,7 @@ gallery:
       alttext: frühere Version
     - filename: twinsister_logo_v6.png
       alttext: finales Icon
+item-preview: twinsister_preview.jpg
 ---
 Ich verbinde vieles mit diesem Logo. Es war eines der ersten, das ich gemacht habe. Mit diesem Logo habe ich zum ersten Mal in einem Vektor-Programm gearbeitet.
 
