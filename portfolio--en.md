@@ -32,9 +32,6 @@ permalink: /en/portfolio/
                     {% if item.title %}
                         <h1>{{ item.title }}</h1>
                     {% endif %}
-                    {% if item.subtitle %}
-                        <h2 class="subtitle">{{ item.subtitle }}</h2>
-                    {% endif %}
                 </a>
             {% endif %}
         </div>
