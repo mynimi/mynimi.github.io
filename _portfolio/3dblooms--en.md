@@ -41,3 +41,5 @@ item-preview: 3dbloom_preview.jpg
 permalink: /en/3d-bloom-fractal/
 ---
 3D Bloom fractals. Created with Apophysis7x.
+
+{% include gallery.html %}

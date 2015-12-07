@@ -41,3 +41,5 @@ item-preview: 3dbloom_preview.jpg
 permalink: /3d-bloom-fractal/
 ---
 3D-Blüten-Fraktale. Erstellt in Apophysis7x.
+
+{% include gallery.html %}

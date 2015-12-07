@@ -86,6 +86,10 @@
 .portfolio-wrapper{
     @include flexbox(row, wrap, flex-start, stretch);
 
+    img {
+      max-width: 300px;
+    }
+
     .theme-wrapper{
         text-align: center;
         @include rowMachine(3, 30px);
