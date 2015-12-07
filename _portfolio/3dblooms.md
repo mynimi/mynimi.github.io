@@ -40,6 +40,6 @@ gallery:
 item-preview: 3dbloom_preview.jpg
 permalink: /3d-bloom-fractal/
 ---
-3D-Blüten-Fraktale. Erstellt in Apophysis7x.
+3D-Blüten-Fraktale. Erstellt mit dem Programm Apophysis7x.
 
 {% include gallery.html %}
