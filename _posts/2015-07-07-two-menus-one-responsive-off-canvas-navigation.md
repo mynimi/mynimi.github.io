@@ -2,7 +2,7 @@
 date: 2015-07-07 07:40:04 +0200
 title: Two Menus, One Responsive Off-Canvas Navigation ♦♦♦
 id: ZMerON
-lang: de
+lang: en
 subtitle: two menus combined into one off-canvas nav
 tags: [navigation, dropdown, responsive, sass, jade, jQuery, ♦♦♦]
 description: A tutorial on how to combine two menus to one in the responsive view
@@ -25,13 +25,13 @@ Markup in Jade
 ```slim
 header
     .menu-container
-        nav.off-canvas-menu 
+        nav.off-canvas-menu
             ul
                 li
                     a(href="#") Tasum
                 li
                     a(href="#") Aldpol
-                    
+
                 li.menu-item-has-children
                     a(href="#") Oughw
                     ul.sub-menu
@@ -42,19 +42,19 @@ header
                         li
                             a(href="#") Ia'usk
                     // /.sub-menu
-                    
+
                 li
                     a(href="#") Swaimim
             // /ul
         // /.off-canvas-menu
-        
+
         nav.main-menu
             ul.second
                 li
                     a(href="#") Smedgone
                 li
                     a(href="#") Aotaliope
-                    
+
                 li.menu-item-has-children
                     a(href="#") Rothiope
                     ul.sub-menu
@@ -65,7 +65,7 @@ header
                         li
                             a(href="#") Xioeleia
                     // /.sub-menu
-                    
+
                 li
                     a(href="#") Iorireto    
             // /ul
@@ -140,7 +140,7 @@ $(document).ready(function() {
         mainToggle = 'toggle-link',
         close = 'toggle-link-close';
 
-    // add toggle links 
+    // add toggle links
     $('header').prepend('<span class="toggle ' + mainToggle + '">Menu</span>');
     $('.menu-container').prepend('<span class="toggle ' + mainToggle + ' ' + close + '">close</span>');
     $('.off-canvas-menu').prepend('<span class="toggle ' + offCanvasToggle + ' ' + close + '">close</span>');
@@ -223,7 +223,7 @@ $main_menu_bg: $coal;
     width: 0;
     height: 0;
     border-style: solid;
-    
+
     @if $dir == right {
         border-color: transparent transparent transparent $c;
     }
@@ -283,29 +283,29 @@ header {
     width: 100%;
     background: $header_bg;
     line-height: 2;
-    
+
     @media screen and (max-width: $menu-collapse){
         @include flexbox(row, wrap, center, center);
     }
-        
+
     // toggle link styling
     .toggle {
         @extend a;
         padding: 6px;
     }
-    
+
     .toggle-link-close {
         position: absolute;
         top: 0;
         right: 0;
     }
-    
+
     .toggle-link {
         @media screen and (min-width: $menu-collapse + 1) {
             display: none;
         }
     }
-    
+
     .toggle-link-off-canvas {
         @media screen and (max-width: $menu-collapse) {
             display: none;
@@ -332,14 +332,14 @@ header {
             transform: translate(300px, 0);
         }
     }
-    
+
     // sub menu styles, are the same as with the off-canvas styling
     .sub-menu {
         border-top: 1px solid rgba($coal, .5);
         border-bottom: 1px solid rgba($coal, .5);
         background: lighten($off-canvas_bg, 5%);
         display: none;
-        
+
         li {
             a {
                 box-sizing: border-box;
@@ -349,11 +349,11 @@ header {
             }
         }
     }
-    
+
     // clickable triangle to toggle sub menu visibility
     .parent {
         @include flexbox(row, wrap, flex-start, center);
-        
+
         .submenu-opener {
             font-size: 0;
             position: relative;
@@ -368,11 +368,11 @@ header {
             @media screen and (min-width: $menu-collapse + 1) {
                 margin-left: 5px;
             }
-            
+
             &.sub-menu-is-open {
                 transform: rotate(-180deg);
             }
-            
+
             &:after {
                 content: '';
                 @include triangle_eqla(10px, down, $a_color);
@@ -382,10 +382,10 @@ header {
                 transform: translate(-50%, -20%);
                 transition: .3s all ease;
             }
-            
+
             &:hover {
                 cursor: pointer;
-            
+
                 &:after {
                     border-color: $a_color_hover transparent transparent transparent;
                 }
@@ -397,7 +397,7 @@ header {
 // off-canvas navigation
 .off-canvas-menu {
     line-height: 2.5;
-    
+
     @media screen and (min-width: $menu-collapse + 1) {
         z-index: 100;
         position: fixed;
@@ -415,7 +415,7 @@ header {
             transform: translate(300px, 0);
         }        
     }
-    
+
     a {
         padding: 0 10px;
     }
@@ -431,7 +431,7 @@ header {
             padding: 0 10px;
         }
     }
-    
+
     @media screen and (min-width: $menu-collapse + 1) {
         position: fixed;
         width: 100%;
@@ -439,10 +439,10 @@ header {
         right: 0;
         background: $main_menu_bg;
         @include flexbox(row, wrap, space-between, center);
-       
+
         ul {
             @include flexbox(row, wrap, flex-start, center);
-        
+
             li {
                 padding: 10px;
             }
