@@ -6,11 +6,12 @@ html(lang="{{page.lang}}")
         include includes/nav.jade
         header.header
             .container
-                h1
                     {% if page.lang == "de" %}
-                    a(href="/") ½ a px.
+                    a(href="/") 
+                        include includes/logo_clean.jade
                     {% else %}
-                    a(href="/en/") ½ a px.
+                    a(href="/en/")
+                        include includes/logo_clean.jade
                     {% endif %}
             // .container end
         // header end

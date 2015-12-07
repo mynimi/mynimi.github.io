@@ -1,18 +1,13 @@
 .logo {
-    .shadow {
-        stroke: $black;
-        stroke-width: 40;
-    }
+    transition: .3s all ease;
 
-    .main-circle {
-        fill: white;
-        stroke: $black;
-        stroke-width: 39;
+    a:hover & {
+        opacity: .7;
     }
 
     .icon {
-        fill: $black;
-        stroke: $black;
+        fill: $white;
+        stroke: $white;
         stroke-width: 20;
     }
 
@@ -21,11 +16,13 @@
         line-height: 125%;
         font-family: $special-elite;
         text-align: start;
-        fill: $black;
+        fill: $white;
         stroke: none;
     }
 
-    .phonetic {
-        fill: $black;
+    .phonetics,
+    #ring {
+        fill: $white;
+        stroke: none;
     }
 }

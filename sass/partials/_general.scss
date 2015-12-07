@@ -1,12 +1,12 @@
 .pagination{
     @include clearfix();
-    
+
     .prev{
         float: left;
         @extend .btn;
         line-height: 1.5 !important;
     }
-    
+
     .next{
         float: right;
         @extend .btn;
@@ -23,27 +23,27 @@
     &:after {
         content: ",";
     }
-    
+
     &:last-of-type:after{
         content: "";
     }
-    
+
 }
 
 .btn {
     color: $color-2;
-    text-transform: uppercase;
     border: 2px solid currentColor;
     background: transparent;
     padding: 7px 13px;
     line-height: 2.5;
     margin: 7px;
     font-weight: $main-font-weight;
-    
+    font-family: $code-font;
+
     &:hover {
         color: $color-3;
-        cursor: pointer; 
-    }    
+        cursor: pointer;
+    }
 }
 
 input,
@@ -51,9 +51,9 @@ textarea {
     font-family: $main-font;
     font-size: $root-font-size;
     font-weight: $main-font-weight;
-    
+
     &.btn{
-        line-height: $basic-line-height;     
+        line-height: $basic-line-height;
     }
 }
 
@@ -207,18 +207,14 @@ p + {
     }
 }
 
-blockquote{
-    font-family: $latin-modern-mono;
-}
-
 .post{
     .title{
         @include flexbox(row, wrap, space-between, flex-start);
-        
+
         > div{
             width: calc(100% - 90px);
         }
-        
+
         .date{
             width: 70px;
             border: 1px solid rgba(0, 0, 0, 0.1);
@@ -228,12 +224,12 @@ blockquote{
             font-size: 1em;
             margin-top: 15px;
         }
-        
+
         @media screen and (max-width: $date-collapse){
             > div{
                 width: 100%;
             }
-            
+
             .date{
                 display: none;
             }
@@ -246,24 +242,24 @@ blockquote{
             background: $color-2;
             color: $white;
         }
-        
+
         .day{
             display: block;
             font-size: 2em;
-            font-family: $latin-modern-mono;
+            font-family: $code-font;
             color: $color-3;
             line-height: 1;
             padding: 5px 0px;
             font-weight: bold;
         }
-        
+
         .year{
             display: block;
             margin-top: 0px;
-            line-height: 1.1;        
+            line-height: 1.1;
         }
     }
-    
+
     .meta{
         @media screen and (min-width: $date-collapse+1){
             .date{
@@ -290,7 +286,7 @@ blockquote{
     margin-top: 20px;
     max-width: 500px;
     // @include center();
-    
+
     input[type="text"],
     textarea{
         display: block;
@@ -300,13 +296,12 @@ blockquote{
 }
 
 .subtitle{
-    font-family: $main-font;
-    font-weight: 300;
+    font-family: $code-font;
     font-size: 1.6em;
 }
 
 p{
-    font-size: 20px;
+    font-size: 23px;
 }
 
 b, strong{

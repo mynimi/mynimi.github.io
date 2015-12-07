@@ -1,12 +1,11 @@
 // Shortcuts
 //-----------
 $noborder: 0 solid transparent;
-
-$pt-sans: 'PT Sans', 'Lato', 'Calibri', sans-serif;
-$work-sans: 'Work Sans', 'Open Sans', 'Calibri', sans-serif;
-$latin-modern-mono: 'Latin Modern Mono', 'Source Code Pro', 'Courier New', monospace;
-$source-code-pro: 'Source Code Pro', 'Courier New', monospace;
+$gaspar: "Gaspar", "Vollkorn", "Roboto Slab", "Georgia", serif;
+$courier-prime: 'Courier Prime', 'Courier Prime Sans', 'Courier Prime Code', 'Courier', 'Courier New', monospace;
+$courier-prime-code: 'Courier Prime Code', 'Courier Prime Sans', 'Courier Prime', 'Courier', 'Courier New', monospace;
 $special-elite: 'Special Elite', monospace;
+$roboto: "Roboto", "Lato", "Open Sans", "Calibri", sans-serif;
 
 // SETTINGS FOR BASE-STYLE
 //-------------------
@@ -55,15 +54,15 @@ $link-hover-color: $color-2;
 // String Variables (use strings as values | for Font Variables: Don't forget to include the fonts)
 //------------------------------------------
 
-$main-font: $work-sans;
+$main-font: $roboto;
 
 // set to $main-font if you don't want your headings to use another font
-$headings-font: $source-code-pro;
+$headings-font: $courier-prime;
 
 // use values from text-transform [none|capitalize|uppercase|lowercase|initial|inherit]
 $headings-text-transform: none;
 
-$code-font: $source-code-pro;
+$code-font: $courier-prime-code;
 
 // size variables (use numbers as values (units as indicated ))
 
@@ -93,7 +92,7 @@ $paragraph-gap-size: 10px;
 // depends on: $container-settings
 $container-class-name: 'container';
 $container-background-color: transparent;
-$container-max-width: 1300px; // use px here
+$container-max-width: 1100px; // use px here
 $container-width: 80%; // use % here
 
 // depends on: $include-blockquote-style

@@ -63,7 +63,7 @@ defaults:
       type: themes
     values:
       layout: theme
-      
+
 exclude: [
 .git,
 .gitignore,
