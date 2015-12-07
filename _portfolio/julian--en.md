@@ -21,7 +21,7 @@ gallery:
       alttext: In too Deep
     - filename: inside_the_clockwork.jpg
       alttext: Inside the Clockwork
-    - filename:jellyfish_field.jpg
+    - filename: jellyfish_field.jpg
       alttext: Jellyfish Field
     - filename: steampunk_blood.jpg
       alttext: Steampunk Blood

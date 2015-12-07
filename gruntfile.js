@@ -260,10 +260,6 @@ module.exports = function(grunt) {
                 files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!jekyllbuild/**"],
                 tasks: ["shell:jekyllBuild"]
             },
-            images: {
-                files: ["img/{,*/}*.{png,jpg,gif}", "!img/compressed/{,*/}*.*"],
-                tasks: ["responsive_images", "newer:imagemin", "shell:jekyllBuild"]
-            }
         }
     });
 
@@ -271,7 +267,8 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Default task(s).
-    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "open", "watch"]);
+    grunt.registerTask("default", ["uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "open", "watch"]);
+    grunt.registerTask("new-img", ["responsive_images", "newer:imagemin"]);
     grunt.registerTask("serve", ["shell:jekyllServe"]);
     grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild"]);
     grunt.registerTask("deploy-mini", ["minifyHtml", "buildcontrol:pages"]);
