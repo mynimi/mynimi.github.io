@@ -42,7 +42,7 @@ gallery:
     - filename: veins.jpg
       alttext: Veins
 item-preview: splits_preview.jpg
-permalink: /en/splits-fractal/
+permalink: /en/portfolio/splits-fractal/
 ---
 Splits Fractals. Created with Apophysis7x.
 

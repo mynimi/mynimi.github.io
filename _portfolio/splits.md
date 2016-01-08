@@ -42,7 +42,7 @@ gallery:
     - filename: veins.jpg
       alttext: Veins
 item-preview: splits_preview.jpg
-permalink: /splits-fractal/
+permalink: /portfolio/splits-fractal/
 ---
 Splits-Fraktale. Erstellt mit dem Programm Apophysis7x.
 

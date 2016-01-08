@@ -30,7 +30,7 @@ gallery:
     - filename: vintage_bubbles.jpg
       alttext: Vintage Bubbles
 item-preview: hypnotize.jpg
-permalink: /en/grand-julian-fractal/
+permalink: /en/portfolio/grand-julian-fractal/
 ---
 Grand Julian Fractals. Created with Apophysis7x.
 

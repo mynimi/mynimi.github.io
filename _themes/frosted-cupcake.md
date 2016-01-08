@@ -20,7 +20,6 @@ Die Idee bei Frosted Cupcake war es, etwas anders zu machen. Es sollte ein mädc
 
 Das Theme ist im Moment nicht mit dem Vorlagendesigner kompatibel.
 
-
 ## Log
 
 Datum | Änderung

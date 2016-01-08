@@ -6,11 +6,11 @@ id: themes
 permalink: /en/themes/
 description: all of my themes. responsive blogger and jekyll themes for free
 ---
-<!--<div class="filtering">
+<div class="filtering">
     <span class="filter" data-filter="all">show all</span> &bull;
     <span class="filter" data-filter=".jekyll">jekyll</span> &bull;
     <span class="filter" data-filter=".blogger">Blogger</span>
-</div>-->
+</div>
 
 <div class="portfolio-wrapper" id="container">
     {% assign themes = site.themes | sort: "date" | reverse | where:"lang", page.lang %}

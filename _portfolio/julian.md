@@ -30,7 +30,6 @@ gallery:
     - filename: vintage_bubbles.jpg
       alttext: Vintage Bubbles
 item-preview: hypnotize.jpg
-permalink: /en/grand-julian-fractal/
 ---
 Grosse Julia Fraktale. Erstellt mit Apophysis7x.
 
