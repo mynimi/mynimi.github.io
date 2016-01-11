@@ -38,7 +38,7 @@ gallery:
     - filename: outburst.jpg
       alttext: Outburst
 item-preview: 3dbloom_preview.jpg
-permalink: /en/3d-bloom-fractal/
+permalink: /en/portfolio/3d-bloom-fractal/
 ---
 3D Bloom fractals. Created with Apophysis7x.
 

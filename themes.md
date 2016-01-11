@@ -5,11 +5,11 @@ lang: de
 id: themes
 description: Alle meine themes und templates. Kostenlos responsive Blogger und jekyll themes
 ---
-<!--<div class="filtering">
+<div class="filtering">
     <span class="filter" data-filter="all">Alle Anzeigen</span> &bull;
     <span class="filter" data-filter=".jekyll">jekyll</span> &bull;
     <span class="filter" data-filter=".blogger">Blogger</span>
-</div>-->
+</div>
 
 <div class="portfolio-wrapper" id="container">
     {% assign themes = site.themes | sort: "date" | reverse | where:"lang", page.lang %}
