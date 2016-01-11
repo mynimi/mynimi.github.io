@@ -27,7 +27,7 @@
     "load-grunt-tasks": "^3.1.0"
   },
   "scripts": {
-    "newpost": "ruby _ruby/createpost.rb",
-    "newtheme": "ruby _ruby/createtheme.rb"
+    "newpost": "start ruby _ruby/createpost.rb",
+    "newtheme": "start ruby _ruby/createtheme.rb"
   }
 }
