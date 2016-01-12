@@ -8,7 +8,7 @@ theme-desc-head: beginne das jekyll Abenteuer
 theme-desc: Ein Starter Theme mit allem was du brauchst
 theme-demo: http://halfapx.com/jekyll-starter/
 theme-source: https://github.com/mynimi/jekyll-starter/
-theme-docs: #
+theme-docs: /initium-verwenden/
 theme-img: initium.png
 theme-preview: initium-preview.png
 category: jekyll
@@ -18,8 +18,6 @@ id: initium
 initium; ist ein Starter Theme für jekyll, das ich schon seit einer Weile für alle Seiten benutze, die ich mit jekyll erstelle.
 
 initium; unterstützt Mehrsprachigkeit, enthält ein portfolio, Blog, Support für einzelne Header Bilder und wird mit grunt gebaut. Geschrieben ist es mit jade und Sass. Es ist ausgerichtet, um auf GitHub gehostet zu werden.
-
-Eine genau Anleitung zur Benutzung folgt
 
 ## Log
 
