@@ -17,10 +17,20 @@ $color-16: adjust-hue(#8ae234, -25deg);
 $color-17: adjust-hue(#989DAA, -25deg);
 $color-18: adjust-hue(#fff, -25deg);
 
+// code blocks with color
 div.highlighter-rouge {
     margin: 20px;
     background: $color-1;
     color: $color-2;
+}
+
+// inline code
+code.highlighter-rouge {
+    background: darken($background-color, 1%);
+    border: 1px solid rgba($main-color, .2);
+    padding: 0 3px;
+    border-radius: 3px;
+    white-space: pre;
 }
 
 .highlight{
