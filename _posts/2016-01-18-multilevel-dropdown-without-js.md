@@ -8,14 +8,12 @@ description: How to create a mutli level dropdown menu without javascript
 category: en
 lang: en
 ---
-Ich dachte ich könnte mal wieder einen Post ohne JavaScript schreiben. Was eignet sich da besser als eine Navigation.
-Diesmal ein Dropdown Menu mit verschiedenen Levels, das auch noch responsive ist.
+It's been a while since I wrote something about doing JavaScript work with CSS. So I decided to create this responsive navigation using the :checked hack.
 
 <!--more-->
 
-### Klassisches Dropdown
-Als erstes beginnen wir mit dem klassischen Dropdown Code. Ineinander verschachtelte Listen. Wir vergeben noch ein paar Klassen um die Levels zu kennzeichnen, aber CSS können wir auch ohne diese Klassen schreiben. ICh schreib nur immer gern alles an für den Fall.
-Ich habe in diesem Fall vier Levels gemacht, aber ich könnt hier beliebig tief gehen.
+### Classic Dropdown
+So we start with a basic dropdown code, that's based on nested lists. I did 4 levels in this case, but you could extend it to however much you wanted.
 
 ```html
 <div class="menu">
@@ -96,11 +94,11 @@ Ich habe in diesem Fall vier Levels gemacht, aber ich könnt hier beliebig tief 
 </div>
 ```
 
-### :checked-Hack
-Um die Submenus zu öffnen, verwenden wir checkboxen. Diese Boxen platzieren wir jeweils in den parent-elementen. Die Labels dienen dabei als Klicker. Es gibt im Internet zahlreiche Posts, die den Hack erklären. Grundsätzlich können wir basierend auf dem Zustand der Checkboxen, Folgeelemente anzeichen oder verstecken.
+### :checked hack
+To open the submenus we'll use checkboxes. If you don't know how the checkbox hack works, just google it, there are some really good posts that go into much detail. But basically we will depend the visibility of the submenu on the state of the checkbox placed before it.
 
 #### Markup
-Das Markup ergänzen wie folgt aus.
+So we change our markup to look like this:
 
 ```html
 <div class="menu">
@@ -192,8 +190,8 @@ Das Markup ergänzen wie folgt aus.
 </div>
 ```
 
-#### Öffnen
-Das Öffnen der Submenus, machen wir mit folgender CSS.
+#### Open
+The opening will be done using this CSS
 
 ```css
 .menu ul > li ul {
@@ -204,12 +202,11 @@ Das Öffnen der Submenus, machen wir mit folgender CSS.
 }
 ```
 
-Das schaut dann so aus:
+The result will look like this:
 <style>#demo-toggle ul > li ul{display: none}#demo-toggle ul > li input[type="checkbox"]:checked + ul{display: block}</style><div id="demo-toggle"><ul class="nav level-one"><li><a href="#">Item 1</a> </li><li class="parent"> <a href="#">Item 2 </a> <label for="toggle-level-2-01" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-2-01"/> <ul class="level-two"> <li> <a href="#">Child 1</a> </li><li> <a href="#">Child 2</a> </li><li class="parent"> <a href="#">Child 3</a> <label for="toggle-level-3-01" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-3-01"/> <ul class="level-three"> <li> <a href="#">Grandchild 1</a> </li><li class="parent"> <a href="#">Grandchild 2</a> <label for="toggle-level-4-01" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-4-01"/> <ul class="level-four"> <li> <a href="#">Grandgrandchild 1</a> </li><li> <a href="#">Grandgrandchild 2</a> </li><li> <a href="#">Grandgrandchild 3</a> </li></ul> </li></ul> </li></ul> </li><li class="parent"> <a href="#">Item 3</a> <label for="toggle-level-2-02" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-2-02"/> <ul class="level-two"> <li> <a href="#">Child 1</a> </li><li> <a href="#">Child 2</a> </li><li class="parent"> <a href="#">Child 3</a> <label for="toggle-level-3-02" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-3-02"/> <ul class="level-three"> <li> <a href="#">Grandchild 1</a> </li><li> <a href="#">Grandchild 2</a> </li><li> <a href="#">Grandchild 3</a> </li></ul> </li><li> <a href="#">Child 4</a> </li></ul> </li><li> <a href="#">Item 4</a> </li><li> <a href="#">Item 5</a> </li><li> <a href="#">Item 6</a> </li></ul></div>
 
 ### Styling
-Jetzt müssen wir das ganze noch gestalten.
-Ich hab mich für eine fixierte Bar entschieden.
+Now we'll just have to style it. I went with a pretty standard bar.
 
 ```css
 .menu {
@@ -306,16 +303,16 @@ Ich hab mich für eine fixierte Bar entschieden.
 }
 ```
 
-Aussehen tut das dann so:
+And that will look like this:
 
 <p data-height="266" data-theme-id="7132" data-slug-hash="MKOebO" data-default-tab="result" data-user="mynimi" class='codepen'>See the Pen <a href='http://codepen.io/mynimi/pen/MKOebO/'>Checkbox-Hack Dropdown (non-responsive)</a> by Myri (<a href='http://codepen.io/mynimi'>@mynimi</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Responsive
-Das Markup muss noch etwas angepasst werden.
-Wir schreiben noch einmal einen checkbox hack und dann machen wir einfach ein off-canvas Menu draus.
+For the responsive version we'll have to adjust some more of the markup. We add another checkbox to toggle the whole navigation.
+And then we just adjust the CSS to create this off-canvas Menu
 
-Die responsive Version schaut so aus:
+And that's what it looks like:
 
 ```html
 <div class="menu">
@@ -372,7 +369,7 @@ Die responsive Version schaut so aus:
 </div>
 ```
 
-In diesem Beispiel liegt der Breakpoint bei 2000px, sodass die responsive Version auf jedem Bildschirm zu sehen ist. Die Werte des media queries müssten dann natürlich entsprechend angepasst werden.
+In the example I put the breakpoint at 2000px so that it shows up on all stanard displays. In real life you would have to adjust this, so that the non-responsive version will be shown first.
 
 ```css
 .menu {
@@ -524,7 +521,8 @@ In diesem Beispiel liegt der Breakpoint bei 2000px, sodass die responsive Versio
 <p data-height="340" data-theme-id="7132" data-slug-hash="dGZvMG" data-default-tab="result" data-user="mynimi" class='codepen'>See the Pen <a href='http://codepen.io/mynimi/pen/dGZvMG/'>Checkbox-Hack Dropdown (responsive)</a> by Myri (<a href='http://codepen.io/mynimi'>@mynimi</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Und das ist dann schon alles.
+And that's it.
 
-### Ist das besser als mit JavaScript?
-Die Frage ist natürlich, ob man in der realen Welt auf diese Lösung zurückgreifen sollte. Falls ihr mal tatsächlich ohne JavaScript arbeiten müsstet - ja. Im Leben allgemein haben Lösungen die mit JavaScript funktionieren definitiv den besseren Browsersupport. Ältere Betriebssysteme auf Handys haben manchmal Probleme mit diesem Hack. Glücklicherweise gibt es ja heutzutage Tools wie Analytics. Je nach dem, wie eure Besucher aussehen, kann man diese Lösung verwenden. Ich für meinen Teil gehe eigentlich immer mit der JavaScript-Variante, aber ich bin trotzdem ein grosser Fan von solchen reinen CSS-Lösungen, weil sie wieder aufzeigen, wie mächtig man mittlerweile mit HTML und CSS doch sein kann.
+### So is this better than JavaScript?
+This is the question. If you should actually go with a solution like this. Well, in case you have to solve this problem without JavaScript - Go with this. In Reallife, though, the javascript solution is the one I would go with. Reason for that being the fact, that it is written faster and all-over support is a little better.
+Still, I like trying to tackle some problems without the use of JavaScript, just to see how far you can come with just HTML and CSS.
