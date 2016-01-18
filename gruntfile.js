@@ -270,7 +270,7 @@ module.exports = function(grunt) {
     grunt.registerTask("default", ["uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "open", "watch"]);
     grunt.registerTask("new-img", ["responsive_images", "newer:imagemin"]);
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("build", ["responsive_images", "newer:imagemin", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild"]);
+    grunt.registerTask("build", ["uglify", "sass", "postcss", "jade", "shell:jekyllBuild"]);
     grunt.registerTask("deploy-mini", ["minifyHtml", "buildcontrol:pages"]);
     grunt.registerTask("deploy", ["prettify", "buildcontrol:pages"]);
 };
