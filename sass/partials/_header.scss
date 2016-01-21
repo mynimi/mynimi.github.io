@@ -4,7 +4,7 @@ $bg: 'halfapx_fractal';
     width: 100%;
     position: relative;
     background: {
-        image: url(../media/compressed/#{$bg}.jpg);
+        image: url(../media/#{$bg}.jpg);
         color: $background-color;
         size: cover;
         position: center center;

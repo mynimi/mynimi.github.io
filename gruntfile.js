@@ -17,12 +17,10 @@ module.exports = function(grunt) {
                     expand: true,
                     flatten: true,
                     src: [
-                        'img/featured-imgs/*.{jpg,gif,png}',
-                        'img/needs-crops/*.{jpg,gif,png}',
-                        'img/portfolio/**/*.{jpg,gif,png}',
+                        'media/needs-crops/*.{jpg,gif,png}',
                     ],
                     cwd: '',
-                    dest: 'img/crops/450x450/'
+                    dest: 'media/'
                 }]
             },
             thumbs:{
@@ -37,59 +35,12 @@ module.exports = function(grunt) {
                     expand: true,
                     flatten: true,
                     src: [
-                        'img/featured-imgs/*.{jpg,gif,png}',
-                        'img/needs-crops/*.{jpg,gif,png}',
-                        'img/portfolio/**/*.{jpg,gif,png}',
+                        'media/needs-crops/*.{jpg,gif,png}',
                     ],
                     cwd: '',
-                    dest: 'img/crops/450x253/'
+                    dest: 'media/'
                 }]
             }
-        },
-
-        imagemin: {
-            gif: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: '',
-                        src: ['img/{,*/}{,*/}{,*/}*.gif'],
-                        dest: 'media/compressed/',
-                        flatten: true,
-                        ext: '.gif'
-                    }
-                ]
-            },
-            png: {
-                options: {
-                    optimizationLevel: 5
-                },
-                files: [
-                    {
-                        expand: true,
-                        cwd: '',
-                        src: ['img/{,*/}{,*/}{,*/}*.png'],
-                        dest: 'media/compressed/',
-                        flatten: true,
-                        ext: '.png'
-                    }
-                ]
-            },
-            jpg: {
-                options: {
-                    progressive: true
-                },
-                files: [
-                    {
-                        expand: true,
-                        cwd: '',
-                        src: ['img/{,*/}{,*/}{,*/}*.{jpg,jpeg}'],
-                        dest: 'media/compressed/',
-                        flatten: true,
-                        ext: '.jpg'
-                    }
-                ]
-            },
         },
 
         buildcontrol: {
@@ -260,6 +211,10 @@ module.exports = function(grunt) {
                 files: ["demo/{,*/}{,*/}*.scss"],
                 tasks: ["sass", "postcss", "shell:jekyllBuild"]
             },
+            img: {
+                files: ["media/needs-crops/*.{jpg,gif,png}"],
+                tasks: ["responsive_images"]
+            },
             site: {
                 files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!jekyllbuild/**"],
                 tasks: ["shell:jekyllBuild"]
@@ -271,10 +226,9 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Default task(s).
-    grunt.registerTask("default", ["uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "open", "watch"]);
-    grunt.registerTask("new-img", ["responsive_images", "newer:imagemin"]);
+    grunt.registerTask("default", ["responsive_images", "uglify", "sass", "postcss", "jade", "shell:jekyllBuild", "open", "watch"]);
     grunt.registerTask("serve", ["shell:jekyllServe"]);
     grunt.registerTask("build", ["uglify", "sass", "postcss", "jade", "shell:jekyllBuild"]);
-    grunt.registerTask("deploy-mini", ["minifyHtml", "buildcontrol:pages"]);
-    grunt.registerTask("deploy", ["prettify", "buildcontrol:pages"]);
+    grunt.registerTask("deploy", ["minifyHtml", "buildcontrol:pages"]);
+    grunt.registerTask("deploy-pretty", ["prettify", "buildcontrol:pages"]);
 };

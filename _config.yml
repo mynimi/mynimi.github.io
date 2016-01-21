@@ -18,7 +18,7 @@ excerpt_separator: "<!-- more -->"
 # paginate_per_category: true
 permalink: /:categories/:title/
 tag_dir: /tag
-img_dir: /media/compressed
+img_dir: /media
 collections:
     portfolio:
         output: true
