@@ -1,6 +1,6 @@
 ---
 date: 2015-09-13 19:14:58 +0200
-title: Vorherige und n&auml;chster Link f&uuml;r jekyll collections ♦♦♦
+title: Vorherige und n&auml;chster Link f&uuml;r jekyll collections
 id: VunLfjc
 lang: de
 subtitle: Wie man einen Navigator in jekyll collections baut
@@ -25,25 +25,25 @@ Was wir brauchen ist bloss eine Variable, nach der wir sortieren können. Für m
 
 {% for links in document %}
     {% if links.title == page.title %}
-    
+
         {% unless forloop.first %}
             {% assign prevurl = prev.url %}
-        
+
             {% assign prevtitle = prev.title %}
         {% endunless %}
-    
+
         {% unless forloop.last %}
             {% assign next = document[forloop.index] %}
-            
+
             {% assign nexturl = next.url %}
-            
+
             {% assign nexttitle = next.title %}
         {% endunless %}
     {% endif %}
-    
+
     {% assign prev = links %}
 {% endfor %}
-                        
+
 {% if prevurl or nexturl %}
     <div class="pagination">
         {% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-left"></i> {{ prevtitle}}</a>{% endif %}                    
@@ -58,21 +58,21 @@ Dieser Navigator ist nicht nur für collections gut. Habt ihr beispielsweise ein
 {% raw %}{% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
     {% for links in document %}
         {% if links.title == page.title %}
-        
+
             {% unless forloop.first %}
                 {% assign prevurl = prev.url %}
-                
+
                 {% assign prevtitle = prev.title %}
             {% endunless %}
-        
+
             {% unless forloop.last %}
                 {% assign next = document[forloop.index] %}
                 {% assign nexturl = next.url %}
                 {% assign nexttitle = next.title %}
             {% endunless %}
-            
+
         {% endif %}
-        
+
         {% assign prev = links %}
     {% endfor %}
 

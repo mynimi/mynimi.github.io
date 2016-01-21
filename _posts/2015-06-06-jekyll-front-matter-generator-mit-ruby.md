@@ -1,6 +1,6 @@
 ---
 date: 2015-06-06 10:01:07 +0200
-title: Ein Front Matter Generator mit Ruby ♦♦
+title: Ein Front Matter Generator mit Ruby
 id: EFMGmR
 subtitle: Warum ich mir nie wieder front matter Variablen merken werde
 tags: [jekyll, ruby, front matter, generator, ♦♦]

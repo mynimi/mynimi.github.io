@@ -164,8 +164,8 @@ end
 url_title_english = file_name_english.downcase.gsub(" ", "-").encode("UTF-8").gsub("ä", "ae").gsub("ö", "oe").gsub("ü", "ue")
 
 # if there is a folder specified, add it and create a new folder, if it does not already exist
-folder_german = "_posts/de"
-folder_english = "_posts/en"
+folder_german = "_posts"
+folder_english = "_posts"
 
 file_format = "markdown"
 case file_format
@@ -289,7 +289,7 @@ umlautify(desc_german)
 p_german.puts "---"
 p_german.puts "date: #{time}"
 p_german.puts "title: #{title_german}"
-p_german.puts "name: #{id}"
+p_german.puts "id: #{id}"
 if subtitle_german != ""
     p_german.puts "subtitle: #{subtitle_german}"
 end
@@ -297,6 +297,7 @@ if tags != ""
     p_german.puts "tags: [#{tags}]"
 end
 p_german.puts "description: #{desc_german}"
+p_german.puts "lang: de"
 p_german.puts "---"
 p_german.close
 
@@ -311,7 +312,7 @@ sanitizeYML(desc_english)
 p_english.puts "---"
 p_english.puts "date: #{time}"
 p_english.puts "title: #{title_english}"
-p_english.puts "name: #{id}"
+p_english.puts "id: #{id}"
 if subtitle_english != ""
     p_english.puts "subtitle: #{subtitle_english}"
 end
@@ -320,6 +321,7 @@ if tags != ""
 end
 p_english.puts "description: #{desc_english}"
 p_english.puts "category: en"
+p_english.puts "lang: en"
 p_english.puts "---"
 p_english.close
 
@@ -327,5 +329,5 @@ puts "file '#{path_german}' created".bold.green
 puts "file '#{path_english}' created".bold.green
 puts ""
 puts "opening files in brackets".bold.green
-value = `brackets #{path_german}`
-value = `brackets #{path_english}`
+value = `atom #{path_german}`
+value = `atom #{path_english}`

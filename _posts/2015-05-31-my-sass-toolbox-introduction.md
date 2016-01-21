@@ -1,5 +1,5 @@
 ---
-title: My Sass Toolbox ♦
+title: My Sass Toolbox
 subtitle: Introduction and main.scss
 description: An introduction into my sass toolbox and file structure
 tags: [tutorial, sass toolbox, sass, ♦]
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 
 
     require('load-grunt-tasks')(grunt);
- 
+
     // Default task(s).
     grunt.registerTask("default", ["sass", "autoprefixer", "watch"]);
 };
@@ -79,7 +79,7 @@ Let's talk about my sass folder structure. I have read different posts on how st
 ├── assets/
 │   └── all Sass files, that I did not write myself (e.g. fontawesome)
 ├── base/
-│   ├── _reset.scss 
+│   ├── _reset.scss
 │   ├── _typography.scss
 │   ├── _settings.scss
 │   └── _base-style.scss
@@ -93,10 +93,10 @@ Let's talk about my sass folder structure. I have read different posts on how st
 └── main.scss
 ```
 
-I don't want to talk too much about my assets and partials folders, since they change for every project and are not that interesting. 
+I don't want to talk too much about my assets and partials folders, since they change for every project and are not that interesting.
 
 ## main.scss
-That's the main file - obviously. This is where I do all of the imports so it's basically a table of contents for the stylesheet. 
+That's the main file - obviously. This is where I do all of the imports so it's basically a table of contents for the stylesheet.
 
 I have my whole Sass-Toolbox uploaded on my gitHub together with my jade starter. So if you want to have a look at it, check out the link: [start-off](https://github.com/mynimi/start-off).
 

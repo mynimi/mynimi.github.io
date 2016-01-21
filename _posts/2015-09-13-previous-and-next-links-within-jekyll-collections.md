@@ -1,6 +1,6 @@
 ---
 date: 2015-09-13 19:14:58 +0200
-title: previous and next links within jekyll collections ♦♦♦
+title: previous and next links within jekyll collections
 id: VunLfjc
 lang: en
 subtitle: how a navigator for jekyll collections is written
@@ -28,25 +28,25 @@ And then it basically goes like this:
 
 {% for links in document %}
     {% if links.title == page.title %}
-    
+
         {% unless forloop.first %}
             {% assign prevurl = prev.url %}
-        
+
             {% assign prevtitle = prev.title %}
         {% endunless %}
-    
+
         {% unless forloop.last %}
             {% assign next = document[forloop.index] %}
-            
+
             {% assign nexturl = next.url %}
-            
+
             {% assign nexttitle = next.title %}
         {% endunless %}
     {% endif %}
-    
+
     {% assign prev = links %}
 {% endfor %}
-                        
+
 {% if prevurl or nexturl %}
     <div class="pagination">
         {% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-left"></i> {{ prevtitle}}</a>{% endif %}                    
@@ -61,21 +61,21 @@ This navigator is not only good for collectins. If you have a multilingual blog 
 {% raw %}{% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
     {% for links in document %}
         {% if links.title == page.title %}
-        
+
             {% unless forloop.first %}
                 {% assign prevurl = prev.url %}
-                
+
                 {% assign prevtitle = prev.title %}
             {% endunless %}
-        
+
             {% unless forloop.last %}
                 {% assign next = document[forloop.index] %}
                 {% assign nexturl = next.url %}
                 {% assign nexttitle = next.title %}
             {% endunless %}
-            
+
         {% endif %}
-        
+
         {% assign prev = links %}
     {% endfor %}
 

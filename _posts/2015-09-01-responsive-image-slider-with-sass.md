@@ -1,6 +1,6 @@
 ---
 date: 2015-09-01 17:10:22 +0200
-title: A responsive Image Slider with Sass ♦♦♦♦
+title: A responsive Image Slider with Sass
 id: ErImS
 lang: en
 subtitle: Do JavaScript-Work with a Sass mixin
@@ -97,7 +97,7 @@ The rest of the Sass should be pretty self-explanatory. Apart from the keyframes
 #slider{
     overflow: hidden;
     box-sizing: border-box;
-    
+
     .wrap{
         position: relative;
         width: $amount-slider-imgs * 100%; // calculates imagestrip width
@@ -107,9 +107,9 @@ The rest of the Sass should be pretty self-explanatory. Apart from the keyframes
         text-align: left;
         font-size: 0;
         animation: $animation-time slidy infinite;
-        
+
         .img{
-            width: 100% / $amount-slider-imgs; 
+            width: 100% / $amount-slider-imgs;
             float: left;
             height: 100%;
             background: {
@@ -139,12 +139,12 @@ $w: $img-width;
 
     (1 * $w) + (1 * x) { left: 1 * 100% * -1; }
     (2 * $w) + (1 * x) { left: 1 * 100% * -1; }
-    
+
     (2 * $w) + (2 * x) { left: 2 * 100% * -1; }
     (3 * $w) + (2 * x) { left: 2 * 100% * -1; }
-    
+
     ...
-    
+
     (($n - 1) * $w) + (($n - 1) * x) { left: ($n - 1) * 100% * -1; }
 }
 ```
@@ -185,8 +185,8 @@ the keyframe percentages are alos easy. I call them `$p` (percentage) and `$s` (
 
 $$
 \begin{align*}
-p &= (i \cdot \frac{100\%}{\sum pics}) + (i \cdot x) \\ 
-s &=  ((i \cdot \frac{100\%}{\sum pics}) + (i \cdot x)) + \frac{100\%}{\sum pics} 
+p &= (i \cdot \frac{100\%}{\sum pics}) + (i \cdot x) \\
+s &=  ((i \cdot \frac{100\%}{\sum pics}) + (i \cdot x)) + \frac{100\%}{\sum pics}
 \end{align*}
 $$
 
@@ -205,7 +205,7 @@ $s: $p + $img-width;
 
 Now for the omnious $$ x $$. To get the solution, we'll need to solve our equation.
 
-if you go back to the goal section, you can see that we found out the following: 
+if you go back to the goal section, you can see that we found out the following:
 
 $$ iw(\sum pics - 1) + x(\sum pics - 1) = 100\% $$
 
@@ -238,7 +238,7 @@ $$
 
 What we have to take into account is that we do not need the `$s` keyframe, because `$p` will be 100%. So to get rid of the second part for the last image, we just put it into an `@if` that will not add the frame, if the percentage is above 100%.
 
-And then the mixin is done: 
+And then the mixin is done:
 
 ```scss
 @mixin generate-slide-keyframes($pics){
@@ -248,9 +248,9 @@ And then the mixin is done:
         $p: (($i * $img-width) + ($i * $dur));
         $l: ($i * 100% * -1);
         $s: $p + $img-width;
-        
+
         #{$p} { left: $l; }
-        
+
         @if $s <= 100% {
             #{$s} { left: $l; }
         }

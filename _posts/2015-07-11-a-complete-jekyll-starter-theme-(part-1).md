@@ -1,6 +1,6 @@
 ---
 date: 2015-07-11 01:57:00
-title: A complete jekyll starter theme (part 1) ♦♦♦♦♦
+title: A complete jekyll starter theme (part 1)
 id: Ekjst(1
 lang: en
 subtitle: Intro, Prepping and Folder structure
@@ -38,7 +38,7 @@ Just create a new repo and get the URL. Default will be HTTPS, I use SSH because
 
 Okay, after you have that, create a new folder where you create the theme. Open the terminal and navigate into that folder. I just will write the terminal commands, because it's easier to write down, than having to use a ton of screenshots.
 
-My folder is in a directory called GitLab (yes, my current playground for that project is on GitLab, because I can keep it private over there) 
+My folder is in a directory called GitLab (yes, my current playground for that project is on GitLab, because I can keep it private over there)
 
 So in the terminal I write the following:
 

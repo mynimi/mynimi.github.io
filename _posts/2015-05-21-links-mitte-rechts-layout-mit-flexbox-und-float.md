@@ -1,5 +1,5 @@
 ---
-title: Links-Mitte-Rechts-Layout mit Flexbox und Float ♦♦
+title: Links-Mitte-Rechts-Layout mit Flexbox und Float
 subtitle: Zentrieren ist gar nicht so einfach...
 description: Ein Quicktip, wie man ein Dreier-Layout einfach umsetzt
 tags: [tutorial, quicktip, sass, css, html, flexbox, ♦♦ ]

@@ -10,7 +10,7 @@ lang: de
 Ich dachte ich könnte mal wieder einen Post ohne JavaScript schreiben. Was eignet sich da besser als eine Navigation.
 Diesmal ein Dropdown Menu mit verschiedenen Levels, das auch noch responsive ist.
 
-<!--more-->
+<!-- more -->
 
 ### Klassisches Dropdown
 Als erstes beginnen wir mit dem klassischen Dropdown Code. Ineinander verschachtelte Listen. Wir vergeben noch ein paar Klassen um die Levels zu kennzeichnen, aber CSS können wir auch ohne diese Klassen schreiben. ICh schreib nur immer gern alles an für den Fall.

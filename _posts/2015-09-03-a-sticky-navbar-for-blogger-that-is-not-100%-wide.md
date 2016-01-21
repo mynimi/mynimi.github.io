@@ -1,6 +1,6 @@
 ---
 date: 2015-09-03 16:09:25 +0200
-title: A sticky navbar for blogger that is not 100% wide ♦♦
+title: A sticky navbar for blogger that is not 100% wide
 id: En1bsnfB
 lang: en
 subtitle: how to fix a blogger navbar without it having to be 100% wide.
@@ -9,7 +9,7 @@ description: How to get a menu in blogger sticky without it having to be 100% wi
 category: en
 ---
 I think the first thing I did using JavaScript in Blogger was wa sticky nav. For me this always meant a sticky nav that's 100% wide. That's pretty simple to accomplish, but what do we need to do, to make this nav only the width of the content, like we have it in pretty much all of the original blogger templates. With a little plugin a wrote a while ago, this will be done in minutes.
-<!-- more --> 
+<!-- more -->
 ![sticky navbar blogger]({{site.img_dir}}/fixedscroll.gif)
 
 #### ID, please!
@@ -43,10 +43,10 @@ var menuWidth = $('#PageList1').outerWidth(); // replace #PageList1 with your ID
 
   // initiate plugin
   $('.tabs-outer').stickyNav();
-  
+
   // add width 100% to wrapper element
   $('.sticky-nav-element').css('width','100%');
-  
+
   // menu gets original width and centering
   $('#PageList1').css({
     'margin': '0 auto',

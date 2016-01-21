@@ -1,6 +1,6 @@
 ---
 date: 2015-06-15 17:11:12 +0200
-title: Responsive Blogger Menus&colon; 3-Level dropdown from list ♦♦
+title: Responsive Blogger Menus&colon; 3-Level dropdown from list
 id: RBM3DaL
 lang: en
 subtitle: A dropdown menu without coding skills
@@ -19,7 +19,7 @@ For all of you out there that are in the same position I was, when I started, I 
 
 In this Tutorial I don't want to go over how this menu works, but how to integrate it into the blog (I do plan on writing a tutorial on the dropdown, though).
 
-It is always best to test something new in a testblog, before you put it on your live blog, even though this should work out in most cases at the first try. 
+It is always best to test something new in a testblog, before you put it on your live blog, even though this should work out in most cases at the first try.
 Also, since this is a responsive menu, you should use a responsive template. If you don't have one and don't feel like writing your own, you are very welcome to take a look at some of [my templates](/themes/).
 
 Okay, log into blogger and let's get started.
@@ -105,7 +105,7 @@ $level-three_bg: $menu_bg;
 $level-three_hover_bg: rgba(white, .1);
 
 // Menu Text Alignment use[left, center, right]
-$text_align: left; 
+$text_align: left;
 
 // Responsive Toggle Link
 $responsive_width: 100%;

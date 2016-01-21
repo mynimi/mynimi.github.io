@@ -10,7 +10,7 @@ lang: en
 ---
 It's been a while since I wrote something about doing JavaScript work with CSS. So I decided to create this responsive navigation using the :checked hack.
 
-<!--more-->
+<!-- more -->
 
 ### Classic Dropdown
 So we start with a basic dropdown code, that's based on nested lists. I did 4 levels in this case, but you could extend it to however much you wanted.

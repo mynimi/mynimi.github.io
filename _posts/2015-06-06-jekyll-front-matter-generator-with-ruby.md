@@ -1,6 +1,6 @@
 ---
 date: 2015-06-06 10:01:07 +0200
-title: A front Matter generator with ruby ♦♦
+title: A front Matter generator with ruby
 id: EFMGmR
 subtitle: Why I will no longer remember my front matter variables
 tags: [jekyll, ruby, front matter, generator, ♦♦]
@@ -36,7 +36,7 @@ subtitle | the subtitle | optional
 description | Meta tag description | not longer than 115 characters
 tags | tags | are in an array, and optional
 
-I just want the subtitle and tags to be optional. All of the others are needed, especially for SEO purposes. 
+I just want the subtitle and tags to be optional. All of the others are needed, especially for SEO purposes.
 
 ### File
 Okay, the file will be placed within a ruby folder. And since most jekyll sites use git, you will most probably have your terminal open at the root. So it is easy to navigate to the Posts folder. My script is within the ruby folder, so I can call it using `ruby _ruby/createpost.rb`
@@ -92,7 +92,7 @@ def umlautify(string)
 end
 ```
 
-And since any colon in yaml within the content can cause problems, we replace them with the unicode representation. 
+And since any colon in yaml within the content can cause problems, we replace them with the unicode representation.
 
 ```ruby
 # replace every colon within yml, so that it still can get parsed correctly
@@ -206,7 +206,7 @@ else
 end
 ```
 
-Now that we have the URL title, we'll transform it into the URL format. For that we use the method we defined before. And then we'll set the file path. We define the folder and if it does not already exist, we'll create it. 
+Now that we have the URL title, we'll transform it into the URL format. For that we use the method we defined before. And then we'll set the file path. We define the folder and if it does not already exist, we'll create it.
 
 ```ruby
 # create URL

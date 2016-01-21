@@ -1,6 +1,6 @@
 ---
 date: 2015-06-15 17:11:12 +0200
-title: Responsive Blogger Menus&colon; 3-Level Dropdown aus Liste ♦♦
+title: Responsive Blogger Menus&colon; 3-Level Dropdown aus Liste
 id: RBM3DaL
 lang: de
 subtitle: Ein Dropdown Menu ohne Coding-Kenntnisse
@@ -111,7 +111,7 @@ $level-three_bg: $menu_bg;
 $level-three_hover_bg: rgba(white, .1);
 
 // Menu Text-Ausrichtugn verwendet hier "left", "center" oder "right"
-$text_align: left; 
+$text_align: left;
 
 // Responsive Toggle Link
 $responsive_width: 100%;

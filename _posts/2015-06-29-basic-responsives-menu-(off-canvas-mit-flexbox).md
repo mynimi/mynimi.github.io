@@ -1,6 +1,6 @@
 ---
 date: 2015-06-29 22:02:53 +0200
-title: Basic Responsives Menu (off-canvas mit flexbox) ♦
+title: Basic Responsives Menu (off-canvas mit flexbox)
 id: BRM(mf
 lang: de
 subtitle: so ziemlich das einfachste 1-Level-Menu ever
@@ -67,26 +67,26 @@ $menu_collapse: 500px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
+
     // mit flex-direction wird die Darstellung der Links angepasst
-    
+
     // horizontal in nicht-responsiver Version
     @media screen and (min-width: $menu_collapse) {
         flex-direction: row;
         justify-content: space-between;
         max-width: 800px;
-        
+
         .toggle-link {
             display: none;
         }
     }
-    
+
     // off-canvas look
     @media screen and (max-width: $menu_collapse) {
         // links untereinander
         flex-direction: column;
         justify-content: flex-start;
-        
+
         // off-canvas style, geschlossen
         background: darken(white, 10%);
         z-index: 100;
@@ -99,12 +99,12 @@ $menu_collapse: 500px;
         box-sizing: border-box;
         padding: 10px;
         transform: translateX(-320px);
-        
+
         // off-canvas stlye, geöffnet
         &.active {
             transform: translateX(0px);
         }
-        
+
         // positioniere "x" oben rechts
         .toggle-link {
             align-self: flex-end;

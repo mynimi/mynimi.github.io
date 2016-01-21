@@ -1,6 +1,6 @@
 ---
 date: 2015-06-29 22:02:53 +0200
-title: Basic responsive menu (off-canvas with flexbox) ♦
+title: Basic responsive menu (off-canvas with flexbox)
 id: BRM(mf
 lang: en
 subtitle: pretty much the easiest 1-Level-Menu ever
@@ -8,7 +8,7 @@ tags: [tutorial, navigation,  sass, css, html, flexbox, ♦]
 description: How to write a simple one level menu with flexbox
 category: en
 ---
-Menus. The first Menu I wrote was a list that was made looking like a navigation with CSS. I still use a lisst for a drop down menu. But since we are finally ready to use Flexbox, I have given up on lists and turned to a simpler markip. 
+Menus. The first Menu I wrote was a list that was made looking like a navigation with CSS. I still use a lisst for a drop down menu. But since we are finally ready to use Flexbox, I have given up on lists and turned to a simpler markip.
 This navigation is written with flexbos and becomes off-canvas once it collapses.
 <br>
 <!-- more -->
@@ -92,26 +92,26 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
+
     // change the way links appear with flex-direction
-    
+
     // on a horizontal line in non-collapsed way
     @media screen and (min-width: $menu_collapse) {
         flex-direction: row;
         justify-content: space-between;
         max-width: 800px;
-        
+
         .toggle-link {
             display: none;
         }
     }
-    
+
     // off-canvas look
     @media screen and (max-width: $menu_collapse) {
         // make links appear underneath each other
         flex-direction: column;
         justify-content: flex-start;
-        
+
         // off-canvas style, closed
         background: darken(white, 10%);
         z-index: 100;
@@ -124,12 +124,12 @@ a {
         box-sizing: border-box;
         padding: 10px;
         transform: translateX(-320px);
-        
+
         // off-canvas, open
         &.active {
             transform: translateX(0px);
         }
-        
+
         // position "x" in the upper right-hand corner
         .toggle-link {
             align-self: flex-end;

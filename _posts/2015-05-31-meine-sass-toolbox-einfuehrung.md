@@ -1,5 +1,5 @@
 ---
-title: Meine Sass Toolbox ♦
+title: Meine Sass Toolbox
 subtitle: Einführung und main.scss
 description: Eine Einführung in meine Sass Toolbox
 tags: [tutorial, sass toolbox, sass, ♦]
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 
 
     require('load-grunt-tasks')(grunt);
- 
+
     // Default task(s).
     grunt.registerTask("default", ["sass", "autoprefixer", "watch"]);
 };
@@ -81,7 +81,7 @@ Kommen wir zu meiner Ordnerstruktur. Ich habe verschiedene Posts gelesen, wie ma
 ├── assets/
 │   └── alle sass files, die ich nicht selbst geschrieben habe (z.B. fontawesome)
 ├── base/
-│   ├── _reset.scss 
+│   ├── _reset.scss
 │   ├── _typography.scss
 │   ├── _settings.scss
 │   └── _base-style.scss

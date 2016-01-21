@@ -1,6 +1,6 @@
 ---
 date: 2015-07-07 07:40:04 +0200
-title: Zwei Menus, eine responsive Off-Canvas Navigation ♦♦♦
+title: Zwei Menus, eine responsive Off-Canvas Navigation
 id: ZMerON
 lang: de
 subtitle: Zwei Menus in der Hauptansicht, die responsive zu einer Off-Canvas Navigation kombiniert werden
@@ -23,13 +23,13 @@ Markup in Jade schaut so aus:
 ```slim
 header
     .menu-container
-        nav.off-canvas-menu 
+        nav.off-canvas-menu
             ul
                 li
                     a(href="#") Tasum
                 li
                     a(href="#") Aldpol
-                    
+
                 li.menu-item-has-children
                     a(href="#") Oughw
                     ul.sub-menu
@@ -40,19 +40,19 @@ header
                         li
                             a(href="#") Ia'usk
                     // /.sub-menu
-                    
+
                 li
                     a(href="#") Swaimim
             // /ul
         // /.off-canvas-menu
-        
+
         nav.main-menu
             ul.second
                 li
                     a(href="#") Smedgone
                 li
                     a(href="#") Aotaliope
-                    
+
                 li.menu-item-has-children
                     a(href="#") Rothiope
                     ul.sub-menu
@@ -63,7 +63,7 @@ header
                         li
                             a(href="#") Xioeleia
                     // /.sub-menu
-                    
+
                 li
                     a(href="#") Iorireto    
             // /ul
@@ -135,22 +135,22 @@ Also, integriert jQuery in eurem Projekt vor folgendem Script.
 
 ```js
 $(document).ready(function() {
-    
+
     // definiere Klassen für Toggle-Links
     var offCanvasToggle = 'toggle-link-off-canvas',
         mainToggle = 'toggle-link',
         close = 'toggle-link-close';
 
-    /* 
+    /*
      * füge Toggle Link zu Header container hinzu.
      * das wird der Toggle für das allgemeine Menu und ist erst
      * nach dem collapse sichtbar
      */
     $('header').prepend('<span class="toggle ' + mainToggle + '">Menu</span>');
-    
+
     // schliessender toggle für das Menu in zusammengeklappter Form
     $('.menu-container').prepend('<span class="toggle ' + mainToggle + ' ' + close + '">close</span>');
-    
+
     // schliessender und öffnender Link für das Off-Canvas Menu
     $('.off-canvas-menu').prepend('<span class="toggle ' + offCanvasToggle + ' ' + close + '">close</span>');
     $('.main-menu').prepend('<ul class="first"><li><span class="toggle ' + offCanvasToggle + '">Menu Off-Canvas</span></li></ul>');
@@ -173,7 +173,7 @@ $(document).ready(function() {
         $(this).toggleClass('sub-menu-is-open');
         $(this).parent().next('.sub-menu').slideToggle();
     });
-    
+
 });
 ```
 
@@ -216,7 +216,7 @@ $main_menu_bg: $coal;
 // FUNKTIONEN
 //------------
 
-// Quadratwurzel 
+// Quadratwurzel
 @function sqrt($r) {
     $x0: 1;
     $x1: $x0;
@@ -235,7 +235,7 @@ $main_menu_bg: $coal;
     width: 0;
     height: 0;
     border-style: solid;
-    
+
     @if $dir == right {
         border-color: transparent transparent transparent $c;
     }
@@ -295,31 +295,31 @@ header {
     width: 100%;
     background: $header_bg;
     line-height: 2;
-    
+
     // das zentriert den toggle link für das responsive Menu
     @media screen and (max-width: $menu-collapse){
         @include flexbox(row, wrap, center, center);
     }
-        
+
     // toggle link styling
     .toggle {
         @extend a;
         padding: 6px;
     }
-    
+
     .toggle-link-close {
         position: absolute;
         top: 0;
         right: 0;
     }
-    
+
     // hier blende ich jeweils den nicht benötigten Toggle aus.
     .toggle-link {
         @media screen and (min-width: $menu-collapse + 1) {
             display: none;
         }
     }
-    
+
     .toggle-link-off-canvas {
         @media screen and (max-width: $menu-collapse) {
             display: none;
@@ -347,14 +347,14 @@ header {
             transform: translate(300px, 0);
         }
     }
-    
+
     // sub menu werden gleich gestyled wie beim off-canvas menu
     .sub-menu {
         border-top: 1px solid rgba($coal, .5);
         border-bottom: 1px solid rgba($coal, .5);
         background: lighten($off-canvas_bg, 5%);
         display: none;
-        
+
         li {
             a {
                 box-sizing: border-box;
@@ -364,11 +364,11 @@ header {
             }
         }
     }
-    
+
     // klickbares dreieck, um das sub menu zu öffnen
     .parent {
         @include flexbox(row, wrap, flex-start, center);
-        
+
         .submenu-opener {
             font-size: 0;
             position: relative;
@@ -383,11 +383,11 @@ header {
             @media screen and (min-width: $menu-collapse + 1) {
                 margin-left: 5px;
             }
-            
+
             &.sub-menu-is-open {
                 transform: rotate(-180deg);
             }
-            
+
             &:after {
                 content: '';
                 @include triangle_eqla(10px, down, $a_color);
@@ -397,10 +397,10 @@ header {
                 transform: translate(-50%, -20%);
                 transition: .3s all ease;
             }
-            
+
             &:hover {
                 cursor: pointer;
-            
+
                 &:after {
                     border-color: $a_color_hover transparent transparent transparent;
                 }
@@ -412,7 +412,7 @@ header {
 // off-canvas Navigation
 .off-canvas-menu {
     line-height: 2.5;
-    
+
     @media screen and (min-width: $menu-collapse + 1) {
         z-index: 100;
         position: fixed;
@@ -430,7 +430,7 @@ header {
             transform: translate(300px, 0);
         }        
     }
-    
+
     a {
         padding: 0 10px;
     }
@@ -446,7 +446,7 @@ header {
             padding: 0 10px;
         }
     }
-    
+
     @media screen and (min-width: $menu-collapse + 1) {
         position: fixed;
         width: 100%;
@@ -454,10 +454,10 @@ header {
         right: 0;
         background: $main_menu_bg;
         @include flexbox(row, wrap, space-between, center);
-       
+
         ul {
             @include flexbox(row, wrap, flex-start, center);
-        
+
             li {
                 padding: 10px;
             }

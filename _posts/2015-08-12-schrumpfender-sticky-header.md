@@ -1,6 +1,6 @@
 ---
 date: 2015-08-12 01:28:36 +0200
-title: Sticky Header mit Extras ♦♦
+title: Sticky Header mit Extras
 id: SHmE
 lang: de
 subtitle: Wie ein Header smooth sticky fixiert wird und ein Element bei Scroll schrumpft
@@ -48,26 +48,26 @@ $menu-bg: #4C7C6E;
 nav {
     width: 100%;
     background: $menu-bg;
-    
+
     .container{
         padding: 0;
         @include flexbox(row, wrap, flex-start, center);
     }
-    
+
     img{
         border-radius: 50%;
         margin-right: 20px;
         border: 7px solid $menu-bg;
         transition: .5s all ease-in-out;
         padding: 0;
-        
+
         &.small{
             height: 100% !important;
             border: 0px solid transparent;
             padding: 2px;
         }
     }
-    
+
     .menu {
         padding: 14px 0;
         a {
@@ -188,12 +188,12 @@ Das ganze Script schaut also wie folgt aus:
 
 ```js
 $(document).ready( function() {
-    
+
     $('nav img').css('height', $('nav img').height());
-    
+
     $('nav .container').css('height', $('.menu').outerHeight());
     $('nav').stickyNav();
-    
+
     $(window).scroll( function(){
         if ($(window).scrollTop() > $('nav img').offset().top){
             $('nav img').addClass('small');
