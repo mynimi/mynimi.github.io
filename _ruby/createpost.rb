@@ -289,7 +289,7 @@ umlautify(desc_german)
 p_german.puts "---"
 p_german.puts "date: #{time}"
 p_german.puts "title: #{title_german}"
-p_german.puts "id: #{id}"
+p_german.puts "name: #{id}"
 if subtitle_german != ""
     p_german.puts "subtitle: #{subtitle_german}"
 end
@@ -312,7 +312,7 @@ sanitizeYML(desc_english)
 p_english.puts "---"
 p_english.puts "date: #{time}"
 p_english.puts "title: #{title_english}"
-p_english.puts "id: #{id}"
+p_english.puts "name: #{id}"
 if subtitle_english != ""
     p_english.puts "subtitle: #{subtitle_english}"
 end

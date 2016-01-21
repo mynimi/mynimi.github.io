@@ -3,7 +3,7 @@ title: Meine Sass Toolbox
 subtitle: Einführung und main.scss
 description: Eine Einführung in meine Sass Toolbox
 tags: [tutorial, sass toolbox, sass, ♦]
-id: sass-toolbox-1
+name: sass-toolbox-1
 lang: de
 ---
 Sass. Wer heute keinen Preprocessor benutzt, der hat noch nicht erkannt, dass CSS so viel mehr Spass machen kann.

@@ -1,7 +1,7 @@
 ---
 date: 2015-09-01 17:10:22 +0200
 title: Ein responsiver Image-Slider mit Sass
-id: ErImS
+name: ErImS
 lang: de
 subtitle: Mit einem Sass Mixin JavaScript Arbeit machen
 tags: [sass, tutorial, mixin, slider, ♦♦♦♦]

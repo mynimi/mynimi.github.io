@@ -1,7 +1,7 @@
 ---
 date: 2015-07-11 01:57:00
 title: Ein komplettes jekyll starter theme (Teil 1)
-id: Ekjst(1
+name: Ekjst(1
 lang: de
 subtitle: Intro, Vorbereitungen und Ordnerstruktur
 tags: [jekyll, jekyll starter series, starter theme, sass, jade, tutorial, ♦♦♦♦♦ ]

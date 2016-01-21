@@ -27,7 +27,7 @@ permalink: /sitemaps.xml
   {% for theme in site.themes %}
   <url>
     <loc>{{ site.url }}{{ theme.url }}</loc>
-    {% assign versions=site.themes|where:"id",theme.id %}
+    {% assign versions=site.themes|where:"name",theme.id %}
     {% for version in versions %}
       <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="{{ site.url }}{{ version.url }}" />
     {% endfor %}

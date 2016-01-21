@@ -1,7 +1,7 @@
 ---
 date: 2015-09-13 19:14:58 +0200
 title: previous and next links within jekyll collections
-id: VunLfjc
+name: VunLfjc
 lang: en
 subtitle: how a navigator for jekyll collections is written
 tags: [jekyll, page navigator, liquid, ♦♦♦]

@@ -49,10 +49,10 @@ MathJax.Hub.Config({
           <!-- .responsive end-->
         </div>
         <div class="center"><span class="toggle">Menu</span></div>
-        <div class="right"><span class="backtotop">up?</span>{% assign portfolio = site.portfolio | where:"id", page.id | sort: 'path' %}{% for item in portfolio %}<li class="lang"><a href="{{ item.url | replace: "index.html", "" }}" class="{{ item.lang }}">{{ item.lang }}</a></li>{% endfor %}  
+        <div class="right"><span class="backtotop">up?</span>{% assign portfolio = site.portfolio | where:"name", page.name | sort: 'path' %}{% for item in portfolio %}<li class="lang"><a href="{{ item.url | replace: "index.html", "" }}" class="{{ item.lang }}">{{ item.lang }}</a></li>{% endfor %}  
           {% assign pages=site.pages | where:"id", page.id | sort: 'path' %}{% for page in pages %}<a href="{{ page.url | replace: "index.html", "" }}" class="{{ page.lang }}">{{ page.lang }}</a>{% endfor %}      
-          {% assign themes = site.themes | where:"id", page.id | sort: 'path' %}{% for theme in themes %}<li class="lang"><a href="{{ theme.url | replace: "index.html", "" }}" class="{{ theme.lang }}">{{ theme.lang }}</a></li>{% endfor %}       
-          {% assign posts=site.posts | where:"id", page.id %}{% for post in posts %}<li class="lang"><a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">{{ post.lang }}</a></li>{% endfor %}    <span id="trigger"><i class="fa fa-eye-slash"></i></span>
+          {% assign themes = site.themes | where:"name", page.name | sort: 'path' %}{% for theme in themes %}<li class="lang"><a href="{{ theme.url | replace: "index.html", "" }}" class="{{ theme.lang }}">{{ theme.lang }}</a></li>{% endfor %}       
+          {% assign posts=site.posts | where:"name", page.name %}{% for post in posts %}<li class="lang"><a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">{{ post.lang }}</a></li>{% endfor %}    <span id="trigger"><i class="fa fa-eye-slash"></i></span>
         </div>
       </div>
       <!-- .menu end-->

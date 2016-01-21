@@ -3,7 +3,7 @@ title: My Sass Toolbox
 subtitle: Introduction and main.scss
 description: An introduction into my sass toolbox and file structure
 tags: [tutorial, sass toolbox, sass, ♦]
-id: sass-toolbox-1
+name: sass-toolbox-1
 category: en
 lang: en
 ---

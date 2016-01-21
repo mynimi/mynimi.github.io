@@ -6,7 +6,7 @@ date: 2016-01-08 12:00:00
 category: coding
 tags: [jekyll, code, static site, webdesign, sass]
 lang: en
-id: micheledekker
+name: micheledekker
 gallery:
   - images:
     - filename: michele_home.png

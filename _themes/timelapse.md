@@ -13,7 +13,7 @@ date: 2013-11-22 12:00:00
 category: blogger
 tags: [blogger template, edgy, clean]
 lang: de
-id: timelapse
+name: timelapse
 ---
 
 Bei Timelapse wollte ich mit der Startseite spielen. Ziel war es, auf den ersten Blick zu verbergen, dass es sich hier um ein Blogger Template handelt. Es sollte modern wirken.

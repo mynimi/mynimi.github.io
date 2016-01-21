@@ -13,7 +13,7 @@ date: 2014-09-18 12:00:00
 category: blogger
 tags: [sass, minimal, blogger template]
 lang: de
-id: papersheet
+name: papersheet
 ---
 
 Dieses Template richtet sich vor allem an Blogger, die Wert auf Text legen und keine Widgets mögen. Es ist ein einfaches Theme, bei dem es darum geht die Lesbarkeit des Texts zu garantieren und keinen ablenkdenden Schnickschnack zu integrieren.

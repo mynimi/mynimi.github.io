@@ -365,7 +365,7 @@ p_german.puts "theme-img: #{theme_img}"
 p_german.puts "theme-preview: #{theme_preview}"
 p_german.puts "category: #{category}"
 p_german.puts "lang: de"
-p_german.puts "id: #{title}"
+p_german.puts "name: #{title}"
 p_german.puts "---"
 p_german.close
 
@@ -392,7 +392,7 @@ p_english.puts "theme-img: #{theme_img}"
 p_english.puts "theme-preview: #{theme_preview}"
 p_english.puts "category: #{category}"
 p_english.puts "lang: en"
-p_english.puts "id: #{title}"
+p_english.puts "name: #{title}"
 p_english.puts "permalink: /en/themes/#{url_title}/"
 p_english.puts "---"
 p_english.close

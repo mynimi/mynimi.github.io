@@ -6,7 +6,7 @@ date: 2012-12-31 12:00:00
 category: fractal
 tags: [fractal, splits, julia, grand julian]
 lang: de
-id: julia
+name: julia
 gallery:
   - images:
     - filename: cellular.jpg

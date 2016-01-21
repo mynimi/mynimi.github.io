@@ -1,7 +1,7 @@
 ---
 date: 2015-06-29 22:02:53 +0200
 title: Basic responsive menu (off-canvas with flexbox)
-id: BRM(mf
+name: BRM(mf
 lang: en
 subtitle: pretty much the easiest 1-Level-Menu ever
 tags: [tutorial, navigation,  sass, css, html, flexbox, ♦]

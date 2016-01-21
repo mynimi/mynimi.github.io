@@ -13,7 +13,7 @@ theme-img: initium.png
 theme-preview: initium-preview.png
 category: jekyll
 lang: en
-id: initium
+name: initium
 permalink: /en/themes/initium/
 ---
 initium; is a starter theme for jekyll that I have already been using for most of the sites I build with jekyll.

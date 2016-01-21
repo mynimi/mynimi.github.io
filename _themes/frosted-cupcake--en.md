@@ -12,7 +12,7 @@ theme-preview: frosted-cupcake-preview.png
 date: 2013-09-11 12:00:00
 category: blogger
 tags: [blogger template, girly]
-id: frosted-cupcake
+name: frosted-cupcake
 lang: en
 permalink: /en/themes/frosted-cupcake/
 ---

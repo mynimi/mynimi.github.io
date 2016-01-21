@@ -6,7 +6,7 @@ date: 2015-05-04 12:00:00
 category: coding
 tags: [jekyll, code, static site, webdesign, sass]
 lang: de
-id: digitalmind
+name: digitalmind
 gallery:
   - images:
     - filename: digitalmind_frontpage.gif

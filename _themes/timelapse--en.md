@@ -13,7 +13,7 @@ date: 2013-11-22 12:00:00
 category: blogger
 tags: [blogger template, edgy, clean]
 lang: en
-id: timelapse
+name: timelapse
 permalink: /en/themes/timelapse
 ---
 

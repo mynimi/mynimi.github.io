@@ -13,7 +13,7 @@ date: 2014-09-21 12:00:00
 category: blogger
 tags: [sass, minimal, blogger template, fotographie]
 lang: de
-id: photosheet
+name: photosheet
 ---
 
 Photosheet ist wie sein Geschwister [Papersheet](/themes/photosheet) ein minimalistisches Template, das sich an die Leute richtet, die bei ihrem Blog Wert auf den Inhalt legen. Photosheet ist hier mehr für die Blogs gedacht, die viel mit Bildern arbeiten, denn abgesehen davon gibt es auf der Startseite nicht viel zu sehen.

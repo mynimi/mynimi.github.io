@@ -1,7 +1,7 @@
 ---
 date: 2015-06-15 17:11:12 +0200
 title: Responsive Blogger Menus&colon; 3-Level Dropdown aus Liste
-id: RBM3DaL
+name: RBM3DaL
 lang: de
 subtitle: Ein Dropdown Menu ohne Coding-Kenntnisse
 tags: [dropdown, blogger, navigation, tutorial, ♦♦, javascript, jquery]

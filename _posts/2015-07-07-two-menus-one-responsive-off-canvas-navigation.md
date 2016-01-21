@@ -1,7 +1,7 @@
 ---
 date: 2015-07-07 07:40:04 +0200
 title: Two Menus, One Responsive Off-Canvas Navigation
-id: ZMerON
+name: ZMerON
 lang: en
 subtitle: two menus combined into one off-canvas nav
 tags: [navigation, dropdown, responsive, sass, jade, jQuery, ♦♦♦]

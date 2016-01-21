@@ -39,4 +39,3 @@ description: all of my themes. responsive blogger and jekyll themes for free
         </div>
     {% endfor %}
 </div>
-

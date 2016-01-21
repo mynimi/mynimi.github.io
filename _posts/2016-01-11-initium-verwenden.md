@@ -2,7 +2,7 @@
 lang: de
 date: 2016-01-11 14:07:27 +0100
 title: Ein jekyll Blog mit initium
-id: EjBmi
+name: EjBmi
 subtitle: Wie man mit initium einen jekyll Blog erstellt
 tags: [initium, jekyll, tutorial, theme, ♦♦♦♦]
 description: Eine Einf&uuml;hrung zur Benutzung des jekyll starter themes initium
@@ -162,7 +162,7 @@ layout: page # optional, da bereits in den defaults definiert (in _config.yml)
 group: "navigation-02" # Das ist für das Einfügen in das Menu. Die Zahl am Ende bestimmt die Reihenfolge im Menu. Diese Page erscheint an zweiter Stelle
 title: Blog # Titel der Page
 page-title: no # Wenn diese Variable eingefügt ist, wir der Seiten-Titel nicht angezeigt. Macht Sinn auf einer Übersichtsseite wie Blog.
-id: blog # Die id für die Mehrsprachigkeit
+name: blog # Die id für die Mehrsprachigkeit
 lang: en # definition der Sprache
 permalink: /en/blog/ # Permalink
 description: The blog overview. # Meta-Beschreibung, die wird dan z.Bsp. in Google Resultaten angezeigt
@@ -201,7 +201,7 @@ title: 3D Blooms # Titel
 subtitle: fractal art # Untertitel
 category: [fractal] # Kategorie
 lang: en # Sprache
-id: 3dblooms # ID
+name: 3dblooms # ID
 header-pic: gold-beam.png # Header-Bild
 permalink: /en/portfolio/3d-blooms/ # Permalink
 description: Ein Portfolio-Eintrag für initium; # Meta-Beschreibung

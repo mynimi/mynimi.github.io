@@ -13,7 +13,7 @@ date: 2014-08-15 12:00:00
 category: blogger
 tags: [template designer, minimal, blogger template, dynamic]
 lang: en
-id: static-magazine
+name: static-magazine
 permalink: /en/themes/static-magazine
 ---
 

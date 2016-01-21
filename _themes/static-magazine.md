@@ -13,7 +13,7 @@ date: 2014-08-15 12:00:00
 category: blogger
 tags: [template designer, minimal, blogger template, dynamic]
 lang: de
-id: static-magazine
+name: static-magazine
 ---
 
 Ich war ein grosser Fan der dynamischen Ansichten, weil es etwas Neues war. Da sie allerdings komplett mit JavaScript generiert werden, sind sie nicht sonderlich benutzerfreundlich und können die Ladezeiten extrem beanspruchen. Ausserdem werden gewisse Änderungen, die über den Vorlagendesigner gemacht wurden nicht richtig angezeigt.

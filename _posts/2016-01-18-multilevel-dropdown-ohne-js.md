@@ -1,7 +1,7 @@
 ---
 date: 2016-01-18 14:07:27 +0100
 title: Ein responsives Mulit-Level Menu ohne JavaScript
-id: armlmwj
+name: armlmwj
 subtitle: Wie man mit dem checked-hack ein responsives Dropdwon schreibt
 tags: [sass, navigation, tutorial ♦♦]
 description: Wie man ein multi-level dropdown mit dem checked hack und ohne javascript schreibt.

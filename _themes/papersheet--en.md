@@ -13,7 +13,7 @@ date: 2014-09-18 12:00:00
 category: blogger
 tags: [sass, minimal, blogger template]
 lang: en
-id: papersheet
+name: papersheet
 permalink: /en/themes/papersheet/
 ---
 This template is for the bloggers with the most basic need that need their blog to be the perfect canvas for what really matters. The content.

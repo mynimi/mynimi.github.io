@@ -1,7 +1,7 @@
 ---
 date: 2015-08-12 01:28:36 +0200
 title: Shrinking sticky header
-id: SHmE
+name: SHmE
 lang: en
 subtitle: how a header is fixed smoothly and part of the element is shrunk
 tags: [header, jquery, javascript, tutorial, ♦♦]

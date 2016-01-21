@@ -5,7 +5,7 @@ date: 2015-05-04 12:00:00
 category: design
 tags: [logo, design, vector]
 lang: en
-id: dmlogo
+name: dmlogo
 permalink: /en/portfolio/digitalmind-logo/
 item-preview: dm_logo_preview.jpg
 ---

@@ -14,7 +14,7 @@
     {% endif %}
     <div class="post-info">
         <h1>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a><span>
         </h1>
         {% if post.subtitle %}
         <h2 class="subtitle">
@@ -22,7 +22,7 @@
         </h2>
         {% endif %}
         <p class="meta">
-            <span class="date">{% include date.html %}</span> 
+            <span class="date">{% include date.html %}</span>
             {% if post.tags %} &nbsp;&bull;&nbsp;
             <span class="tags">
                 <i class="fa fa-tags"></i>

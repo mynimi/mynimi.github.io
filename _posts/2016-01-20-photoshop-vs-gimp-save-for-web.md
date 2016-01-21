@@ -1,7 +1,7 @@
 ---
 date: 2016-01-20 23:22:24 +0100
 title: Photoshop vs GIMP&colon; Save for Web [Toolbox Smackdown]
-id: PvGSfW[S
+name: PvGSfW[S
 subtitle: Wer schneidet besser beim Weboptimierten Speichern ab?
 tags: [toolbox smackdown, save for web, photoshop, gimp]
 description: Ein Vergleich zwischen Photoshop und Gimp welches der beiden Programme Bilder f&uuml;r das Web speichert
@@ -25,12 +25,15 @@ Ich dachte ich teste das mal mit den verschiedenen Bildformaten, die man so benu
 
 Original Bilder:
 [![chichen itza original]({{ site.img_dir }}/chichenitza_original.jpg)]({{ site.img_dir }}/chichenitza_original.jpg)
+
 Klassiches Beispiel für ein jpg. Foto wurde nach der Retusche mit Photoshop verkleinert, aber nicht fürs Web gespeichert. Grösse: 1.52 MB
 
 [![transparent original]({{ site.img_dir }}/transparent_original.png)]({{ site.img_dir }}/transparent_original.png)
+
 PNG Bild mit transparentem Hintergrund und Halbtransparentem Textschatten. Bild wurde mit Photoshop erstellt, aber nicht fürs Web gespeichert Grösse: 47.1 KB
 
 [![animation original]({{ site.img_dir }}/typing_original.gif)]({{ site.img_dir }}/typing_original.gif)
+
 GIF-Animation. Animation wurde mit [LICEcap](http://www.cockos.com/licecap/) erstellt. Grösse 3.83 KB
 
 ### Photoshop
@@ -64,13 +67,13 @@ Einstellungen wieder in den Bildern
 
 #### GIF
 [![save for web gimp]({{ site.img_dir }}/save_gif_gimp.jpg)]({{ site.img_dir }}/save_gif_gimp.jpg)
-[![animation gimp]({{ site.img_dir }}/typing_gimp.gif)](({{ site.img_dir }}/typing_gimp.gif)
+[![animation gimp]({{ site.img_dir }}/typing_gimp.gif)]({{ site.img_dir }}/typing_gimp.gif)
 
 ### Resultat
 
 #### Filegrösse
 
- - | Original | Photoshop | GIMP
+ File | Original | Photoshop | GIMP
 --- | --- | --- | ---
 JPG | 1.52 MB | 247 KB | 235 KB
 PNG | 47.1 KB | 48.2 KB | 32.3 KB

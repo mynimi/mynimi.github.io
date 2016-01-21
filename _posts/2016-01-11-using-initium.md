@@ -1,7 +1,7 @@
 ---
 date: 2016-01-11 14:07:27 +0100
 title: Setting up a blog with initium
-id: EjBmi
+name: EjBmi
 subtitle: How to use intium to get your own jekyll blog up and running
 tags: [initium, jekyll, tutorial, theme, ♦♦♦♦]
 description: an introduction on how to use the jekyll start theme initium
@@ -155,7 +155,7 @@ layout: page # optional, defaults defined for this
 group: "navigation-02" # this is for the dynamic menu. the number in the end gives you the order.
 title: Blog # Title of the page
 page-title: no # if you add this, the page title will not be displayed. Good for pages like blog
-id: blog # identifier for multilang
+name: blog # identifier for multilang
 lang: en # language
 permalink: /en/blog/ # Permalink
 description: The blog overview. # meta description, used for example in google results
@@ -194,7 +194,7 @@ title: 3D Blooms
 subtitle: fractal art
 category: [fractal]
 lang: en
-id: 3dblooms
+name: 3dblooms
 header-pic: gold-beam.png
 permalink: /en/portfolio/3d-blooms/
 description: Ein Portfolio-Eintrag für initium

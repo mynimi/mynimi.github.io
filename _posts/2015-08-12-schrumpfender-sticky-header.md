@@ -1,7 +1,7 @@
 ---
 date: 2015-08-12 01:28:36 +0200
 title: Sticky Header mit Extras
-id: SHmE
+name: SHmE
 lang: de
 subtitle: Wie ein Header smooth sticky fixiert wird und ein Element bei Scroll schrumpft
 tags: [header, jquery, javascript, tutorial, ♦♦]

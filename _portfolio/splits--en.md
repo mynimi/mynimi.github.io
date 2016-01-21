@@ -6,7 +6,7 @@ date: 2012-12-31 12:00:00
 category: fractal
 tags: [fractal, splits, floral]
 lang: en
-id: splits
+name: splits
 gallery:
   - images:
     - filename: autumn.jpg

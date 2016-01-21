@@ -5,7 +5,7 @@ date: 2014-04-14 12:00:00
 category: design
 tags: [logo, design, vector]
 lang: en
-id: twinsister
+name: twinsister
 livesite: http://twinsiter.ch
 permalink: /en/portfolio/twinsister/
 gallery:

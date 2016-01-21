@@ -1,7 +1,7 @@
 ---
 date: 2016-01-20 23:22:24 +0100
 title: Photoshop vs GIMP&colon; Save for Web [Toolbox Smackdown]
-id: PvGSfW[S
+name: PvGSfW[S
 subtitle: Who's better at saving for web?
 tags: [toolbox smackdown, save for web, photoshop, gimp]
 description: A comparison between photoshop and GIMP and their ability to save an image for the internet.
@@ -25,12 +25,15 @@ GIMP 2.8.16
 I used the 3 standard image formats.
 
 [![chichen itza original]({{ site.img_dir }}/chichenitza_original.jpg)]({{ site.img_dir }}/chichenitza_original.jpg)
+
 Classic jpg. The image was made a little bit smaller after Photoshop Retouch, but not saved for web. Size: 1.52 MB
 
 [![transparent original]({{ site.img_dir }}/transparent_original.png)]({{ site.img_dir }}/transparent_original.png)
+
 PNG with transparent background and semi-transparent shadow. Image was created in Photoshop but not saved for web. Size: 47.1 KB
 
 [![animation original]({{ site.img_dir }}/typing_original.gif)]({{ site.img_dir }}/typing_original.gif)
+
 GIF Animation. Was created using [LICEcap](http://www.cockos.com/licecap/). Size: 3.83 KB
 
 ### Photoshop
@@ -39,7 +42,7 @@ Just Ctrl+Alt+Shift+S (replace Ctrl with Cmd on a Mac) and the window will open.
 
 #### JPG
 [![save for web jpg ps]({{ site.img_dir }}/save_jpg_ps.jpg)]({{ site.img_dir }}/save_jpg_ps.jpg)
-[![chichen itza ps]({{ site.img_dir }}/chichenitza_ps.jpg)](({{ site.img_dir }}/chichenitza_ps.jpg)
+[![chichen itza ps]({{ site.img_dir }}/chichenitza_ps.jpg)]({{ site.img_dir }}/chichenitza_ps.jpg)
 
 #### PNG
 [![save for web png ps]({{ site.img_dir }}/save_png_ps.jpg)]({{ site.img_dir }}/save_png_ps.jpg)
@@ -70,7 +73,7 @@ Setting are shown below
 
 #### File Size
 
- - | Original | Photoshop | GIMP
+ File | Original | Photoshop | GIMP
 --- | --- | --- | ---
 JPG | 1.52 MB | 247 KB | 235 KB
 PNG | 47.1 KB | 48.2 KB | 32.3 KB

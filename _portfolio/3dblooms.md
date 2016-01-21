@@ -6,7 +6,7 @@ date: 2012-12-31 12:00:00
 category: fractal
 tags: [fractal, 3d bloom, floral]
 lang: de
-id: 3dbloom
+name: 3dbloom
 gallery:
   - images:
     - filename: add_a_little_sparkle.jpg

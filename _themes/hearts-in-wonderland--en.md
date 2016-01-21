@@ -13,7 +13,7 @@ date: 2013-10-29 12:00:00
 category: blogger
 tags: [blogger template, girly]
 lang: en
-id: hearts-in-wonderland
+name: hearts-in-wonderland
 permalink: /en/themes/hearts-in-wonderland/
 ---
 

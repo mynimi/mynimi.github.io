@@ -6,7 +6,7 @@ date: 2014-12-27 12:00:00
 category: coding
 tags: [jekyll, code, static site, webdesign, sass]
 lang: de
-id: fvpukjekyll
+name: fvpukjekyll
 gallery:
   - images:
     - filename: fvpuk_frontpage.png

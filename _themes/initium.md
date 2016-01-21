@@ -13,7 +13,7 @@ theme-img: initium.png
 theme-preview: initium-preview.png
 category: jekyll
 lang: de
-id: initium
+name: initium
 ---
 initium; ist ein Starter Theme für jekyll, das ich schon seit einer Weile für alle Seiten benutze, die ich mit jekyll erstelle.
 

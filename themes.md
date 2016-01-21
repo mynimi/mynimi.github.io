@@ -38,4 +38,3 @@ description: Alle meine themes und templates. Kostenlos responsive Blogger und j
         </div>
     {% endfor %}
 </div>
-

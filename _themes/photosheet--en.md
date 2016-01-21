@@ -13,7 +13,7 @@ date: 2014-09-21 12:00:00
 category: blogger
 tags: [sass, minimal, blogger template, fotography]
 lang: en
-id: photosheet
+name: photosheet
 permalink: /en/themes/photosheet/
 ---
 
