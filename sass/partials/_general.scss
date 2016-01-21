@@ -307,3 +307,8 @@ p{
 b, strong{
     font-weight: 500;
 }
+
+// ensuring that there is still some space, even after minification
+.MathJax{
+    padding: 0 5px !important;
+}

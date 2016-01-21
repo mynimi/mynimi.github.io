@@ -113,7 +113,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files:{
-                    'js/build/main.min.js': ['js/*.js']
+                    'jekyllbuild/js/build/main.min.js': ['js/*.js']
                 }
             }
         },
@@ -136,7 +136,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'sass',
                     src: ['*.scss'],
-                    dest: 'css',
+                    dest: 'jekyllbuild/css',
                     ext: '.css'
                 }]
             }
@@ -242,7 +242,7 @@ module.exports = function(grunt) {
             },
             scripts: {
                 files: ['js/{,*/}*.js'],
-                tasks: ["uglify", "shell:jekyllBuild"]
+                tasks: ["uglify"]
             },
             demo_js: {
                 files: ['demo/{,*/}{,*/}*.js'],
@@ -253,7 +253,11 @@ module.exports = function(grunt) {
                 tasks: ["jade"]
             },
             css: {
-                files: ["sass/{,*/}{,*/}{,*/}*.scss", "demo/{,*/}{,*/}*.scss"],
+                files: ["sass/{,*/}{,*/}{,*/}*.scss"],
+                tasks: ["sass", "postcss"]
+            },
+            demo_css:{
+                files: ["demo/{,*/}{,*/}*.scss"],
                 tasks: ["sass", "postcss", "shell:jekyllBuild"]
             },
             site: {
