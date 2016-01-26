@@ -10,6 +10,7 @@ lang: en
 ---
 My obsession started Dec 30th 2015, when I first picked up one of my nail art brushes and just tried it. Brush lettering. Since then I've done it almost every day and so I thought I'd tell you a little bit of my experiences for beginners (which I still am) and what kind of brush pens work for me.
 <!-- more -->
+
 ### How a lot of my january was spent
 Brushlettering. Basically this is handwriting with a brush, simple as that. I got into this, after we had a typography course last semester. I was not the biggest fan of how the course was taught, but thing is, it reintroduced me to something I have always enjoyed, which is writing by hand. In the typography course I chose to go with a type written with a Pilot Parallel Pen. I really enjoyed it. But then I stumbled over a brush lettering tutorial on YouTube and I absolutely loved the look of it.
 So almost the last day of the year I got one of my nail art brushes that kind of looked like the tips of the brushes used in the videos and just did it. I grabbed my gouache palette, which I hadn't used since 6th grade and just tried it out. It was obviously not very pretty. But still. It was a start.
@@ -60,7 +61,7 @@ So what do I recommend most. obviously I go with bristles. I think if you own wa
 
 #### Inks & Colors & other stuff
 You have the brush, now you need something to write with. I actually had a lot of this stuff already. I did get different inks in pots a few years ago when I absolutely wanted to learn Copperplate (totally will not follow this goal anymore, I gave up after two days), so I do have a selection of chinese and fountain ink to use. In Switzerland we also all get a palette of Gouache in School. It's to be used in Art Classes and at the end of Primary School you can take it home. Caran d'Ache makes really beautiful Colors and even after almost 14 years, I'm still able to use them.
-Now, if you want to custom mix ink, you need something to fill the cartridges, or the reservoirs. The unmessyest way I have found is using one of these scary looking syringes that you can get on ebay ![link](http://www.ebay.com/itm/321912284779?_trksid=p2060353.m2749.l2649&var=510859676126&ssPageName=STRK%3AMEBIDX%3AIT). I absolutely love that thing.
+Now, if you want to custom mix ink, you need something to fill the cartridges, or the reservoirs. The unmessyest way I have found is using one of these scary looking syringes that you can get on ebay [link](http://www.ebay.com/itm/321912284779?_trksid=p2060353.m2749.l2649&var=510859676126&ssPageName=STRK%3AMEBIDX%3AIT). I absolutely love that thing.
 
 ### How you don't have to follow everything tutorials sometimes say
 This is something I have taken from these tutorials. Don't follow it all. A lot of people said that you should practice brushlettering by practicing the different strokes. I really do not like to do stuff out of context, so whenever I tried something like this I really did not enjoy it and I fell like that's really not the point of it. Also, give brushpens with actual bristles a try if you failed at the felt tips like me, you might get this to work.
@@ -69,3 +70,5 @@ Also practics normal handwriting. I think it really does make a difference to al
 
 And that wraps it up. I hope you liked this post that's a little different from what I usually do.
 Give Brushlettering a try, it is the ultimate stress relieve!
+
+Also if you want to see more of my brushlettering adventures - I finally joined [Instagram](https://www.instagram.com/halfapx/) and will share it there.
