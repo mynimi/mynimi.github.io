@@ -1,0 +1,33 @@
+- var page = { title: "Demo: Responsive Image Slider with Sass", subtitle: false, author: "Myriam Frisano", description: "A tutorial on how to write a flexible responsive image slider with Sass", tags: false }
+- var cssSource = 'style.css'
+
+doctype html
+html(lang="en")
+    include includes/head.jade
+
+    body
+        #slider
+            .wrap
+                .img(style="background-image: url(/media/responsive-slider-with-sass-1.png)")
+                    .slider-content
+                        h1 Floating
+                .img(style="background-image: url(/media/responsive-slider-with-sass-2.png)")
+                    .slider-content
+                        h1 Start of Spring
+                .img(style="background-image: url(/media/responsive-slider-with-sass-3.png)")
+                    .slider-content
+                        h1 Honey Drops
+                .img(style="background-image: url(/media/responsive-slider-with-sass-4.png)")
+                    .slider-content
+                        h1 Dalia
+                .img(style="background-image: url(/media/responsive-slider-with-sass-5.png)")
+                    .slider-content
+                        h1 Exotic Dreams
+                .img(style="background-image: url(/media/responsive-slider-with-sass-6.png)")
+                    .slider-content
+                        h1 Ice Queen
+                .img(style="background-image: url(/media/responsive-slider-with-sass-1.png)")
+                    .slider-content
+                        h1 Floating
+    // body end
+// html end

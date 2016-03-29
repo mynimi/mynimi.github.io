@@ -66,7 +66,7 @@ module.exports = function(grunt) {
                 files:{
                     'jekyllbuild/js/build/main.min.js': ['js/*.js']
                 }
-            }
+            },
         },
 
         sass: {
@@ -80,7 +80,10 @@ module.exports = function(grunt) {
                     src: ['{,*/}*.scss'],
                     dest: 'demo',
                     ext: '.css'
-                }]
+                }],
+                options: {
+                    outputStyle: 'nested'
+                }
             },
             main: {
                 files: [{
@@ -211,9 +214,13 @@ module.exports = function(grunt) {
                 files: ["demo/{,*/}{,*/}*.scss"],
                 tasks: ["sass", "postcss", "shell:jekyllBuild"]
             },
-            img: {
+            crops: {
                 files: ["media/needs-crops/*.{jpg,gif,png}"],
                 tasks: ["responsive_images"]
+            },
+            img:{
+                files: ["media/*.{jpg,gif,png}"],
+                tasks: ["shell:jekyllBuild"]
             },
             site: {
                 files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!jekyllbuild/**"],
