@@ -1,0 +1,22 @@
+- var page = { title: "Imagelightbox", subtitle: "Beispiele", author: "Myriam Frisano", description: "Beispiele zur Verwendung des imagelightbox plugins von osvaldas.info"}
+
+doctype html
+html(lang="de")
+    include includes/head.jade
+    
+    body
+        .container
+            h1 Generell
+            p Diese Lightbox verwendet <a href="https://github.com/osvaldasvalutis/imagelightbox" target="_blank">dieses Plugin</a>. Es muss unterhalb von jQuery eingefügt werden.
+            p Die Lightbox lässt sich so steuern: touch, pfeiltasten, auf den Rand des Bildes klicken bei Beispiel 3 auf Pfeile klicken. Schliessen kann man indem man einfach ausserhalb des Bildes klickt. Es lassen sich mehrere Lightboxen auf einer Seite einbinden. Sie müssen einfach einen eigenen selektor haben und einzeln initiiert werden.
+            p Klick auf die Buttons öffnen die Beispiele.
+            nav
+                span.toggle-minimal minimal
+                span.toggle-overlay overlay
+                span.toggle-arrows arrows
+            include includes/minimal.jade
+            include includes/overlay.jade
+            include includes/arrows.jade
+        include includes/footer.jade
+    // body end
+// html end

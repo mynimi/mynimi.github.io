@@ -1,0 +1,62 @@
+blockquote{
+    font-size: 1.2em;
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Vollkorn', 'Times New Roman', serif;
+    font-style: italic;
+
+    cite{
+        font-style: normal;
+        font-size: .8em;
+        opacity: .8;
+        text-align: right;
+        width: 100%;
+        display: block;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.btn{
+    @extend a;
+    border: 2px solid currentColor;
+    padding: 3px 5px;
+    border-radius: 3px;
+    position: relative;
+    top: 12px;
+    line-height: 2;
+}
+
+p + {
+    h1,
+    h2,
+    h3,
+    h4{
+        margin-top: 20px;
+    }
+}
+
+pre{
+    padding: 7px 5px;
+}
+
+nav{
+    width: 100%;
+    @include flexbox(row, wrap, space-around, center);
+
+    span{
+        color: $blood;
+        padding: 5px 7px;
+        margin: 5px 10px;
+        border: 1px solid currentColor;
+        font-weight: bold;
+
+        &:hover{
+            cursor: pointer;
+            color: black;
+        }
+    }
+}

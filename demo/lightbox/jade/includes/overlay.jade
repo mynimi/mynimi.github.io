@@ -1,0 +1,153 @@
+.overlay.to-be-toggled
+    h3 Demo
+    .masonry
+        - for(i = 10; i < 19; i++)
+            a(data-imagelightbox="b", href="img/full/#{i}.jpg")
+                img(src="img/thumb/#{i}.jpg")
+    h3 Code
+    h5 HTML
+    pre
+        code.language-markup
+            | &lt;div class=&quot;masonry&quot;&gt;
+            |     &lt;a data-imagelightbox=&quot;b&quot; href=&quot;img/full/4.jpg&quot;&gt;&lt;img src=&quot;img/thumb/4.jpg&quot;&gt;&lt;/a&gt;
+            |     &lt;a data-imagelightbox=&quot;b&quot; href=&quot;img/full/5.jpg&quot;&gt;&lt;img src=&quot;img/thumb/5.jpg&quot;&gt;&lt;/a&gt;
+            |     &lt;a data-imagelightbox=&quot;b&quot; href=&quot;img/full/6.jpg&quot;&gt;&lt;img src=&quot;img/thumb/6.jpg&quot;&gt;&lt;/a&gt;
+            |     &lt;!-- und alle anderen --&gt;
+            | &lt;/div&gt;
+    h5 JS
+    pre
+        code.language-js
+            | // loader
+            | var loaderOn = function () {
+            | 		$('body').append('<div class="lightbox-loader"><div></div></div>');
+            | 	},
+            | 	loaderOff = function () {
+            | 		$('.lightbox-loader').remove();
+            | 	},
+            | 
+            | // overlay
+            | 	overlayOn = function () {
+            | 		$('body').append('<div class="lightbox-overlay"></div>');
+            | 	},
+            | 	overlayOff = function () {
+            | 		$('.lightbox-overlay').remove();
+            | 	};
+            | 
+            | // Initiating Lightboxes
+            | $(document).ready(function(){
+            | 	// loader and overlay
+            | 	$( 'a[data-imagelightbox="b"]' ).imageLightbox({
+            | 		onStart: function(){ overlayOn(); },
+            | 		onEnd: function() { overlayOff(); loaderOff(); },
+            | 		onLoadStart: function() { loaderOn(); },
+            | 		onLoadEnd:	 function() { loaderOff(); }
+            | 	});
+            | });
+    h5 CSS
+    pre
+        code.language-css
+            | #imagelightbox {
+            |     cursor: pointer;
+            |     position: fixed;
+            |     z-index: 10000;
+            |     -ms-touch-action: none;
+            |         touch-action: none;
+            | }
+            | 
+            | @-webkit-keyframes clockwise {
+            |     0% {
+            |         -webkit-transform: rotate(0deg);
+            |             transform: rotate(0deg);
+            |     }
+            |     100% {
+            |         -webkit-transform: rotate(360deg);
+            |             transform: rotate(360deg);
+            |     }
+            | }
+            | 
+            | @keyframes clockwise {
+            |     0% {
+            |         -webkit-transform: rotate(0deg);
+            |             transform: rotate(0deg);
+            |     }
+            |     100% {
+            |         -webkit-transform: rotate(360deg);
+            |             transform: rotate(360deg);
+            |     }
+            | }
+            | @-webkit-keyframes anticlockwise {
+            |     0% {
+            |         -webkit-transform: rotate(360deg);
+            |             transform: rotate(360deg);
+            |     }
+            |     100% {
+            |         -webkit-transform: rotate(0deg);
+            |             transform: rotate(0deg);
+            |     }
+            | }
+            | @keyframes anticlockwise {
+            |     0% {
+            |         -webkit-transform: rotate(360deg);
+            |             transform: rotate(360deg);
+            |     }
+            |     100% {
+            |         -webkit-transform: rotate(0deg);
+            |             transform: rotate(0deg);
+            |     }
+            | }
+            | .lightbox-loader {
+            |     border-radius: 50%;
+            |     width: 2.5em;
+            |     height: 2.5em;
+            |     background-color: transparent;
+            |     position: fixed;
+            |     z-index: 10003;
+            |     top: 50%;
+            |     left: 50%;
+            |     padding: 0.625em;
+            |     margin: -1.25em 0 0 -1.25em;
+            | }
+            | .lightbox-loader div {
+            |     -webkit-animation: clockwise 1.5s linear infinite;
+            |         animation: clockwise 1.5s linear infinite;
+            |     display: block;
+            |     height: 2em;
+            |     position: relative;
+            |     width: 2em;
+            | }
+            | .lightbox-loader div, .lightbox-loader div:before, | .lightbox-loader div:after {
+            |     border: .2em solid transparent;
+            |     border-radius: 50%;
+            |     border-top-color: white;
+            |     margin: auto;
+            | }
+            | .lightbox-loader div:before, .lightbox-loader div:after {
+            |     content: '';
+            |     position: absolute;
+            | }
+            | .lightbox-loader div:before {
+            |     -webkit-animation: anticlockwise .9s linear infinite;
+            |         animation: anticlockwise .9s linear infinite;
+            |     top: -.6em;
+            |     right: -.6em;
+            |     bottom: -.6em;
+            |     left: -.6em;
+            | }
+            | .lightbox-loader div:after {
+            |     -webkit-animation: anticlockwise .66s linear infinite;
+            |         animation: anticlockwise .66s linear infinite;
+            |     top: .3em;
+            |     right: .3em;
+            |     bottom: .3em;
+            |     left: .3em;
+            | }
+            | 
+            | .lightbox-overlay {
+            |     background-color: rgba(0, 0, 0, 0.8);
+            |     position: fixed;
+            |     z-index: 9998;
+            |     top: 0;
+            |     right: 0;
+            |     bottom: 0;
+            |     left: 0;
+            | }

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="expires" content="43200">
+    <title>Imagelightbox - Beispiele</title>
+    <meta name="description" content="Beispiele zur Verwendung des imagelightbox plugins von osvaldas.info">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Myriam Frisano">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <!-- head end-->
+  <body>
+    <div class="container">
+      <h1>Generell</h1>
+      <p>Diese Lightbox verwendet <a href="https://github.com/osvaldasvalutis/imagelightbox" target="_blank">dieses Plugin</a>. Es muss unterhalb von jQuery eingefügt werden.</p>
+      <p>Die Lightbox lässt sich so steuern: touch, pfeiltasten, auf den Rand des Bildes klicken bei Beispiel 3 auf Pfeile klicken. Schliessen kann man indem man einfach ausserhalb des Bildes klickt. Es lassen sich mehrere Lightboxen auf einer Seite einbinden. Sie müssen einfach einen eigenen selektor haben und einzeln initiiert werden.</p>
+      <p>Klick auf die Buttons öffnen die Beispiele.</p>
+      <nav><span class="toggle-minimal">minimal</span><span class="toggle-overlay">overlay</span><span class="toggle-arrows">arrows</span></nav>
+      <div class="minimal to-be-toggled">
+        <h3>Demo</h3>
+        <div class="masonry"><a data-imagelightbox="a" href="img/full/1.jpg"><img src="img/thumb/1.jpg"></a><a data-imagelightbox="a" href="img/full/2.jpg"><img src="img/thumb/2.jpg"></a><a data-imagelightbox="a" href="img/full/3.jpg"><img src="img/thumb/3.jpg"></a><a data-imagelightbox="a" href="img/full/4.jpg"><img src="img/thumb/4.jpg"></a><a data-imagelightbox="a" href="img/full/5.jpg"><img src="img/thumb/5.jpg"></a><a data-imagelightbox="a" href="img/full/6.jpg"><img src="img/thumb/6.jpg"></a><a data-imagelightbox="a" href="img/full/7.jpg"><img src="img/thumb/7.jpg"></a><a data-imagelightbox="a" href="img/full/8.jpg"><img src="img/thumb/8.jpg"></a><a data-imagelightbox="a" href="img/full/9.jpg"><img src="img/thumb/9.jpg"></a>
+        </div>
+        <h3>Code</h3>
+        <h5>html</h5>
+        <pre><code class="language-markup">&lt;div class=&quot;masonry&quot;&gt;
+    &lt;a data-imagelightbox=&quot;a&quot; href="img/full/1.jpg"><img src="img/thumb/1.jpg"></a>
+    &lt;a data-imagelightbox=&quot;a&quot; href="img/full/2.jpg"><img src="img/thumb/2.jpg"></a>
+    &lt;a data-imagelightbox=&quot;a&quot; href="img/full/3.jpg"><img src="img/thumb/3.jpg"></a>
+    &lt;!-- und alle anderen --&gt;
+&lt;/div&gt;</code></pre>
+        <h5>js</h5>
+        <pre><code class="language-js"> 
+$(document).ready(function(){
+  $('a[data-imagelightbox="a"]').imageLightbox();      
+});</code></pre>
+        <h5>css</h5>
+        <pre><code class="language-css">#imagelightbox {
+    cursor: pointer;
+    position: fixed;
+    z-index: 10000;
+    touch-action: none;
+}</code></pre>
+      </div>
+      <div class="overlay to-be-toggled">
+        <h3>Demo</h3>
+        <div class="masonry"><a data-imagelightbox="b" href="img/full/10.jpg"><img src="img/thumb/10.jpg"></a><a data-imagelightbox="b" href="img/full/11.jpg"><img src="img/thumb/11.jpg"></a><a data-imagelightbox="b" href="img/full/12.jpg"><img src="img/thumb/12.jpg"></a><a data-imagelightbox="b" href="img/full/13.jpg"><img src="img/thumb/13.jpg"></a><a data-imagelightbox="b" href="img/full/14.jpg"><img src="img/thumb/14.jpg"></a><a data-imagelightbox="b" href="img/full/15.jpg"><img src="img/thumb/15.jpg"></a><a data-imagelightbox="b" href="img/full/16.jpg"><img src="img/thumb/16.jpg"></a><a data-imagelightbox="b" href="img/full/17.jpg"><img src="img/thumb/17.jpg"></a><a data-imagelightbox="b" href="img/full/18.jpg"><img src="img/thumb/18.jpg"></a>
+        </div>
+        <h3>Code</h3>
+        <h5>HTML</h5>
+        <pre><code class="language-markup">&lt;div class=&quot;masonry&quot;&gt;
+    &lt;a data-imagelightbox=&quot;b&quot; href=&quot;img/full/4.jpg&quot;&gt;&lt;img src=&quot;img/thumb/4.jpg&quot;&gt;&lt;/a&gt;
+    &lt;a data-imagelightbox=&quot;b&quot; href=&quot;img/full/5.jpg&quot;&gt;&lt;img src=&quot;img/thumb/5.jpg&quot;&gt;&lt;/a&gt;
+    &lt;a data-imagelightbox=&quot;b&quot; href=&quot;img/full/6.jpg&quot;&gt;&lt;img src=&quot;img/thumb/6.jpg&quot;&gt;&lt;/a&gt;
+    &lt;!-- und alle anderen --&gt;
+&lt;/div&gt;</code></pre>
+        <h5>JS</h5>
+        <pre><code class="language-js">// loader
+var loaderOn = function () {
+		$('body').append('<div class="lightbox-loader"><div></div></div>');
+	},
+	loaderOff = function () {
+		$('.lightbox-loader').remove();
+	},
+ 
+// overlay
+	overlayOn = function () {
+		$('body').append('<div class="lightbox-overlay"></div>');
+	},
+	overlayOff = function () {
+		$('.lightbox-overlay').remove();
+	};
+ 
+// Initiating Lightboxes
+$(document).ready(function(){
+	// loader and overlay
+	$( 'a[data-imagelightbox="b"]' ).imageLightbox({
+		onStart: function(){ overlayOn(); },
+		onEnd: function() { overlayOff(); loaderOff(); },
+		onLoadStart: function() { loaderOn(); },
+		onLoadEnd:	 function() { loaderOff(); }
+	});
+});</code></pre>
+        <h5>CSS</h5>
+        <pre><code class="language-css">#imagelightbox {
+    cursor: pointer;
+    position: fixed;
+    z-index: 10000;
+    -ms-touch-action: none;
+        touch-action: none;
+}
+ 
+@-webkit-keyframes clockwise {
+    0% {
+        -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+ 
+@keyframes clockwise {
+    0% {
+        -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes anticlockwise {
+    0% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    }
+}
+@keyframes anticlockwise {
+    0% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    }
+}
+.lightbox-loader {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: transparent;
+    position: fixed;
+    z-index: 10003;
+    top: 50%;
+    left: 50%;
+    padding: 0.625em;
+    margin: -1.25em 0 0 -1.25em;
+}
+.lightbox-loader div {
+    -webkit-animation: clockwise 1.5s linear infinite;
+        animation: clockwise 1.5s linear infinite;
+    display: block;
+    height: 2em;
+    position: relative;
+    width: 2em;
+}
+.lightbox-loader div, .lightbox-loader div:before, | .lightbox-loader div:after {
+    border: .2em solid transparent;
+    border-radius: 50%;
+    border-top-color: white;
+    margin: auto;
+}
+.lightbox-loader div:before, .lightbox-loader div:after {
+    content: '';
+    position: absolute;
+}
+.lightbox-loader div:before {
+    -webkit-animation: anticlockwise .9s linear infinite;
+        animation: anticlockwise .9s linear infinite;
+    top: -.6em;
+    right: -.6em;
+    bottom: -.6em;
+    left: -.6em;
+}
+.lightbox-loader div:after {
+    -webkit-animation: anticlockwise .66s linear infinite;
+        animation: anticlockwise .66s linear infinite;
+    top: .3em;
+    right: .3em;
+    bottom: .3em;
+    left: .3em;
+}
+ 
+.lightbox-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}</code></pre>
+      </div>
+      <div class="arrows to-be-toggled">
+        <h3>Demo</h3>
+        <div class="masonry"><a data-imagelightbox="c" href="img/full/19.jpg"><img src="img/thumb/19.jpg"></a><a data-imagelightbox="c" href="img/full/20.jpg"><img src="img/thumb/20.jpg"></a><a data-imagelightbox="c" href="img/full/21.jpg"><img src="img/thumb/21.jpg"></a><a data-imagelightbox="c" href="img/full/22.jpg"><img src="img/thumb/22.jpg"></a><a data-imagelightbox="c" href="img/full/23.jpg"><img src="img/thumb/23.jpg"></a><a data-imagelightbox="c" href="img/full/24.jpg"><img src="img/thumb/24.jpg"></a><a data-imagelightbox="c" href="img/full/25.jpg"><img src="img/thumb/25.jpg"></a><a data-imagelightbox="c" href="img/full/26.jpg"><img src="img/thumb/26.jpg"></a><a data-imagelightbox="c" href="img/full/27.jpg"><img src="img/thumb/27.jpg"></a>
+        </div>
+        <h3>Code</h3>
+        <h5>HTML</h5>
+        <pre><code class="language-markup">&lt;div class=&quot;masonry&quot;&gt;
+    &lt;a data-imagelightbox=&quot;c&quot; href=&quot;img/full/7.jpg&quot;&gt;&lt;img src=&quot;img/thumb/7.jpg&quot;&gt;&lt;/a&gt;
+    &lt;a data-imagelightbox=&quot;c&quot; href=&quot;img/full/8.jpg&quot;&gt;&lt;img src=&quot;img/thumb/8.jpg&quot;&gt;&lt;/a&gt;
+    &lt;a data-imagelightbox=&quot;c&quot; href=&quot;img/full/9.jpg&quot;&gt;&lt;img src=&quot;img/thumb/9.jpg&quot;&gt;&lt;/a&gt;
+    &lt;!-- und alle anderen --&gt;
+&lt;/div&gt;</code></pre>
+        <h5>JS</h5>
+        <pre><code class="language-js">// loader
+var loaderOn = function () {
+		$('body').append('<div class="lightbox-loader"><div></div></div>');
+	},
+	loaderOff = function () {
+		$('.lightbox-loader').remove();
+	},
+ 
+// overlay
+	overlayOn = function () {
+		$('body').append('<div class="lightbox-overlay"></div>');
+	},
+	overlayOff = function () {
+		$('.lightbox-overlay').remove();
+	},
+ 
+// arrows
+	arrowsOn = function (instance, selector) {
+		var $arrows = $('<span class="lightbox-left lightbox-arrow">left</span><span class="lightbox-right lightbox-arrow">right</span>"');
+		$arrows.appendTo('body');
+		$arrows.on('click touchend', function (e) {
+			e.preventDefault();
+			var $this = $(this),
+				$target = $(selector + '[href="' + $('#imagelightbox').attr('src') + '"]'),
+				index = $target.index(selector);
+ 
+			if ($this.hasClass('lightbox-left')) {
+				index = index - 1;
+				if (!$(selector).eq(index).length)
+					index = $(selector).length;
+			} else {
+				index = index + 1;
+				if (!$(selector).eq(index).length)
+					index = 0;
+			}
+			instance.switchImageLightbox(index);
+			return false;
+		});
+	},
+	arrowsOff = function () {
+		$('.lightbox-arrow').remove();
+	};
+ 
+// Initiating Lightboxes
+$(document).ready(function(){
+   // arrows, loader and overlay
+	var selectorC = 'a[data-imagelightbox="c"]';
+	var instanceC = $(selectorC).imageLightbox({
+		onStart: function () { overlayOn(); arrowsOn(instanceC, selectorC);},
+		onEnd: function () { overlayOff(); arrowsOff(); loaderOff();},
+		onLoadStart: function () { loaderOn(); },
+		onLoadEnd: function () { loaderOff(); $('.lightbox-arrow').css('display', 'block'); }
+	});
+	});
+});</code></pre>
+        <h5>CSS</h5>
+        <pre><code class="language-css">#imagelightbox {
+    cursor: pointer;
+    position: fixed;
+    z-index: 10000;
+    -ms-touch-action: none;
+        touch-action: none;
+}
+ 
+@-webkit-keyframes clockwise {
+    0% {
+        -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+ 
+@keyframes clockwise {
+    0% {
+        -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes anticlockwise {
+    0% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    }
+}
+@keyframes anticlockwise {
+    0% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    }
+}
+.lightbox-loader {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: transparent;
+    position: fixed;
+    z-index: 10003;
+    top: 50%;
+    left: 50%;
+    padding: 0.625em;
+    margin: -1.25em 0 0 -1.25em;
+}
+.lightbox-loader div {
+    -webkit-animation: clockwise 1.5s linear infinite;
+        animation: clockwise 1.5s linear infinite;
+    display: block;
+    height: 2em;
+    position: relative;
+    width: 2em;
+}
+.lightbox-loader div, .lightbox-loader div:before, | .lightbox-loader div:after {
+    border: .2em solid transparent;
+    border-radius: 50%;
+    border-top-color: white;
+    margin: auto;
+}
+.lightbox-loader div:before, .lightbox-loader div:after {
+    content: '';
+    position: absolute;
+}
+.lightbox-loader div:before {
+    -webkit-animation: anticlockwise .9s linear infinite;
+        animation: anticlockwise .9s linear infinite;
+    top: -.6em;
+    right: -.6em;
+    bottom: -.6em;
+    left: -.6em;
+}
+.lightbox-loader div:after {
+    -webkit-animation: anticlockwise .66s linear infinite;
+        animation: anticlockwise .66s linear infinite;
+    top: .3em;
+    right: .3em;
+    bottom: .3em;
+    left: .3em;
+}
+ 
+.lightbox-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.lightbox-arrow {
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  position: fixed;
+  top: calc(50% - 15px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 9999;
+}
+.lightbox-arrow:hover {
+  cursor: pointer;
+}
+.lightbox-left {
+  left: 60px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+}
+ 
+.lightbox-right {
+  right: 60px;
+  border-right: 5px solid white;
+  border-top: 5px solid white;
+}</code></pre>
+      </div>
+    </div>
+    <!-- development (do not ship this)-->
+    <!-- script(src="/js/jquery-2.2.3.js")-->
+    <!-- script(src="/js/prism.js")-->
+    <!-- script(src="/js/imagelightbox.js")-->
+    <!-- script(src="/js/main.js")-->
+    <!-- production (compile scripts.min.js before shipping)-->
+    <script src="js/scripts.min.js"></script>
+  </body>
+  <!-- body end-->
+</html>
+<!-- html end-->

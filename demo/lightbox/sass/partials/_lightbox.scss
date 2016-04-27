@@ -1,0 +1,136 @@
+#imagelightbox {
+    cursor: pointer;
+    position: fixed;
+    z-index: 10000;
+    touch-action: none;
+}
+
+@keyframes clockwise {
+  0%  { transform: rotate(0deg) }
+  100%{ transform: rotate(360deg) }
+}
+
+@keyframes anticlockwise {
+  0%  { transform: rotate(360deg) }
+  100%{ transform: rotate(0deg) }
+}
+
+.lightbox-loader {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: transparent;
+    position: fixed;
+    z-index: 10003;
+    top: 50%;
+    left: 50%;
+    padding: 0.625em;
+    margin: -1.25em 0 0 -1.25em;
+
+    div {
+        animation: clockwise 1.5s linear infinite;
+        display: block;
+        height: 2em;
+        position: relative;
+        width: 2em;
+
+        &,
+        &:before,
+        &:after {
+            border: .2em solid transparent;
+            border-radius: 50%;
+            border-top-color: $white;
+            margin: auto;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+        }
+
+        &:before {
+            animation: anticlockwise .9s linear infinite;
+            top: -.6em;
+            right: -.6em;
+            bottom: -.6em;
+            left: -.6em;
+        }
+
+        &:after {
+            animation: anticlockwise .66s linear infinite;
+            top: .3em;
+            right: .3em;
+            bottom: .3em;
+            left: .3em;
+        }
+    }
+}
+
+.lightbox-overlay {
+    background-color: rgba(0,0,0, .8);
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.lightbox-arrow{
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    position: fixed;
+    top: calc(50% - 15px);
+    transform: rotate(45deg);
+    z-index: 9999;
+
+    &:hover{
+        cursor: pointer;
+        opacity: .8;
+    }
+}
+
+.lightbox-left{
+    left: 60px;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.lightbox-right{
+    right: 60px;
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+}
+
+.masonry{
+    @include flexbox(row, wrap, flex-start, flex-start);
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding: 15px;
+    column-count: 3;
+    column-gap: 7px;
+    background: black;
+
+    a{
+        width: calc((100% / 3) - 20px );
+        padding: 0;
+        margin: 10px;
+        line-height: 0;
+        font-size: 0;
+
+        img{
+            width: 100%;
+            opacity: .8;
+            transition: .3s all ease;
+        }
+
+        &:hover{
+            img{
+                opacity: 1;
+            }
+        }
+    }
+}
