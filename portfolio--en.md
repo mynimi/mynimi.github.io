@@ -6,14 +6,6 @@ id: portfolio
 description: My Portfolio
 permalink: /en/portfolio/
 ---
-<div class="filtering">
-    <span class="filter" data-filter="all">Show All</span> &bull;
-    <span class="filter" data-filter=".coding">Coding</span> &bull;
-    <span class="filter" data-filter=".design">Design</span> &bull;
-    <span class="filter" data-filter=".fractal">Fractal Art</span> &bull;
-    <span class="filter" data-filter=".photography">Fotography</span>
-</div>
-
 <div class="portfolio-wrapper" id="container">
     {% assign portfolio = site.portfolio | sort: "date" | reverse | where:"lang", page.lang %}
     {% for item in portfolio %}

@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     'use strict';
-    
+
     // open external links in new window
     $("a[href^='http']").attr("target","_blank");
 
@@ -23,16 +23,12 @@ $(document).ready(function () {
             headerHeight = $('.header').outerHeight(),
             parentWidth = $('div.highlighter-rouge').parent().width(),
 			vw = $(window).width();
-  
+
         $('div.highlighter-rouge').css({
-            'margin-left': -(vw / 2 - parentWidth / 2), 
-            'margin-right': -(vw / 2 - parentWidth / 2) 
+            'margin-left': -(vw / 2 - parentWidth / 2),
+            'margin-right': -(vw / 2 - parentWidth / 2)
         });
         
-        // Instantiate MixItUp:
-        $('#container').mixItUp();
-
-
         // hide backtotop
         if ($('nav').hasClass('open')) {
             $('.backtotop').addClass('hidden');

@@ -1,16 +1,25 @@
-$bg: 'halfapx_fractal';
+$bg: 'header';
 
 .header {
     width: 100%;
     position: relative;
     background: {
-        image: url(../media/#{$bg}.jpg);
+        image: url(../img/#{$bg}.jpg);
         color: $background-color;
         size: cover;
         position: center center;
         attachment: fixed;
     }
     text-align: center;
+    .header-img{
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
     .container {
         padding-top: 50px;
         max-width: 300px;
@@ -35,8 +44,8 @@ $bg: 'halfapx_fractal';
 .triangle_reverse_container {
     @include paddinghack(100%, 770, 63, '.triangle_reverse');
     .triangle_reverse {
-        fill: white;
-        stroke: white;
+        fill: $white;
+        stroke: $white;
         width: 100%;
         stroke-width: 2px;
     }

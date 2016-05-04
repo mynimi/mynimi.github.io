@@ -32,17 +32,18 @@
 
 .btn {
     color: $color-2;
-    border: 2px solid currentColor;
+    border: 2px solid currentColor !important;
     background: transparent;
     padding: 7px 13px;
     line-height: 2.5;
     margin: 7px;
-    font-weight: $main-font-weight;
-    font-family: $code-font;
+    font-weight: $headings-font-weight;
+    white-space: nowrap;
 
     &:hover {
         color: $color-3;
         cursor: pointer;
+        border: 2px solid currentColor !important;
     }
 }
 
@@ -235,7 +236,7 @@ p + {
             }
         }
         .month{
-            font-weight: 300;
+            font-weight: light;
             text-transform: uppercase;
             display: block;
             width: 100%;
@@ -296,19 +297,34 @@ p + {
 }
 
 .subtitle{
-    font-family: $code-font;
     font-size: 1.6em;
 }
 
 p{
-    font-size: 23px;
+    font-size: 19px;
 }
 
 b, strong{
-    font-weight: 500;
+    font-weight: bold;
 }
 
 // ensuring that there is still some space, even after minification
 .MathJax{
     padding: 0 5px !important;
+}
+
+.content{
+     a{
+         border-bottom: 1px solid $color-3;
+
+        &:hover{
+            border-color: transparent;
+        }
+    }
+
+    h1, h2, h3, h4, h5{
+        a{
+            border-color: transparent;
+        }
+    }
 }

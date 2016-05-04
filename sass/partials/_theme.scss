@@ -66,23 +66,6 @@
     }
 }
 
-// mixitup
-#container .mix{
-	display: none;
-}
-
-.filtering{
-    text-align: center;
-    padding-bottom: 40px;
-
-    span{
-      &:hover{
-        cursor: pointer;
-      }
-    }
-}
-
-
 .portfolio-wrapper{
     @include flexbox(row, wrap, flex-start, stretch);
 
@@ -97,7 +80,6 @@
         h3, h6{
             font:{
                 family: $main-font;
-                weight: normal;
             }
             padding: 3px;
         }

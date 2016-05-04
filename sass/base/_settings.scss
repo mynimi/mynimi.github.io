@@ -1,11 +1,9 @@
 // Shortcuts
 //-----------
 $noborder: 0 solid transparent;
-$gaspar: "Gaspar", "Vollkorn", "Roboto Slab", "Georgia", serif;
-$courier-prime: 'Courier Prime', 'Courier Prime Sans', 'Courier Prime Code', 'Courier', 'Courier New', monospace;
 $courier-prime-code: 'Courier Prime Code', 'Courier Prime Sans', 'Courier Prime', 'Courier', 'Courier New', monospace;
 $special-elite: 'Special Elite', monospace;
-$roboto: "Roboto", "Lato", "Open Sans", "Calibri", sans-serif;
+$fira-sans: "Fira Sans", "Lato", "Open Sans", "Calibri", sans-serif;
 
 // SETTINGS FOR BASE-STYLE
 //-------------------
@@ -54,10 +52,10 @@ $link-hover-color: $color-2;
 // String Variables (use strings as values | for Font Variables: Don't forget to include the fonts)
 //------------------------------------------
 
-$main-font: $roboto;
+$main-font: $fira-sans;
 
 // set to $main-font if you don't want your headings to use another font
-$headings-font: $courier-prime;
+$headings-font: $fira-sans;
 
 // use values from text-transform [none|capitalize|uppercase|lowercase|initial|inherit]
 $headings-text-transform: none;
@@ -67,13 +65,13 @@ $code-font: $courier-prime-code;
 // size variables (use numbers as values (units as indicated ))
 
 // font-weights, alternatively use: [light, normal, bold]
-$main-font-weight: 300;
+$main-font-weight: 400;
 
 // set $main-font-weight if you don't want your headings to use another font-weight
-$headings-font-weight: 400;
+$headings-font-weight: 300;
 
 // use px here
-$root-font-size: 19px;
+$root-font-size: 17px;
 
 // do not add a unit here
 $basic-line-height: 1.6;
@@ -107,9 +105,9 @@ $definition-list-border: 1px solid rgba(black, 0.1);
 
 // PROJECT SETTINGS
 //------------------
-$nav-bg: $color-3;
-$responsive-nav-bg: $color-1;
-$nav-color: $white;
+$nav-bg: $almost-white;
+$responsive-nav-bg: $color-3;
+$nav-color: $black;
 $nav-toggle: 720px;
 
 $footer-bg: $color-2;

@@ -4,17 +4,7 @@ html(lang="{{page.lang}}")
 
     body.page.post(class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}")
         include includes/nav.jade
-        header.header
-            .container
-                {% if page.lang == "de" %}
-                a(href="/") 
-                    include includes/logo_clean.jade
-                {% else %}
-                a(href="/en/")
-                    include includes/logo_clean.jade
-                {% endif %}
-            // .container end
-        // header end
+        include includes/header.jade
 
         div(class="triangle_reverse_container")
             svg(version="1.1", viewBox="0 0 770 63", class="triangle_reverse")

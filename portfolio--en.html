@@ -1,22 +1,22 @@
----
-title: Portfolio
+<hr>
+<p>title: Portfolio
 group: navigation-04
-lang: de
+lang: en
 id: portfolio
-description: Übersicht über mein Portfolio
----
+description: My Portfolio</p>
+<h2 id="permalink-en-portfolio-">permalink: /en/portfolio/</h2>
 <div class="portfolio-wrapper" id="container">
-    {% assign portfolio = site.portfolio | sort: "date" | reverse | where:"lang", page.lang %}
+    {% assign portfolio = site.portfolio | sort: &quot;date&quot; | reverse | where:&quot;lang&quot;, page.lang %}
     {% for item in portfolio %}
         <div class="theme-wrapper mix {{ item.category }}">
             {% if item.title or item.item-preview %}
                 <a href="{{ item.url | remove: '/index.html' }}">
                     {% if item.item-preview%}
-                        {% if item.item-preview contains '.png'%}
-                            {% assign featimg = item.item-preview | replace: '.png', '' %}
+                        {% if item.item-preview contains &#39;.png&#39;%}
+                            {% assign featimg = item.item-preview | replace: &#39;.png&#39;, &#39;&#39; %}
                             <img src="{{ site.img_dir }}/{{ featimg | append: '-450x450.png' }}" alt="{{ image.alttext }}">
-                        {% elsif item.item-preview contains '.jpg'%}
-                            {% assign featimg = item.item-preview | replace: '.jpg', '' %}
+                        {% elsif item.item-preview contains &#39;.jpg&#39;%}
+                            {% assign featimg = item.item-preview | replace: &#39;.jpg&#39;, &#39;&#39; %}
                             <img src="{{ site.img_dir }}/{{ featimg | append: '-450x450.jpg' }}" alt="{{ image.alttext }}">
                         {% endif %}
                     {% endif %}
