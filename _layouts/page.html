@@ -131,7 +131,9 @@ MathJax.Hub.Config({
           <article>{% if page.page-title == "yes" %}
             <h1 class="title">{{ page.title }}</h1>{% endif %}
             {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
-            <div class="content">{{ content }}</div>
+            <div class="content">{{ content }}</div>{% if page.enable-comments == "yes" %}
+            {% include disqus.html %}
+            {% endif %}
           </article>
           <!-- article end-->
         </div>

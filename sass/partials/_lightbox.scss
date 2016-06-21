@@ -227,18 +227,18 @@
     padding: 15px;
     column-count: 3;
     column-gap: 7px;
-    
+
     a{
         width: calc((100% / 3) - 20px );
         padding: 0;
         margin: 10px;
         line-height: 0;
         font-size: 0;
+        border-bottom: 0 solid transparent;
 
         img{
             width: 100%;
             opacity: .8;
-            border-radius: 50%;
             transition: .3s all ease;
         }
 

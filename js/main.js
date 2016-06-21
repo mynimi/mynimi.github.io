@@ -28,7 +28,7 @@ $(document).ready(function () {
             'margin-left': -(vw / 2 - parentWidth / 2),
             'margin-right': -(vw / 2 - parentWidth / 2)
         });
-        
+
         // hide backtotop
         if ($('nav').hasClass('open')) {
             $('.backtotop').addClass('hidden');

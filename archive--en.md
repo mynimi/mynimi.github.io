@@ -1,5 +1,5 @@
 ---
-group: "navigation-04"
+group: navigation-06
 title: Archive
 lang: en
 id: archive

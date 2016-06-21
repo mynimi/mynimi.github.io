@@ -31,7 +31,7 @@ html(lang="{{page.lang}}")
                                  {% for tag in page.tags limit:10 offset:0 %} <a href="{{ site.tag_dir}}/{{ tag }}">{{ tag }}</a> {% endfor %}
                             {% endif %}
                         .content {{ content }}
-
+                        
                         {% include disqus.html %}
                         
                         {% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}

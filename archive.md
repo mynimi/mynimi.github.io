@@ -1,6 +1,6 @@
 ---
 permalink: /archiv/
-group: "navigation-04"
+group: navigation-06
 title: Archiv
 lang: de
 id: archive

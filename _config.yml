@@ -26,6 +26,9 @@ collections:
     themes:
         output: true
         permalink: /themes/:path/
+    brushlettering:
+        output: true
+        permalink: /brushlettering/:path/
 defaults:
   -
     scope:
@@ -64,7 +67,12 @@ defaults:
       type: themes
     values:
       layout: theme
-
+  -
+    scope:
+      path: ""
+      type: brushlettering
+    values:
+      layout: lettering
 exclude: [
 .git,
 .gitignore,

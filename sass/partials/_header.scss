@@ -41,6 +41,31 @@ $bg: 'header';
         }
     }
 }
+
+.blheader {
+    background-image: url(../media/bl_wall.jpg);
+
+    svg{
+        padding: 60px 0 10px;
+        fill: white;
+        max-width: 600px;
+        width: 80%;
+
+        .st0{
+            font-family:'Fourteen Dreams';
+        }
+        .st1{
+            font-size:168px;
+        }
+        .st2{
+            letter-spacing:5;
+        }
+        .st3{
+            letter-spacing:-3;
+        }
+    }
+}
+
 .triangle_reverse_container {
     @include paddinghack(100%, 770, 63, '.triangle_reverse');
     .triangle_reverse {

@@ -19,6 +19,9 @@ html(lang="{{page.lang}}")
                         {% endif %}
                         {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
                         .content {{ content }}
+                        {% if page.enable-comments == "yes" %}
+                        {% include disqus.html %}
+                        {% endif %}
                     // article end
                 // .container end
             // section end

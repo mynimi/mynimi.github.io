@@ -5,10 +5,10 @@
 {% endif %}
 
 {% for gallery in page.gallery %}
-    {% for image in gallery.images %}
-        <a href="{{ site.img_dir | prepend: base }}/{{ image.filename }}" data-imagelightbox="f" class="noline">
-            <img src="{{ site.img_dir | prepend: base }}/{{ image.filename }}" alt="{{ image.alttext }}">
-        </a>
-        <br>
-    {% endfor %}
+{% for image in gallery.images %}
+<a href="{{ site.img_dir | prepend: base }}/{{ image.filename }}" data-imagelightbox="f" class="noline">
+    <img src="{{ site.img_dir | prepend: base }}/{{ image.filename }}" alt="{{ image.alttext }}">
+</a>
+<br>
+{% endfor %}
 {% endfor %}

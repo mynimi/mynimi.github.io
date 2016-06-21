@@ -1,5 +1,5 @@
 ---
-group: "navigation-05"
+group: navigation-07
 title: Contact
 lang: en
 id: contact

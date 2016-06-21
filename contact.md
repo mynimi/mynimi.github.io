@@ -1,6 +1,6 @@
 ---
 permalink: /kontakt/
-group: "navigation-05"
+group: navigation-07
 title: Kontakt
 lang: de
 id: contact
