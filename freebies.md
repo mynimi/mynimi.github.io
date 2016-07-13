@@ -12,6 +12,17 @@ Auf mich verweisen ist nicht nötig, freut mich aber natürlich.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
+## Lettering Übungsbogen
+
+#### Kleinbuchstaben
+[![practice lowercase]({{ site.img_dir }}/practice-lowercase.jpg)]({{ site.img_dir }}/practice-lowercase.jpg)
+
+Lettering Übungbögen für meine Kleinbuchstaben. Die Bögen kommen als Bilder, die man ausdrucken kann, oder zum Beispiel auf's iPad laden. Geeignet für Wasserfarben mit einem 00 Pinsel und die meisten Fude Pens.
+Falls in Procreate damit geübt wird, den Pinsel den ich verwendet habe ist der Pointed Pen (etwas runterscrollen um herunterzuladen)
+Ordner enthält auch ein DIY-File, damit lässt sich ein personalisierter Übungsbogen herstellen.
+
+<a href="http://bit.ly/halfapxPracticeLowercase" class="btn"><i class="fa fa-download"></i> Download</a>
+
 ## Procreate Brushes
 
 ### Instalation Tutorial

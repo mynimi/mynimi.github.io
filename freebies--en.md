@@ -13,6 +13,16 @@ Crediting is optional but much appreciated.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
+## Lettering Practice Sheets
+
+#### Lowercase
+[![practice lowercase]({{ site.img_dir }}/practice-lowercase.jpg)]({{ site.img_dir }}/practice-lowercase.jpg)
+
+These are practice Sheets for my lowercase letters. They come as image files. You can either print them out and letter using fude pens or watercolor or you could import them into procreate. In case you go with procreate, I did make them using my Pointed Pen Brush (download below).
+There is also a DIY-File. It can be used to custom build a practice sheet.
+
+<a href="http://bit.ly/halfapxPracticeLowercase" class="btn"><i class="fa fa-download"></i> Download</a>
+
 ## Procreate Brushes
 
 ### Installation Tutorial
