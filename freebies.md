@@ -51,6 +51,13 @@ Diese Pinsel basieren auf handgezeichneten Formen. Das Set enthält einige einfa
 
 <a href="http://bit.ly/halfapxHanddrawnBrushes" class="btn"><i class="fa fa-download"></i> Download</a>
 
+### Character Lettering
+[![character]({{ site.img_dir }}/characterlettering.jpg)]({{ site.img_dir }}/characterlettering.jpg)
+
+Diese Pinsel haben alle einen bestimmten Charakter. Artsy und Lush gehören definitiv zu meinen Favoriten. Sie sind etwas funky, haben aber immernoch den grossen Strichstärkenkontrast, den ich so sehr liebe.
+
+<a href="http://bit.ly/halfapxCharacterBrushes" class="btn"><i class="fa fa-download"></i> Download</a>
+
 ## Other Resources
 
 ### Dot Grids and Lines

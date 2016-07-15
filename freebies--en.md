@@ -50,6 +50,12 @@ These Brushes have custom handdrawn shapes to them. This set features some basic
 
 <a href="http://bit.ly/halfapxHanddrawnBrushes" class="btn"><i class="fa fa-download"></i> Download</a>
 
+### Character Lettering
+[![character]({{ site.img_dir }}/characterlettering.jpg)]({{ site.img_dir }}/characterlettering.jpg)
+
+All of these brushes have quite a unique character. Artsy and lush are some of my favorites, when I go for a playful look. They are a little funky but still have the nice high contrast between thick and thin strokes, which I absolutely love.
+
+<a href="http://bit.ly/halfapxCharacterBrushes" class="btn"><i class="fa fa-download"></i> Download</a>
 
 ## Other Resources
 

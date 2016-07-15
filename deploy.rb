@@ -18,8 +18,4 @@
 `git push -f origin master`
 
 # Checkout the source branch:
-# `git checkout source`
-
-#Push all branches to origin:
-# `git push --all origin`
-
+`git checkout source`
