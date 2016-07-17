@@ -44,7 +44,7 @@ MathJax.Hub.Config({
             </svg></a>{% endif %}
           <div class="responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
             {% assign group = 'navigation' %}
-            {% include pages_list.html %}
+            {% include pages_list.html %}<a href="https://www.etsy.com/shop/halfapx">Shop</a>
           </div>
           <!-- .responsive end-->
         </div>

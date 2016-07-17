@@ -9,6 +9,8 @@ enable-comments: yes
 ---
 Some Free Stuff for you.
 
+There's a lot of pretty cool stuff here. Some stuff that's a little bit cooler can be found in my [Etsy Store](https://www.etsy.com/shop/halfapx)
+
 Crediting is optional but much appreciated.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
