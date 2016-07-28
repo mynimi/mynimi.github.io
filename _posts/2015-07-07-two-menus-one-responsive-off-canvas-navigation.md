@@ -15,7 +15,7 @@ Suprisingly, this proved to be not as easy as I initially had thought. But it wa
 <p data-height="266" data-theme-id="7132" data-slug-hash="oXqoJR" data-default-tab="result" data-user="mynimi" class='codepen'>See the Pen <a href='http://codepen.io/mynimi/pen/oXqoJR/'>Two Menus, One responsive Off-Canvas</a> by Myri (<a href='http://codepen.io/mynimi'>@mynimi</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-### Markup
+# Markup
 We start with general markup. As already said in another tutorial I usually place my menus within a header so that's what I did here as well. Then we have one container for both menus and each menu in a separate container with a list inside, since this is a dropdown.
 The toggle links to open the off canvas navs as well as the triangles to toggle the sub menues are going to be added via jQuery.
 I wanted the main menu to be aligned on the right and the toggle button on the left. To achieve that I had my toggle in a separate ul with the class `first` and the main menu in a list with the class `second`
@@ -131,7 +131,7 @@ And the compiled HTML of that:
 <!-- /header-->
 ```
 
-### jQuery
+# jQuery
 We will work on toggles with jQuery. So add jQuery before you add the following script
 
 ```js
@@ -169,7 +169,7 @@ $(document).ready(function() {
 
 As soon as that's done, we can add the styles.
 
-### Styling
+# Styling
 As always I will use Sass. I use variables for the settings so feel free to play around.
 
 Comments will go a little more into detail what everything does

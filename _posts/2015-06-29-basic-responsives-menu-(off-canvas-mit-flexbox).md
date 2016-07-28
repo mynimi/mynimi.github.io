@@ -18,7 +18,7 @@ Ich verwende in diesem Tutorial jeweils [Font-Awesome](http://fontawesome.io/) u
 
 Font Awesome verwende ich für das Menu-Icon und jQuery um das Off-Canvas-Menu per Klick zu aktivieren.
 
-### Markup
+# Markup
 Ich verwende meine Menus meist irgendwo im Header. Aus diesem Grund, habe ich beschlossen, das ganze in einem Header zu machen. Da ich den Menu-Toggle-Button ausserhalb der Navigation platziere und der nicht einfach so in der Luft hängen soll. Die Links platziere ich in einem `nav`-Element. Toggle-Links gibt es zwei. Wenn diese geklickt werden, wird das Menu entweder sichtbar, oder unsichtbar. Das ist jeweils bloss für die responsive Ansicht, aber sie sind wichtig. Den inneren toggle-Link versehe ich mit einem _X_, den äusseren mit dem Hamburger Icon und einem Text der "Menu" sagt. Ganz simpel.
 
 Und damit es noch ein bisschen schneller geht, schreib ich das alles in jade
@@ -54,7 +54,7 @@ in HTML schaut das dann so aus:
 </header>
 ```
 
-### Styling
+# Styling
 Styling wird mit Flexbox erledigt. Kommentare erläutern etwas mehr. Ich mach das in Sass, weil ich einfach nie wieder in meinem Leben CSS ohne Superkräfte verwenden werde.
 
 ```scss
@@ -201,7 +201,7 @@ und CSS schaut dann nach Sass und Autoprefixer so aus:
 ```
 
 
-### und ein Hauch jQuery
+# und ein Hauch jQuery
 Damit das Menu auch responsive funktioniert, müssen wir nun nur noch einen klick-Event für den toggle-link schreiben, bei dem wir die Klasse `active` zuordnen.
 
 ```js

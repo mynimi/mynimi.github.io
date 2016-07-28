@@ -1,48 +1,18 @@
 nav.open
-    .menu
-        .left
-            {% if page.lang == "de" %}
-            a(href="/", class="homelink")
-                svg#hap-icon.logo(xmlns:svg="http://www.w3.org/2000/svg", xmlns="http://www.w3.org/2000/svg", version="1.1", viewBox="0 0 478.36136 407.60321")
-                    g(transform="translate(-370.26663,-281.64625)")
-                        g.hap(transform="translate(2.1898424,0)")
-                            path.icon.icon-left(d="M 514.19481,664.8729 590.21786,581.24053 546.2964,472.16361 622.1262,423.78152 605.41204,324.77154 449.38297,293.15295 379.58348,637.59453 Z")
-                            path.icon.icon-right(d="m 836.64362,678.72265 -214.09408,0.70775 57.57731,-97.25601 -65.03429,-97.96636 64.50319,-62.69229 -36.35501,-93.59836 192.2411,-0.6355 z")
-            {% else %}
-            a(href="/en", class="homelink")
-                svg#hap-icon.logo(xmlns:svg="http://www.w3.org/2000/svg", xmlns="http://www.w3.org/2000/svg", version="1.1", viewBox="0 0 478.36136 407.60321")
-                    g(transform="translate(-370.26663,-281.64625)")
-                        g.hap(transform="translate(2.1898424,0)")
-                            path.icon.icon-left(d="M 514.19481,664.8729 590.21786,581.24053 546.2964,472.16361 622.1262,423.78152 605.41204,324.77154 449.38297,293.15295 379.58348,637.59453 Z")
-                            path.icon.icon-right(d="m 836.64362,678.72265 -214.09408,0.70775 57.57731,-97.25601 -65.03429,-97.96636 64.50319,-62.69229 -36.35501,-93.59836 192.2411,-0.6355 z")
-            {% endif %}
-            .responsive
-                span.toggle
-                    i.fa.fa-close
-                {% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
-                {% assign group = 'navigation' %}
-                {% include pages_list.html %}
-                a(href="https://www.etsy.com/shop/halfapx") Shop
+    .menu.container
+        .left.responsive
+            span.toggle
+                i.fa.fa-close
+            {% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
+            {% assign group = 'navigation' %}
+            {% include pages_list.html %}
+            a(href="https://www.etsy.com/shop/halfapx") Shop
             // .responsive end
         .center
             span.toggle
                 | Menu
         .right
-            span.backtotop up?
-            {% assign portfolio = site.portfolio | where:"name", page.name | sort: 'path' %}{% for item in portfolio %}<li class="lang"><a href="{{ item.url | replace: "index.html", "" }}" class="{{ item.lang }}">{{ item.lang }}</a></li>{% endfor %}  
             {% assign pages=site.pages | where:"id", page.id | sort: 'path' %}{% for page in pages %}<a href="{{ page.url | replace: "index.html", "" }}" class="{{ page.lang }}">{{ page.lang }}</a>{% endfor %}      
-            {% assign themes = site.themes | where:"name", page.name | sort: 'path' %}{% for theme in themes %}<li class="lang"><a href="{{ theme.url | replace: "index.html", "" }}" class="{{ theme.lang }}">{{ theme.lang }}</a></li>{% endfor %}       
-            {% assign posts=site.posts | where:"name", page.name %}{% for post in posts %}<li class="lang"><a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">{{ post.lang }}</a></li>{% endfor %}    
-            span#trigger
-                i.fa.fa-eye-slash
+            {% assign posts=site.posts | where:"name", page.name %}{% for post in posts %}<a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">{{ post.lang }}</a>{% endfor %}    
     // .menu end
-    .svg_wrapper
-        svg(class="triangle", version="1.1", viewBox="0 0 769.4693 45.8125")
-            path(id="ruffle")
-                animate(
-                    attributeName="d",
-                    dur="300ms",
-                    fill="freeze",
-                    begin="indefinite"
-                )
 // nav end

@@ -21,7 +21,7 @@ Vor einer Weile hab ich schon über einen Front Matter Generator geschrieben. Do
 Inspiration kam, als ich die Plugins für Jekyll ansah. Es gab welche, die neue Seiten generierten. Ruby war also wohl die Lösung. Gedacht, getan. Den Kurs auf [Codecademy](http://www.codecademy.com/en/tracks/ruby) begonnen und nach 60% des Kurses, schrieb sich der Generator praktisch von selbst.
 Wie ich ihn geschrieben habe, möchte ich euch heute zeigen.
 
-### Variablen Sammeln
+# Variablen Sammeln
 Okay, der erste Schritt ist ganz klar. Ehe man einen Front Matter Generator schreiben kann, braucht man alle Variablen, die vorkommen.
 In diesem Tutorial, möchte ich einen etwas kürzeren Generator vorstellen, als meinen eigenen. Meiner generiert mir jeweils direkt zwei Files, weil ich zweisprachig poste und gewisse Variablen den gleichen Wert haben.
 
@@ -37,7 +37,7 @@ tags | tags | sind in einem Array drin
 
 Von diesen Variablen, möchte ich bloss den Untertitel und die Tags optional hinzufügen. Doch da Titel und Beschreibung für SEO nötig sind, muss hier auf jeden Fall etwas eingegeben werden.
 
-### File
+# File
 Okay. Nun müssen wir uns überlegen, wo wir das File am besten platzieren. Wenn man eine Jekyll-Seite hat, ist es sehr wahrscheinlich, dass man auch git verwendet. Das Terminal ist also im Root-Ordner geöffnet. Wir müssen ausserdem auf den Posts-Ordner einfach zugreifen können, und das Script sollte nicht allzu weit entfernt sein.
 Ich habe also entschlossen, einen Ordner zu machen, den ich `_ruby`genannt habe und darin mein Ruby-Script zu speichern.
 Ausführen kann ich es also mit `ruby _ruby/erstellepost.rb` Wenn ihr aber für euch kein Problem damit habt, einfach ein ruby-file im Root zu haben, könnt ihr es auch dort speichern. Die Datei würde ich aber auf jeden Fall beschreibend benennen.
@@ -127,7 +127,7 @@ else
 end
 ```
 
-### Generator
+# Generator
 Okay, haben wir das getan, können wir nun mit dem Generator beginnen.
 
 Wir beginnen damit, dass wir eine Info ausgeben, die sagt, dass wir den Generator gestartet haben. `\n` sagt hier, dass eine neue Zeile begonnen werden soll. Und das machen wir in fett und grün.

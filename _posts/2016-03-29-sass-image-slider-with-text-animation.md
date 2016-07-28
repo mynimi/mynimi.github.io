@@ -18,7 +18,7 @@ I created a demo. There is a small iframe here, if you want to see it in all it'
 
 <iframe src="/demo/responsive-image-and-text-slider-with-sass/" width="100%" height="400px"></iframe>
 
-### Markup
+# Markup
 The markup is basically the same as before. This time I wanted the slider to cover the whole windows so I removed the size-control and did not do the padding-hack. It's still the same concept if you want to add it, though. Then I just added the content within the image container. You can add whatever you want.
 I just went with a heading, because that should do for demonstration purposes.
 
@@ -27,25 +27,25 @@ Jade:
 ```slim
 #slider
     .wrap
-        .img(style="background-image: url(/media/responsive-slider-with-sass-1.png)")
+        .img(style="background-image: url(/img/posts/responsive-slider-with-sass-1.png)")
             .slider-content
                 h1 Floating
-        .img(style="background-image: url(/media/responsive-slider-with-sass-2.png)")
+        .img(style="background-image: url(/img/posts/responsive-slider-with-sass-2.png)")
             .slider-content
                 h1 Start of Spring
-        .img(style="background-image: url(/media/responsive-slider-with-sass-3.png)")
+        .img(style="background-image: url(/img/posts/responsive-slider-with-sass-3.png)")
             .slider-content
                 h1 Honey Drops
-        .img(style="background-image: url(/media/responsive-slider-with-sass-4.png)")
+        .img(style="background-image: url(/img/posts/responsive-slider-with-sass-4.png)")
             .slider-content
                 h1 Dalia
-        .img(style="background-image: url(/media/responsive-slider-with-sass-5.png)")
+        .img(style="background-image: url(/img/posts/responsive-slider-with-sass-5.png)")
             .slider-content
                 h1 Exotic Dreams
-        .img(style="background-image: url(/media/responsive-slider-with-sass-6.png)")
+        .img(style="background-image: url(/img/posts/responsive-slider-with-sass-6.png)")
             .slider-content
                 h1 Ice Queen
-        .img(style="background-image: url(/media/responsive-slider-with-sass-1.png)")
+        .img(style="background-image: url(/img/posts/responsive-slider-with-sass-1.png)")
             .slider-content
                 h1 Floating
 ```
@@ -55,37 +55,37 @@ HTML:
 ```html
 <div id="slider">
   <div class="wrap">
-    <div style="background-image: url(/media/responsive-slider-with-sass-1.png)" class="img">
+    <div style="background-image: url(/img/posts/responsive-slider-with-sass-1.png)" class="img">
       <div class="slider-content">
         <h1>Floating</h1>
       </div>
     </div>
-    <div style="background-image: url(/media/responsive-slider-with-sass-2.png)" class="img">
+    <div style="background-image: url(/img/posts/responsive-slider-with-sass-2.png)" class="img">
       <div class="slider-content">
         <h1>Start of Spring</h1>
       </div>
     </div>
-    <div style="background-image: url(/media/responsive-slider-with-sass-3.png)" class="img">
+    <div style="background-image: url(/img/posts/responsive-slider-with-sass-3.png)" class="img">
       <div class="slider-content">
         <h1>Honey Drops</h1>
       </div>
     </div>
-    <div style="background-image: url(/media/responsive-slider-with-sass-4.png)" class="img">
+    <div style="background-image: url(/img/posts/responsive-slider-with-sass-4.png)" class="img">
       <div class="slider-content">
         <h1>Dalia</h1>
       </div>
     </div>
-    <div style="background-image: url(/media/responsive-slider-with-sass-5.png)" class="img">
+    <div style="background-image: url(/img/posts/responsive-slider-with-sass-5.png)" class="img">
       <div class="slider-content">
         <h1>Exotic Dreams</h1>
       </div>
     </div>
-    <div style="background-image: url(/media/responsive-slider-with-sass-6.png)" class="img">
+    <div style="background-image: url(/img/posts/responsive-slider-with-sass-6.png)" class="img">
       <div class="slider-content">
         <h1>Ice Queen</h1>
       </div>
     </div>
-    <div style="background-image: url(/media/responsive-slider-with-sass-1.png)" class="img">
+    <div style="background-image: url(/img/posts/responsive-slider-with-sass-1.png)" class="img">
       <div class="slider-content">
         <h1>Floating</h1>
       </div>
@@ -94,7 +94,7 @@ HTML:
 </div>
 ```
 
-### Textanimation
+# Textanimation
 The way you animate does not matter too much.
 What concerns us is the way the slide animation and content animation interact with each other. There is no possibility with css to check if a slide is visible and then do something. This means, we do need another option to tell our content animation if it faces the viewer or is hidden somewhere.
 

@@ -23,7 +23,7 @@ Ausserdem solltet ihr hier ein Template verwenden, das responsive ist, sonst mac
 
 Also, bei Blogger einloggen und dann kann es losgehen.
 
-### 1. LinkListe Erstellen
+# 1. LinkListe Erstellen
 
 Als erstes geht ihr in den Layout Bereich eures Blogs und dann erstellt ihr dort eine neue Linkliste, platziert das Gadget wo auch immer ihr wollt, da das Menu fixiert ist, spielt es nicht wirklich eine Rolle, wo es sich befindet. Einfach logisch vom Aufbau her, wäre irgendwo oben.
 
@@ -43,7 +43,7 @@ Und das speichert ihr dann.
 
 ![linkliste]({{ site.img_dir }}/blogger-linklist.png)
 
-### 2. Sass und Script Personalisieren
+# 2. Sass und Script Personalisieren
 
 Als nächstes personalisiert ihr euer Dropdown.
 
@@ -123,7 +123,7 @@ $navtoggle_hover_color: lighten(#291018, 80%);
 
 Wenn ihr eure Farben angepasst habt, seit ihr ready um euer HTML Gadget zusammenzustellen.
 
-### 3. HTML Widget einfügen
+# 3. HTML Widget einfügen
 
 Okay, was kommt alles ins Gadget?
 
@@ -159,7 +159,7 @@ Wenn ihr mit dem Gadget arbeitet, kommt das alles rein.
 </script>
 ```
 
-### 4. Troubleshoot
+# 4. Troubleshoot
 
 Zum Teil ist Blogger etwas mühsam.
 

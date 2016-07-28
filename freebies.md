@@ -17,7 +17,7 @@ Auf mich verweisen ist nicht nötig, freut mich aber natürlich.
 ## Lettering Übungsbogen
 
 #### Kleinbuchstaben
-[![practice lowercase]({{ site.img_dir }}/practice-lowercase.jpg)]({{ site.img_dir }}/practice-lowercase.jpg)
+[![practice lowercase](/img/freebies/practice-lowercase.jpg)](/img/freebies/practice-lowercase.jpg)
 
 Lettering Übungbögen für meine Kleinbuchstaben. Die Bögen kommen als Bilder, die man ausdrucken kann, oder zum Beispiel auf's iPad laden. Geeignet für Wasserfarben mit einem 00 Pinsel und die meisten Fude Pens.
 Falls in Procreate damit geübt wird, den Pinsel den ich verwendet habe ist der Pointed Pen (etwas runterscrollen um herunterzuladen)
@@ -33,28 +33,28 @@ Leider nur auf Englisch, Bild sollte allerdings sonst auch reichen.
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
 ### Classic Lettering
-[![classiclettering]({{ site.img_dir }}/classiclettering.jpg)]({{ site.img_dir }}/classiclettering.jpg)
+[![classiclettering](/img/freebies/classiclettering.jpg)](/img/freebies/classiclettering.jpg)
 
 Das sind meine wichtigsten Procreate Lettering Pinsel. Ich verwende sie andauernd.
 
 <a href="http://bit.ly/halfapxClassicLettering" class="btn"><i class="fa fa-download"></i> Download</a>
 
 ### Fancy Lettering
-[![fancylettering]({{ site.img_dir }}/fancylettering.jpg)]({{ site.img_dir }}/fancylettering.jpg)
+[![fancylettering](/img/freebies/fancylettering.jpg)](/img/freebies/fancylettering.jpg)
 
 Diese Pinsel verwende ist, wenn ich etwas haben möchte was etwas besonders ist. Mein Favorit ist der Chalk brush.
 
 <a href="http://bit.ly/halfapxFancyLettering" class="btn"><i class="fa fa-download"></i> Download</a>
 
 ### Handdrawn Shapes
-[![handdrawn shapes]({{ site.img_dir }}/handdrawnbrushes.jpg)]({{ site.img_dir }}/handdrawnbrushes.jpg)
+[![handdrawn shapes](/img/freebies/handdrawnbrushes.jpg)](/img/freebies/handdrawnbrushes.jpg)
 
 Diese Pinsel basieren auf handgezeichneten Formen. Das Set enthält einige einfache Pinsel sowie welche, die ein kleines bisschen Extra enthalten.
 
 <a href="http://bit.ly/halfapxHanddrawnBrushes" class="btn"><i class="fa fa-download"></i> Download</a>
 
 ### Character Lettering
-[![character]({{ site.img_dir }}/characterlettering.jpg)]({{ site.img_dir }}/characterlettering.jpg)
+[![character](/img/freebies/characterlettering.jpg)](/img/freebies/characterlettering.jpg)
 
 Diese Pinsel haben alle einen bestimmten Charakter. Artsy und Lush gehören definitiv zu meinen Favoriten. Sie sind etwas funky, haben aber immernoch den grossen Strichstärkenkontrast, den ich so sehr liebe.
 
@@ -63,7 +63,7 @@ Diese Pinsel haben alle einen bestimmten Charakter. Artsy und Lush gehören defi
 ## Other Resources
 
 ### Dot Grids and Lines
-[![dotgridsandlines]({{ site.img_dir }}/dotgridsandlines.jpg)]({{ site.img_dir }}/dotgridsandlines.jpg)
+[![dotgridsandlines](/img/freebies/dotgridsandlines.jpg)](/img/freebies/dotgridsandlines.jpg)
 
 Punktkarierter Hintergrund und Hilfslinien in all den üblichen Grössen (Retina iPad, 16:9; 1:1, 4K, A4).
 

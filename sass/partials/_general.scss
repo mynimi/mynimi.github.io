@@ -1,21 +1,44 @@
 .pagination{
-    @include clearfix();
+    border-top: $line;
+    border-bottom: $line;
+    padding: 10px 0;
+    @include flexbox(row, nowrap, space-between, center);
 
-    .prev{
-        float: left;
-        @extend .btn;
-        line-height: 1.5 !important;
-    }
-
+    .prev,
     .next{
-        float: right;
-        @extend .btn;
-        line-height: 1.5 !important;
+        width: 40%;
+        position: relative;
     }
-}
+    .prev{
+        text-align: left;
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: $line;
 
-.triangle_up {
-    transform: rotate(180deg),
+        &:before{
+            content: '';
+            @include triangle(7px, left, $lightgray);
+            position: absolute;
+            right: calc(100% + 10px);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .next{
+        text-align: right;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: $line;
+
+        &:after{
+            content: '';
+            @include triangle(7px, right, $lightgray);
+            position: absolute;
+            left: calc(100% + 10px);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 }
 
 .tags a,
@@ -31,19 +54,16 @@
 }
 
 .btn {
-    color: $color-2;
-    border: 2px solid currentColor !important;
+    color: $link-color;
+    border-top: 1px solid currentColor !important;
+    border-bottom: 1px solid currentColor !important;
     background: transparent;
     padding: 7px 13px;
     line-height: 2.5;
-    margin: 7px;
-    font-weight: $headings-font-weight;
-    white-space: nowrap;
+    // margin: 7px;
 
     &:hover {
-        color: $color-3;
-        cursor: pointer;
-        border: 2px solid currentColor !important;
+        color: $link-hover-color;
     }
 }
 
@@ -54,7 +74,10 @@ textarea {
     font-weight: $main-font-weight;
 
     &.btn{
-        line-height: $basic-line-height;
+        line-height: 1.5;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        cursor: pointer;
     }
 }
 
@@ -168,22 +191,6 @@ th {
     }
 }
 
-
-.index{
-    .main_container{
-        .content{
-            > h1{
-                font-size: 2.6em;
-                margin: 30px 0;
-            }
-        }
-    }
-}
-
-.main_container{
-    padding-bottom: 35px;
-}
-
 .highlighter-rouge{
     .highlight{
         @include center();
@@ -192,13 +199,8 @@ th {
     }
 }
 
-code,
-pre{
-//    white-space:pre-wrap;
-}
-
-p + {
-    h1,
+p + ,
+iframe + {
     h2,
     h3,
     h4,
@@ -206,23 +208,31 @@ p + {
     h6{
         margin-top: 20px;
     }
+
+    h1{
+        margin-top: 50px;
+    }
+}
+
+.title h1{
+    border: 0 solid transparent !important;
 }
 
 .post{
     .title{
         @include flexbox(row, wrap, space-between, flex-start);
+        font-size: 1.2em;
 
         > div{
-            width: calc(100% - 90px);
+            width: calc(100% - 100px);
         }
 
         .date{
             width: 70px;
             border: 1px solid rgba(0, 0, 0, 0.1);
             text-align: center;
-            font-size: 0.8em;
+            font-size: 0.6em;
             margin-bottom: 10px;
-            font-size: 1em;
             margin-top: 15px;
         }
 
@@ -240,15 +250,15 @@ p + {
             text-transform: uppercase;
             display: block;
             width: 100%;
-            background: $color-2;
-            color: $white;
+            background: $main-color;
+            color: $background-color;
         }
 
         .day{
             display: block;
             font-size: 2em;
             font-family: $code-font;
-            color: $color-3;
+            color: $link-color;
             line-height: 1;
             padding: 5px 0px;
             font-weight: bold;
@@ -262,6 +272,13 @@ p + {
     }
 
     .meta{
+        opacity: .8;
+        margin: 30px 0;
+        padding: 10px 0;
+        border-bottom: $line;
+        border-top: $line;
+        font-size: .8em;
+
         @media screen and (min-width: $date-collapse+1){
             .date{
                 display: none;
@@ -275,6 +292,17 @@ p + {
         padding-bottom: 30px;
         border-bottom: $line;
         margin-bottom: 30px;
+    }
+}
+
+article{
+    img{
+        display: block;
+        margin: 20px auto;
+    }
+
+    h1{
+        border-bottom: $line;
     }
 }
 
@@ -292,16 +320,9 @@ p + {
     textarea{
         display: block;
         width: 100%;
-        margin: 7px;
+        border: $line;
+        margin-bottom: 10px;
     }
-}
-
-.subtitle{
-    font-size: 1.6em;
-}
-
-p{
-    font-size: 19px;
 }
 
 b, strong{
@@ -313,18 +334,16 @@ b, strong{
     padding: 0 5px !important;
 }
 
-.content{
-     a{
-         border-bottom: 1px solid $color-3;
+iframe{
+    margin: 20px auto !important;
+}
 
-        &:hover{
-            border-color: transparent;
-        }
+p{
+    a{
+        border-bottom: $line;
     }
+}
 
-    h1, h2, h3, h4, h5{
-        a{
-            border-color: transparent;
-        }
-    }
+.subtitle{
+    opacity: .6;
 }

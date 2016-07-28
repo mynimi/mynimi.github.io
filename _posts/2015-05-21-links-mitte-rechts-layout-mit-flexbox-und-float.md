@@ -6,7 +6,7 @@ tags: [tutorial, quicktip, sass, css, html, flexbox, ♦♦ ]
 name: lmr-layout
 lang: de
 ---
-### Das Problem.
+# Das Problem.
 Ich bin ein grosser Grid-Fan. Ein "links-mitte-rechts"-Layout ist in meinem täglichen Gebrauch keine Seltenheit. Allerdings hatte ich es bisher meist nur mit gleich breiten Komponenten zu tun. Als ich allerdings letztesn mit drei Buttons das Layout umsetzen wollte, habe ich festgestellt, dass es gar nicht so einfach ist, wie gedacht.
 
 Wie ihr es aber dennoch schnell beheben könnt, möchte ich euch hier zeigen.
@@ -22,7 +22,7 @@ Bevor das Center-Element zentriert wird, werden die beiden äusseren Breiten red
 
 In Flexbox heisst das `space-between` also Platz dazwischen. Der Zwischenraum ist überall gleich gross. Das mag in gewissen fällen sehr praktisch sein, doch bei diesem Layout ist Beispiel 2 erstrebenswerter.
 
-### Aufbau
+# Aufbau
 okay, wie bauen wir das auf? Für Version 1 brauchen wir jeweils ein simples HTML-Markup. Einmal container und darin drei Elemente.
 
 ```html
@@ -93,7 +93,7 @@ Alternative in Flexbox ist viel kürzer und deswegen die Variante, die ich stets
 Wenn ihr die beiden Beispiele zuerst anseht, könnt ihr erkennen, dass er Unterschied bei relativ gleich grossen Elementen minimal ist. Die Mitte des zentierten Textes liegt fast auf der gezeichneten Y-Achse.
 Aber verlängern wir nur eines der Worte, bringen den Text also aus dem Gleichgewicht, bricht unser Konstrukt zusammen. Um es zu stabilisieren, gibt es einen Grundgedanken:
 
-### Die Lösung.
+# Die Lösung.
 
 Die Idee ist es, gleich grosse Container zu generieren. Wenn alle Elemente gleich gross sind, kann innerhalb davon entsprechend generiert werden. Das innere Markup musste ich dafür etwas anspassen, indem ich die Elemente, noch in eigene container gepackt habe.
 

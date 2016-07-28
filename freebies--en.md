@@ -18,7 +18,7 @@ Crediting is optional but much appreciated.
 ## Lettering Practice Sheets
 
 #### Lowercase
-[![practice lowercase]({{ site.img_dir }}/practice-lowercase.jpg)]({{ site.img_dir }}/practice-lowercase.jpg)
+[![practice lowercase](/img/freebies/practice-lowercase.jpg)](/img/freebies/practice-lowercase.jpg)
 
 These are practice Sheets for my lowercase letters. They come as image files. You can either print them out and letter using fude pens or watercolor or you could import them into procreate. In case you go with procreate, I did make them using my Pointed Pen Brush (download below).
 There is also a DIY-File. It can be used to custom build a practice sheet.
@@ -32,28 +32,28 @@ There is also a DIY-File. It can be used to custom build a practice sheet.
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
 ### Classic Lettering
-[![classiclettering]({{ site.img_dir }}/classiclettering.jpg)]({{ site.img_dir }}/classiclettering.jpg)
+[![classiclettering](/img/freebies/classiclettering.jpg)](/img/freebies/classiclettering.jpg)
 
 These are my essential lettering brushes which I reach for most of the time.
 
 <a href="http://bit.ly/halfapxClassicLettering" class="btn"><i class="fa fa-download"></i> Download</a>
 
 ### Fancy Lettering
-[![fancylettering]({{ site.img_dir }}/fancylettering.jpg)]({{ site.img_dir }}/fancylettering.jpg)
+[![fancylettering](/img/freebies/fancylettering.jpg)](/img/freebies/fancylettering.jpg)
 
 I reach for these brushes if I want something a little bit more special. My favorite is probably the Chalk brush.
 
 <a href="http://bit.ly/halfapxFancyLettering" class="btn"><i class="fa fa-download"></i> Download</a>
 
 ### Handdrawn Shapes
-[![handdrawn shapes]({{ site.img_dir }}/handdrawnbrushes.jpg)]({{ site.img_dir }}/handdrawnbrushes.jpg)
+[![handdrawn shapes](/img/freebies/handdrawnbrushes.jpg)](/img/freebies/handdrawnbrushes.jpg)
 
 These Brushes have custom handdrawn shapes to them. This set features some basic brushes as well as some that are a little bit more special.
 
 <a href="http://bit.ly/halfapxHanddrawnBrushes" class="btn"><i class="fa fa-download"></i> Download</a>
 
 ### Character Lettering
-[![character]({{ site.img_dir }}/characterlettering.jpg)]({{ site.img_dir }}/characterlettering.jpg)
+[![character](/img/freebies/characterlettering.jpg)](/img/freebies/characterlettering.jpg)
 
 All of these brushes have quite a unique character. Artsy and lush are some of my favorites, when I go for a playful look. They are a little funky but still have the nice high contrast between thick and thin strokes, which I absolutely love.
 
@@ -62,7 +62,7 @@ All of these brushes have quite a unique character. Artsy and lush are some of m
 ## Other Resources
 
 ### Dot Grids and Lines
-[![dotgridsandlines]({{ site.img_dir }}/dotgridsandlines.jpg)]({{ site.img_dir }}/dotgridsandlines.jpg)
+[![dotgridsandlines](/img/freebies/dotgridsandlines.jpg)](/img/freebies/dotgridsandlines.jpg)
 
 Grids and Guidelines for all of the common sizes (Retina iPad, 16:9; 1:1, 4K, A4).
 

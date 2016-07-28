@@ -14,7 +14,7 @@ I was looking for a simple responsive image Slider featuring as little markup as
 
 <iframe src="/demo/responsive-image-slider-with-sass/" width="100%" height="900px"></iframe>
 
-### Markup
+# Markup
 In my exmaple I'm using a slider with a fixed aspect ratio (3:2), so I needed a container for the padding hack[^1]. Apart from that we need a wrapper which we'll give an `overflow: hidden` and in there we'll create an image strip, where the images will be put next to each other and we'll scroll through that. To ensure the animation is smooth, we'll actually add the first image at the beginning and end of the strip. I added the pictures as background images of divs, because I find it easier to work with. Especially if one image has a bit of a different format.
 
 [^1]: the padding hack was probably first introdoced in a blogpost [here](http://alistapart.com/article/creating-intrinsic-ratios-for-video) where it was about embedding videos responsively. Since then it's probably the first solution you'll think of, if you have to have something with a fixed aspect ration scale responsively.
@@ -52,7 +52,7 @@ and generated HTML
 </div>
 ```
 
-### Styling
+# Styling
 For the styling we'll definitely need the image count. I am using 6 different ones, but because the first one is added twice, the total comes up to 7. Also I want each of my images to have a total view time of 6s. So for the animation lenght we'll just $$ imgCount \cdot imgViewTime $$ to get the total animation timeframe.
 So I created two Sass variables for that:
 
@@ -121,10 +121,10 @@ The rest of the Sass should be pretty self-explanatory. Apart from the keyframes
 }
 ```
 
-### Keyframe Mixin
+# Keyframe Mixin
 As soon as that's done we are in the keyframe generation stage. Writing these was acutally not as simple as I had originally thought. I'll just turn this into a mixin, so I can use it across multiple pages, but if you only want to use it once, feel free to use all of this code just within your keyframe declaration.
 
-#### Goals
+## Goals
 This is what we are looking for in a formula-kinda-you-know-what-I-mean fashion.
 We'll be looking for the $$ x $$ most of the time. This is basically a representative of our slide view time in a percentage.
 
@@ -151,7 +151,7 @@ $w: $img-width;
 
 As you can see we'll need to generate a keyframe pair for each image. This means that we'll have to use a for-loop for sure, because most of the values depend on an index (`$i`). The repetition of the same `left` value stands for the time that the image is in view. $$ x $$ will then represent the 6s view time that we defined before, but we'll neet to translate that into a keyframe percentage. If we didn't need that last keyframe this would be much easier, but the last frame ensures, that our animation runs smoothly in an infinite loop. But since the last image only needs the sliding in part of the animation and not the sliding out, we only need the first part of the pair. Also the last percentage of the keyframe needs to be 100%. That will be helpful with finding $$ x $$, because we can create an equation from that and that makes finding unknown variables quite easy to find.
 
-#### Math
+## Math
 First of all we need to know what values we need for our mixin. Because we only have the image count, that's basically everything we can our mixin dependant on. So we need to try and represent each of the components with this variable.
 
 Let's start our declaration

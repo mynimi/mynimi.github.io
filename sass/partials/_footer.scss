@@ -1,26 +1,14 @@
 footer {
     position: relative;
-    .svg_wrapper {
-        @include paddinghack(100%, 769.4693, 45.8125, 'svg');
-        svg {
-            fill: $footer-bg;
-        }
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
+    padding: 30px 0 10px;
     .foot {
-        position: absolute;
-        bottom: 0;
-        left: 0;
         background: $footer-bg;
         color: $footer-color;
         width: 100%;
-        min-height: 80px;
         a {
-            color: darken($footer-color, 20%);
+            color: $footer-link-color;
             &:hover {
-                color: $footer-color;
+                color: $footer-hover-color;
                 opacity: .8;
             }
         }

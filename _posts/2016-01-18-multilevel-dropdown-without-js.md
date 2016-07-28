@@ -12,7 +12,7 @@ It's been a while since I wrote something about doing JavaScript work with CSS. 
 
 <!-- more -->
 
-### Classic Dropdown
+# Classic Dropdown
 So we start with a basic dropdown code, that's based on nested lists. I did 4 levels in this case, but you could extend it to however much you wanted.
 
 ```html
@@ -94,10 +94,10 @@ So we start with a basic dropdown code, that's based on nested lists. I did 4 le
 </div>
 ```
 
-### :checked hack
+# :checked hack
 To open the submenus we'll use checkboxes. If you don't know how the checkbox hack works, just google it, there are some really good posts that go into much detail. But basically we will depend the visibility of the submenu on the state of the checkbox placed before it.
 
-#### Markup
+## Markup
 So we change our markup to look like this:
 
 ```html
@@ -190,7 +190,7 @@ So we change our markup to look like this:
 </div>
 ```
 
-#### Open
+## Open
 The opening will be done using this CSS
 
 ```css
@@ -205,7 +205,7 @@ The opening will be done using this CSS
 The result will look like this:
 <style>#demo-toggle ul > li ul{display: none}#demo-toggle ul > li input[type="checkbox"]:checked + ul{display: block}</style><div id="demo-toggle"><ul class="nav level-one"><li><a href="#">Item 1</a> </li><li class="parent"> <a href="#">Item 2 </a> <label for="toggle-level-2-01" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-2-01"/> <ul class="level-two"> <li> <a href="#">Child 1</a> </li><li> <a href="#">Child 2</a> </li><li class="parent"> <a href="#">Child 3</a> <label for="toggle-level-3-01" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-3-01"/> <ul class="level-three"> <li> <a href="#">Grandchild 1</a> </li><li class="parent"> <a href="#">Grandchild 2</a> <label for="toggle-level-4-01" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-4-01"/> <ul class="level-four"> <li> <a href="#">Grandgrandchild 1</a> </li><li> <a href="#">Grandgrandchild 2</a> </li><li> <a href="#">Grandgrandchild 3</a> </li></ul> </li></ul> </li></ul> </li><li class="parent"> <a href="#">Item 3</a> <label for="toggle-level-2-02" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-2-02"/> <ul class="level-two"> <li> <a href="#">Child 1</a> </li><li> <a href="#">Child 2</a> </li><li class="parent"> <a href="#">Child 3</a> <label for="toggle-level-3-02" class="toggle">toggle submenu</label> <input type="checkbox" id="toggle-level-3-02"/> <ul class="level-three"> <li> <a href="#">Grandchild 1</a> </li><li> <a href="#">Grandchild 2</a> </li><li> <a href="#">Grandchild 3</a> </li></ul> </li><li> <a href="#">Child 4</a> </li></ul> </li><li> <a href="#">Item 4</a> </li><li> <a href="#">Item 5</a> </li><li> <a href="#">Item 6</a> </li></ul></div>
 
-### Styling
+# Styling
 Now we'll just have to style it. I went with a pretty standard bar.
 
 ```css
@@ -308,7 +308,7 @@ And that will look like this:
 <p data-height="266" data-theme-id="7132" data-slug-hash="MKOebO" data-default-tab="result" data-user="mynimi" class='codepen'>See the Pen <a href='http://codepen.io/mynimi/pen/MKOebO/'>Checkbox-Hack Dropdown (non-responsive)</a> by Myri (<a href='http://codepen.io/mynimi'>@mynimi</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-### Responsive
+# Responsive
 For the responsive version we'll have to adjust some more of the markup. We add another checkbox to toggle the whole navigation.
 And then we just adjust the CSS to create this off-canvas Menu
 
@@ -523,6 +523,6 @@ In the example I put the breakpoint at 2000px so that it shows up on all stanard
 
 And that's it.
 
-### So is this better than JavaScript?
+# So is this better than JavaScript?
 This is the question. If you should actually go with a solution like this. Well, in case you have to solve this problem without JavaScript - Go with this. In Reallife, though, the javascript solution is the one I would go with. Reason for that being the fact, that it is written faster and all-over support is a little better.
 Still, I like trying to tackle some problems without the use of JavaScript, just to see how far you can come with just HTML and CSS.

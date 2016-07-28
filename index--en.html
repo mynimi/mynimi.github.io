@@ -1,70 +1,18 @@
 ---
 permalink: /en/
-layout: index
+layout: page
 title: Home
 lang: en
 id: index
 description: 1/2 a px. a blog about frontend development. Focusing on jekyll and blogger.
+page-title: false
 ---
-<h1>Recent Posts</h1>
 <div class="posts-container">
 {% assign posts = site.posts | where:"lang", page.lang %}
-{% for post in posts limit: 3 %}
+{% for post in posts limit: 30 %}
     {% include article_index.html %}
 {% endfor %}
-<a href="/en/blog" class="btn">see all posts</a>
-</div>
-
-<h1>Recent Portfolio Entries</h1>
-<div class="portfolio-wrapper">
-    {% assign portfolio = site.portfolio | sort: "date" | reverse | where:"lang", page.lang %}
-    {% for item in portfolio  limit: 3%}
-        <div class="theme-wrapper mix {{ item.category }}">
-            {% if item.title or item.item-preview %}
-                <a href="{{ item.url | remove: '/index.html' }}">
-                    {% if item.item-preview%}
-                        {% if item.item-preview contains '.png'%}
-                            {% assign featimg = item.item-preview | replace: '.png', '' %}
-                            <img src="{{ site.img_dir }}/{{ featimg | append: '-450x450.png' }}" alt="{{ image.alttext }}">
-                        {% elsif item.item-preview contains '.jpg'%}
-                            {% assign featimg = item.item-preview | replace: '.jpg', '' %}
-                            <img src="{{ site.img_dir }}/{{ featimg | append: '-450x450.jpg' }}" alt="{{ image.alttext }}">
-                        {% endif %}
-                    {% endif %}
-                    {% if item.title %}
-                        <h1>{{ item.title }}</h1>
-                    {% endif %}
-                </a>
-            {% endif %}
-        </div>
-    {% endfor %}
-</div>
-
-<h1>Recent Themes</h1>
-<div class="portfolio-wrapper">
-    {% assign themes = site.themes | sort: "date" | reverse | where:"lang", page.lang %}
-    {% for theme in themes limit: 3 %}
-        <div class="theme-wrapper mix {{ theme.category }}">
-            {% if theme.title and theme.theme-preview %}
-                <a href="{{ theme.url | remove: '/index.html' }}">
-                    {% if theme.theme-preview%}
-                        {% if theme.theme-preview contains '.png'%}
-                            {% assign featimg = theme.theme-preview | replace: '.png', '' %}
-                            <img src="{{ site.img_dir }}/{{ featimg | append: '-450x450.png' }}" alt="{{ image.alttext }}">
-                        {% elsif theme.theme-preview contains '.jpg'%}
-                            {% assign featimg = theme.theme-preview | replace: '.jpg', '' %}
-                            <img src="{{ site.img_dir }}/{{ featimg | append: '-450x450.jpg' }}" alt="{{ image.alttext }}">
-                        {% endif %}
-                    {% endif %}
-                    {% if theme.title %}
-                        <h1>{{ theme.title }}</h1>
-                    {% endif %}
-                    {% if theme.subtitle %}
-                        <h2 class="subtitle">{{ theme.subtitle }}</h2>
-                    {% endif %}
-                        <p>{% include date.html %}</p>
-                </a>
-            {% endif %}
-        </div>
-    {% endfor %}
+{% if posts.size > 30 %}
+<a href="/en/archive" class="btn">all posts</a>
+{% endif %}
 </div>

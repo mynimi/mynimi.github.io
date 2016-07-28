@@ -13,14 +13,16 @@
     </div>
     {% endif %}
     <div class="post-info">
-        <h1>
-            <a href="{{ post.url }}">{{ post.title }}</a><span>
-        </h1>
-        {% if post.subtitle %}
-        <h2 class="subtitle">
-            <a href="{{ post.url }}">{{ post.subtitle }}</a>
-        </h2>
-        {% endif %}
+        <div class="title">
+            <h1>
+                <a href="{{ post.url }}">{{ post.title }}</a><span>
+            </h1>
+            {% if post.subtitle %}
+            <h2 class="subtitle">
+                <a href="{{ post.url }}">{{ post.subtitle }}</a>
+            </h2>
+            {% endif %}
+        </div>
         <p class="meta">
             <span class="date">{% include date.html %}</span>
             {% if post.tags %} &nbsp;&bull;&nbsp;

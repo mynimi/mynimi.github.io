@@ -7,7 +7,7 @@ name: lmr-layout
 category: en
 lang: en
 ---
-### The Problem
+# The Problem
 I'm a big grid fan. A "left-middle-right"-layout is something I've used hundreds of times. But because I've mostly just worked with elements of the same width, I've never realized before, that it is actually not that easy, to _really_ center the middle element. So when I recently wanted to do the same thing with three buttons, I found out, that I had to figure out a new method.
 
 But a solution was found and that's what I want to talk about today.
@@ -23,7 +23,7 @@ Before the middle element is centered, the width will be reduced on both sides a
 
 In flexbox this is called `space-between`. The space between each of the elements is the same. It may be really helpful in some placed, but for this layout the second examples are what we want.
 
-### Markup
+# Markup
 Okay, for version 1 we need a very basic markup. A container and three subcontainers with the contents
 
 ```html
@@ -91,7 +91,7 @@ Alternatively the solution is flexbox is much shorter and less probable to break
 
 So you can see that this version breaks. To stabilise it, I had a pretty simple idea.
 
-### The Solution
+# The Solution
 
 The idea is to take containers of the same size. If all of the elements are the same width, you can align the content within easily. The inner markup needs a little bit of an adjustments then.
 

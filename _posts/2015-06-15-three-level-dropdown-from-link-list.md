@@ -24,7 +24,7 @@ Also, since this is a responsive menu, you should use a responsive template. If 
 
 Okay, log into blogger and let's get started.
 
-### 1. Create Linklist
+# 1. Create Linklist
 First open the layout tab of your blog and create a new link list. It does not matter where you put it, since the navigation will be fixed anyways. But because I'd like to mention some logic, I would place it somewhere around the top.
 
 Now on how you build your link list. Order does matter here.
@@ -41,7 +41,7 @@ Save.
 
 ![linkliste]({{ site.img_dir }}/blogger-linklist.png)
 
-### 2. Sass and Script Personalization.
+# 2. Sass and Script Personalization.
 
 Now personalize the dropdown.
 
@@ -117,7 +117,7 @@ $navtoggle_hover_color: lighten(#291018, 80%);
 
 As soon as you adjusted the colors, you are ready to put together your HTML widget.
 
-### 3. Add HTML Widget
+# 3. Add HTML Widget
 
 Okay, what is all going into the widget?
 
@@ -151,7 +151,7 @@ An that's the content of your HTML widget.
 </script>
 ```
 
-### 4. Troubleshoot
+# 4. Troubleshoot
 
 Sometimes Blogger likes to be annoying.
 

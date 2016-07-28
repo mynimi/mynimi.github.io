@@ -11,7 +11,7 @@ Ich glaube das erste was ich mit JavaScript bei Blogger gemacht habe, ist eine s
 <!-- more -->
 ![sticky navbar blogger]({{site.img_dir}}/fixedscroll.gif)
 
-#### ID herausfinden
+# ID herausfinden
 Bevor wir loslegen können, müssen wir die ID des Elements herausfinden, das wir fixieren möchten.
 Am einfachsten geht es, wenn ihr auf das Element geht, rechtsklick und dann Element untersuchen. Dann könnt ihr den Code untersuchen und die ID herausfinden. Falls ihr das Seiten-Gadget verwendet, ist es sehr wahrscheinlich, dass diese ID `#PageList1` sein wird, wie es bei mir der Fall war.
 
@@ -19,10 +19,10 @@ Am einfachsten geht es, wenn ihr auf das Element geht, rechtsklick und dann Elem
 
 Wenn ihr die ID habt, merkt ihr euch die.
 
-#### Fixieren
+# Fixieren
 Fixieren geht ganz schnell. Öffnet den Code unter Vorlage>HTML bearbeiten.
 
-Sucht nach `</body>
+Sucht nach `</body>`
 
 
 direkt oben drüber kommt jetzt jQuery und das Script rein.

@@ -14,7 +14,7 @@ My obsession started Dec 30th 2015, when I first picked up one of my nail art br
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.125% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BBBZBxpBMLD/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;">New post on my blog. Talking about brushlettering and different tools I&#39;ve tried.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A video posted by Myriam (@halfapx) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-01-27T00:05:35+00:00">Jan 26, 2016 at 4:05pm PST</time></p></div></blockquote>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
-### How a lot of my january was spent
+# How a lot of my january was spent
 Brushlettering. Basically this is handwriting with a brush, simple as that. I got into this, after we had a typography course last semester. I was not the biggest fan of how the course was taught, but thing is, it reintroduced me to something I have always enjoyed, which is writing by hand. In the typography course I chose to go with a type written with a Pilot Parallel Pen. I really enjoyed it. But then I stumbled over a brush lettering tutorial on YouTube and I absolutely loved the look of it.
 So almost the last day of the year I got one of my nail art brushes that kind of looked like the tips of the brushes used in the videos and just did it. I grabbed my gouache palette, which I hadn't used since 6th grade and just tried it out. It was obviously not very pretty. But still. It was a start.
 
@@ -25,9 +25,9 @@ And so, I lettered. I started by writing down quotes and I'm still doing it. Abo
 
 So in the following I want to go over each of the pens, how I like to use them, what I like, what I dislike. in the end I will be choosing one of these, that I'd recommend for starting out, and some other little things of how I approached learning this thing maybe a little differently than most of the tutorial videos taught.
 
-### Supplies
+# Supplies
 
-#### Brush Pens and actual brushes
+## Brush Pens and actual brushes
 All of the following samples were recorded today, right after one another (first one is a big fail, be prepared)
 
 ![twintouch](https://lh3.googleusercontent.com/-ikXD8Sgm8tc/VqyNwOjZz5I/AAAAAAAAABw/BdkVkulVsS4/s600-Ic42/twintouch.gif)
@@ -59,14 +59,14 @@ I really like the color selection and I think it's definitely one worth checking
 ![watercolor](https://lh3.googleusercontent.com/-5-LRugkqf1s/VqyN21MmJCI/AAAAAAAAAB4/fQ2B3KLMMK8/s600-Ic42/watercolor.gif)
 This is obviously the original way of brush lettering and the cheapest tool. This is a round watercolor brush by conda no. 4 and it cost me 3.00 CHF. It works very well. I think this one was the hardest to get control over. If you haven't used a brush in a while, it will feel very strange because it's so thin. I had a bit of trouble getting the hang of it, at the beginning my hand hurt, because I had such a tight grip on it.
 
-##### Recommendation
+### Recommendation
 So what do I recommend most. obviously I go with bristles. I think if you own water colors or are willing to get some, get the Aquash in fine. It's easy to learn and colors do make you happy, especially at the beginning where the letters might not look that nice. If you don't want to invest in that, get the Pocket Brush, the results are beautiful.
 
-#### Inks & Colors & other stuff
+## Inks & Colors & other stuff
 You have the brush, now you need something to write with. I actually had a lot of this stuff already. I did get different inks in pots a few years ago when I absolutely wanted to learn Copperplate (totally will not follow this goal anymore, I gave up after two days), so I do have a selection of chinese and fountain ink to use. In Switzerland we also all get a palette of Gouache in School. It's to be used in Art Classes and at the end of Primary School you can take it home. Caran d'Ache makes really beautiful Colors and even after almost 14 years, I'm still able to use them.
 Now, if you want to custom mix ink, you need something to fill the cartridges, or the reservoirs. The unmessyest way I have found is using one of these scary looking syringes that you can get on ebay [link](http://www.ebay.com/itm/321912284779?_trksid=p2060353.m2749.l2649&var=510859676126&ssPageName=STRK%3AMEBIDX%3AIT). I absolutely love that thing.
 
-### How you don't have to follow everything tutorials sometimes say
+# How you don't have to follow everything tutorials sometimes say
 This is something I have taken from these tutorials. Don't follow it all. A lot of people said that you should practice brushlettering by practicing the different strokes. I really do not like to do stuff out of context, so whenever I tried something like this I really did not enjoy it and I fell like that's really not the point of it. Also, give brushpens with actual bristles a try if you failed at the felt tips like me, you might get this to work.
 
 Also practics normal handwriting. I think it really does make a difference to also pick up just a ballpoint pen and try and write a little bit nicer than you'd do otherwise. I am definitely not someone that has a pretty (or even legible) handwriting, but I try to keep the things I do for brushlettering in mind. It helps. The people correcting your handwritten exams will thank you!

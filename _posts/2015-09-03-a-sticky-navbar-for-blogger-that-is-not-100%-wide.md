@@ -12,17 +12,17 @@ I think the first thing I did using JavaScript in Blogger was wa sticky nav. For
 <!-- more -->
 ![sticky navbar blogger]({{site.img_dir}}/fixedscroll.gif)
 
-#### ID, please!
+# ID, please!
 Bevore we can start, we need the ID of the element that we want to have sticky. Easiest way to accomplish that is by right-clicking on the element and inspect it. It'll give you the code and you can check the ID. If you are using a PageList Widget most probably your ID will be `#PageList1`.
 
 ![PageList ID herausfinden]({{ site.img_dir}}/findID.gif)
 
 As soon as you have the ID, you'll memorize it.
 
-#### Sticky
+# Sticky
 Getting this sticky is a matter of minutes (maybe even seconds :D) Get to your Code via template edit HTML
 
-Look for `</body>
+Look for `</body>`
 
 Immediately before that, we'll add some code.
 If you already have jQuery added to your code, you do not need to add it again, if you don't let [Google host]((https://developers.google.com/speed/libraries/?hl=en#jquery)) it for you. Also copy the [minified version of my script](https://gist.github.com/mynimi/d224bbfa487d97102bde#file-jquery-stickynav-min-js)

@@ -6,8 +6,8 @@
     }
 
     .icon {
-        fill: $white;
-        stroke: $white;
+        fill: black;
+        stroke: black;
         stroke-width: 20;
     }
 
@@ -16,13 +16,13 @@
         line-height: 125%;
         font-family: $special-elite;
         text-align: start;
-        fill: $white;
+        fill: black;
         stroke: none;
     }
 
     .phonetics,
     #ring {
-        fill: $white;
+        fill: black;
         stroke: none;
     }
 }

@@ -1,7 +1,4 @@
-#trigger,
 .toggle {
-    margin-right: 20px;
-
     &:hover{
         opacity: .8;
         cursor: pointer;
@@ -41,16 +38,13 @@ nav{
         }
 
         &.active{
-            &:before{
-                content: '♦ ';
-            }
+            border-bottom: $line;
         }
     }
 
     .menu{
-        @include flexbox(row, wrap, space-between, center);
         background: $nav-bg;
-        padding: 10px 20px;
+        padding: 10px 0px;
         box-sizing: border-box;
         width: 100%;
         position: relative;
@@ -58,43 +52,26 @@ nav{
         left: 0;
         z-index: 10;
 
-        .homelink{
-            line-height: 1;
-            margin-right: 0;
-        }
-
-        svg{
-            height: 30px;
-
-            .icon{
-                fill: $nav-color;
-                stroke: $nav-color;
-            }
-
-            &:hover{
-                opacity: .8;
-            }
-        }
+        @include flexbox(row, nowrap, space-between, center);
     }
 
     .left,
+    .center,
     .right {
         @include flexbox(row, wrap, flex-start, center);
-
-        li{
-            list-style: none;
-            display: inline;
+        @media screen and (max-width: $nav-toggle){
+            width: 50%;
         }
+    }
+
+    .right{
+        justify-content: flex-end;
     }
 
     .responsive{
         @media screen and (min-width: $nav-toggle + 1){
             .toggle{
                 display: none;
-            }
-
-            a:first-of-type{
-                margin-left: 20px;
             }
         }
 
@@ -143,36 +120,29 @@ nav{
             display: none;
         }
     }
-
-    .svg_wrapper{
-        @include paddinghack(100%, 769.4693, 45.8125, '.triangle');
-
-        .triangle{
-
-            path{
-                fill: $nav-bg;
-                transform: translateY(-1px);
-            }
-        }
-    }
 }
 
 .lang-de {
     .menu {
-        .de {
-            &:before{
-                content: '♦ ';
-            }
+        .de,
+        .en{
+            border-bottom: $line;
+        }
+
+        .en{
+            border-color: transparent;
         }
     }
 }
 
 .lang-en {
     .menu {
-        .en {
-            &:before{
-                content: '♦ ';
-            }
+        .en,
+        .de {
+            border-bottom: $line;
+        }
+        .de{
+            border-color: transparent;
         }
     }
 }

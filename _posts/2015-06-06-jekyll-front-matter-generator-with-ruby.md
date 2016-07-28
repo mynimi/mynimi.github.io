@@ -23,7 +23,7 @@ I have written another front matter generator a while ago[^1], it worked pretty 
 I got inspired, when I had a look at some jekyll plugins, that did generate new files. So I thought Ruby is the way to go. I started the course at [Codecademy](http://www.codecademy.com/en/tracks/ruby) and 60% into it, decided to give this generator a go and it basically wrote itself.
 How I wrote it, is what I want to show you today.
 
-### Collecting Variables
+# Collecting Variables
 Okay, first step is pretty obvious. Before you can write a front matter generator, you need all of the relevant variables, to be included. In this tutorial I want to present a shorter generator than my personal one. Mine generates two files since I'm posting in two languages and certain variables share values.
 
 The variables I use for this generator are as follows:
@@ -38,7 +38,7 @@ tags | tags | are in an array, and optional
 
 I just want the subtitle and tags to be optional. All of the others are needed, especially for SEO purposes.
 
-### File
+# File
 Okay, the file will be placed within a ruby folder. And since most jekyll sites use git, you will most probably have your terminal open at the root. So it is easy to navigate to the Posts folder. My script is within the ruby folder, so I can call it using `ruby _ruby/createpost.rb`
 
 Okay, open your favourite editor. Mine is [Brackets](http://brackets.io/) and then we can get started.
@@ -123,7 +123,7 @@ else
 end
 ```
 
-### Generator
+# Generator
 As soon as that's done, we can start the generator.
 
 We start by inserting a initiation message `\n` tells it, to start a new line. And we'll do that in bold and green

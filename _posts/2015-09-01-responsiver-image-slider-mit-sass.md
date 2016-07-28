@@ -13,7 +13,7 @@ Ich war auf der Suche nach einem schönen responsiven Slider, der minimales Mark
 
 <iframe src="/demo/responsive-image-slider-with-sass/" width="100%" height="900px"></iframe>
 
-### Markup
+# Markup
 In meinem Beispiel habe ich einen Slider mit einem fixen Verhältnis (3:2) gewollt, folglich brauchte ich noch einen Container für den padding hack[^1]. Ansonsten brauchen wir einen Wrapper, dem wir `overflow: hidden` geben werden und darin einen "imagestrip" In dem werden alle Bilder nebeneinander angeordnet, und wir scrollen dann durch. Damit die Animation smooth abläuft, platzieren wir das erste Bild am Ende noch einmal. Ich habe die Bilder als Hintergrund von Containern eingefügt, anstelle als imgs, weil ich sie damit einfacher positionieren kann und es ist einfacher ein fixes Format zu haben, auch wenn die verwendeten Bilder verschiedene Formate besitzen.
 
 [^1]: Der Padding Hack wurde wohl als erstes [hier](http://alistapart.com/article/creating-intrinsic-ratios-for-video) vorgestellt, wo es darum ging videos responsive einzubetten. Seither ist der Padding Hack allzeit beliebt irgendetwas responsive zu bekommen, das auf ein fixes Seitenverhältnis angewiesen ist.
@@ -51,7 +51,7 @@ und HTML davon:
 </div>
 ```
 
-### Grundstyles
+# Grundstyles
 Beim Styling brauchen wir auf jeden Fall die Anzahl Bilder. Ich habe hier sechs verschiedene, doch da das erste Bild zwei Mal vorkommt, liegt mein Total von Bildern bei 7. Ausserdem möchte ich, dass jedes Bild 6s angezeigt wird, also müssen wir für die Animationslänge $$ Anzahl Bilder \cdot Bildanzeigedauer $$ rechnen, um den Wert zu bekommen.
 Ausgedrückt habe ich das in zwei Sass Variabeln:
 
@@ -120,10 +120,10 @@ Sass sollte ansonsten recht selbsterklärend sein, bis auf die Keyframes ist der
 }
 ```
 
-### Keyframe Mixin
+# Keyframe Mixin
 Sobald Sass steht, kommen wir zur Keyframes Generation, die überraschenderweise gar nicht so einfach war, wie ich es zuerst gedacht hatte.
 
-#### Gewünschtes Ergebnis
+## Gewünschtes Ergebnis
 Das Ziel ist wie folgt. Wir wollen am Ende Keyframes haben, die wie folgt aussehen:
 Auf der Suche werden wir später nach $$ x $$ sein, was unsere Anzeigedauer (in %) ist.
 
@@ -150,7 +150,7 @@ $w: $img-width;
 
 Wie ihr sehen könnt, müssen wir für jedes Bild ein Keyframe-Paar generieren. Das heisst auf jeden Fall, dass wir eine for-Schleife brauchen werden, da der grösste Teil der Werte vom Index (`$i`) abhängig ist. Die Wiederholung des gleichen Werts für `left` stellt die Zeit dar in der das Bild stillsteht. $$ x $$ repräsentiert also unsere 6s Animationsdauer, die wir dann sozusagen in die Keyframe Prozente übersetzen müssen. Wenn der letzte Keyframe nicht nötig wäre, wäre diese Zahl zu finden nicht schwer, da wir allerdings für das letzte Bild keinen Stillstand möchten, sondern bloss den Slide und dann wieder mit dem ersten Bild beginnen, brauchen wir für das letzte Bild nicht das ganze Paar, sondern nur den ersten Teil davon. Ausserdem muss der Prozentsatz des letzten Keyframes 100% ergeben. Das ist die Lösung. Denn mit einer Gleichung lassen sich Unbekannte einfach finden.
 
-#### Mathe
+## Mathe
 Als erstes müssen wir mal festlegen welche Zahlen wir im Allgemeinen für unser Mixin brauchen. Wir können unserem Mixin allerdings nur eine einzige Variable weitergeben. Und das ist unsere Anzahl Bilder. Grundsätzlich müssen wir also unser komplettes Mixin von dieser Variable abhängig machen.
 
 Beginnen wir mit der Deklaration:

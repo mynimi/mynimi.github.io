@@ -17,7 +17,7 @@ This navigation is written with flexbos and becomes off-canvas once it collapses
 
 I use [Font-Awesome](http://fontawesome.io/) and [jQuery](https://jquery.com/) here because I always have those in my projectrs. But you can create a menu like that, with CSS only. If you are interested in a tutorial, let me know.
 
-### Markup
+# Markup
 Since I use my menus in the header area that's what I did here as well, because I did not want my toggle link floating arount in the emptyness. There are two. One within the `nav` element, that I use to wrap the items and one within. They will toggle the off-canvas. So only used for that version.
 
 And so that markup is written a little faster, I will use jade
@@ -53,7 +53,7 @@ This will result in the following HTML
 </header>
 ```
 
-### Styling
+# Styling
 Styling is done with Flexbox. And Sass, because I will never write plain CSS again. Comments will explain a bit further.
 
 ```scss
@@ -226,7 +226,7 @@ and that's what the styles look like after sass and autoprefixer did their work
 ```
 
 
-### and a pinch of jQuery
+# and a pinch of jQuery
 For the off-canvas to function, we will write a click event, that triggers an active class to display the menu or hide it.
 
 ```js

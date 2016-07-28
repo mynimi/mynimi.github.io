@@ -13,7 +13,7 @@ Meine Obsession begann am 30. Dezember 2015, als ich einen meiner Nail Art Pinse
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.125% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BBBZBxpBMLD/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;">New post on my blog. Talking about brushlettering and different tools I&#39;ve tried.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A video posted by Myriam (@halfapx) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-01-27T00:05:35+00:00">Jan 26, 2016 at 4:05pm PST</time></p></div></blockquote>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
-### Wie ein Grossteil meines Januars verbracht wurde
+# Wie ein Grossteil meines Januars verbracht wurde
 Brushlettering. Grundsätzlich ist das von Hand schreiben, aber mit einem Pinsel. Nur das. Ich habe mit der ganzen Sache angefangen, nachdem wir im letzten Semester einen Typographie Kurs hatten. Ich war nicht wirklich vom Kurs selbst begeistert, doch er hat mich daran erinnert, dass es da diese eine Sache gibt, die ich eigentlich schon immer total gerne mochte. Von Hand schreiben. Im Typographiekurs entwarf ich eine Schrift mit einem Pilot Parallel Pen. Ich mochte ihn sehr, doch dann stolperte ich im Internet über dieses Tutorial auf YouTube und habe mich in den Look von Brushlettering verliebt.
 Also habe ich fast am Ende des Jahres meine Nailart Pinsel durchforstet und einen gefunden, der ein bisschen wie die Pinsel aus den Videos aussah und hab es einfach getan. Ich hab den alten Malkasten aus der Schule hervorgekramt, der Jahrelang unberührt war und habe es ausprobiert. Selbstverständlich war es nicht wunderschön. Aber es war ein Anfang.
 
@@ -24,9 +24,9 @@ Und so habe ich "gelettert". Ich habe damit begonnen Zitate zu schreiben und tue
 
 Im Folgenden möchte ich über die einzelnen Stifte reden. UNd dann noch ein Tipp, weilchen das ich auf jeden Fall kaufen würde und noch ein paar andere kleine Sachen.
 
-### Tools
+# Tools
 
-#### Pinsel(stifte)
+## Pinsel(stifte)
 Alle der folgenden Samples wurden heute aufgenommen, direkt nacheinander. Erstes ein grosser Fail, seit bereit.
 
 ![twintouch](https://lh3.googleusercontent.com/-ikXD8Sgm8tc/VqyNwOjZz5I/AAAAAAAAABw/BdkVkulVsS4/s600-Ic42/twintouch.gif)
@@ -55,14 +55,14 @@ Im Vergleich zum Aquash oder Pocket Brush ist dieser Pinsel weniger elastisch. E
 ![watercolor](https://lh3.googleusercontent.com/-5-LRugkqf1s/VqyN21MmJCI/AAAAAAAAAB4/fQ2B3KLMMK8/s600-Ic42/watercolor.gif)
 Das ist natürlich die Art, wie man dieses Lettering im Original tun würde. Mit einem richtigen klassischen Pinsel. Es ist die günstigste Variante, dieser Pinsel hat mich 4.00 CHF gekostet und auch wenn es anfangs etwas schwer für mich war, eine Position zu finden, bei der meine Finger am Ende nicht wehtaten, muss ich sagen, dass ich langsam verstanden habe, wie es geht. Die Resultate mit diesem Pinsel kommen sehr schön.
 
-##### Empfehlung
+### Empfehlung
 Offensichtlich mag ich richtige Pinsel lieber. Ich denke wennihr Wasserfarben zu Hause habt oder welche besorgen wollt, solltet ihr euch für einen Aquash entscheiden. Am Anfang ist der fine sicher der einfachste. Ich denke Farben lohnen sich allgemein, weil schwarze Buchstaben sind auf jeden Fall weniger schön. Vor allem am Anfang macht Wasserfarbe einfach glücklicher. Aber falls ihr doch TInte wollt - kauft den Pocket Brush, er wird euch auch glücklich machen.
 
-#### Tinte, Farbe und anderes
+## Tinte, Farbe und anderes
 Wenn man den Pinsel hat, braucht man Farbe. Ich hatte viele dieser Sachen zu Hause, weil ich vor ein paar Jahren mal beschlossen hatte, dass ich Copperplate lernen wollte (nach ein paar Tagen hab ich aufgegeben und ich kehre nicht zurück) also hatte ich mir eine Auswahl an Tushe und normaler Tinte in Fässchen besorgt. In der Schweiz bekomt jeder Schüler in der ersten Klasse einen Gouache Malkasten für den Unterricht, wenn die Primar vorbei ist, darf man ihn nach Hause nehmen. ICh hatte also noch Gouache von Caran D'Ache zu Hause. Und auch noch nach fast 14 Jahren, kann man die Farbe super gebrauchen.
 Nun, wenn ihr selbst Tinte mischen wollt, müsst ihr die Patronen und Reservoirs irgendwie füllen. Ich habe nur eine Möglichkeit gefunden. Eine Spritze. Sieht total gruslig aus, aber es wirkt Wunder! Kaufen kann man sich sowas bei ebay. [link](http://www.ebay.com/itm/321912284779?_trksid=p2060353.m2749.l2649&var=510859676126&ssPageName=STRK%3AMEBIDX%3AIT).
 
-### Tutorials und was man bedenken sollte
+# Tutorials und was man bedenken sollte
 Das ist etwas, was ich aus einigen Tutorial gelernt habe. Folge nicht jedem Schritt. Viele habe gesagt, das sman die einzelnen Teilstrihche von Lettering üben soll. Ich habe wirklich keinen Spass dabei und denke nicht, dass ich dabei irgendetwas lerne. Denn Spass muss es machen, wenn ich dafür meine Freizeit verwende. Ich denke, wenn euch etwas nicht gefällt, solltet ihr anders üben. Aber ja, üben ist auf jeden Fall wichtig. Ausserdem, wenn ihr bei Brushpens mit Filz so gefailt habt, wie ich, versucht es mal mit richtigen Pinseln, vielleicht klappt es besser.
 
 Und das ist es. Ich hoffe dieser etwas unübliche Post hat euch gefallen. Versucht es mal mit Brushlettering, es ist das beste Anti-Stress-Mittel.

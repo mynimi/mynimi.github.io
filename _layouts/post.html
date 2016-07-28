@@ -24,45 +24,19 @@ MathJax.Hub.Config({
   <!-- head end-->
   <body class="page post {% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}">
     <nav class="open">
-      <div class="menu">
-        <div class="left">{% if page.lang == "de" %}<a href="/" class="homelink">
-            <svg id="hap-icon" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 478.36136 407.60321" class="logo">
-              <g transform="translate(-370.26663,-281.64625)">
-                <g transform="translate(2.1898424,0)" class="hap">
-                  <path d="M 514.19481,664.8729 590.21786,581.24053 546.2964,472.16361 622.1262,423.78152 605.41204,324.77154 449.38297,293.15295 379.58348,637.59453 Z" class="icon icon-left"></path>
-                  <path d="m 836.64362,678.72265 -214.09408,0.70775 57.57731,-97.25601 -65.03429,-97.96636 64.50319,-62.69229 -36.35501,-93.59836 192.2411,-0.6355 z" class="icon icon-right"></path>
-                </g>
-              </g>
-            </svg></a>{% else %}<a href="/en" class="homelink">
-            <svg id="hap-icon" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 478.36136 407.60321" class="logo">
-              <g transform="translate(-370.26663,-281.64625)">
-                <g transform="translate(2.1898424,0)" class="hap">
-                  <path d="M 514.19481,664.8729 590.21786,581.24053 546.2964,472.16361 622.1262,423.78152 605.41204,324.77154 449.38297,293.15295 379.58348,637.59453 Z" class="icon icon-left"></path>
-                  <path d="m 836.64362,678.72265 -214.09408,0.70775 57.57731,-97.25601 -65.03429,-97.96636 64.50319,-62.69229 -36.35501,-93.59836 192.2411,-0.6355 z" class="icon icon-right"></path>
-                </g>
-              </g>
-            </svg></a>{% endif %}
-          <div class="responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
-            {% assign group = 'navigation' %}
-            {% include pages_list.html %}<a href="https://www.etsy.com/shop/halfapx">Shop</a>
-          </div>
+      <div class="menu container">
+        <div class="left responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
+          {% assign group = 'navigation' %}
+          {% include pages_list.html %}<a href="https://www.etsy.com/shop/halfapx">Shop</a>
           <!-- .responsive end-->
         </div>
         <div class="center"><span class="toggle">Menu</span></div>
-        <div class="right"><span class="backtotop">up?</span>{% assign portfolio = site.portfolio | where:"name", page.name | sort: 'path' %}{% for item in portfolio %}<li class="lang"><a href="{{ item.url | replace: "index.html", "" }}" class="{{ item.lang }}">{{ item.lang }}</a></li>{% endfor %}  
+        <div class="right">
           {% assign pages=site.pages | where:"id", page.id | sort: 'path' %}{% for page in pages %}<a href="{{ page.url | replace: "index.html", "" }}" class="{{ page.lang }}">{{ page.lang }}</a>{% endfor %}      
-          {% assign themes = site.themes | where:"name", page.name | sort: 'path' %}{% for theme in themes %}<li class="lang"><a href="{{ theme.url | replace: "index.html", "" }}" class="{{ theme.lang }}">{{ theme.lang }}</a></li>{% endfor %}       
-          {% assign posts=site.posts | where:"name", page.name %}{% for post in posts %}<li class="lang"><a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">{{ post.lang }}</a></li>{% endfor %}    <span id="trigger"><i class="fa fa-eye-slash"></i></span>
+          {% assign posts=site.posts | where:"name", page.name %}{% for post in posts %}<a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">{{ post.lang }}</a>{% endfor %}    
         </div>
       </div>
       <!-- .menu end-->
-      <div class="svg_wrapper">
-        <svg version="1.1" viewBox="0 0 769.4693 45.8125" class="triangle">
-          <path id="ruffle">
-            <animate attributeName="d" dur="300ms" fill="freeze" begin="indefinite"></animate>
-          </path>
-        </svg>
-      </div>
     </nav>
     <!-- nav end-->
     <header class="header">
@@ -120,11 +94,6 @@ MathJax.Hub.Config({
       <!-- .container end-->
     </header>
     <!-- header end-->
-    <div class="triangle_reverse_container">
-      <svg version="1.1" viewBox="0 0 770 63" class="triangle_reverse">
-        <path d="M 769.0766,61.53043 0.5,61.629255 0.55974186,0.520315 C 0.23440393,30.221569 359.00793,14.210549 384.80814,45.029889 412.33508,14.210549 769.38188,30.328689 769.04308,0.5 z"></path>
-      </svg>
-    </div>
     <div class="wrapper">
       <section class="main_container">
         <div class="container">
@@ -156,8 +125,8 @@ MathJax.Hub.Config({
             {% endfor %}
             {% if prevurl or nexturl %}
             <div class="pagination">
-              {% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fa fa-angle-left"></i> {{ prevtitle}}</a>{% endif %}                    
-              {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}} <i class="fa fa-angle-right"></i></a>{% endif %}
+              {% if prevurl %}<a href="{{prevurl}}" class="prev">{{ prevtitle}}</a>{% endif %}                    
+              {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}}{% endif %}
             </div>{% endif %}
           </article>
           <!-- article end-->
@@ -168,11 +137,6 @@ MathJax.Hub.Config({
     </div>
     <!-- .wrapper end-->
     <footer>
-      <div class="svg_wrapper">
-        <svg version="1.1" viewBox="0 0 769.4693 45.8125" class="triangle_up">
-          <path d="M 0.49749557,0.533884 C 0.17215764,30.235138 358.94568,14.224118 384.74589,45.043458 412.27283,14.224118 769.31963,30.342258 768.98083,0.513569 z"></path>
-        </svg>
-      </div>
       <div class="foot">
         <div class="container">
           <div class="left"><span class="copyright">&copy; content by 1/2 a px.</span>&nbsp;&middot;&nbsp;<span class="year">2016</span>

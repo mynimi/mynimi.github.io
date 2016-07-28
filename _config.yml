@@ -5,20 +5,12 @@ encoding: utf-8
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
-  # german version: smart_quotes: ["ldquo", "rsquo", "bdquo", "ldquo"]
-  # Guillemets version smart_quotes: ["laquo", "rsquo", "raquo", "laquo"]
-relative_permalinks: false
 destination: jekyllbuild
 keep_files: [css/main.css, js/build/main.min.js]
-gems: [jekyll-paginate]
 excerpt_separator: "<!-- more -->"
-# paginate: 10
-# paginate_path: /blog/page/:num/
-# paginate_per_category: true
 permalink: /:categories/:title/
 tag_dir: /tag
-img_dir: /media
+img_dir: /img/posts
 collections:
     portfolio:
         output: true
@@ -33,46 +25,16 @@ defaults:
   -
     scope:
       path: ""
-      type: ""
-    values:
-      lang: de
-  -
-    scope:
-      path: /en
-      type: ""
-    values:
-      lang: en
-  -
-    scope:
-      path: ""
       type: pages
     values:
       layout: page
-      page-title: "yes"
+      page-title: true
   -
     scope:
       path: ""
       type: posts
     values:
       layout: post
-  -
-    scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: portfolio
-  -
-    scope:
-      path: ""
-      type: themes
-    values:
-      layout: theme
-  -
-    scope:
-      path: ""
-      type: brushlettering
-    values:
-      layout: lettering
 exclude: [
 .git,
 .gitignore,

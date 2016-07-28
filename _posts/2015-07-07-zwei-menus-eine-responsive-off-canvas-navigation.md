@@ -13,7 +13,7 @@ Dieses Menu entstand bei der Arbeit, als wir zwei klassische Menus und eine Off-
 <p data-height="266" data-theme-id="7132" data-slug-hash="oXqoJR" data-default-tab="result" data-user="mynimi" class='codepen'>See the Pen <a href='http://codepen.io/mynimi/pen/oXqoJR/'>Two Menus, One responsive Off-Canvas</a> by Myri (<a href='http://codepen.io/mynimi'>@mynimi</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-### Markup
+# Markup
 Wir beginnen mit dem allgemeinen Markup. Wie schon in einem anderen Tutorial erwähnt, werden meine Menus meist im Header platziert und das ist hier nicht anders. Dann haben wir einen gemeinsamen Container für beide Menus und dann jeweils einen einzelnen Container für jedes Menu, darin eine Liste. Da es sich um ein Drop-Down handelt.
 Die Toggle-Links um das Off-Canvas zu öffnen, sowie die Pfeile für die Submenus, werden wir über jQuery hinzufügen.
 Das Hauptmenu wollte ich rechtsbündig haben und den Toggle Button dann auf der linken Seite. Um das hinzubekommen, bekommt der Toggle-Link dann eine eigene Liste, die mit der Klasse `first` versehen wird. Das Menu bekommt demfall die Klasse `second`
@@ -129,7 +129,7 @@ Und HTML für die, die es gerne wissen wollen:
 <!-- /header-->
 ```
 
-### jQuery
+# jQuery
 Mit jQuery sorgen wir dafür, dass wir toggle links für die responsive Ansicht haben und die Sub-Menus öffnen können.
 Also, integriert jQuery in eurem Projekt vor folgendem Script.
 
@@ -179,7 +179,7 @@ $(document).ready(function() {
 
 Wenn das steht, können wir uns endlich an das Styling machen.
 
-### Styling
+# Styling
 Ich verwende wie immer Sass, um die Menus zu stylen. Für die Farben und Einstellungen, verwende ich Variabeln, ihr könnt also ganz einfach Farben ändern, wenn ihr es ausprobieren möchtet. Genauso, wie der Punkt an dem die beiden Menus eines werden.
 Der Sub-Menu Toggle ist ein gleichseitiges Dreieck, das sich mit CSS machen lässt. Ich habe dafür eine Funktion und ein Mixin, weil ich immer wieder mal Dreiecke verwende.
 Ausserdem verwende ich auch mal Flexbox, auch dafür gibt's ein Mixin.

@@ -3,8 +3,8 @@
 $noborder: 0 solid transparent;
 $courier-prime-code: 'Courier Prime Code', 'Courier Prime Sans', 'Courier Prime', 'Courier', 'Courier New', monospace;
 $special-elite: 'Special Elite', monospace;
-$fira-sans: "Fira Sans", "Lato", "Open Sans", "Calibri", sans-serif;
-
+$courier-prime: 'Courier Prime', 'Courier Prime Sans', 'Courier', 'Courier New', monospace;
+$courier-prime-sans: 'Courier Prime Sans', 'Courier Prime', 'Courier', 'Courier New', monospace;
 // SETTINGS FOR BASE-STYLE
 //-------------------
 
@@ -46,16 +46,16 @@ $inlcude-WordPress-kit: yes;
 // color variables (use colors as values)
 //----------------------------------------
 $main-color: $black;
-$link-color: $color-1;
-$link-hover-color: $color-2;
+$link-color: $darkgray;
+$link-hover-color: $red;
 
 // String Variables (use strings as values | for Font Variables: Don't forget to include the fonts)
 //------------------------------------------
 
-$main-font: $fira-sans;
+$main-font: $courier-prime-sans;
 
 // set to $main-font if you don't want your headings to use another font
-$headings-font: $fira-sans;
+$headings-font: $courier-prime;
 
 // use values from text-transform [none|capitalize|uppercase|lowercase|initial|inherit]
 $headings-text-transform: none;
@@ -65,16 +65,16 @@ $code-font: $courier-prime-code;
 // size variables (use numbers as values (units as indicated ))
 
 // font-weights, alternatively use: [light, normal, bold]
-$main-font-weight: 400;
+$main-font-weight: normal;
 
 // set $main-font-weight if you don't want your headings to use another font-weight
-$headings-font-weight: 300;
+$headings-font-weight: normal;
 
 // use px here
-$root-font-size: 17px;
+$root-font-size: 21px;
 
 // do not add a unit here
-$basic-line-height: 1.6;
+$basic-line-height: 2.2;
 
 // yes/no-dependant
 //------------------
@@ -82,7 +82,7 @@ $basic-line-height: 1.6;
 // the variables can be ignored
 
 // depends on: $background-color-setting
-$background-color: $white;
+$background-color: white;
 
 // depends on: $paragraph-gap
 $paragraph-gap-size: 10px;
@@ -90,7 +90,7 @@ $paragraph-gap-size: 10px;
 // depends on: $container-settings
 $container-class-name: 'container';
 $container-background-color: transparent;
-$container-max-width: 1100px; // use px here
+$container-max-width: 1000px; // use px here
 $container-width: 80%; // use % here
 
 // depends on: $include-blockquote-style
@@ -98,24 +98,26 @@ $blockquote-border: 1px solid rgba(black, 0.3);
 
 // depends on: $include-table-style
 $table-border: 1px solid rgba(black, 0.1);
-$even-rows-bg: rgba(black, 0.02);
+$even-rows-bg: rgba(black, 0.001);
 
 // depends on: $include-definition-list-style
 $definition-list-border: 1px solid rgba(black, 0.1);
 
 // PROJECT SETTINGS
 //------------------
-$nav-bg: $almost-white;
-$responsive-nav-bg: $color-3;
-$nav-color: $black;
+$nav-bg: $background-color;
+$responsive-nav-bg: $white;
+$nav-color: $main-color;
 $nav-toggle: 830px;
 
-$footer-bg: $color-2;
-$footer-color: $white;
+$footer-bg: $background-color;
+$footer-color: $main-color;
+$footer-link-color: $link-color;
+$footer-hover-color: $link-hover-color;
 
-$table-border-color: rgba(black, .1);
+$table-border-color: $lightgray;
 $table-collapse: 900px;
-$table-striped-color: rgba(black, .02);
+$table-striped-color: rgba(black, .005);
 
 $threetotwo: 1235px;
 $twotoone: 820px;
