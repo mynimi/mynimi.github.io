@@ -47,7 +47,7 @@ $(document).ready(function () {
         // dissapearing .header based on nav state
         $(window).scroll(function (event) {
             if ($(window).scrollTop() > headerHeight) {
-                didScroll = true;
+                didScroll = false;
             }
         });
 
