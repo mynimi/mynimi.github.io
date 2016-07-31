@@ -96,6 +96,8 @@ Ich benutze die App nicht wahnsinnig oft, aber immer dann wenn ich sie starte, h
 
 [![Tayasui Pro Lettering Sample]({{ site.img_dir }}/tayasui.jpg)]({{ site.img_dir }}/tayasui.jpg)
 
+**Edit**
+Ich habe erfahren, dass ich das Glück hatte die App in einer Phase herunterzuladen, in der sie kostenlos zur Verfügung stand. Mittlerweile ist sie wieder kostenpflichtig. Für 5CHF in der Schweiz erhältlich. Würde ich die App für dieses Geld kaufen? Wahrscheinlich nicht.
 
 # Procreate
 Oh ja, ein ganzer Übertitel für diese App.

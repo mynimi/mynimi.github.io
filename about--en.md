@@ -6,13 +6,23 @@ lang: en
 id: about
 description: a few words about me.
 ---
-So that's it. The About Page.
-You are supposed to present yourself, say what it's all about?
+The About Page. You're supposed to present yourself. Tell, what you're doing.
 
-Well, I will give my best...
-My name is Myriam.
-I have a _slight_ obsession for typing on a computer keyboard. If I'm typing out words for a novel or if code starts to form under my fingers is not that much of a difference to me. I love doing both. With both of them there is one goal. Drawing with words.
+There's different versions of the story. Short ones and a long one.
 
-Here on halfapx.com I want to combine my passion for writing with my love for code. You'll find here (sometime, hopefully) everything that I write. Sometimes all orderly sometimes a little chaotic. I want to write tutorials. And templates, because I want to create so many designs that I can't use for myself. I'll probably write mostly in and about Sass, jade, sometimes jQuery, obviously HTML and CSS, with a focus on Blogger and jekyll. But you might be going with me on some other adventures as well.
+# [Twitter](https://twitter.com/halfapx) Bio
+writing-obsessed media engineering student that likes to code and paint roses on their nails. Also really into anything related to food.
 
-Yeah, I think that's it. Have a look around, read something and stay for a while if you like.
+# [Instagram](https://instagram.com/halfapx) Bio
+<p>22. Swiss. Writer. Frontend Dev. Media Engineering Student. Lettering since 30. Dec 2015.</p>
+
+# [Etsy](https://halfapx.etsy.com) Bio
+I'm a Media Engineering Student, writer and frontend developer, obsessed with hand lettering, in love with chocolate and homemade cupcakes, addicted to collecting nail polish and pens and inks and other awesome things that make daily life a better place.
+
+# halfapx.com
+
+## the short version
+I'm Myriam, 22 years old and from Switzerland. I have a passion (okay, you could call it obsession) for words. Be it in the form of lettering, composing sentences for a story or coding a website. I love pretty pens, awesome technical devices, nail polish and everything related to chocolate.
+
+## the long version
+Just read [this blog post](/en/reboot).

@@ -108,6 +108,8 @@ I don't opt for this App too often, but when I do I enjoy using it.
 
 [![Tayasui Pro Lettering Sample]({{ site.img_dir }}/tayasui.jpg)]({{ site.img_dir }}/tayasui.jpg)
 
+**EDIT**
+I found out that I was lucky to download the app in a limited period where it was available for free. It has now gone back to being a paid app. It is 5 CHF here in Switzerland. Would I pay that money for it? To be hones, probably not.
 
 # Procreate
 Yes, we are gonna do a separate chapter for this one.
