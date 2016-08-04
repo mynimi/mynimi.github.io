@@ -2,7 +2,7 @@
 date: 2016-08-04 13:50:34 +0200
 title: In Love With Amaziograph
 name: ViA
-subtitle: An Introduction int Doodling for Non-Artists
+subtitle: An Introduction into Doodling for Non-Artists
 tags: [amaziograph, lettering, iPad, App, Review]
 description: An Introduction to the Symmetry App Amaziograph
 category: en
