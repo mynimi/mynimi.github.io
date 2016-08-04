@@ -25,7 +25,8 @@ MathJax.Hub.Config({
   <body class="page post {% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}">
     <nav class="open">
       <div class="menu container">
-        <div class="left responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
+        <div class="left responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% if page.lang == "de" %}<a href="/">Home</a>{% else %}<a href="/en">Home</a>{% endif %}
+          {% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
           {% assign group = 'navigation' %}
           {% include pages_list.html %}<a href="https://www.etsy.com/shop/halfapx">Shop</a>
           <!-- .responsive end-->

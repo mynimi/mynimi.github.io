@@ -3,6 +3,11 @@ nav.open
         .left.responsive
             span.toggle
                 i.fa.fa-close
+            {% if page.lang == "de" %}
+            a(href="/") Home
+            {% else %}
+            a(href="/en") Home
+            {% endif %}
             {% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
             {% assign group = 'navigation' %}
             {% include pages_list.html %}

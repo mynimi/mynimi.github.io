@@ -1,3 +1,7 @@
+iframe{
+    margin: 20px auto !important;
+}
+
 .pagination{
     border-top: $line;
     border-bottom: $line;
@@ -308,6 +312,18 @@ article{
 
 .video{
     @include paddinghack(100%, 16, 9, "iframe");
+    iframe{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+.video-4-3{
+    @include paddinghack(100%, 4, 3, "iframe");
+    iframe{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
 }
 
 // contact form
@@ -332,10 +348,6 @@ b, strong{
 // ensuring that there is still some space, even after minification
 .MathJax{
     padding: 0 5px !important;
-}
-
-iframe{
-    margin: 20px auto !important;
 }
 
 p,
