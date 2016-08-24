@@ -2,7 +2,7 @@
 date: 2016-08-12 18:13:41 +0200
 title: All of my Procreate Brushes in one place
 name: AmPBaeO
-tags: [ipadlettering, procreate, freebies]
+tags: [ipadlettering, procreate]
 description: An Introduction into my procreate brushes site
 category: en
 lang: en

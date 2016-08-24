@@ -2,7 +2,7 @@
 date: 2016-08-12 18:13:41 +0200
 title: Alle meine Procreate Brushes an einem Ort
 name: AmPBaeO
-tags: [ipadlettering, procreate, freebies]
+tags: [ipadlettering, procreate]
 description: Eine Einf&uuml;hrung in meine Procreate Brushes Seite
 lang: de
 ---

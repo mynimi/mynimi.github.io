@@ -14,25 +14,22 @@ Auf mich verweisen ist nicht nötig, freut mich aber natürlich.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-## Lettering Übungsbogen
+# Custom Procreate Brushes
+Ich hab über 60 custom Procreate Pinsel
 
-#### Kleinbuchstaben
-[![practice lowercase](/img/freebies/practice-lowercase.jpg)](/img/freebies/practice-lowercase.jpg)
+<a href="/procreate-brushes" class="btn">Procreate Brushes Page</a>
 
-Lettering Übungbögen für meine Kleinbuchstaben. Die Bögen kommen als Bilder, die man ausdrucken kann, oder zum Beispiel auf's iPad laden. Geeignet für Wasserfarben mit einem 00 Pinsel und die meisten Fude Pens.
-Falls in Procreate damit geübt wird, den Pinsel den ich verwendet habe ist der Pointed Pen (etwas runterscrollen um herunterzuladen)
-Ordner enthält auch ein DIY-File, damit lässt sich ein personalisierter Übungsbogen herstellen.
+# Mehr Downloads
+Dotgrids, Übungsbögen, was zum Ausmalen etc.
+<div class="masonry">
+<div><img src="/img/freebies/Colorfree.jpg"><h2>Coloring Page</h2><a href="http://bit.ly/2biec15" download class="btn"><i class="fa fa-download"></i> Download</a></div>
 
-<a href="http://bit.ly/halfapxPracticeLowercase" class="btn"><i class="fa fa-download"></i> Download</a>
+<div><img src="/img/freebies/Colorfree2.jpg"><h2>Coloring Page</h2><a href="http://bit.ly/2c6Lwyg" download class="btn"><i class="fa fa-download"></i> Download</a></div>
 
-## Procreate Brushes
-<a href="/procreate-brushes" class="btn">Alle meine Procreate Pinsel an einem Ort</a>
+<div><img src="/img/freebies/Colorfree3.jpg"><h2>Coloring Page</h2><a href="http://bit.ly/2bFZEN4" download class="btn"><i class="fa fa-download"></i> Download</a></div>
 
-## Other Resources
+<div><img src="/img/freebies/practice-lowercase.jpg"><h2>Lowercase Practice Sheets</h2>
+<a href="http://bit.ly/halfapxPracticeLowercase" class="btn"><i class="fa fa-download"></i> Download</a></div>
 
-### Dot Grids and Lines
-[![dotgridsandlines](/img/freebies/dotgridsandlines.jpg)](/img/freebies/dotgridsandlines.jpg)
-
-Punktkarierter Hintergrund und Hilfslinien in all den üblichen Grössen (Retina iPad, 16:9; 1:1, 4K, A4).
-
-<a href="http://bit.ly/halfapxDotgridsAndLines" class="btn"><i class="fa fa-download"></i> Download</a>
+<div><img src="/img/freebies/dotgridsandlines.jpg"><h2>Dot Grids and Lines</h2><a href="http://bit.ly/halfapxDotgridsAndLines" class="btn"><i class="fa fa-download"></i> Download</a></div>
+</div>
