@@ -9,7 +9,7 @@ html(lang="{{page.lang}}")
         .wrapper
             section.main_container
                 .container
-                    article
+                    .post-header
                         .title
                             div
                                 h1 {{ page.title }}
@@ -26,32 +26,35 @@ html(lang="{{page.lang}}")
                                  i.fa.fa-tags
                                  {% for tag in page.tags limit:10 offset:0 %} <a href="{{ site.tag_dir}}/{{ tag }}">{{ tag }}</a> {% endfor %}
                             {% endif %}
-                        .content {{ content }}
-                        
-                        {% include disqus.html %}
-                        
-                        {% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
-                        {% for links in document %}
-                        {% if links.title == page.title %}
-                        {% unless forloop.first %}
-                        {% assign prevurl = prev.url %}
-                        {% assign prevtitle = prev.title %}
-                        {% endunless %}
-                        {% unless forloop.last %}
-                        {% assign next = document[forloop.index] %}
-                        {% assign nexturl = next.url %}
-                        {% assign nexttitle = next.title %}
-                        {% endunless %}
-                        {% endif %}
-                        {% assign prev = links %}
-                        {% endfor %}
+                    .content-wrapper
+                        main
+                            .content {{ content }}
+                            
+                            {% include disqus.html %}
+                        .sidebar
+                            include includes/sidebar.html
+                        // .sidebar end
+                    {% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
+                    {% for links in document %}
+                    {% if links.title == page.title %}
+                    {% unless forloop.first %}
+                    {% assign prevurl = prev.url %}
+                    {% assign prevtitle = prev.title %}
+                    {% endunless %}
+                    {% unless forloop.last %}
+                    {% assign next = document[forloop.index] %}
+                    {% assign nexturl = next.url %}
+                    {% assign nexttitle = next.title %}
+                    {% endunless %}
+                    {% endif %}
+                    {% assign prev = links %}
+                    {% endfor %}
 
-                        {% if prevurl or nexturl %}
-                        .pagination
-                            {% if prevurl %}<a href="{{prevurl}}" class="prev">{{ prevtitle}}</a>{% endif %}                    
-                            {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}}{% endif %}
-                        {% endif %}
-                    // article end
+                    {% if prevurl or nexturl %}
+                    .pagination.full-width
+                        {% if prevurl %}<a href="{{prevurl}}" class="prev">{{ prevtitle}}</a>{% endif %}                    
+                        {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}}{% endif %}
+                    {% endif %}
                 // .container end
             // section end
         // .wrapper end

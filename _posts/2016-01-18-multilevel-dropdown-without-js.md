@@ -5,7 +5,6 @@ name: armlmwj
 subtitle: Using the checked-hack to create a responsive dropdown menu
 tags: [sass, navigation, tutorial ♦♦]
 description: How to create a mutli level dropdown menu without javascript
-category: en
 lang: en
 ---
 It's been a while since I wrote something about doing JavaScript work with CSS. So I decided to create this responsive navigation using the :checked hack.

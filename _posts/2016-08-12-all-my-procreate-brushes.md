@@ -4,7 +4,6 @@ title: All of my Procreate Brushes in one place
 name: AmPBaeO
 tags: [ipadlettering, procreate]
 description: An Introduction into my procreate brushes site
-category: en
 lang: en
 ---
 I reorganized my custom Procreate Brushes.

@@ -369,3 +369,79 @@ ul{
         border-bottom: $line;
     }
 }
+
+
+.main_container{
+    .content-wrapper{
+        @include flexbox(row, wrap, space-between, flex-start);
+        main{
+            width: calc(100% - #{$sidebar-width + 20px});
+        }
+        .sidebar{
+            width: $sidebar-width;
+
+            &.is_stuck{
+                transform: translateX(10px);
+            }
+
+            .widget{
+                border: $line;
+                margin-bottom: 30px;
+
+                h1{
+                    font-size: 90%;
+                    border-bottom: $line;
+                    padding: 10px;
+                    opacity: .9;
+                    text-align: right;
+                }
+
+                .content{
+                    padding: 10px;
+                }
+            }
+        }
+
+        @media screen and (max-width: $sidebar-collapse){
+            main,
+            .sidebar{
+                width: 100%;
+            }
+            // .sidebar{
+                // display: none;
+            // }
+        }
+    }
+}
+
+
+// Procreate Brushes
+.brush-tab-wrapper{
+    width: 100%;
+    .brush-tab{
+        width: 100%;
+        display: none;
+
+        &.visible{
+            display: block;
+        }
+    }
+}
+.brush-nav{
+    span{
+        border: $line;
+        padding: 3px 7px;
+        transition: .3s all ease;
+        cursor: pointer;
+
+        &:hover{
+            background: rgba(black, .05);
+        }
+
+        &.active{
+            border-color: black;
+            color: black;
+            cursor: default;
+        }
+    }
+}

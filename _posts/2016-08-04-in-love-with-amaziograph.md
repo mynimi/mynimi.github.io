@@ -5,7 +5,6 @@ name: ViA
 subtitle: An Introduction into Doodling for Non-Artists
 tags: [amaziograph, lettering, iPad, App, Review]
 description: An Introduction to the Symmetry App Amaziograph
-category: en
 lang: en
 ---
 I've never considered myself an artist and probably won't call myself that for the rest of my life. I can't draw. Well, at least not without help.

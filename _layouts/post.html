@@ -25,15 +25,14 @@ MathJax.Hub.Config({
   <body class="page post {% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}">
     <nav class="open">
       <div class="menu container">
-        <div class="left responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% if page.lang == "de" %}<a href="/">Home</a>{% else %}<a href="/en">Home</a>{% endif %}
+        <div class="left responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% if page.lang == "en" %}<a href="/">Home</a>{% else %}<a href="/de/">Home</a>{% endif %}
           {% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
           {% assign group = 'navigation' %}
           {% include pages_list.html %}<a href="https://www.etsy.com/shop/halfapx">Shop</a>
           <!-- .responsive end-->
         </div>
         <div class="center"><span class="toggle">Menu</span></div>
-        <div class="right">
-          {% assign pages=site.pages | where:"id", page.id | sort: 'path' %}{% for page in pages %}<a href="{{ page.url | replace: "index.html", "" }}" class="{{ page.lang }}">{{ page.lang }}</a>{% endfor %}      
+        <div class="right"><a href="https://www.instagram.com/halfapx/"><i class="fa fa-instagram"></i></a><a href="http://youtube.com/halfapx"><i class="fa fa-youtube"></i></a><a href="https://twitter.com/halfapx"><i class="fa fa-twitter"></i></a><a href="https://github.com/mynimi"> <i class="fa fa-github"></i></a><a href="http://codepen.io/mynimi/"><i class="fa fa-codepen"></i></a>{% assign pages=site.pages | where:"id", page.id | sort: 'path' %}{% for page in pages %}<a href="{{ page.url | replace: "index.html", "" }}" class="{{ page.lang }}">{{ page.lang }}</a>{% endfor %}      
           {% assign posts=site.posts | where:"name", page.name %}{% for post in posts %}<a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">{{ post.lang }}</a>{% endfor %}    
         </div>
       </div>
@@ -98,7 +97,7 @@ MathJax.Hub.Config({
     <div class="wrapper">
       <section class="main_container">
         <div class="container">
-          <article>
+          <div class="post-header">
             <div class="title">
               <div>
                 <h1>{{ page.title }}</h1>{% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
@@ -108,29 +107,136 @@ MathJax.Hub.Config({
             <div class="meta"><span class="date">
                 {% include date.html %}
                 {% if post.tags %} &nbsp;&bull;&nbsp;{% endif %}</span>{% if page.tags %}<span class="tags"><i class="fa fa-tags"></i>{% for tag in page.tags limit:10 offset:0 %} <a href="{{ site.tag_dir}}/{{ tag }}">{{ tag }}</a> {% endfor %}</span>{% endif %}</div>
-            <div class="content">{{ content }}</div>{% include disqus.html %}
-            {% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
-            {% for links in document %}
-            {% if links.title == page.title %}
-            {% unless forloop.first %}
-            {% assign prevurl = prev.url %}
-            {% assign prevtitle = prev.title %}
-            {% endunless %}
-            {% unless forloop.last %}
-            {% assign next = document[forloop.index] %}
-            {% assign nexturl = next.url %}
-            {% assign nexttitle = next.title %}
-            {% endunless %}
+          </div>
+          <div class="content-wrapper">
+            <main>
+              <div class="content">{{ content }}</div>{% include disqus.html %}
+            </main>
+            <div class="sidebar"><div class="widget">
+    <h1>
+        {% if page.lang == "en" %}
+        Like what you read?
+        {% else %}
+        Gefällt dir was du liest?
+        {% endif %}
+    </h1>
+    <div class="content">
+        <p>{% if page.lang == "en" %}
+        Tell the world
+        {% else %}
+        Erzähl der Welt davon
+        {% endif %}</p>
+        <div class="share">
+            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=halfapx&related=halfapx" rel="nofollow" target="_blank" title="Share on Twitter">
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+                <i class="fa fa-facebook-official fa-lg"></i>
+            </a>
+            <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">
+                <i class="fa fa-google-plus-official fa-lg"></i>
+            </a>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.url }}" rel="nofollow" title="Share on LinkedIN">
+                <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+        </div>
+    </div>
+</div>
+{% assign hasSimilar = '' %}
+{% assign related = site.related_posts | where:"lang", page.lang %}
+
+{% for post in related %}
+    {% assign postHasSimilar = false %}
+    {% for tag in post.tags %}
+        {% for thisTag in page.tags %}
+            {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+                {% if hasSimilar.size == 0 %}
+                <div class="widget">
+                    <h1>
+                        {% if page.lang == "en" %}
+                            Related Posts
+                        {% else %}
+                            Ähnliche Beiträge
+                        {% endif %}
+                    </h1>
+                    <div class="content">
+                        <ul>
+                {% endif %}
+                    <li>
+                        <a href="{{ post.url }}" class="related-post">{{ post.title }}</a>
+                    </li>
+                {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                {% assign postHasSimilar = true %}
             {% endif %}
-            {% assign prev = links %}
-            {% endfor %}
-            {% if prevurl or nexturl %}
-            <div class="pagination">
-              {% if prevurl %}<a href="{{prevurl}}" class="prev">{{ prevtitle}}</a>{% endif %}                    
-              {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}}{% endif %}
-            </div>{% endif %}
-          </article>
-          <!-- article end-->
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{% if hasSimilar.size > 0 %}
+    </u>
+    </div>
+    </div>
+{% endif %}
+{% if page.id == "brushes" %}
+<div class="widget">
+    <h1>{% if page.lang == "en" %}More on iPad Lettering{% else %}Mehr über iPad Lettering{% endif %}</h1>
+    <div class="content">
+        <ul>
+            <li>
+                {% if page.lang == "en" %}
+                    <a href="/all-my-procreate-brushes/">Install the Brushes</a>
+                {% else %}
+                    <a href="/de/meine-procreate-pinsel/">Brushes installieren</a>
+                {% endif %}
+            </li>
+            <li>
+                {% if page.lang == "en" %}
+                    <a href="/ipad-lettering-101/">iPad Lettering 101</a>
+                {% else %}
+                    <a href="/de/ipad-lettering-1x1/">iPad Lettering 1x1</a>
+                {% endif %}
+            </li>
+            <li>
+                {% if page.lang == "en" %}
+                    <a href="/pressure-curve-for-ipadlettering/">Find your Pressure Curve</a>
+                {% else %}
+                    <a href="/de/pressure-curve-fuer-ipadlettering/">Finde deine Pressure Curve</a>
+                {% endif %}
+            </li>
+            <li>
+                {% if page.lang == "en" %}
+                    <a href="/tag/ipadlettering">All iPad Lettering Posts</a>
+                {% else %}
+                    <a href="/de/tag/ipadlettering">Alle iPad Lettering Posts</a>
+                {% endif %}
+            </li>
+
+        </ul>
+    </div>
+</div>
+{% endif %}
+
+            </div>
+            <!-- .sidebar end-->
+          </div>{% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
+          {% for links in document %}
+          {% if links.title == page.title %}
+          {% unless forloop.first %}
+          {% assign prevurl = prev.url %}
+          {% assign prevtitle = prev.title %}
+          {% endunless %}
+          {% unless forloop.last %}
+          {% assign next = document[forloop.index] %}
+          {% assign nexturl = next.url %}
+          {% assign nexttitle = next.title %}
+          {% endunless %}
+          {% endif %}
+          {% assign prev = links %}
+          {% endfor %}
+          {% if prevurl or nexturl %}
+          <div class="pagination full-width">
+            {% if prevurl %}<a href="{{prevurl}}" class="prev">{{ prevtitle}}</a>{% endif %}                    
+            {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}}{% endif %}
+          </div>{% endif %}
         </div>
         <!-- .container end-->
       </section>
@@ -142,7 +248,7 @@ MathJax.Hub.Config({
         <div class="container">
           <div class="left"><span class="copyright">&copy; content by 1/2 a px.</span>&nbsp;&middot;&nbsp;<span class="year">2016</span>
           </div>
-          <div class="right"><a href="https://www.instagram.com/halfapx/"><i class="fa fa-instagram"></i></a><a href="http://youtube.com/halfapx"><i class="fa fa-youtube"></i></a><a href="https://twitter.com/halfapx"><i class="fa fa-twitter"></i></a><a href="https://github.com/mynimi"> <i class="fa fa-github"></i></a><a href="http://codepen.io/mynimi/"><i class="fa fa-codepen"></i></a>&nbsp;<span class="backtotop">back to top</span></div>
+          <div class="right"><span class="backtotop">back to top</span></div>
         </div>
         <!-- .container end-->
       </div>

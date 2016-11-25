@@ -5,7 +5,6 @@ name: EFMGmR
 subtitle: Why I will no longer remember my front matter variables
 tags: [jekyll, ruby, front matter, generator, ♦♦]
 description: How I wrote a jekyll front matter generator with ruby.
-category: en
 lang: en
 ---
 After an Introduction to Java a few years ago in school I decided to leave the programming languages behind me. I think if we'd have gotten an introduction to Ruby, my opinion would have been different.

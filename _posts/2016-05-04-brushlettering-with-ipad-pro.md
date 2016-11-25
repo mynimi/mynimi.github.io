@@ -5,7 +5,6 @@ name: BL2
 subtitle: digital handlettering with the iPad Pro and Apple Pencil
 tags: [review, brushlettering, procreate, freebie]
 description: How to handletter digitally with the iPad Pro and Apple Pencil
-category: en
 lang: en
 ---
 I would've never thought that I'd ever buy an iPad. I was sure of the fact that I would never (ever) be in love with an Apple product as much as I still adore my beloved iPod classic (which is still in use!). Well, my iPod is still my number one, but this Pad is definitelly getting there. I've only had it for 6 days... Combine the iPad Pro with Porcreate and the Apple Pencil and you got a lettering tool that feels like a real brush upgraded with an undo option.

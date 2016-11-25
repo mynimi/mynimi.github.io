@@ -4,6 +4,7 @@ subtitle: Zentrieren ist gar nicht so einfach...
 description: Ein Quicktip, wie man ein Dreier-Layout einfach umsetzt
 tags: [tutorial, quicktip, sass, css, html, flexbox, ♦♦ ]
 name: lmr-layout
+category: de
 lang: de
 ---
 # Das Problem.

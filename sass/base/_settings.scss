@@ -90,7 +90,7 @@ $paragraph-gap-size: 10px;
 // depends on: $container-settings
 $container-class-name: 'container';
 $container-background-color: transparent;
-$container-max-width: 1000px; // use px here
+$container-max-width: 1300px; // use px here
 $container-width: 80%; // use % here
 
 // depends on: $include-blockquote-style
@@ -125,3 +125,7 @@ $twotoone: 820px;
 $date-collapse: 900px;
 
 $line: 1px solid rgba(black, 0.1);
+
+
+$sidebar-collapse: 1150px;
+$sidebar-width: 300px;

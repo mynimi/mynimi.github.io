@@ -1,13 +1,13 @@
 ---
-permalink: /archiv/
 group: navigation-06
-title: Archiv
-lang: de
+title: Archive
+lang: en
 id: archive
-description: Alle Posts von 1/2 a px. Posts über blogger, jekyll, HTML und Sass.
+description: All posts by 1/2 a px. Posts about blogger, jekyll, HTML Sass and other things web-related.
+layout: page-no-sidebar
 ---
 {% assign posts = site.posts | where:"lang", page.lang %}
-Datum | Titel | Tags
+Date | Title | Tags
 ---|---|---
 {% for post in posts%}{% include date.md %} | [{{ post.title }}]({{ post.url }}) | {% for tag in post.tags %} <a href="{{ site.tag_dir}}/{{ tag }}" class="tag">{{ tag }}</a> {% endfor %}
 {% endfor %}

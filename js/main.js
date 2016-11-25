@@ -44,6 +44,34 @@ $(document).ready(function () {
             'margin-top': navbarHeight
         });
 
+        $(".sidebar").stick_in_parent({offset_top: navbarHeight+30});
+
+        // procreate brushes tabs
+        $('.brush-nav span').click(function(){
+            var tabId = $(this).data('toggles-tab');
+            $('.brush-nav span').not($(this)).removeClass('active');
+            $(this).addClass('active');
+            $('.brush-tab').not('#'+tabId).slideUp();
+            $('#'+tabId).slideDown();
+        });
+
+        $('a[data-lightbox]').click(function(e){
+            e.preventDefault();
+            var img = $(this).attr('href');
+            $('body').append('<div class="shadow"></div>');
+            $('body').append('<img src="'+img+'" class="lightbox-img">');
+        });
+        $('body').on('click', '.shadow', function(){
+            $('.shadow').remove();
+            $('.lightbox-img').remove();
+        });
+        $(document).keyup(function(e){
+            if(e.keyCode === 27){
+                $('.shadow').remove();
+                $('.lightbox-img').remove();
+            }
+        });
+
         // dissapearing .header based on nav state
         $(window).scroll(function (event) {
             if ($(window).scrollTop() > headerHeight) {

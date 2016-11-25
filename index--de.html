@@ -1,0 +1,18 @@
+---
+layout: page
+title: Home
+lang: de
+id: index
+description: 1/2 a px. Ein Blog über Frontend Development mit Fokus auf jekyll und Blogger.
+page-title: false
+permalink: /de/
+---
+<div class="posts-container">
+{% assign posts = site.posts | where:"lang", page.lang %}
+{% for post in posts limit: 30 %}
+    {% include article_index.html %}
+{% endfor %}
+{% if posts.size > 30 %}
+<a href="/archiv" class="btn">Alle Posts</a>
+{% endif %}
+</div>

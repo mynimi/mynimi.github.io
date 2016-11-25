@@ -413,27 +413,28 @@ $(function () {
         };
 
     //	ALL COMBINED
-    var selectorF = 'a[data-imagelightbox="f"]';
+    var selectorF = 'a[data-imagelightbox]';
     var instanceF = $(selectorF).imageLightbox({
         onStart: function () {
             overlayOn();
             closeButtonOn(instanceF);
-            arrowsOn(instanceF, selectorF);
+            navigationOff();
+            // arrowsOn(instanceF, selectorF);
         },
         onEnd: function () {
             overlayOff();
-            captionOff();
             closeButtonOff();
-            arrowsOff();
+            navigationOff();
+            // arrowsOff();
             activityIndicatorOff();
         },
         onLoadStart: function () {
-            captionOff();
             activityIndicatorOn();
+            navigationOff();
         },
         onLoadEnd: function () {
-            captionOn();
             activityIndicatorOff();
+            navigationOff();
             $('.imagelightbox-arrow').css('display', 'block');
         }
     });

@@ -5,7 +5,6 @@ name: DpPCfdiL
 subtitle: How to find the perfect setting for your writing
 tags: [pressure curve, handlettering, ipadlettering, procreate, iPad]
 description: How to set up your pressure curve in Procreate for  handlettering.
-category: en
 lang: en
 ---
 The pressure curve in procreate seems to be kind of a mystery for a lot of people. As soon as it goes into curve some have problems because it looks quite abstract. But if you get the curve right, you can improove your results greatly, without having to master any additional skill.

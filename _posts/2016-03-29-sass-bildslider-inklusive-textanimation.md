@@ -6,6 +6,7 @@ subtitle: Ein responsiver Bildslider mit Textoverlay, ganz ohne JavaScript
 tags: [sass, tutorial, no javascript, slider, mixin, ♦♦♦♦]
 description: Ein Bildslider ohne JavaScript inklusive Animationen. Geschrieben mit Sass.
 lang: de
+category: de
 ---
 Vor ein paar Monaten habe ich bereits gezeigt, wie man mit einem Sass-Mixin einen responsiven Bildslider schreiben kann. Vor einer Weile wurde ich dann allerdings gefragt, ob ich einen Bildslider mit Textoverlay schreiben könnte. Im Zuge dessen, habe ich den Code von damals erweitert. Diesen erweiterten Code, möchte ich heute vorstellen.
 In dem Zuge auch noch einmal entschuldigung, dass es so lange gedauert hat. Studium und Arbeit lassen wenig Zeit fürs bloggen, aber ich will mich besser.

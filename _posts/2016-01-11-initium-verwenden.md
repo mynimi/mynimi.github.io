@@ -1,5 +1,6 @@
 ---
 lang: de
+category: de
 date: 2016-01-11 14:07:27 +0100
 title: Ein jekyll Blog mit initium
 name: EjBmi

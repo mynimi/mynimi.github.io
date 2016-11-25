@@ -5,7 +5,6 @@ name: DgEiBL
 subtitle: A shopping list to learn about all brush lettering tool types for a small budget
 tags: [low budget, brush lettering, starter kit, lettering tools]
 description: A list of products to cover the different pen types you can use for brush lettering.
-category: en
 lang: en
 ---
 There are three main pen types to do brush lettering. Felt tip brush pens, fude pens and actual bristled brushes. If you want to get into brush lettering I recommend trying all of them. I tried to think of the most cost-effective way to get a good grasp of the different types, without having to spend tons of money. So this is what I'd put on your shopping list for the very first trip to get lettering supplies. I did make a product choice, but this guide will show you a variety of alternatives too.

@@ -3,6 +3,7 @@ date: 2015-07-07 07:40:04 +0200
 title: Zwei Menus, eine responsive Off-Canvas Navigation
 name: ZMerON
 lang: de
+category: de
 subtitle: Zwei Menus in der Hauptansicht, die responsive zu einer Off-Canvas Navigation kombiniert werden
 tags: [navigation, dropdown, responsive, sass, jade, jQuery, ♦♦♦]
 description: Ein Tutorial, wie man zwei Menus schreibt, die responsive zu einem vereint werden

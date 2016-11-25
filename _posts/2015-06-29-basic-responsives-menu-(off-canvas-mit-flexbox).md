@@ -3,6 +3,7 @@ date: 2015-06-29 22:02:53 +0200
 title: Basic Responsives Menu (off-canvas mit flexbox)
 name: BRM(mf
 lang: de
+category: de
 subtitle: so ziemlich das einfachste 1-Level-Menu ever
 tags: [tutorial, navigation,  sass, css, html, flexbox, ♦]
 description: Wie man ein einfaches responsives 1-Level-Menu mit Flexbox macht

@@ -6,6 +6,7 @@ subtitle: Wie du die Pressure Curve auf dich pers&ouml;nlich angepasst einstelle
 tags: [pressure curve, handlettering, ipadlettering, procreate, iPad]
 description: Wie man die Pressure Curve in Procreate f&uuml;rs Handlettering einstellt.
 lang: de
+category: de
 ---
 Die Pressure Curve (Druckkurve?) in Procreate scheint für viele ein Rätsel zu sein. Sobald man mit Kurven zutun hat, haben viele etwas Probleme an der ganzen Sache. Dabei kann man mit den Einstellungne in der Kurve wahnsinnig beeinflussen, wie der Pinsel sich verhält.
 

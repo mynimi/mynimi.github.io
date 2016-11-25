@@ -8,8 +8,8 @@ html(lang="{{page.lang}}")
         
         .wrapper
             section.main_container
-                .container
-                    article
+                .container.content-wrapper
+                    main
                         {% if page.page-title == true %}
                         h1.title {{ page.title }}
                         {% endif %}
@@ -18,7 +18,10 @@ html(lang="{{page.lang}}")
                         {% if page.enable-comments == true %}
                         {% include disqus.html %}
                         {% endif %}
-                    // article end
+                    // main end
+                    .sidebar
+                        include includes/sidebar.html
+                    // .sidebar end
                 // .container end
             // section end
         // .wrapper end

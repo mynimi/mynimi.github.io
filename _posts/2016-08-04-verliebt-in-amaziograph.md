@@ -6,6 +6,7 @@ subtitle: Eine Einf&uuml;hrung in Doodling f&uuml;r Nicht-K&uuml;nstler
 tags: [amaziograph, lettering, iPad, App, Review]
 description: Eine Einf&uuml;hrung in die Symmetrie App Amaziograph
 lang: de
+category: de
 ---
 Ich habe mich nie als Künstler angesehen und werde es in diesem Leben wohl auch nicht mehr tun. Ich kann nicht zeichnen. Na ja, zumindest nicht ohne Hilfe.
 

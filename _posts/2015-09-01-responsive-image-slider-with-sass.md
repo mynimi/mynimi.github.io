@@ -6,7 +6,6 @@ lang: en
 subtitle: Do JavaScript-Work with a Sass mixin
 tags: [sass, tutorial, mixin, slider, ♦♦♦♦]
 description: A tutorial on how to write a flexible responsive image slider with Sass
-category: en
 mathjax: true
 ---
 I was looking for a simple responsive image Slider featuring as little markup as possible. It should not be fancy or packed with features, just plain old scrolling through some images. While searching CodePen for inspiration I acutally ran over [this pen](http://codepen.io/dudleystorey/pen/ehKpi/) which was doing exactly what I wanted. Also with CSS only. But when I was trying to write keyframes for another amount of images I though that it would get way overboard if I needed to recalculate the numbers whenever I wanted to change the image count. So I took over the CSS into my Sass workspace and wrote a mixin for the keyframes. This is what I want to go over today. You can check out the demo <a href="/demo/responsive-image-slider-with-sass/" target="_blank">here</a> if you want to have it full screen.

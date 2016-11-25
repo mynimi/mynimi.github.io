@@ -6,7 +6,6 @@ lang: en
 subtitle: pretty much the easiest 1-Level-Menu ever
 tags: [tutorial, navigation,  sass, css, html, flexbox, ♦]
 description: How to write a simple one level menu with flexbox
-category: en
 ---
 Menus. The first Menu I wrote was a list that was made looking like a navigation with CSS. I still use a lisst for a drop down menu. But since we are finally ready to use Flexbox, I have given up on lists and turned to a simpler markip.
 This navigation is written with flexbos and becomes off-canvas once it collapses.

@@ -5,6 +5,7 @@ name: AmPBaeO
 tags: [ipadlettering, procreate]
 description: Eine Einf&uuml;hrung in meine Procreate Brushes Seite
 lang: de
+category: de
 ---
 Ich hab die Procreate Brushes neu organisiert.
 

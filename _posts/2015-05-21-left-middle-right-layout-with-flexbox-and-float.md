@@ -4,7 +4,6 @@ subtitle: Centering is not that easey...
 description: A quicktip on how to set up a layout with three elements and centering correctly.
 tags: [tutorial, quicktip, sass, css, html, flexbox, ♦♦ ]
 name: lmr-layout
-category: en
 lang: en
 ---
 # The Problem

@@ -3,6 +3,7 @@ date: 2015-09-03 16:09:25 +0200
 title: Eine nicht 100% breite sticky navbar f&uuml;r Blogger
 name: En1bsnfB
 lang: de
+category: de
 subtitle: Wie man eine Navbar in Blogger fixiert, ohne dass sie gleich 100% einnimmt
 tags: [blogger, tutorial, jQuery, javascript, navigation, ♦♦]
 description: Wie ihr in Blogger ein Menu sticky bekommt, ohne dass die Navbar dann 100% einnimmt

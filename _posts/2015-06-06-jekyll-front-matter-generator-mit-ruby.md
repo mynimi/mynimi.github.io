@@ -6,6 +6,7 @@ subtitle: Warum ich mir nie wieder front matter Variablen merken werde
 tags: [jekyll, ruby, front matter, generator, ♦♦]
 description: Wie ich einen Front Matter Generator f&uuml;r Jekyll mit ruby schrieb.
 lang: de
+category: de
 ---
 Nachdem ich vor einigen Jahren in Informatik eine Einführung in Java erhielt, hatte ich beschlossen, die Programmiersprachen auf ewig hinter mir zu lassen. Hätten wir damals eine Sprache wie Ruby gelernt, hätte ich das wohl ganz anders gesehen.
 Ich hatte einen Tag ruby gelernt, als ich die erste Version dieses Generators schrieb. Nach einem Jahr Java konnte ich nicht einmal so viel programmieren, wie ich es mit ein bisschen Javascript und CSS heute kann.

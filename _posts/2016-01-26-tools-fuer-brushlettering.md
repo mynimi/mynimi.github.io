@@ -6,6 +6,7 @@ subtitle: Eine Übersicht meiner liebsten Tools für Brush Lettering und eine Ei
 tags: [brushlettering, creative, offtopic, analog]
 description: Eine Übersicht meiner liebsten Tools für Brush Lettering und eine Einführung für Anfänger
 lang: de
+category: de
 ---
 Meine Obsession begann am 30. Dezember 2015, als ich einen meiner Nail Art Pinsel in die Hand nahm und es einfach ausprobiert habe. Brushlettering. Seit diesem Tag, habe ich fast jeden Tag irgendwas geschrieben und ich dachte, ich erzähl euch heute ein bisschen etwas über meine Stifte und Pinsel und die Erfahrungen, die ich bisher gemacht habe.
 <!-- more -->

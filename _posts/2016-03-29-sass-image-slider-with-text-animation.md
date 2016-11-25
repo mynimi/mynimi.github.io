@@ -5,7 +5,6 @@ name: SBiT
 subtitle: A responsive image slider with textoverlay, without any JavaScript
 tags: [sass, tutorial, no javascript, slider, mixin, ♦♦♦♦]
 description: An image slider, without javascript, including animations, and text. Written in Sass.
-category: en
 lang: en
 ---
 A few months ago I showed you how to write an image slider with Sass only. A while ago I was asked to write a slider with text and animating that text as well. So I took the code and modified it to suit my needs. Today I wanted to sit down and write a post about it, because it has been a while, sorry for that.

@@ -3,6 +3,7 @@ date: 2015-09-13 19:14:58 +0200
 title: Vorherige und n&auml;chster Link f&uuml;r jekyll collections
 name: VunLfjc
 lang: de
+category: de
 subtitle: Wie man einen Navigator in jekyll collections baut
 tags: [jekyll, page navigator, liquid, ♦♦♦]
 description: Wie man in jekyll links zu vorherigen und n&auml;chsten Elementen in collections schreibt

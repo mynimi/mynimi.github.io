@@ -5,7 +5,6 @@ name: EjBmi
 subtitle: How to use intium to get your own jekyll blog up and running
 tags: [initium, jekyll, tutorial, theme, ♦♦♦♦]
 description: an introduction on how to use the jekyll start theme initium
-category: en
 lang: en
 ---
 A while ago I finally managed to publish my jekyll starter theme "initum;". Since it is a pretty packed theme, I wanted to make this post as an introduction on how to use it.

@@ -6,6 +6,7 @@ subtitle: Wie man mit dem checked-hack ein responsives Dropdwon schreibt
 tags: [sass, navigation, tutorial ♦♦]
 description: Wie man ein multi-level dropdown mit dem checked hack und ohne javascript schreibt.
 lang: de
+category: de
 ---
 Ich dachte ich könnte mal wieder einen Post ohne JavaScript schreiben. Was eignet sich da besser als eine Navigation.
 Diesmal ein Dropdown Menu mit verschiedenen Levels, das auch noch responsive ist.

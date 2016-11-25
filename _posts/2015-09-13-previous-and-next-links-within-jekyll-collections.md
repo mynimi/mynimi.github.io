@@ -6,7 +6,6 @@ lang: en
 subtitle: how a navigator for jekyll collections is written
 tags: [jekyll, page navigator, liquid, ♦♦♦]
 description: How paginator links are placed within jekyll collections
-category: en
 ---
 If you want to add some navigation links within jekyll posts that bring you to the previous and next one, it's a fairly simple thing to achieve, since all articles are found within the paginator. I'm showing you how to do the same thing for collections.
 

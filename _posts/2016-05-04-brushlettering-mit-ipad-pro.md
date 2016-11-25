@@ -6,6 +6,7 @@ subtitle: Digital Lettern mit dem iPad Pro und Apple Pencil
 tags: [review, brushlettering, procreate, freebie]
 description: Wie man mit dem iPad Pro und Apple Pencil digital Handlettern kann
 lang: de
+category: de
 ---
 Ich hätte nie im Leben gedacht, dass ich mir je ein iPad kaufen würde. Ich war der Überzeugung, dass ich nie wieder ein Apple Produkt so sehr lieben könnte, wie mein heissgeliebter und noch immer in Betrieb stehender iPod classic. Nun, mein iPod ist noch immer einer meiner grössten Schätze, aber dieses iPad Pro und den Apple Pencil habe ich nach nur sechs Tagen total ins Herz geschlossen. In Kombination mit der App Procreate schafft man es damit zu lettern, als hätte man einen richtigen Pinsel mit einer undo-Funktion versehen.
 <!-- more -->

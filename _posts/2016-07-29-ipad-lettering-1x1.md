@@ -3,9 +3,10 @@ date: 2016-07-29 11:42:21 +0200
 title: iPad Lettering 1x1
 name: iL1
 subtitle: Eine Starthilfe
-tags: [brushlettering, lettering, iPadlettering, iPadPro, Basics]
+tags: [brushlettering, lettering, iPadlettering, iPad, Basics]
 description: Eine Starthilfe zum Thema iPad Lettering.
 lang: de
+category: de
 ---
 iPad Lettering ist in den Monaten seit meinem letzten Post wahnsinnig beliebt geworden. Ich habe mein iPad Pro und Apple Pencil jetzt seit genau 3 Monaten. In der Zwischenzeit haben wir ein fantstisches Update erhalten, viele neue Brushes released und ich persönlich konnte mein Lettering deutlich verbessern.
 

@@ -3,9 +3,8 @@ date: 2016-07-29 11:42:21 +0200
 title: iPad Lettering 101
 name: iL1
 subtitle: A Getting Started Guide
-tags: [brushlettering, lettering, iPadlettering, iPadPro, Basics]
+tags: [brushlettering, lettering, iPadlettering, iPad, Basics]
 description: Getting started with iPad Lettering.
-category: en
 lang: en
 ---
 iPad Lettering has become quite popular since my last post about it. I've had my iPad Pro and Apple Pencil for exactly 3 month now. There have been some fantastic updates, a lot of new brush releases and quite a big improvement in my personal Lettering since then.

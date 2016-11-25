@@ -6,7 +6,6 @@ lang: en
 subtitle: two menus combined into one off-canvas nav
 tags: [navigation, dropdown, responsive, sass, jade, jQuery, ♦♦♦]
 description: A tutorial on how to combine two menus to one in the responsive view
-category: en
 ---
 I created this menu at work, when we wanted to have two menus but just one off-canvas navigation after the collapse. The idea was to combine an off-canvas menu with a classic navbar and then merge them into one separate off-canvas navigation on the collapse.
 Suprisingly, this proved to be not as easy as I initially had thought. But it was still achieved in the end, here you'll see how.

@@ -6,6 +6,7 @@ subtitle: Einkaufsliste f&uuml;r ein Einstieg in alle Brush Lettering Tools f&uu
 tags: [low budget, brush lettering, starter kit, lettering tools]
 description: Eine Liste von Produkten, mit denen alle Brush Lettering Stufttypen abgedeckt werden.
 lang: de
+category: de
 ---
 Es gibt drei verschiedene Stift-Typen für Brush Lettering. Filz Pinselstifte, Fude Pens und richtige Pinsel (mit Haaren). Wenn du Brush Lettering lernen willst, dann empfehle ich dir alle diese Typen einmal anzuschauen. Ich hab versucht ein Kit zusammenzustellen, welches all diese Typen abdeckt, und zwar möglichst kosten-effizient. Das ist also das was ich auf die Einkaufsliste setzen würde, wenn es zum ersten Mal zum Brush-Lettering-Spielzeug-Einkaufstrip geht. Ich hab Produktempfehlungen, aber auch Alternativ-Vorschläge. Mein Kit hat mich ca. 15 CHF gekostet.
 <!-- more -->

@@ -298,6 +298,7 @@ if tags != ""
 end
 p_german.puts "description: #{desc_german}"
 p_german.puts "lang: de"
+p_german.puts "category: de"
 p_german.puts "---"
 p_german.close
 
@@ -320,7 +321,6 @@ if tags != ""
     p_english.puts "tags: [#{tags}]"
 end
 p_english.puts "description: #{desc_english}"
-p_english.puts "category: en"
 p_english.puts "lang: en"
 p_english.puts "---"
 p_english.close
@@ -328,6 +328,6 @@ p_english.close
 puts "file '#{path_german}' created".bold.green
 puts "file '#{path_english}' created".bold.green
 puts ""
-puts "opening files in brackets".bold.green
+puts "opening files in Atom".bold.green
 value = `atom #{path_german}`
 value = `atom #{path_english}`

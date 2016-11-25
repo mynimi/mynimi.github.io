@@ -5,7 +5,6 @@ name: BT
 subtitle: An overview of different brush pens and a little intro
 tags: [brushlettering, creative, offtopic, analog]
 description: A little overview over brush lettering pens and an introduction for beginners
-category: en
 lang: en
 ---
 My obsession started Dec 30th 2015, when I first picked up one of my nail art brushes and just tried it. Brush lettering. Since then I've done it almost every day and so I thought I'd tell you a little bit of my experiences for beginners (which I still am) and what kind of brush pens work for me.

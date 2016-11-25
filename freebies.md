@@ -1,26 +1,24 @@
 ---
 title: Freebies
 group: navigation-05
-lang: de
+lang: en
 id: freebies
-description: Kostenloses zum Runterladen
+description: some free stuff for download
 enable-comments: yes
 ---
-Einige kostenlose Dinge zum Runterladen.
+Some Free Stuff for you.
 
-Hier gibt's eine Menge tolle Sachen. Ein paar noch bisschen tollere Sachen gibt es in meinem [Etsy Store](https://www.etsy.com/shop/halfapx)
+There's a lot of pretty cool stuff here. Some stuff that's a little bit cooler can be found in my [Etsy Store](https://www.etsy.com/shop/halfapx)
 
-Auf mich verweisen ist nicht nötig, freut mich aber natürlich.
+Crediting is optional but much appreciated.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 # Custom Procreate Brushes
-Ich hab über 60 custom Procreate Pinsel
+Just in case you haven't seen it. There are tons of Brushes from me. Check the link in the menu for that.
 
-<a href="/procreate-brushes" class="btn">Procreate Brushes Page</a>
-
-# Mehr Downloads
-Dotgrids, Übungsbögen, was zum Ausmalen etc.
+# More Downloads
+Gridlines, Practice Sheets, Coloring Pages etc.
 <div class="masonry">
 <div><img src="/img/freebies/Colorfree.jpg"><h2>Coloring Page</h2><a href="http://bit.ly/2biec15" download class="btn"><i class="fa fa-download"></i> Download</a></div>
 

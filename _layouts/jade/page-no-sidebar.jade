@@ -1,0 +1,28 @@
+doctype html
+html(lang="{{page.lang}}")
+    include includes/head.jade
+
+    body.page(class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}")
+        include includes/nav.jade
+        include includes/header.jade
+
+        .wrapper
+            section.main_container
+                .container
+                    main
+                        {% if page.page-title == true %}
+                        h1.title {{ page.title }}
+                        {% endif %}
+                        {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+                        .content {{ content }}
+                        {% if page.enable-comments == true %}
+                        {% include disqus.html %}
+                        {% endif %}
+                    // main end
+                // .container end
+            // section end
+        // .wrapper end
+        include includes/footer.jade
+        script(src="/js/build/main.min.js")
+    // body end
+// html end

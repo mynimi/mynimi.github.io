@@ -6,7 +6,6 @@ lang: en
 subtitle: A dropdown menu without coding skills
 tags: [dropdown, blogger, navigation, tutorial, ♦♦, javascript, jquery]
 description: How to generate a 3-level dropdown menu from a link list in blogger.
-category: en
 ---
 When I first started creating responsive Websites, navigation was always one of the hardest things to accomplish. Because of that, I almost always went with Bootstrap. But using a pretty huge framework for something pretty small like a menu pretty soon started bothering me. So I searched for tutorials on how to write a responsive menu and soon started, to write my own, because there was almost always something that I did not like.
 
