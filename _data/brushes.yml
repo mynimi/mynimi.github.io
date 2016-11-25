@@ -1,4 +1,50 @@
-# categories: premium, free, special, custom, favorite, essential, nonlettering, single, set
+# http://halfapx.com/procreate-brushes/download/
+# categories: premium, free, single, set, special, custom, favorite, essential, nonlettering
+- url: "https://www.etsy.com/listing/480786590/grids-procreate-brush-set-5-brushes"
+  cat: [premium, custom, special, favorite, essential, nonlettering, set, new]
+  img: gridset
+- url: "https://www.etsy.com/listing/480785944/fun-shades-procreate-lettering-brush-set"
+  cat: [premium, custom, special, set, favorite, new]
+  img: funshades
+- url: "https://www.etsy.com/listing/494282711/twinkle-procreate-lettering-brush"
+  cat: [premium, custom, special, single, new]
+  img: Twinkle
+- url: "https://www.etsy.com/listing/494280463/lined-procreate-lettering-set-3-brushes"
+  cat: [premium, custom, special, favorite, set, new]
+  img: linedset
+- url: "https://www.etsy.com/listing/480787220/textured-accent-procreate-lettering"
+  cat: [premium, custom, special, set, new]
+  img: texturedaccentset
+- url: "http://bit.ly/2fwI4w5"
+  cat: [free, single, custom, special, new]
+  img: Fuzzy
+- url: "http://bit.ly/2fdCLTI"
+  cat: [free, single, custom, special, new]
+  img: Garland
+- url: "http://bit.ly/2gmUwQk"
+  cat: [free, single, custom, special, new]
+  img: Form
+- url: "http://bit.ly/2fdBcoy"
+  cat: [free, custom, new]
+  img: Subtle
+- url: "http://bit.ly/2grdanJ"
+  cat: [free, custom, essential, single, new]
+  img: Lovely
+- url: "http://bit.ly/2fdFZXn"
+  cat: [free, custon, special, single, new]
+  img: Loopy
+- url: "http://bit.ly/2fdD9RW"
+  cat: [free, custom, special, single, new]
+  img: Infinity
+- url: "http://bit.ly/2fX7iUT"
+  cat: [free, single, new]
+  img: Painter
+- url: "http://bit.ly/2grkW0K"
+  cat: [free, single, new]
+  img: Mush
+- url: "http://bit.ly/2ga0jWr"
+  cat: [free, single, new]
+  img: Bristles
 - url: "https://www.etsy.com/listing/476905754/offset-shadow-procreate-lettering-brush"
   cat: [premium, special, custom, set]
   img: Offsetshadow
