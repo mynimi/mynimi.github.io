@@ -1,11 +1,11 @@
 header.header
     .container
         {% if page.lang == "en" %}
-        a(href="/") 
-            include logo_clean.jade
+        a(href="/")
+            include logo_clean.pug
         {% else %}
         a(href="/de/")
-            include logo_clean.jade
+            include logo_clean.pug
         {% endif %}
     // .container end
 // header end

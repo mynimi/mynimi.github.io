@@ -60,10 +60,12 @@ $(document).ready(function () {
             var img = $(this).attr('href');
             $('body').append('<div class="shadow"></div>');
             $('body').append('<img src="'+img+'" class="lightbox-img">');
+            $('body').append('<div class="lightbox-open"></div>');
         });
-        $('body').on('click', '.shadow', function(){
+        $('body').on('click', '.lightbox-open', function(){
             $('.shadow').remove();
             $('.lightbox-img').remove();
+            $('.lightbox-open').remove();
         });
         $(document).keyup(function(e){
             if(e.keyCode === 27){

@@ -1,10 +1,10 @@
 doctype html
 html(lang="{{page.lang}}")
-    include includes/head.jade
+    include includes/head.pug
 
     body.page(class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}")
-        include includes/nav.jade
-        include includes/header.jade
+        include includes/nav.pug
+        include includes/header.pug
         
         .wrapper
             section.main_container
@@ -25,7 +25,7 @@ html(lang="{{page.lang}}")
                 // .container end
             // section end
         // .wrapper end
-        include includes/footer.jade
+        include includes/footer.pug
         script(src="/js/build/main.min.js")
     // body end
 // html end

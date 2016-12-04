@@ -2,7 +2,7 @@
 
 doctype html
 html(lang="de")
-    include includes/head.jade
+    include includes/head.pug
     
     body
         .container
@@ -14,9 +14,9 @@ html(lang="de")
                 span.toggle-minimal minimal
                 span.toggle-overlay overlay
                 span.toggle-arrows arrows
-            include includes/minimal.jade
-            include includes/overlay.jade
-            include includes/arrows.jade
-        include includes/footer.jade
+            include includes/minimal.pug
+            include includes/overlay.pug
+            include includes/arrows.pug
+        include includes/footer.pug
     // body end
 // html end

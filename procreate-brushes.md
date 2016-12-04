@@ -30,7 +30,7 @@ single
 set
 -->
 <p>Here you find all of my procreate brushes. Use the categories to find what you're looking for.</p>
-<p>Check the Sidebar for more on the subject.</p>
+<p>Check the Sidebar (on small screens it is below the content) for more on the subject.</p>
 <div class="brush-nav">
     <span class="toggle-tab active" data-toggles-tab="new">new [{{ new.size}}]</span>
     <span class="toggle-tab" data-toggles-tab="premium">premium [{{ premium.size}}]</span>
