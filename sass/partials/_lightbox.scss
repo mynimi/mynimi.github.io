@@ -228,6 +228,12 @@
         width: calc((100% / 3) - 20px );
         padding: 0;
         margin: 10px;
+        @media screen and (max-width: 950px) {
+            width: calc(50% - 20px);
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
 
         img{
             width: 100%;
