@@ -3,14 +3,14 @@ nav.open
         .left.responsive
             span.toggle
                 i.fa.fa-close
-            {% if page.lang == "en" %}
+            | {% if page.lang == "en" %}
             a(href="/") Home
-            {% else %}
+            | {% else %}
             a(href="/de/") Home
-            {% endif %}
-            {% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
-            {% assign group = 'navigation' %}
-            {% include pages_list.html %}
+            | {% endif %}
+            | {% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
+            | {% assign group = 'navigation' %}
+            | {% include pages_list.html %}
             a(href="https://www.etsy.com/shop/halfapx") Shop
             // .responsive end
         .center
@@ -23,11 +23,21 @@ nav.open
                 i.fa.fa-youtube
             a(href="https://twitter.com/halfapx")
                 i.fa.fa-twitter
-            a(href="https://github.com/mynimi") 
+            a(href="https://github.com/mynimi")
                 i.fa.fa-github
             a(href="http://codepen.io/mynimi/")
                 i.fa.fa-codepen
-            {% assign pages=site.pages | where:"id", page.id | sort: 'path' %}{% for page in pages %}<a href="{{ page.url | replace: "index.html", "" }}" class="{{ page.lang }}">{{ page.lang }}</a>{% endfor %}      
-            {% assign posts=site.posts | where:"name", page.name %}{% for post in posts %}<a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">{{ post.lang }}</a>{% endfor %}    
+            | {% assign pages=site.pages | where:"id", page.id | sort: 'path' %}
+            | {% for page in pages %}
+            |   <a href="{{ page.url | replace: "index.html", "" }}" class="{{ page.lang }}">
+            |       {{ page.lang }}
+            |   </a>
+            | {% endfor %}
+            | {% assign posts=site.posts | where:"name", page.name %}
+            | {% for post in posts %}
+            |   <a href="{{ post.url | replace: "index.html", "" }}" class="{{ post.lang }}">
+            |       {{ post.lang }}
+            |   </a>
+            | {% endfor %}
     // .menu end
 // nav end

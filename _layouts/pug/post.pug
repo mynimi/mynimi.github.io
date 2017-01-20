@@ -3,8 +3,8 @@ html(lang="{{page.lang}}")
     include includes/head.pug
 
     body.page.post(class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}")
-        include includes/nav.pug
         include includes/header.pug
+        include includes/nav.pug
 
         .wrapper
             section.main_container
@@ -13,48 +13,46 @@ html(lang="{{page.lang}}")
                         .title
                             div
                                 h1 {{ page.title }}
-                                {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
-                            .date 
+                                | {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+                            //- .date
                                 span.month {{ page.date | date: "%B" | slice: 0, 3 }}
                                 span.day {{ page.date | date: "%d" }}
                                 span.year {{ page.date | date: "%Y" }}
                         .meta
                             span.date {% include date.html %}
-                                {% if post.tags %} &nbsp;&bull;&nbsp;{% endif %}
-                            {% if page.tags %}
+                                | {% if post.tags %} &nbsp;&bull;&nbsp;{% endif %}
+                            | {% if page.tags %}
                             span.tags
-                                 i.fa.fa-tags
-                                 {% for tag in page.tags limit:10 offset:0 %} <a href="{{ site.tag_dir}}/{{ tag }}">{{ tag }}</a> {% endfor %}
-                            {% endif %}
+                                i.fa.fa-tags
+                                | {% for tag in page.tags limit:10 offset:0 %} <a href="{{ site.tag_dir}}/{{ tag }}">{{ tag }}</a> {% endfor %}
+                            | {% endif %}
                     .content-wrapper
                         main
                             .content {{ content }}
-                            
-                            {% include disqus.html %}
-                        .sidebar
-                            include includes/sidebar.html
-                        // .sidebar end
-                    {% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
-                    {% for links in document %}
-                    {% if links.title == page.title %}
-                    {% unless forloop.first %}
-                    {% assign prevurl = prev.url %}
-                    {% assign prevtitle = prev.title %}
-                    {% endunless %}
-                    {% unless forloop.last %}
-                    {% assign next = document[forloop.index] %}
-                    {% assign nexturl = next.url %}
-                    {% assign nexttitle = next.title %}
-                    {% endunless %}
-                    {% endif %}
-                    {% assign prev = links %}
-                    {% endfor %}
 
-                    {% if prevurl or nexturl %}
+                            | {% include disqus.html %}
+                    | {% assign  document = site.posts | sort: "date" | reversed | where:"lang", page.lang %}
+                    |   {% for links in document %}
+                    |       {% if links.title == page.title %}
+                    |           {% unless forloop.first %}
+                    |               {% assign prevurl = prev.url %}
+                    |               {% assign prevtitle = prev.title %}
+                    |           {% endunless %}
+                    |           {% unless forloop.last %}
+                    |               {% assign next = document[forloop.index] %}
+                    |               {% assign nexturl = next.url %}
+                    |               {% assign nexttitle = next.title %}
+                    |           {% endunless %}
+                    |       {% endif %}
+                    |   {% assign prev = links %}
+                    | {% endfor %}
+                    .sidebar
+                        include includes/sidebar.html
+                    | {% if prevurl or nexturl %}
                     .pagination.full-width
-                        {% if prevurl %}<a href="{{prevurl}}" class="prev">{{ prevtitle}}</a>{% endif %}                    
-                        {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}}{% endif %}
-                    {% endif %}
+                        | {% if prevurl %}<a href="{{prevurl}}" class="prev">{{ prevtitle}}</a>{% endif %}
+                        | {% if nexturl %}<a href="{{nexturl}}" class="next">{{nexttitle}}{% endif %}
+                    | {% endif %}
                 // .container end
             // section end
         // .wrapper end

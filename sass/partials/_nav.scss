@@ -20,13 +20,16 @@
 
 nav{
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 5;
     transition: .3s all ease-in-out;
     color: $nav-color;
     line-height: 1;
+    margin-bottom: 30px;
+    border-bottom: $line;
+
 
     a{
         margin-right: 20px;
@@ -46,12 +49,12 @@ nav{
         background: $nav-bg;
         padding: 10px 0px;
         box-sizing: border-box;
-        width: 100%;
+        width: 80%;
+        max-width: 1920px;
         position: relative;
         top: 0;
         left: 0;
         z-index: 10;
-        border-bottom: $line;
 
         @include flexbox(row, nowrap, space-between, center);
     }

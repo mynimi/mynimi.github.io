@@ -39,12 +39,7 @@ $(document).ready(function () {
             $('.responsive').toggleClass('active');
         });
 
-        // add margin top for fixed nav
-        $('body').css({
-            'margin-top': navbarHeight
-        });
-
-        $(".sidebar").stick_in_parent({offset_top: navbarHeight+30});
+        $("nav").stick_in_parent();
 
         // procreate brushes tabs
         $('.brush-nav span').click(function(){

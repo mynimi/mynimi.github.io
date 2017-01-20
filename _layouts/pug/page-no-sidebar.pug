@@ -3,21 +3,21 @@ html(lang="{{page.lang}}")
     include includes/head.pug
 
     body.page(class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %} {{ page.lang | prepend: 'lang-' }}")
-        include includes/nav.pug
         include includes/header.pug
+        include includes/nav.pug
 
         .wrapper
             section.main_container
                 .container
                     main
-                        {% if page.page-title == true %}
+                        | {% if page.page-title == true %}
                         h1.title {{ page.title }}
-                        {% endif %}
-                        {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+                        | {% endif %}
+                        | {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
                         .content {{ content }}
-                        {% if page.enable-comments == true %}
-                        {% include disqus.html %}
-                        {% endif %}
+                        | {% if page.enable-comments == true %}
+                        |   {% include disqus.html %}
+                        | {% endif %}
                     // main end
                 // .container end
             // section end

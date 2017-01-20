@@ -1,14 +1,14 @@
-
 .header {
     width: 100%;
     position: relative;
 
     .container {
+        width: 100%;
+        max-width: 1920px;
         padding: 30px 0;
         text-align: right;
         @include flexbox(row, wrap, center, center);
         border-bottom: $line;
-        margin-bottom: 30px;
     }
 
     a{
@@ -55,15 +55,5 @@
         .st3{
             letter-spacing:-3;
         }
-    }
-}
-
-.triangle_reverse_container {
-    @include paddinghack(100%, 770, 63, '.triangle_reverse');
-    .triangle_reverse {
-        fill: $white;
-        stroke: $white;
-        width: 100%;
-        stroke-width: 2px;
     }
 }
