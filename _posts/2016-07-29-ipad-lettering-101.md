@@ -3,7 +3,7 @@ date: 2016-07-29 11:42:21 +0200
 title: iPad Lettering 101
 name: iL1
 subtitle: A Getting Started Guide
-tags: [brushlettering, lettering, iPadlettering, iPad, Basics]
+tags: [brushlettering, lettering, iPadlettering, iPad, Basics, tips]
 description: Getting started with iPad Lettering.
 lang: en
 ---

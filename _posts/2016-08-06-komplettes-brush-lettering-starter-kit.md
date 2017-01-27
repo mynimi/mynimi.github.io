@@ -3,7 +3,7 @@ date: 2016-08-06 21:52:16 +0200
 title: Der g&uuml;nstigste Einstieg in Brush Lettering
 name: DgEiBL
 subtitle: Einkaufsliste f&uuml;r ein Einstieg in alle Brush Lettering Tools f&uuml;r ein kleines Budget
-tags: [low budget, brush lettering, starter kit, lettering tools]
+tags: [low budget, brush lettering, starter kit, tools]
 description: Eine Liste von Produkten, mit denen alle Brush Lettering Stufttypen abgedeckt werden.
 lang: de
 category: de

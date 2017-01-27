@@ -3,7 +3,7 @@ date: 2016-08-06 21:52:16 +0200
 title: The cheapest versatile Brush Lettering Starter Kit
 name: DgEiBL
 subtitle: A shopping list to learn about all brush lettering tool types for a small budget
-tags: [low budget, brush lettering, starter kit, lettering tools]
+tags: [low budget, brush lettering, starter kit, tools]
 description: A list of products to cover the different pen types you can use for brush lettering.
 lang: en
 ---

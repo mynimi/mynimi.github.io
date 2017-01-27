@@ -3,7 +3,7 @@ date: 2016-07-29 11:42:21 +0200
 title: iPad Lettering 1x1
 name: iL1
 subtitle: Eine Starthilfe
-tags: [brushlettering, lettering, iPadlettering, iPad, Basics]
+tags: [brushlettering, lettering, iPadlettering, iPad, Basics, tips]
 description: Eine Starthilfe zum Thema iPad Lettering.
 lang: de
 category: de
