@@ -1,52 +1,73 @@
 # http://halfapx.com/procreate-brushes/download/
 # categories: premium, free, single, set, special, custom, favorite, essential, nonlettering
+- url: "https://www.etsy.com/listing/511658091/complete-copperplate-procreate-lettering"
+  cat: [premium, special, custom, set, favorite, essential, new]
+  img: CopperplateSet
+- url: "https://www.etsy.com/listing/511658741/copperplate-starter-procreate-lettering"
+  cat: [premium, special, custom, set, favorite, essential, new]
+  img: Starterset
+- url: "https://www.etsy.com/listing/498168040/vinyl-procreate-lettering-brush-set-3"
+  cat: [premium, special, custom, set, new]
+  img: vinylset
+- url: "https://www.etsy.com/listing/498167210/pixy-procreate-lettering-brush"
+  cat: [premium, special, custom, single, new]
+  img: pixy
+- url: "http://bit.ly/2lBAsIV"
+  cat: [free, single, custom, favorite, new]
+  img: Striple
+- url: "http://bit.ly/2kxOr1W"
+  cat: [free, single, custom, special, new]
+  img: Blooh
+- url: "http://bit.ly/2kiDbWA"
+  cat: [free, single, custom, nonlettering, new]
+  img: Hearts
 - url: "https://www.etsy.com/listing/491577332/faux-felt-procreate-lettering-brush-set"
-  cat: [premium, custom, favorite, special, essential, set, new]
+  cat: [premium, custom, favorite, special, essential, set]
   img: fauxfelt
 - url: "https://www.etsy.com/listing/480786590/grids-procreate-brush-set-5-brushes"
-  cat: [premium, custom, special, favorite, essential, nonlettering, set, new]
+  cat: [premium, custom, special, favorite, essential, nonlettering, set]
   img: gridset
 - url: "https://www.etsy.com/listing/480785944/fun-shades-procreate-lettering-brush-set"
-  cat: [premium, custom, special, set, favorite, new]
+  cat: [premium, custom, special, set, favorite]
   img: funshades
 - url: "https://www.etsy.com/listing/494282711/twinkle-procreate-lettering-brush"
-  cat: [premium, custom, special, single, new]
+  cat: [premium, custom, special, single]
   img: Twinkle
 - url: "https://www.etsy.com/listing/494280463/lined-procreate-lettering-set-3-brushes"
-  cat: [premium, custom, special, favorite, set, new]
+  cat: [premium, custom, special, favorite, set]
   img: linedset
 - url: "https://www.etsy.com/listing/480787220/textured-accent-procreate-lettering"
-  cat: [premium, custom, special, set, new]
+  cat: [premium, custom, special, set]
   img: texturedaccentset
 - url: "http://bit.ly/2fwI4w5"
-  cat: [free, single, custom, special, new]
+  cat: [free, single, custom, special]
   img: Fuzzy
 - url: "http://bit.ly/2fdCLTI"
-  cat: [free, single, custom, special, new]
+  cat: [free, single, custom, special]
   img: Garland
 - url: "http://bit.ly/2gmUwQk"
-  cat: [free, single, custom, special, new]
+  cat: [free, single, custom, special]
   img: Form
 - url: "http://bit.ly/2fdBcoy"
-  cat: [free, custom, new]
+  cat: [free, custom]
   img: Subtle
 - url: "http://bit.ly/2grdanJ"
-  cat: [free, custom, essential, single, new]
+  cat: [free, custom, essential, single]
   img: Lovely
 - url: "http://bit.ly/2fdFZXn"
-  cat: [free, custon, special, single, new]
+  cat: [free, custon, special, single]
   img: Loopy
 - url: "http://bit.ly/2fdD9RW"
-  cat: [free, custom, special, single, new]
+  cat: [free, custom, special, single]
   img: Infinity
 - url: "http://bit.ly/2fX7iUT"
-  cat: [free, single, new]
+  cat: [free, single]
   img: Painter
 - url: "http://bit.ly/2grkW0K"
-  cat: [free, single, new]
+  cat: [free, single]
   img: Mush
 - url: "http://bit.ly/2ga0jWr"
-  cat: [free, single, new]
+  cat: [free, single]
   img: Bristles
 - url: "https://www.etsy.com/listing/476905754/offset-shadow-procreate-lettering-brush"
   cat: [premium, special, custom, set]

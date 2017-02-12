@@ -17,7 +17,7 @@ permalink: /de/procreate-brushes/
 {% assign nonlettering = site.data.brushes | where:"cat", "nonlettering" %}
 {% assign single = site.data.brushes | where:"cat", "single" %}
 {% assign set = site.data.brushes | where:"cat", "set" %}
-
+{% assign all = site.data.brushes %}
 <!--
 new
 premium
@@ -34,6 +34,7 @@ set
 <p>Beachte die Links in der Sidebar (auf kleinen Bildschirmen ist die Sidebar unterhalb des Contents zu finden) für mehr Informationen zum Thema iPad Lettering</p>
 <div class="brush-nav bigger">
     <span class="toggle-tab active" data-toggles-tab="new">new [{{ new.size}}]</span>
+    <span class="toggle-tab" data-toggles-tab="all">all [{{ all.size}}]</span>
     <span class="toggle-tab" data-toggles-tab="premium">premium [{{ premium.size}}]</span>
     <span class="toggle-tab" data-toggles-tab="free">free [{{ free.size}}]</span>
     <span class="toggle-tab" data-toggles-tab="special">special [{{ special.size}}]</span>
@@ -48,6 +49,21 @@ set
     <div class="brush-tab visible" id="new">
         <div class="box">
             {% for brush in new %}
+            <div class="mix {{ brush.cat | join: ' ' }}">
+                <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
+                    <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
+                </a>
+                <a href="{{ brush.url }}">
+                    <i class="fa fa-download"></i>
+                    Download
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="brush-tab" id="all">
+        <div class="box">
+            {% for brush in all %}
             <div class="mix {{ brush.cat | join: ' ' }}">
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
