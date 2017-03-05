@@ -81,7 +81,7 @@ MathJax.Hub.Config({
     <!-- header end-->
     <nav class="open">
       <div class="menu container">
-        <div class="left responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% if page.lang == "en" %}<a href="/">Home</a>{% else %}<a href="/de/">Home</a>
+        <div class="left responsive"><span class="toggle"><i class="fa fa-close"></i></span>{% if page.lang == "en" %}<a href="/">Blog</a>{% else %}<a href="/de/">Blog</a>
           {% endif %}
           {% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
           {% assign group = 'navigation' %}

@@ -4,9 +4,9 @@ nav.open
             span.toggle
                 i.fa.fa-close
             | {% if page.lang == "en" %}
-            a(href="/") Home
+            a(href="/") Blog
             | {% else %}
-            a(href="/de/") Home
+            a(href="/de/") Blog
             | {% endif %}
             | {% assign pages_list = site.pages | sort:"group" | where:"lang", page.lang %}
             | {% assign group = 'navigation' %}
