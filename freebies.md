@@ -20,6 +20,8 @@ Just in case you haven't seen it. There are tons of Brushes from me. Check the l
 # More Downloads
 Gridlines, Practice Sheets, Coloring Pages etc.
 <div class="masonry">
+<div><img src="/img/freebies/rhodia-5mm.jpg"><h2>Guide Sheets, 5mm Copperplate (Rhodia Pad Size)</h2><a href="http://bit.ly/2n1NaRB" class="btn"><i class="fa fa-download"></i> Download</a></div>
+
 <div><img src="/img/freebies/guides5mm.jpg"><h2>Guide Sheets 5mm x-height (A4)</h2>
 <a href="http://bit.ly/2hzBylJ" class="btn"><i class="fa fa-download"></i> Download</a></div>
 
