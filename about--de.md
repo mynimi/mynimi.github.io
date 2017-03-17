@@ -20,12 +20,21 @@ Halfapx ist mein Sammelsurium an Dingen, die ich liebe. Ich liebe es zu schreibe
 
 # Myriam. Was noch?
 Myriam, 22 Jahre alt, aus der Schweiz.
-Seit 1994 Jahren besessen von Schokolade und Wörtern und allem mit Kaffeegeschmack.
-Seit 2007 Jahren Geschichten- und Romanschreiberin.
+
+Seit 1994 besessen von Schokolade und Wörtern und allem mit Kaffeegeschmack.
+
+Seit 2007 Geschichten- und Romanschreiberin.
+
 Seit 2011 Webseiten-Coderin.
+
 Seit 2013 Fontend Developer.
+
 Seit 2014 Publizistik-und-Englische-Literatur-Studium-Abbrecherin.
+
 Seit 2015 Media Engineering Studentin.
+
 Seit 30.12.2015 Buchstabenzeichnerin und Hobby-Kalligraphin.
+
 Seit 2016 besessen von Instagram.
+
 Seit 2016 Besitzerin einer Sony a7II und begeistert von Makrofotographie und manuellen Objektiven.
