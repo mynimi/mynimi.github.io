@@ -328,6 +328,6 @@ p_english.close
 puts "file '#{path_german}' created".bold.green
 puts "file '#{path_english}' created".bold.green
 puts ""
-puts "opening files in Atom".bold.green
-value = `atom #{path_german}`
-value = `atom #{path_english}`
+puts "opening files in Brackets".bold.green
+value = `brackets #{path_german}`
+value = `brackets #{path_english}`

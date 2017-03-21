@@ -3,7 +3,7 @@ date: 2017-01-27 12:53:20 +0100
 title: Kalligraphie 1x1 - Der Anfang
 name: K1DA
 subtitle: Eine Einf&uuml;hrung in die Welt der Sch&ouml;nschrift
-tags: [pointed pen, calligraphy, tips, starter kit, tools]
+tags: [pointed pen, calligraphy, tips, starter kit, tools, calligraphy 101]
 description: Eine Einf&uuml;hrung in die Welt von Schreibfedern und sch&ouml;nen Buchstaben.
 lang: de
 category: de
@@ -80,6 +80,8 @@ FInetec ist unglaublich, die Farben kommen in Tabletten und müssen mit Wasser a
 
 ## Federn
 Ich plane einen ganzen Post zu diesem Thema und eine Reihe von Posts auf Instagram in dem ich jede meiner Federn bezüglich Anfängertauglichkeit und anderen Aspekten kurz vorstellen werde. Das wird auf [#halfapxnibcollection](https://www.instagram.com/explore/tags/halfapxnibcollection/) gepostet. Aber falls das noch nicht geschehen ist, hier eine kurze Übersicht über meine besten Empfehlungen für Anfänger: 
+
+**UPDATE**: Blogpost zu all meinen Federn wurde geschrieben und [hier](http://halfapx.com/de/alle-meine-spitzfedern/) veröffentlicht.
 
 * G Federn (Tachikawa, Nikko, Zebra) &middot; eher gross, eher steif, sehr gut für Anfänger
 * Hunt 22 (one of my favorite nibs) &middot; eine meiner absoluten Favoriten, toll auf allen Leveln

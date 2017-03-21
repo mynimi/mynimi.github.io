@@ -3,7 +3,7 @@ date: 2017-01-27 12:53:20 +0100
 title: Calligraphy 101 - The Beginning
 name: K1DA
 subtitle: An introduction into the world of pointed pen
-tags: [pointed pen, calligraphy, tips, Basics, starter kit, tools]
+tags: [pointed pen, calligraphy, tips, Basics, starter kit, tools, calligraphy 101]
 description: An introduction into the world of beautiful letters, nibs and ink.
 lang: en
 ---
@@ -91,6 +91,8 @@ Finetec is amazing. It is a brand from coliro and is a bunch of gorgeous metalli
 
 ## Nibs
 I plan a whole post on nibs and my nib collection, because I feel like there is a whole world of nibs to be explored and many people only focus on the ones that the Internet talks about. I plan on doing a whole overview of my nibs with samples and small reviews. So check the hashtag : [#halfapxnibcollection](https://www.instagram.com/explore/tags/halfapxnibcollection/) on Instagram for that. But if you are getting started I would look into these nibs:
+
+**UPDATE**: I posted the nib collection blogpost [here](http://halfapx.com/my-nib-collection/).
 
 * G Nibs (Tachikawa, Nikko, Zebra) &middot; pretty stiff nibs, but work great for starting
 * Hunt 22 (one of my favorite nibs) &middot; stiffish, awesome hairlines, it was instant love for me

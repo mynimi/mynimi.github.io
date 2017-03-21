@@ -3,7 +3,7 @@ date: 2017-02-05 00:43:44 +0100
 title: My Nib Collection
 name: AmS
 subtitle: Tortured Tines and Splattering Sacrifices for Pen Presentations
-tags: [nib collection, calligraphy, lettering, tips]
+tags: [nib collection, calligraphy, lettering, tips, calligraphy 101]
 description: An overview and reviews on my current calligraphy nibs.
 lang: en
 bodyclass: hide-table-headings
