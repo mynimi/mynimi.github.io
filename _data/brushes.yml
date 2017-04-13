@@ -1,25 +1,67 @@
 # http://halfapx.com/procreate-brushes/download/
 # categories: premium, free, single, set, special, custom, favorite, essential, nonlettering
+- url: https://www.etsy.com/listing/510818452/azim-pen-procreate-lettering-brush
+  cat: [premium, single, custom, favorite, essential, new]
+  img: Azimpen
+- url: https://www.etsy.com/listing/510817856/soft-shade-procreate-lettering-brush
+  cat: [premium, single, custom, special, favorite, new]
+  img: Softshade
+- url: https://www.etsy.com/listing/510816834/sweater-procreate-lettering-brush
+  cat: [premium, single, custom, favorite, special, new]
+  img: Sweater
+- url: https://www.etsy.com/listing/510817428/ways-procreate-lettering-brush
+  cat: [premium, single, custom, new]
+  img: Ways
+- url: http://bit.ly/2oqRKLc
+  cat: [free, single, custom, essential, new]
+  img: Silk
+- url: http://bit.ly/2o9lUBC
+  cat: [free, single, custom, new]
+  img: Patches
+- url: http://bit.ly/2p0zE5Q
+  cat: [free, single, custom, new]
+  img: Loud
+- url: http://bit.ly/2p0u3MV
+  cat: [free, single, custom, special, favorite, new]
+  img: Mandala
+- url: http://bit.ly/2oCOcaQ
+  cat: [free, single, custom, new]
+  img: Ornate
+- url: http://bit.ly/2o9hkU7
+  cat: [free, single, custom, new]
+  img: Paint
+- url: http://bit.ly/2oaqdvQ
+  cat: [free, single, custom, new]
+  img: Zebra
+- url: http://bit.ly/2o9gxTd
+  cat: [free, single, custom, new]
+  img: Lost
+- url: http://bit.ly/2oqHWkp
+  cat: [free, single, custom, new]
+  img: Kaleidobloom
+- url: http://bit.ly/2nIjOwI
+  cat: [free, single, custom, new]
+  img: Error
 - url: "https://www.etsy.com/listing/511658091/complete-copperplate-procreate-lettering"
-  cat: [premium, special, custom, set, favorite, essential, new]
+  cat: [premium, special, custom, set, favorite, essential]
   img: CopperplateSet
 - url: "https://www.etsy.com/listing/511658741/copperplate-starter-procreate-lettering"
-  cat: [premium, special, custom, set, favorite, essential, new]
+  cat: [premium, special, custom, set, favorite, essential]
   img: Starterset
 - url: "https://www.etsy.com/listing/498168040/vinyl-procreate-lettering-brush-set-3"
-  cat: [premium, special, custom, set, new]
+  cat: [premium, special, custom, set]
   img: vinylset
 - url: "https://www.etsy.com/listing/498167210/pixy-procreate-lettering-brush"
-  cat: [premium, special, custom, single, new]
+  cat: [premium, special, custom, single]
   img: pixy
 - url: "http://bit.ly/2lBAsIV"
-  cat: [free, single, custom, favorite, new]
+  cat: [free, single, custom, favorite]
   img: Striple
 - url: "http://bit.ly/2kxOr1W"
-  cat: [free, single, custom, special, new]
+  cat: [free, single, custom, special]
   img: Blooh
 - url: "http://bit.ly/2kiDbWA"
-  cat: [free, single, custom, nonlettering, new]
+  cat: [free, single, custom, nonlettering]
   img: Hearts
 - url: "https://www.etsy.com/listing/491577332/faux-felt-procreate-lettering-brush-set"
   cat: [premium, custom, favorite, special, essential, set]
