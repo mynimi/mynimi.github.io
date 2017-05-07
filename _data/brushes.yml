@@ -1,440 +1,805 @@
 # http://halfapx.com/procreate-brushes/download/
-# categories: premium, free, single, set, special, custom, favorite, essential, nonlettering
+# categories: premium, free, special, custom, favorite, essential, nonlettering
+- url: https://www.etsy.com/listing/529454803/crocet-procreate-lettering-brush
+  cat: [premium, special, custom, new]
+  img: Crocet
+  count: 1
+  type: single
+- url: https://www.etsy.com/listing/529455569/alien-procreate-lettering-brush
+  cat: [premium, special, custom, favorite, new]
+  img: Alien
+  count: 1
+  type: single
+- url: https://www.etsy.com/listing/529453849/shadows-procreate-lettering-brush-set-2
+  cat: [premium, special, custom, new]
+  img: Shadowset
+  count: 2
+  type: set
+- url: https://www.etsy.com/listing/515646716/trinity-procreate-lettering-brush
+  cat: [premium, special, custom, new]
+  img: Trinity
+  count: 1
+  type: single
+- url: http://bit.ly/2paulBB
+  cat: [free, custom, special, new]
+  img: Zoned
+  count: 1
+  type: single
+- url: http://bit.ly/2pohFCR
+  cat: [free, custom, special, new]
+  img: Crackly
+  count: 1
+  type: single
+- url: http://bit.ly/2paaiTI
+  cat: [free, custom, special, new]
+  img: Ropeset
+  count: 3
+  type: set
+- url: http://bit.ly/2paapi4
+  cat: [free, custom, special, new]
+  img: Braidset
+  count: 3
+  type: set
+- url: http://bit.ly/2pQwgcZ
+  cat: [free, custom, essential, favorite, nonlettering, new]
+  img: Note Pencil
+  count: 1
+  type: single
+- url: http://bit.ly/2qPDEnI
+  cat: [free, custom, new]
+  img: Wavery
+  count: 1
+  type: single
+- url: http://bit.ly/2qQ9Cz5
+  cat: [free, custom, special, new]
+  img: Comet
+  count: 1
+  type: single
+- url: http://bit.ly/2pTVTdE
+  cat: [free, custom, special, new]
+  img: Rohre
+  count: 1
+  type: single
+- url: http://bit.ly/2qGtuZ5
+  cat: [free, custom, special, new]
+  img: Minnie
+  count: 1
+  type: single
+- url: http://bit.ly/2pTNuXu
+  cat: [free, custom, special, new]
+  img: Stakz
+  count: 1
+  type: single
+- url: http://bit.ly/2pQhjHP
+  cat: [free, custom, special, new]
+  img: Funfetti
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/510818452/azim-pen-procreate-lettering-brush
-  cat: [premium, single, custom, favorite, essential, new]
+  cat: [premium, custom, favorite, essential]
   img: Azimpen
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/510817856/soft-shade-procreate-lettering-brush
-  cat: [premium, single, custom, special, favorite, new]
+  cat: [premium, custom, special, favorite]
   img: Softshade
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/510816834/sweater-procreate-lettering-brush
-  cat: [premium, single, custom, favorite, special, new]
+  cat: [premium, custom, favorite, special]
   img: Sweater
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/510817428/ways-procreate-lettering-brush
-  cat: [premium, single, custom, new]
+  cat: [premium, custom]
   img: Ways
+  count: 1
+  type: single
 - url: http://bit.ly/2oqRKLc
-  cat: [free, single, custom, essential, new]
+  cat: [free, custom, essential]
   img: Silk
+  count: 1
+  type: single
 - url: http://bit.ly/2o9lUBC
-  cat: [free, single, custom, new]
+  cat: [free, custom]
   img: Patches
+  count: 1
+  type: single
 - url: http://bit.ly/2p0zE5Q
-  cat: [free, single, custom, new]
+  cat: [free, custom]
   img: Loud
+  count: 1
+  type: single
 - url: http://bit.ly/2p0u3MV
-  cat: [free, single, custom, special, favorite, new]
+  cat: [free, custom, special, favorite]
   img: Mandala
+  count: 1
+  type: single
 - url: http://bit.ly/2oCOcaQ
-  cat: [free, single, custom, new]
+  cat: [free, custom]
   img: Ornate
+  count: 1
+  type: single
 - url: http://bit.ly/2o9hkU7
-  cat: [free, single, custom, new]
+  cat: [free, custom]
   img: Paint
+  count: 1
+  type: single
 - url: http://bit.ly/2oaqdvQ
-  cat: [free, single, custom, new]
+  cat: [free, custom]
   img: Zebra
+  count: 1
+  type: single
 - url: http://bit.ly/2o9gxTd
-  cat: [free, single, custom, new]
+  cat: [free, custom]
   img: Lost
+  count: 1
+  type: single
 - url: http://bit.ly/2oqHWkp
-  cat: [free, single, custom, new]
+  cat: [free, custom]
   img: Kaleidobloom
+  count: 1
+  type: single
 - url: http://bit.ly/2nIjOwI
-  cat: [free, single, custom, new]
+  cat: [free, custom]
   img: Error
+  count: 1
+  type: single
 - url: "https://www.etsy.com/listing/511658091/complete-copperplate-procreate-lettering"
-  cat: [premium, special, custom, set, favorite, essential]
+  cat: [premium, special, custom, favorite, essential]
   img: CopperplateSet
+  count: 4
+  type: set
 - url: "https://www.etsy.com/listing/511658741/copperplate-starter-procreate-lettering"
-  cat: [premium, special, custom, set, favorite, essential]
+  cat: [premium, special, custom, favorite, essential]
   img: Starterset
+  count: 0
+  type: set
 - url: "https://www.etsy.com/listing/498168040/vinyl-procreate-lettering-brush-set-3"
   cat: [premium, special, custom, set]
   img: vinylset
+  count: 3
+  type: set
 - url: "https://www.etsy.com/listing/498167210/pixy-procreate-lettering-brush"
   cat: [premium, special, custom, single]
   img: pixy
+  count: 1
+  type: single
 - url: "http://bit.ly/2lBAsIV"
-  cat: [free, single, custom, favorite]
+  cat: [free, custom, favorite]
   img: Striple
+  count: 1
+  type: single
 - url: "http://bit.ly/2kxOr1W"
-  cat: [free, single, custom, special]
+  cat: [free, custom, special]
   img: Blooh
+  count: 1
+  type: single
 - url: "http://bit.ly/2kiDbWA"
-  cat: [free, single, custom, nonlettering]
+  cat: [free, custom, nonlettering]
   img: Hearts
+  count: 1
+  type: single
 - url: "https://www.etsy.com/listing/491577332/faux-felt-procreate-lettering-brush-set"
   cat: [premium, custom, favorite, special, essential, set]
   img: fauxfelt
+  count: 4
+  type: set
 - url: "https://www.etsy.com/listing/480786590/grids-procreate-brush-set-5-brushes"
   cat: [premium, custom, special, favorite, essential, nonlettering, set]
   img: gridset
+  count: 5
+  type: set
 - url: "https://www.etsy.com/listing/480785944/fun-shades-procreate-lettering-brush-set"
-  cat: [premium, custom, special, set, favorite]
+  cat: [premium, custom, special, favorite]
   img: funshades
+  count: 4
+  type: set
 - url: "https://www.etsy.com/listing/494282711/twinkle-procreate-lettering-brush"
   cat: [premium, custom, special, single]
   img: Twinkle
+  count: 1
+  type: single
 - url: "https://www.etsy.com/listing/494280463/lined-procreate-lettering-set-3-brushes"
   cat: [premium, custom, special, favorite, set]
   img: linedset
+  count: 3
+  type: set
 - url: "https://www.etsy.com/listing/480787220/textured-accent-procreate-lettering"
   cat: [premium, custom, special, set]
   img: texturedaccentset
+  count: 3
+  type: set
 - url: "http://bit.ly/2fwI4w5"
-  cat: [free, single, custom, special]
+  cat: [free, custom, special]
   img: Fuzzy
+  count: 1
+  type: single
 - url: "http://bit.ly/2fdCLTI"
-  cat: [free, single, custom, special]
+  cat: [free, custom, special]
   img: Garland
+  count: 1
+  type: single
 - url: "http://bit.ly/2gmUwQk"
-  cat: [free, single, custom, special]
+  cat: [free, custom, special]
   img: Form
+  count: 1
+  type: single
 - url: "http://bit.ly/2fdBcoy"
   cat: [free, custom]
   img: Subtle
+  count: 1
+  type: single
 - url: "http://bit.ly/2grdanJ"
   cat: [free, custom, essential, single]
   img: Lovely
+  count: 1
+  type: single
 - url: "http://bit.ly/2fdFZXn"
   cat: [free, custon, special, single]
   img: Loopy
+  count: 1
+  type: single
 - url: "http://bit.ly/2fdD9RW"
   cat: [free, custom, special, single]
   img: Infinity
+  count: 1
+  type: single
 - url: "http://bit.ly/2fX7iUT"
   cat: [free, single]
   img: Painter
+  count: 1
+  type: single
 - url: "http://bit.ly/2grkW0K"
   cat: [free, single]
   img: Mush
+  count: 1
+  type: single
 - url: "http://bit.ly/2ga0jWr"
   cat: [free, single]
   img: Bristles
+  count: 1
+  type: single
 - url: "https://www.etsy.com/listing/476905754/offset-shadow-procreate-lettering-brush"
   cat: [premium, special, custom, set]
   img: Offsetshadow
+  count: 2
+  type: set
 - url: "https://www.etsy.com/listing/490404471/drop-shadow-procreate-lettering-brush"
   cat: [premium, special, custom, favorite, essential, set]
   img: dropshadowset
+  count: 5
+  type: set
 - url: "https://www.etsy.com/listing/476358096/magnet-procreate-lettering-brush"
   cat: [premium, custom, favorite, essential, single]
   img: Magnet
+  count: 1
+  type: single
 - url: "https://www.etsy.com/listing/489856399/aura-procreate-lettering-brush"
   cat: [premium, custom, special, favorite, single]
   img: Aura
+  count: 1
+  type: single
 - url: "https://www.etsy.com/listing/476357720/intern-procreate-lettering-brush"
   cat: [premium, custom, special, favorite, single]
   img: Intern
+  count: 1
+  type: single
 - url: "https://www.etsy.com/listing/476357920/tubes-procreate-lettering-brush"
   cat: [premium, custom, special, single]
   img: Tubes
+  count: 1
+  type: single
 - url: "https://www.etsy.com/listing/489857613/insider-procreate-lettering-brush"
   cat: [premium, custom, special, single]
   img: Insider
+  count: 1
+  type: single
 - url: "https://www.etsy.com/listing/476358440/breath-procreate-lettering-brush"
   cat: [premium, custom, special, single]
   img: Breath
+  count: 1
+  type: single
 - url: "http://bit.ly/2eonYjQ"
   cat: [free, custom, essential, single]
   img: Flips
+  count: 1
+  type: single
 - url: "http://bit.ly/2frof6l"
   cat: [free, custom, single]
   img: Slinky
+  count: 1
+  type: single
 - url: "http://bit.ly/2frmsOz"
   cat: [free, custom, single]
   img: Boxed
+  count: 1
+  type: single
 - url: "http://bit.ly/2fnod2T"
   cat: [free, custom, single]
   img: Waves-2
+  count: 1
+  type: single
 - url: "http://bit.ly/2f40sg2"
   cat: [free, custom, special, single]
   img: Stair
+  count: 1
+  type: single
 - url: "http://bit.ly/2e9tqI7"
-  cat: [free, custom, favorite, single, essential]
+  cat: [free, custom, favorite, essential]
   img: Azimbrush
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/485249811/smooth-pencil-procreate-brush-set-3
   cat: [premium, custom, favorite, essential, nonlettering, set]
   img: pencilset
+  count: 3
+  type: set
 - url: https://www.etsy.com/listing/484101251/grunge-procreate-lettering-brush-set-3
-  cat: [premium, custom, set, favorite]
+  cat: [premium, custom, favorite]
   img: Grungeset
+  count: 3
+  type: set
 - url: https://www.etsy.com/listing/470606262/line-accent-procreate-lettering-brush
   cat: [premium, custom, favorite, set]
   img: lineaccentset
+  count: 3
+  type: set
 - url: https://www.etsy.com/listing/470604802/subtle-accent-procreate-lettering-brush
   cat: [premium, custom, set]
   img: Subtleaccentset
+  count: 4
+  type: set
 - url: https://www.etsy.com/listing/470603944/flat-brush-procreate-lettering-brush-set
-  cat: [premium, set, custom]
+  cat: [premium, custom]
   img: Flatset
+  count: 2
+  type: set
 - url: http://bit.ly/2cRvjwa
-  cat: [single, free]
+  cat: [free]
   img: Paper
+  count: 1
+  type: single
 - url: http://bit.ly/2e0GaUT
-  cat: [free, special, single, custom]
+  cat: [free, special, custom]
   img: Royal
+  count: 1
+  type: single
 - url: http://bit.ly/2cSaifZ
-  cat: [free, special, single, custom]
+  cat: [free, special, custom]
   img: Waves
+  count: 1
+  type: single
 - url: http://bit.ly/2cRvF66
-  cat: [free, special, single, custom]
+  cat: [free, special, custom]
   img: Midnight
+  count: 1
+  type: single
 - url: http://bit.ly/2dslzXy
-  cat: [free, special, single, custom]
+  cat: [free, special, custom]
   img: Scribble
+  count: 1
+  type: single
 - url: http://bit.ly/2d2fzVB
-  cat: [free, special, single, custom]
+  cat: [free, special, custom]
   img: Wither
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/480365147/watercolor-procreate-lettering-brush-set
-  cat: [premium, custom, special, favorite, set, essential]
+  cat: [premium, custom, special, favorite, essential]
   img: Watercolorset
+  count: 3
+  type: set
 - url: https://www.etsy.com/listing/466869882/carbon-procreate-lettering-brush
-  cat: [premium, custom, special, favorite, single, essential]
+  cat: [premium, custom, special, favorite, essential]
   img: Carbon
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/480363525/highlight-procreate-lettering-brush
-  cat: [premium, custom, special, single, favorite]
+  cat: [premium, custom, special, favorite]
   img: Highlight
+  count: 1
+  type: single
 - url: http://bit.ly/2d4m8Jh
-  cat: [free, custom, single, special]
+  cat: [free, custom, special]
   img: Vibes
+  count: 1
+  type: single
 - url: http://bit.ly/2cKknBX
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Squiggle
+  count: 1
+  type: single
 - url: http://bit.ly/2cQzEi5
-  cat: [free, custom, single, special]
+  cat: [free, custom, special]
   img: Dyn
+  count: 1
+  type: single
 - url: http://bit.ly/2d8JARR
-  cat: [free, custom, special, single, nonlettering]
+  cat: [free, custom, special, nonlettering]
   img: Stitches
+  count: 1
+  type: single
 - url: http://bit.ly/2cQAsUb
-  cat: [free, custom, single, nonlettering]
+  cat: [free, custom, nonlettering]
   img: Paperplane
+  count: 1
+  type: single
 - url: http://bit.ly/2cxbVm3
-  cat: [free, custom, favorite, single, essential]
+  cat: [free, custom, favorite, essential]
   img: Bluntpencil
+  count: 1
+  type: single
 - url: http://bit.ly/2cfxI3s
-  cat: [free, custom, favorite, single, essential]
+  cat: [free, custom, favorite, essential]
   img: Chalk2
+  count: 1
+  type: single
 - url: http://bit.ly/2cDgNoL
-  cat: [free, custom, single, special]
+  cat: [free, custom, special]
   img: Char
+  count: 1
+  type: single
 - url: http://bit.ly/2cvrk9V
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Charcoal
+  count: 1
+  type: single
 - url: http://bit.ly/2ctg3kU
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Coal
+  count: 1
+  type: single
 - url: http://bit.ly/2cDB3II
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Fallout
+  count: 1
+  type: single
 - url: http://bit.ly/2cPMLiq
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Flick
+  count: 1
+  type: single
 - url: http://bit.ly/2ctgH1I
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Skip
+  count: 1
+  type: single
 - url: http://bit.ly/2cdyHfy
-  cat: [free, custom, single, special]
+  cat: [free, custom, special]
   img: Triangle
+  count: 1
+  type: single
 - url: http://bit.ly/2cFQ5u9
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Gelliner
+  count: 1
+  type: single
 - url: http://bit.ly/2d18tDu
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Walnut
+  count: 1
+  type: single
 - url: http://bit.ly/2cQ8NUV
-  cat: [free, custom, single, special]
+  cat: [free, custom, special]
   img: Wired
+  count: 1
+  type: single
 - url: http://bit.ly/2cxcexh
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Waters
+  count: 1
+  type: single
 - url: http://bit.ly/2bOCHFX
-  cat: [free, special, essential, custom, single, custom]
+  cat: [free, special, essential, custom, custom]
   img: Black
+  count: 1
+  type: single
 - url: http://bit.ly/2b6ShPc
-  cat: [single, nonlettering]
+  cat: [nonlettering]
   img: Microglitter
+  count: 1
+  type: single
 - url: http://bit.ly/2bqX9z5
-  cat: [free, special, custom, single, custom]
+  cat: [free, special, custom, custom]
   img: Worker
+  count: 1
+  type: single
 - url: http://bit.ly/2byqXWx
-  cat: [free, special, single, custom]
+  cat: [free, special, custom]
   img: Shade
+  count: 1
+  type: single
 - url: http://bit.ly/2b8MJRs
-  cat: [free, special, single, custom]
+  cat: [free, special, custom]
   img: Ribbon
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/459821070/loose-procreate-lettering-brush
-  cat: [premium, special, single, custom]
+  cat: [premium, special, custom]
   img: Loose
+  count: 1
+  type: single
 - url: http://bit.ly/2bn9IH8
-  cat: [free, essential, favorite, single, custom]
+  cat: [free, essential, favorite, custom]
   img: Ink
+  count: 1
+  type: single
 - url: http://bit.ly/2bGSGYv
-  cat: [free, special, single, custom]
+  cat: [free, special, custom]
   img: Fray
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/459821336/accent-procreate-lettering-brush
-  cat: [premium, special, single, custom]
+  cat: [premium, special, custom]
   img: Accent
+  count: 1
+  type: single
 - url: http://bit.ly/2aHAE8m
-  cat: [free, single, essential]
+  cat: [free, essential]
   img: Monosmooth
+  count: 1
+  type: single
 - url: http://bit.ly/2aMOKks
-  cat: [single, free]
+  cat: [free]
   img: Minimalist
+  count: 1
+  type: single
 - url: http://bit.ly/2bblCai
-  cat: [single, free, essential, favorite]
+  cat: [free, essential, favorite]
   img: Monov
+  count: 1
+  type: single
 - url: http://bit.ly/2aHzvh2
-  cat: [single, free, essential, favorite]
+  cat: [free, essential, favorite]
   img: MoreV
+  count: 1
+  type: single
 - url: http://bit.ly/2b3Ewyz
-  cat: [single, free]
+  cat: [free]
   img: Maxv
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/466542841/railroading-procreate-lettering-brush
-  cat: [premium, special, set, custom]
+  cat: [premium, special, custom]
   img: Railstracks
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/471527859/whole-procreate-lettering-brush
-  cat: [premium, special, favorite, single, custom]
+  cat: [premium, special, favorite, custom]
   img: Whole
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/453052336/tux-procreate-lettering-brush
-  cat: [premium, special, favorite, single, custom]
+  cat: [premium, special, favorite, custom]
   img: Tux
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/466539035/tie-procreate-lettering-brush
-  cat: [premium, special, single, custom]
+  cat: [premium, special, custom]
   img: Tie
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/453050840/bow-procreate-lettering-brush
-  cat: [premium, special, single, custom]
+  cat: [premium, special, custom]
   img: Bow
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/466540121/zipped-procreate-lettering-brush
-  cat: [premium, special, single, custom]
+  cat: [premium, special, custom]
   img: Zipped
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/466542209/string-procreate-lettering-brush
-  cat: [premium, special, favorite, single, custom]
+  cat: [premium, special, favorite, custom]
   img: String
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/453054452/collier-procreate-lettering-brush
-  cat: [premium, special, single, custom]
+  cat: [premium, special, custom]
   img: Collier
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/453053988/chain-procreate-lettering-brush
-  cat: [premium, special, single, custom]
+  cat: [premium, special, custom]
   img: Chain
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/471529035/puff-procreate-lettering-brush
-  cat: [premium, special, favorite, single, custom]
+  cat: [premium, special, favorite, custom]
   img: Puff
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/458039610/patch-procreate-lettering-brush
-  cat: [premium, special, favorite, single, custom]
+  cat: [premium, special, favorite, custom]
   img: Patch
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/458038996/pillow-procreate-lettering-brush
-  cat: [premium, special, favorite, single, custom]
+  cat: [premium, special, favorite, custom]
   img: Pillow
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/458037626/stars-procreate-lettering-brush
-  cat: [premium, special, single, custom]
+  cat: [premium, special, custom]
   img: Stars
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/453053374/sprinkles-procreate-lettering-brush
-  cat: [premium, special, favorite, single, custom]
+  cat: [premium, special, favorite, custom]
   img: Sprinkles
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/453043664/bony-procreate-lettering-brush
-  cat: [premium, special, single, custom]
+  cat: [premium, special, custom]
   img: Bony
+  count: 1
+  type: single
 - url: https://www.etsy.com/listing/466543481/letter-pen-procreate-lettering-brush
-  cat: [premium, favorite, essential, single, custom]
+  cat: [premium, favorite, essential, custom]
   img: Letter-pen
+  count: 1
+  type: single
 - url: http://bit.ly/2aHAttM
-  cat: [single, free]
+  cat: [free]
   img: Fish
+  count: 1
+  type: single
 - url: http://bit.ly/2aMO52o
-  cat: [single, free]
+  cat: [free]
   img: Electric
+  count: 1
+  type: single
 - url: http://bit.ly/2bncfou
-  cat: [single, free]
+  cat: [free]
   img: Bleed
+  count: 1
+  type: single
 - url: http://bit.ly/2aYIjOC
-  cat: [free, single, special]
+  cat: [free, special]
   img: Cloud
+  count: 1
+  type: single
 - url: http://bit.ly/2bndcgI
-  cat: [single, free]
+  cat: [free]
   img: Feather
+  count: 1
+  type: single
 - url: http://bit.ly/2bblcRn
-  cat: [single, free]
+  cat: [free]
   img: Harsh
+  count: 1
+  type: single
 - url: http://bit.ly/2blD4aE
-  cat: [single, free]
+  cat: [free]
   img: Grunge
+  count: 1
+  type: single
 - url: http://bit.ly/2bbkXWh
-  cat: [single, free, special]
+  cat: [free, special]
   img: Linear
+  count: 1
+  type: single
 - url: http://bit.ly/2bbkG5P
-  cat: [free, single, special]
+  cat: [free, special]
   img: Stringy
+  count: 1
+  type: single
 - url: http://bit.ly/2aRxCvm
-  cat: [single, free]
+  cat: [free]
   img: Imperfect
+  count: 1
+  type: single
 - url: http://bit.ly/2aRwPL1
-  cat: [free, favorite, single, essential]
+  cat: [free, favorite, essential]
   img: Artsy
+  count: 1
+  type: single
 - url: http://bit.ly/2b2HO3d
-  cat: [free, special, single, custom]
+  cat: [free, special, custom]
   img: Looney
+  count: 1
+  type: single
 - url: http://bit.ly/2aQnRPj
-  cat: [free, single, favorite]
+  cat: [free, favorite]
   img: Lush
+  count: 1
+  type: single
 - url: http://bit.ly/2aQCLb5
-  cat: [single, free]
+  cat: [free]
   img: Roundpen
+  count: 1
+  type: single
 - url: http://bit.ly/2aRx5tu
-  cat: [free, favorite, essential, single, custom]
+  cat: [free, favorite, essential, custom]
   img: Fluff
+  count: 1
+  type: single
 - url: http://bit.ly/2aOJD2x
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Waterbased
+  count: 1
+  type: single
 - url: http://bit.ly/2aRw30z
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Hotmess
+  count: 1
+  type: single
 - url: http://bit.ly/2blBd5K
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Homemade
+  count: 1
+  type: single
 - url: http://bit.ly/2aQmqjO
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Sharp
+  count: 1
+  type: single
 - url: http://bit.ly/2bnuMOv
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Starburst
+  count: 1
+  type: single
 - url: http://bit.ly/2bbke7s
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Pills
+  count: 1
+  type: single
 - url: http://bit.ly/2aHzWru
-  cat: [free, single, custom]
+  cat: [free, custom]
   img: Blur
+  count: 1
+  type: single
 - url: http://bit.ly/2aQmPmn
-  cat: [free, single, special]
+  cat: [free, special]
   img: Glow
+  count: 1
+  type: single
 - url: http://bit.ly/2bnafMS
-  cat: [free, favorite, single, essential]
+  cat: [free, favorite, essential]
   img: Chalk
+  count: 1
+  type: single
 - url: http://bit.ly/2bnOJJm
-  cat: [single, free]
+  cat: [free]
   img: Streaky
+  count: 1
+  type: single
 - url: http://bit.ly/2bcg7Fo
-  cat: [free, single, special]
+  cat: [free, special]
   img: Double
+  count: 1
+  type: single
 - url: http://bit.ly/2aYGWz8
-  cat: [single, free]
+  cat: [free]
   img: Glazed
+  count: 1
+  type: single
 - url: http://bit.ly/2aRvzr7
-  cat: [free, special, single, favorite]
+  cat: [free, special, favorite]
   img: Shadowed
+  count: 1
+  type: single
 - url: http://bit.ly/2blA6mz
-  cat: [single, free]
+  cat: [free]
   img: Mono
+  count: 1
+  type: single
 - url: http://bit.ly/2aQlsnO
-  cat: [single, free]
+  cat: [free]
   img: Stiffnib
+  count: 1
+  type: single
 - url: http://bit.ly/2aQBctQ
-  cat: [free, single, essential]
+  cat: [free, essential]
   img: Pointedpen
+  count: 1
+  type: single
 - url: http://bit.ly/2bnt7sw
-  cat: [free, single, essential]
+  cat: [free, essential]
   img: Texturedhc
+  count: 1
+  type: single
 - url: http://bit.ly/2bn9qDX
-  cat: [free, single, favorite]
+  cat: [free, favorite]
   img: Smoothhc

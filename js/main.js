@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
 
     // open external links in new window
-    $("a[href^='http']").attr("target","_blank");
+    $("a[href^='http']:not(.noblank)").attr("target","_blank");
 
     $(window).resize(function () {
         // Variables

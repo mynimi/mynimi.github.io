@@ -15,35 +15,75 @@ permalink: /de/procreate-brushes/
 {% assign favorite = site.data.brushes | where:"cat", "favorite" %}
 {% assign essential = site.data.brushes | where:"cat", "essential" %}
 {% assign nonlettering = site.data.brushes | where:"cat", "nonlettering" %}
-{% assign single = site.data.brushes | where:"cat", "single" %}
-{% assign set = site.data.brushes | where:"cat", "set" %}
+{% assign single = site.data.brushes | where:"type", "single" %}
+{% assign set = site.data.brushes | where:"type", "set" %}
 {% assign all = site.data.brushes %}
-<!--
-new
-premium
-free
-special
-custom
-favorite
-essential
-nonlettering
-single
-set
--->
-<p>Hier findest du alle meine Procreate Brushes. Nutze die Kategorien Buttons um zu navigieren</p>
-<p>Scrolle nach unten für eine Installationsanleitung und mehr Informationen zum Thema iPad Lettering</p>
+
+{% for brush in single %}
+    {% assign singles = singles | plus: brush.count %}
+{% endfor %}
+
+{% for brush in set %}
+    {% assign inset = inset | plus: brush.count %}
+{% endfor %}
+
+{% for brush in all %}
+    {% assign total = total | plus: brush.count %}
+{% endfor %}
+
+{% for brush in premium %}
+    {% assign premiumtotal = premiumtotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in free %}
+    {% assign freetotal = freetotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in special %}
+    {% assign specialtotal = specialtotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in custom %}
+    {% assign customtotal = customtotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in favorite %}
+    {% assign favoritetotal = favoritetotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in essential %}
+    {% assign essentialtotal = essentialtotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in nonlettering %}
+    {% assign nonletteringtotal = nonletteringtotal | plus: brush.count %}
+{% endfor %}
+
+<h2>Hallöchen!</h2>
+<p>Hier findest du alle meine Procreate Pinsel, die Buttons unten helfen dir dabei zu navigieren und zeigen dir ausserdem an wie viele Pinsel in der jeweiligen Kategorie zur Verfügung stehen.</p>
+
+<p>Klicke auf das Bild um das Preview zu vergrössern.</p>
+
+<p>Scrolle nach unten für ein Anleitungsvideo und links zu Posts zum Thema.</p>
+
+<h2>Statistik</h2>
+<p>Total findest du hier <b>{{ total }}</b> Pinsel.</p>
+<p><b>{{ singles }}</b> davon sind einzeln verfügbar.</p>
+<p><b>{{ inset }}</b> sind in <b>{{ set.size }}</b> verschiedenen Sets verfügbar.</p>
+<p><b>{{ free.size }}</b> dieser <b>{{ total }}</b> Pinsel sind komplett kostenlos.</p>
+
 <div class="brush-nav bigger">
     <span class="toggle-tab active" data-toggles-tab="new">new [{{ new.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="all">all [{{ all.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="premium">premium [{{ premium.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="free">free [{{ free.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="special">special [{{ special.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="custom">custom [{{ custom.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="favorite">favorite [{{ favorite.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="essential">essential [{{ essential.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="nonlettering">nonlettering [{{ nonlettering.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="single">single [{{ single.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="set">set [{{ set.size}}]</span>
+    <span class="toggle-tab" data-toggles-tab="all">all [{{ total }}]</span>
+    <span class="toggle-tab" data-toggles-tab="premium">premium [{{ premiumtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="free">free [{{ freetotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="special">special [{{ specialtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="custom">custom [{{ customtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="favorite">favorite [{{ favoritetotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="essential">essential [{{ essentialtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="nonlettering">nonlettering [{{ nonletteringtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="single">single [{{ singles }}]</span>
+    <span class="toggle-tab" data-toggles-tab="set">set [{{ inset }}]</span>
 </div>
 <div class="brush-tab-wrapper bigger">
     <div class="brush-tab visible" id="new">
@@ -53,7 +93,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -68,7 +108,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -83,7 +123,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -98,7 +138,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -113,7 +153,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -128,7 +168,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -143,7 +183,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -158,7 +198,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -173,7 +213,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -188,7 +228,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -203,7 +243,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -214,7 +254,6 @@ set
 </div>
 
 <h1>Installation</h1>
-<p>Und hier ein kurzes Video in dem ich die Installation zeige</p>
 <div class="video">
     <iframe src="https://www.youtube.com/embed/V8pBr5lYOmw" frameborder="0" allowfullscreen></iframe>
 </div>

@@ -8,4 +8,4 @@ description: Ein Post der die verschiedenen Typen von Federnhaltern erkl&auml;rt
 lang: de
 category: de
 ---
-Post ist aktuell nur auf Englisch verfügbar, Übersetzung folgt.
+Post aktuell nur auf Englisch verfügbar, Übersetzung folgt.

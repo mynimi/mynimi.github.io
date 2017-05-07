@@ -14,36 +14,75 @@ enable-comments: yes
 {% assign favorite = site.data.brushes | where:"cat", "favorite" %}
 {% assign essential = site.data.brushes | where:"cat", "essential" %}
 {% assign nonlettering = site.data.brushes | where:"cat", "nonlettering" %}
-{% assign single = site.data.brushes | where:"cat", "single" %}
-{% assign set = site.data.brushes | where:"cat", "set" %}
+{% assign single = site.data.brushes | where:"type", "single" %}
+{% assign set = site.data.brushes | where:"type", "set" %}
 {% assign all = site.data.brushes %}
 
-<!--
-new
-premium
-free
-special
-custom
-favorite
-essential
-nonlettering
-single
-set
--->
-<p>Here you find all of my procreate brushes. Use the categories to find what you're looking for.</p>
-<p>Scroll down for instructions and more on the subject.</p>
+{% for brush in single %}
+    {% assign singles = singles | plus: brush.count %}
+{% endfor %}
+
+{% for brush in set %}
+    {% assign inset = inset | plus: brush.count %}
+{% endfor %}
+
+{% for brush in all %}
+    {% assign total = total | plus: brush.count %}
+{% endfor %}
+
+{% for brush in premium %}
+    {% assign premiumtotal = premiumtotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in free %}
+    {% assign freetotal = freetotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in special %}
+    {% assign specialtotal = specialtotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in custom %}
+    {% assign customtotal = customtotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in favorite %}
+    {% assign favoritetotal = favoritetotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in essential %}
+    {% assign essentialtotal = essentialtotal | plus: brush.count %}
+{% endfor %}
+
+{% for brush in nonlettering %}
+    {% assign nonletteringtotal = nonletteringtotal | plus: brush.count %}
+{% endfor %}
+
+<h2>Hi there!</h2>
+<p>Here you find all of my procreate brushes. The Buttons below help you navigate and give you some indication how many brushes there are in every category.</p>
+
+<p>Click the image to enlarge the preview.</p>
+
+<p>Scroll down for installation instructions and more on the subject.</p>
+
+<h2>Stats</h2>
+<p>There are <b>{{ total }}</b> Brushes in total.</p>
+<p><b>{{ singles }}</b> of these are available as singles.</p>
+<p><b>{{ inset }}</b> are part of <b>{{ set.size }}</b> sets.</p>
+<p><b>{{ free.size }}</b> of those <b>{{ total }}</b> are completely free.</p>
+
 <div class="brush-nav bigger">
     <span class="toggle-tab active" data-toggles-tab="new">new [{{ new.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="all">all [{{ all.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="premium">premium [{{ premium.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="free">free [{{ free.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="special">special [{{ special.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="custom">custom [{{ custom.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="favorite">favorite [{{ favorite.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="essential">essential [{{ essential.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="nonlettering">nonlettering [{{ nonlettering.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="single">single [{{ single.size}}]</span>
-    <span class="toggle-tab" data-toggles-tab="set">set [{{ set.size}}]</span>
+    <span class="toggle-tab" data-toggles-tab="all">all [{{ total }}]</span>
+    <span class="toggle-tab" data-toggles-tab="premium">premium [{{ premiumtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="free">free [{{ freetotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="special">special [{{ specialtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="custom">custom [{{ customtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="favorite">favorite [{{ favoritetotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="essential">essential [{{ essentialtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="nonlettering">nonlettering [{{ nonletteringtotal }}]</span>
+    <span class="toggle-tab" data-toggles-tab="single">single [{{ singles }}]</span>
+    <span class="toggle-tab" data-toggles-tab="set">set [{{ inset }}]</span>
 </div>
 <div class="brush-tab-wrapper bigger">
     <div class="brush-tab visible" id="new">
@@ -53,7 +92,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -68,7 +107,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -83,7 +122,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -98,7 +137,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -113,7 +152,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -128,7 +167,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -143,7 +182,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -158,7 +197,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -173,7 +212,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -188,7 +227,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
@@ -203,7 +242,7 @@ set
                 <a href="/procreate-brushes/img/{{ brush.img }}.jpg" data-lightbox="true">
                     <img src="/procreate-brushes/img/{{ brush.img }}.jpg" alt="{{ brush.img }}">
                 </a>
-                <a href="{{ brush.url }}">
+                <a href="{{ brush.url }}" download class="noblank">
                     <i class="fa fa-download"></i>
                     Download
                 </a>
