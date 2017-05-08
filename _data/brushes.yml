@@ -1,5 +1,10 @@
 # http://halfapx.com/procreate-brushes/download/
 # categories: premium, free, special, custom, favorite, essential, nonlettering
+- url: https://www.etsy.com/listing/529650169/flat-edge-45deg-procreate-lettering
+  cat: [premium, special, custom, essential, new]
+  img: flatedge45deg
+  count: 8
+  type: set
 - url: https://www.etsy.com/listing/529454803/crocet-procreate-lettering-brush
   cat: [premium, special, custom, new]
   img: Crocet
