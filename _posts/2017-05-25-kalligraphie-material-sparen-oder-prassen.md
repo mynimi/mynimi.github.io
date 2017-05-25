@@ -1,5 +1,5 @@
 ---
-date: 2017-05-25 21:23:23 +0200
+date: 2017-05-25
 title: Kalligraphie Material sparen oder prassen
 name: KMsop
 subtitle: Wo macht ein h&ouml;herer Preis wirklich einen Unterschied?

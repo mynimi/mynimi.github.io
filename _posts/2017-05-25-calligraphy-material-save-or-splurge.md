@@ -1,5 +1,5 @@
 ---
-date: 2017-05-25 21:23:23 +0200
+date: 2017-05-25
 title: Calligraphy material save or splurge
 name: KMsop
 subtitle: Where does more money really make a difference?
