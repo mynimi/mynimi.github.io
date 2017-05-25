@@ -1,5 +1,5 @@
 ---
-date: 2017-04-22 21:23:23 +0200
+date: 2017-05-25 21:23:23 +0200
 title: Calligraphy material save or splurge
 name: KMsop
 subtitle: Where does more money really make a difference?
@@ -12,6 +12,8 @@ I know as a beginner, especially when you're not really sure if Calligraphy is r
 This time I promise to cut myself short!
 
 <!-- more -->
+[![Saveorsplurge]({{site.img_dir}}/Saveorsplurge.jpg)]({{site.img_dir}}/Saveorsplurge.jpg)
+
 # Intro
 
 > To splurge, or not to splurge, that is the question.
