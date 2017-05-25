@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>1/2 a px. - Ein responsiver Image-Slider mit Sass </title>
+    <meta name="description" content="Ein Tutorial, wie man mit einem Sass Mixin einen flexiblen responsiven Slider baut.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Myriam Frisano">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="alternate" type="application/rss+xml" title="1/2 a px." href="http:/localhost:4000/feed.xml">
+    <link rel="icon" href="img/logo/halfapx.svg" sizes="32x32" type="image/svg">
+    <meta name="google-site-verification" content="w1Apie0u6V6tgGbStKa-TVurtBmWtf3dHe5Xx_LQFtE">
+    <meta name="p:domain_verify" content="10355c6a8a6b148ba5a418457b9c7c58"><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS": {
+        scale: 100
+    },
+    SVG: {
+        scale: 100
+    }
+});
+</script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <!-- head end-->
+  <body class="page post  lang-de">
+    <header class="header">
+      <div class="container"><a href="/de/">
+          <div class="logo-wrapper">
+            <svg class="logo" version="1.1" viewBox="156 -282.3 1154.2 1157.5" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+              <g class="phonetics" transform="matrix(0.71064677,0,0,0.71064677,92.322569,1271.1798)">
+                <path d="M523-976.8c-0.2,0.5-0.4,0.9-0.6,1.2c-0.2,0.3-0.5,0.5-0.8,0.7 c-0.3,0.2-0.7,0.3-1.1,0.3s-1,0.1-1.6,0.1c-0.6,0-1.2-0.1-1.7-0.2c-0.5-0.1-0.9-0.3-1.2-0.5c-0.3-0.2-0.5-0.5-0.5-0.9 c-0.1-0.4,0-0.8,0.2-1.2l38.6-104.4c0.2-0.5,0.4-0.9,0.6-1.2c0.2-0.3,0.5-0.5,0.8-0.7c0.3-0.2,0.7-0.3,1.2-0.3 c0.5-0.1,1-0.1,1.6-0.1c0.6,0,1.2,0.1,1.6,0.2c0.5,0.1,0.8,0.3,1.1,0.5c0.3,0.2,0.5,0.5,0.5,0.9c0.1,0.4,0,0.8-0.1,1.2L523-976.8 z"></path>
+                <path d="M648.8-992.8c0,0.3-0.1,0.5-0.2,0.7c-0.1,0.2-0.3,0.4-0.6,0.5 c-0.3,0.1-0.7,0.2-1.1,0.3c-0.5,0.1-1.1,0.1-1.8,0.1c-0.8,0-1.4,0-1.9-0.1c-0.5-0.1-0.9-0.2-1.1-0.3c-0.3-0.1-0.5-0.3-0.6-0.5 c-0.1-0.2-0.2-0.4-0.2-0.7v-34c0-3.5-0.3-6.4-0.8-8.6c-0.5-2.2-1.4-4.1-2.5-5.7c-1.1-1.6-2.5-2.8-4.2-3.7c-1.7-0.9-3.7-1.3-6-1.3 c-2.9,0-5.8,1-8.7,3.1c-2.9,2.1-6,5.1-9.2,9.1v41.1c0,0.3-0.1,0.5-0.2,0.7c-0.1,0.2-0.3,0.4-0.6,0.5c-0.3,0.1-0.7,0.2-1.1,0.3 s-1.1,0.1-1.9,0.1c-0.7,0-1.3,0-1.8-0.1c-0.5-0.1-0.9-0.2-1.2-0.3c-0.3-0.1-0.5-0.3-0.6-0.5c-0.1-0.2-0.2-0.4-0.2-0.7v-85.4 c0-0.3,0.1-0.5,0.2-0.7c0.1-0.2,0.3-0.4,0.6-0.5c0.3-0.1,0.7-0.3,1.2-0.3c0.5-0.1,1.1-0.1,1.8-0.1c0.8,0,1.4,0,1.9,0.1 c0.5,0.1,0.9,0.2,1.1,0.3c0.3,0.1,0.5,0.3,0.6,0.5c0.1,0.2,0.2,0.4,0.2,0.7v35.8c3.1-3.5,6.2-6,9.4-7.6c3.1-1.6,6.2-2.4,9.4-2.4 c3.8,0,6.9,0.6,9.5,1.9c2.6,1.3,4.7,3,6.2,5.1c1.6,2.2,2.7,4.7,3.4,7.5c0.7,2.9,1,6.3,1,10.4V-992.8z"></path>
+                <path d="M752.5-1024.4c0,1.5-0.4,2.6-1.2,3.1c-0.8,0.6-1.6,0.9-2.3,0.9h-39.1 c0,3.5,0.3,6.8,1,9.6c0.7,2.9,1.8,5.3,3.5,7.4c1.6,2,3.7,3.6,6.3,4.7c2.6,1.1,5.8,1.6,9.5,1.6c2.7,0,5-0.2,7.2-0.7 c2.1-0.5,3.9-1,5.5-1.6c1.5-0.6,2.8-1.1,3.8-1.6c1-0.5,1.7-0.7,2.1-0.7c0.3,0,0.5,0.1,0.7,0.2c0.2,0.1,0.3,0.3,0.5,0.6 c0.1,0.3,0.2,0.6,0.3,1c0.1,0.4,0.1,1,0.1,1.6c0,0.3,0,0.6-0.1,0.9c0,0.3-0.1,0.5-0.2,0.8c-0.1,0.2-0.2,0.5-0.3,0.7 c-0.1,0.2-0.3,0.4-0.5,0.6c-0.2,0.2-0.9,0.6-2,1.1c-1.1,0.5-2.5,1.1-4.3,1.6c-1.8,0.5-3.8,1-6.2,1.4c-2.3,0.4-4.9,0.6-7.6,0.6 c-2.7,0-5.3-0.2-7.6-0.7c-2.3-0.5-4.4-1.2-6.2-2.2c-1.9-1-3.5-2.1-5-3.5c-1.5-1.4-2.7-2.9-3.8-4.7c-1.4,1.6-2.9,3.1-4.5,4.5 c-1.6,1.4-3.3,2.5-5.1,3.5c-1.8,1-3.7,1.8-5.7,2.3c-2,0.5-4.1,0.8-6.4,0.8c-3,0-5.7-0.4-8.1-1.2c-2.4-0.8-4.4-1.9-6-3.4 s-2.9-3.2-3.8-5.3c-0.9-2.1-1.3-4.4-1.3-7c0-3.2,0.7-5.9,2-8.3c1.3-2.3,3.2-4.3,5.6-5.9c2.4-1.6,5.3-2.7,8.7-3.5 c3.4-0.8,7.1-1.2,11.3-1.2h9.1v-4.9c0-2.4-0.3-4.6-0.8-6.5c-0.5-1.9-1.3-3.5-2.5-4.7c-1.1-1.3-2.6-2.2-4.4-2.9 c-1.8-0.6-4-0.9-6.7-1c-2.5,0-4.8,0.3-6.8,0.9c-2,0.6-3.8,1.3-5.4,2.1c-1.5,0.8-2.8,1.4-3.8,2.1c-1,0.6-1.7,0.9-2.2,0.9 c-0.3,0-0.5,0-0.7-0.1c-0.2-0.1-0.3-0.2-0.5-0.5c-0.1-0.2-0.2-0.5-0.3-0.9c-0.1-0.4-0.1-0.8-0.1-1.3c0-0.9,0.1-1.6,0.2-2.1 c0.1-0.5,0.5-1.1,1-1.6c0.5-0.5,1.5-1.2,2.8-1.9c1.4-0.7,2.9-1.4,4.7-2c1.8-0.6,3.6-1.1,5.7-1.5c2-0.4,4.1-0.6,6.1-0.6 c2.8,0,5.3,0.3,7.4,0.8c2.1,0.5,3.9,1.2,5.4,2.2c1.5,1,2.8,2.1,3.8,3.4c1,1.3,1.8,2.7,2.4,4.3c2-3.4,4.8-6,8.4-7.9 c3.6-1.8,7.6-2.8,12.1-2.8c4.3,0,8,0.7,11,2.2c3,1.4,5.5,3.4,7.5,5.8c2,2.4,3.4,5.2,4.3,8.5c0.9,3.2,1.4,6.6,1.4,10.1 L752.5-1024.4z M744.8-1026.6c0-3-0.3-5.8-1-8.1c-0.7-2.4-1.8-4.4-3.2-6.1c-1.4-1.7-3.2-2.9-5.4-3.8c-2.1-0.9-4.6-1.3-7.3-1.3 c-2.9,0-5.4,0.5-7.6,1.6c-2.2,1.1-4,2.5-5.5,4.3c-1.5,1.8-2.6,3.8-3.5,6.2c-0.8,2.3-1.3,4.8-1.4,7.3H744.8z M703.8-1008.1 c-0.5-1.6-1-3.4-1.2-5.6c-0.3-2.2-0.4-4.2-0.4-6.2h-10.3c-3,0-5.7,0.3-8,0.8c-2.3,0.5-4.2,1.4-5.7,2.4c-1.5,1.1-2.6,2.3-3.4,3.8 c-0.7,1.5-1.1,3.2-1.1,5.1c0,3.3,1,5.9,3.1,7.9c2.1,2,5,2.9,8.8,2.9c3,0,6-0.9,8.9-2.6C697.5-1001.3,700.6-1004.1,703.8-1008.1z"></path>
+                <path d="M799.5-1074.6c0,0.6,0,1.1-0.1,1.4c-0.1,0.4-0.1,0.6-0.3,0.9 c-0.1,0.2-0.2,0.4-0.4,0.4c-0.1,0.1-0.3,0.1-0.5,0.1c-0.3,0-0.7-0.1-1.2-0.3c-0.5-0.2-1-0.4-1.7-0.7c-0.7-0.3-1.5-0.5-2.5-0.7 c-1-0.2-2.1-0.3-3.3-0.3c-1.8,0-3.3,0.3-4.5,0.9c-1.2,0.6-2.2,1.5-3,2.7c-0.8,1.2-1.3,2.9-1.6,4.8c-0.3,2-0.5,4.3-0.5,7.1v6.8 H794c0.3,0,0.5,0.1,0.8,0.2c0.2,0.1,0.4,0.3,0.6,0.6c0.2,0.3,0.3,0.6,0.4,1c0.1,0.4,0.1,0.9,0.1,1.4c0,1.1-0.2,1.8-0.5,2.4 c-0.3,0.5-0.8,0.8-1.3,0.8h-14.1v52.3c0,0.3-0.1,0.5-0.2,0.7c-0.1,0.2-0.3,0.4-0.6,0.5c-0.3,0.1-0.7,0.2-1.2,0.3 s-1.1,0.1-1.8,0.1c-0.7,0-1.3,0-1.8-0.1c-0.5-0.1-0.9-0.2-1.2-0.3c-0.3-0.1-0.5-0.3-0.6-0.5c-0.1-0.2-0.2-0.4-0.2-0.7v-52.3h-8.6 c-0.6,0-1-0.3-1.4-0.8c-0.3-0.5-0.5-1.3-0.5-2.4c0-0.5,0-1,0.1-1.4s0.2-0.7,0.3-1c0.1-0.3,0.3-0.5,0.6-0.6 c0.2-0.1,0.5-0.2,0.8-0.2h8.6v-6.5c0-4,0.4-7.4,1.1-10.3c0.7-2.8,1.8-5.1,3.3-6.9c1.5-1.8,3.3-3.1,5.5-3.9 c2.2-0.8,4.8-1.2,7.7-1.2c1.4,0,2.8,0.1,4.2,0.4c1.4,0.3,2.4,0.6,3.1,0.9c0.7,0.3,1.2,0.6,1.4,0.8c0.2,0.2,0.4,0.5,0.6,0.9 c0.1,0.3,0.3,0.7,0.3,1.2C799.5-1075.6,799.5-1075.1,799.5-1074.6z"></path>
+                <path d="M834.2-1019.1c0-1.5,0.4-2.6,1.2-3.1c0.8-0.6,1.6-0.9,2.3-0.9h39.1 c0-3.4-0.4-6.5-1.1-9.3c-0.7-2.8-1.9-5.2-3.4-7.2c-1.6-2-3.6-3.6-6.1-4.7c-2.5-1.1-5.5-1.7-9.1-1.7c-2.8,0-5.3,0.3-7.4,0.8 c-2.2,0.5-4,1.1-5.6,1.7c-1.6,0.6-2.8,1.2-3.8,1.7c-1,0.5-1.6,0.8-2.1,0.8c-0.5,0-1-0.3-1.2-0.8s-0.4-1.4-0.4-2.7 c0-1.3,0.3-2.3,1-2.9c0.3-0.3,0.9-0.7,2-1.2c1.1-0.5,2.5-1.1,4.3-1.7c1.8-0.6,3.8-1.1,6.2-1.5c2.4-0.4,5-0.6,7.9-0.6 c8.6,0,15.2,2.6,19.9,7.9c4.6,5.3,7,12.9,7,23c0,4.9-0.6,9.2-1.9,13c-1.3,3.8-3.1,7.1-5.4,9.8c-2.3,2.7-5.1,4.7-8.4,6.1 c-3.3,1.4-6.9,2.1-10.9,2.1c-4.3,0-8-0.7-11-2.2c-3-1.5-5.5-3.5-7.5-6s-3.4-5.4-4.3-8.7c-0.9-3.3-1.4-6.7-1.4-10.3V-1019.1z M841.9-1016.9c-0.1,6.3,1.3,11.2,4.2,14.7s7.2,5.3,12.7,5.3c2.9,0,5.4-0.5,7.6-1.6c2.2-1.1,4.1-2.5,5.6-4.3 c1.5-1.8,2.7-3.9,3.5-6.4c0.8-2.4,1.2-5,1.3-7.6H841.9z"></path>
+                <path d="M939.9-1062.3c0,0.5-0.2,0.9-0.7,1.2c-0.4,0.3-1.3,0.5-2.4,0.5 c-1.2,0-2-0.2-2.5-0.5c-0.5-0.3-0.7-0.7-0.7-1.3v-22.7c0-0.5,0.2-0.9,0.7-1.3c0.5-0.3,1.3-0.5,2.5-0.5c1.2,0,2,0.2,2.4,0.5 c0.4,0.3,0.7,0.8,0.7,1.3V-1062.3z"></path>
+                <path d="M1013.1-1022.3c0,4.9-0.5,9.3-1.6,13.2c-1.1,3.9-2.7,7.3-4.8,10 c-2.1,2.7-4.7,4.9-7.8,6.4c-3.1,1.5-6.6,2.2-10.6,2.2c-1.7,0-3.3-0.2-4.8-0.5c-1.5-0.4-2.9-0.9-4.3-1.7c-1.4-0.8-2.8-1.7-4.2-2.9 c-1.4-1.1-2.9-2.5-4.5-4.1v29.6c0,0.3-0.1,0.5-0.2,0.7c-0.1,0.2-0.3,0.4-0.6,0.5c-0.3,0.1-0.7,0.3-1.1,0.3 c-0.5,0.1-1.1,0.1-1.9,0.1c-0.7,0-1.3,0-1.8-0.1c-0.5-0.1-0.9-0.2-1.2-0.3c-0.3-0.1-0.5-0.3-0.6-0.5c-0.1-0.2-0.2-0.4-0.2-0.7 v-80.1c0-0.3,0.1-0.5,0.2-0.8c0.1-0.2,0.3-0.4,0.6-0.5c0.3-0.1,0.6-0.2,1.1-0.3c0.4-0.1,1-0.1,1.6-0.1c0.6,0,1.2,0,1.6,0.1 c0.4,0.1,0.8,0.2,1.1,0.3c0.3,0.1,0.5,0.3,0.6,0.5c0.1,0.2,0.2,0.5,0.2,0.8v8.3c1.8-1.8,3.5-3.4,5.1-4.7c1.6-1.3,3.2-2.4,4.8-3.3 c1.6-0.9,3.3-1.5,4.9-2c1.7-0.4,3.5-0.6,5.4-0.6c4.1,0,7.7,0.8,10.6,2.4c2.9,1.6,5.3,3.7,7.1,6.5c1.8,2.7,3.2,5.9,4,9.6 C1012.7-1030.3,1013.1-1026.4,1013.1-1022.3z M1005.2-1021.1c0-3.2-0.3-6.3-0.8-9.3c-0.5-3-1.4-5.6-2.6-7.9 c-1.2-2.3-2.8-4.2-4.8-5.6c-2-1.4-4.5-2.1-7.6-2.1c-1.5,0-3,0.2-4.5,0.6c-1.5,0.4-2.9,1.1-4.5,2.1c-1.5,1-3.1,2.2-4.8,3.8 c-1.6,1.5-3.4,3.5-5.2,5.7v25c3.2,3.8,6.2,6.8,9.1,8.8c2.9,2,5.9,3.1,9.1,3.1c2.9,0,5.4-0.7,7.5-2.1c2.1-1.4,3.8-3.3,5.1-5.6 c1.3-2.3,2.3-4.9,2.9-7.8S1005.2-1018.2,1005.2-1021.1z"></path>
+                <path d="M1042.6-997.9h10.5c1.1,0,1.7,1.1,1.7,3.2s-0.6,3.2-1.7,3.2h-28.4 c-1.1,0-1.7-1.1-1.7-3.2s0.6-3.2,1.7-3.2h10.5v-47.2h-10.5c-1.1,0-1.7-1.1-1.7-3.2s0.6-3.2,1.7-3.2h28.4c1.1,0,1.7,1.1,1.7,3.2 s-0.6,3.2-1.7,3.2h-10.5V-997.9z"></path>
+                <path d="M1112.2-992.9c0,0.3-0.1,0.5-0.2,0.8s-0.3,0.4-0.6,0.5 c-0.3,0.1-0.7,0.3-1.2,0.3c-0.5,0.1-1.2,0.1-2,0.1c-0.8,0-1.5,0-2.1-0.1s-1-0.2-1.4-0.3s-0.7-0.3-1-0.5c-0.3-0.2-0.5-0.5-0.8-0.8 l-26.9-32.6v32.6c0,0.3-0.1,0.5-0.2,0.7c-0.1,0.2-0.3,0.4-0.6,0.5c-0.3,0.1-0.7,0.2-1.1,0.3s-1.1,0.1-1.9,0.1 c-0.7,0-1.3,0-1.8-0.1c-0.5-0.1-0.9-0.2-1.2-0.3c-0.3-0.1-0.5-0.3-0.6-0.5s-0.2-0.4-0.2-0.7v-85.4c0-0.3,0.1-0.5,0.2-0.7 c0.1-0.2,0.3-0.4,0.6-0.5c0.3-0.1,0.7-0.3,1.2-0.3c0.5-0.1,1.1-0.1,1.8-0.1c0.8,0,1.4,0,1.9,0.1c0.5,0.1,0.9,0.2,1.1,0.3 c0.3,0.1,0.5,0.3,0.6,0.5c0.1,0.2,0.2,0.4,0.2,0.7v52.7l24.1-24.4c0.3-0.4,0.7-0.7,1-0.9c0.4-0.2,0.7-0.4,1.2-0.6 s0.9-0.3,1.5-0.3c0.5-0.1,1.2-0.1,1.9-0.1c0.7,0,1.3,0,1.9,0.1c0.5,0,1,0.1,1.3,0.3c0.3,0.1,0.6,0.3,0.8,0.5 c0.2,0.2,0.3,0.4,0.3,0.7c0,0.4-0.1,0.8-0.4,1.2c-0.3,0.4-0.7,0.9-1.3,1.6l-22.9,21.7l25.5,30.4c0.5,0.6,0.9,1.1,1.1,1.5 C1112.1-993.6,1112.2-993.3,1112.2-992.9L1112.2-992.9z"></path>
+                <path d="M1159.4-1008.1c0,2.7-0.5,5.2-1.5,7.4c-1,2.2-2.5,4-4.3,5.5 c-1.9,1.5-4.1,2.7-6.7,3.5s-5.5,1.2-8.7,1.2c-2,0-3.9-0.2-5.6-0.5c-1.8-0.3-3.4-0.7-4.8-1.2c-1.4-0.5-2.6-1-3.6-1.6 c-1-0.5-1.7-1-2.2-1.5c-0.5-0.4-0.8-1-1-1.6c-0.2-0.6-0.3-1.5-0.3-2.5c0-0.5,0-1,0.1-1.5c0.1-0.4,0.2-0.8,0.3-1.1 c0.1-0.3,0.3-0.5,0.5-0.7c0.2-0.1,0.4-0.2,0.7-0.2c0.5,0,1.1,0.3,2,0.9c0.9,0.6,2,1.2,3.3,1.9c1.3,0.7,2.9,1.3,4.8,1.9 c1.8,0.6,4,0.9,6.4,0.9c1.9,0,3.7-0.2,5.3-0.6s3-1.1,4.2-1.9s2.1-1.9,2.8-3.3c0.7-1.3,1-2.9,1-4.7c0-1.8-0.4-3.3-1.3-4.5 c-0.8-1.2-2-2.3-3.3-3.2c-1.4-0.9-2.9-1.7-4.7-2.4c-1.8-0.7-3.5-1.4-5.4-2.2c-1.8-0.7-3.6-1.6-5.4-2.4c-1.8-0.9-3.3-2-4.7-3.2 c-1.4-1.3-2.5-2.8-3.3-4.6s-1.3-3.9-1.3-6.4c0-2,0.4-3.9,1.1-5.9c0.8-1.9,1.9-3.6,3.5-5.2c1.6-1.5,3.6-2.7,6.1-3.7 c2.5-0.9,5.4-1.4,8.8-1.4c1.4,0,2.9,0.1,4.3,0.3c1.4,0.2,2.7,0.5,3.9,0.9c1.2,0.4,2.2,0.8,3,1.2c0.8,0.4,1.5,0.8,1.9,1.2 c0.4,0.3,0.7,0.6,0.9,0.9c0.1,0.2,0.3,0.5,0.3,0.7c0.1,0.3,0.1,0.6,0.2,0.9c0,0.4,0.1,0.8,0.1,1.3c0,0.5,0,1-0.1,1.4 s-0.2,0.7-0.3,1c-0.1,0.3-0.3,0.5-0.5,0.7c-0.2,0.1-0.4,0.2-0.7,0.2c-0.3,0-0.8-0.2-1.5-0.7s-1.6-1-2.7-1.5 c-1.1-0.5-2.4-1.1-3.9-1.5c-1.5-0.5-3.3-0.7-5.3-0.7c-2,0-3.7,0.2-5.2,0.7s-2.7,1.1-3.7,2c-1,0.8-1.7,1.8-2.2,3 c-0.5,1.1-0.7,2.4-0.7,3.7c0,1.9,0.4,3.4,1.3,4.7s2,2.4,3.4,3.3c1.4,0.9,3,1.8,4.8,2.5s3.6,1.4,5.4,2.2s3.6,1.5,5.4,2.4 c1.8,0.9,3.4,1.9,4.8,3.1s2.5,2.7,3.4,4.4C1159-1012.5,1159.4-1010.5,1159.4-1008.1L1159.4-1008.1z"></path>
+                <path d="M1172.1-1019.1c0-1.5,0.4-2.6,1.2-3.1c0.8-0.6,1.6-0.9,2.3-0.9h39.1 c0-3.4-0.4-6.5-1.1-9.3c-0.7-2.8-1.9-5.2-3.4-7.2c-1.6-2-3.6-3.6-6.1-4.7s-5.5-1.7-9.1-1.7c-2.8,0-5.3,0.3-7.4,0.8 c-2.2,0.5-4,1.1-5.6,1.7c-1.6,0.6-2.8,1.2-3.8,1.7c-1,0.5-1.6,0.8-2.1,0.8c-0.5,0-1-0.3-1.2-0.8s-0.4-1.4-0.4-2.7 c0-1.3,0.3-2.3,1-2.9c0.3-0.3,0.9-0.7,2-1.2c1.1-0.5,2.5-1.1,4.3-1.7c1.8-0.6,3.8-1.1,6.2-1.5c2.4-0.4,5-0.6,7.9-0.6 c8.6,0,15.2,2.6,19.9,7.9c4.6,5.3,7,12.9,7,23c0,4.9-0.6,9.2-1.9,13c-1.3,3.8-3.1,7.1-5.4,9.8c-2.3,2.7-5.1,4.7-8.4,6.1 s-6.9,2.1-10.9,2.1c-4.3,0-8-0.7-11-2.2c-3-1.5-5.5-3.5-7.5-6s-3.4-5.4-4.3-8.7c-0.9-3.3-1.4-6.7-1.4-10.3V-1019.1z M1179.9-1016.9c-0.1,6.3,1.3,11.2,4.2,14.7s7.2,5.3,12.7,5.3c2.9,0,5.4-0.5,7.6-1.6c2.2-1.1,4.1-2.5,5.6-4.3 c1.5-1.8,2.7-3.9,3.5-6.4c0.8-2.4,1.2-5,1.3-7.6H1179.9z"></path>
+                <path d="M1247.6-992.8c0,0.3-0.1,0.5-0.2,0.7c-0.1,0.2-0.3,0.4-0.6,0.5 c-0.3,0.1-0.7,0.2-1.1,0.3s-1.1,0.1-1.9,0.1c-0.7,0-1.3,0-1.8-0.1c-0.5-0.1-0.9-0.2-1.2-0.3c-0.3-0.1-0.5-0.3-0.6-0.5 s-0.2-0.4-0.2-0.7v-85.4c0-0.3,0.1-0.5,0.2-0.7c0.1-0.2,0.3-0.4,0.6-0.5c0.3-0.1,0.7-0.3,1.2-0.3c0.5-0.1,1.1-0.1,1.8-0.1 c0.8,0,1.4,0,1.9,0.1c0.5,0.1,0.9,0.2,1.1,0.3c0.3,0.1,0.5,0.3,0.6,0.5c0.1,0.2,0.2,0.4,0.2,0.7V-992.8z"></path>
+                <path d="M1295.2-976.8c-0.2,0.5-0.4,0.9-0.6,1.2c-0.2,0.3-0.5,0.5-0.8,0.7 s-0.7,0.3-1.1,0.3s-1,0.1-1.6,0.1c-0.6,0-1.2-0.1-1.7-0.2c-0.5-0.1-0.9-0.3-1.2-0.5c-0.3-0.2-0.5-0.5-0.5-0.9 c-0.1-0.4,0-0.8,0.2-1.2l38.6-104.4c0.2-0.5,0.4-0.9,0.6-1.2c0.2-0.3,0.5-0.5,0.8-0.7c0.3-0.2,0.7-0.3,1.2-0.3 c0.5-0.1,1-0.1,1.6-0.1c0.6,0,1.2,0.1,1.6,0.2c0.5,0.1,0.8,0.3,1.1,0.5c0.3,0.2,0.5,0.5,0.5,0.9c0.1,0.4,0,0.8-0.1,1.2 L1295.2-976.8z"></path>
+              </g>
+              <text class="name" transform="matrix(1 0 0 1 410.8579 428.9127)">½ a px.</text>
+              <g class="pixel" id="icon" transform="translate(2.1898424,0)">
+                <path class="icon icon-left" d="M652.9,234.1l65.7-72.3l-38-94.3l65.6-41.8L731.7-60L596.8-87.3l-60.4,297.9L652.9,234.1z" inkscape:transform-center-x="-190.58337" inkscape:transform-center-y="-189.38751"></path>
+                <path class="icon icon-right" d="M931.7,246.1l-185.1,0.6l49.8-84.1l-56.2-84.7l55.8-54.2 l-31.4-80.9l166.2-0.5L931.7,246.1z"></path>
+              </g>
+              <path id="ring" d="M1199.7,111.4c-2.2-5.1-4.4-10.2-6.7-15.2c-25.3-59.7-61.5-113.3-107.5-159.4c-46.1-46.1-99.9-82.4-159.7-107.7 c-62-26.2-127.8-39.5-195.6-39.5c-67.8,0-133.6,13.3-195.6,39.5c-59.8,25.3-113.6,61.5-159.7,107.7		c-46.1,46.1-82.4,99.9-107.7,159.7c-26.2,62-39.5,127.8-39.5,195.6s13.3,133.6,39.5,195.6c25.3,59.8,61.5,113.6,107.7,159.7		c18.3,18.3,37.9,35.1,58.6,50.3c0,0,0,0,0,0c34.6,27.2,72.5,49.5,113.3,66.8c61.4,26,126.7,39.2,194,39.2		c67.3,0,132.5-13.2,194-39.2c59.3-25.1,112.6-61,158.4-106.8c45.8-45.8,81.7-99,106.8-158.4c26-61.4,39.2-126.7,39.2-194 C1238.8,238.1,1225.7,172.8,1199.7,111.4z M266.4,292.1c0-255.7,208-463.6,463.6-463.6c255.7,0,463.6,208,463.6,463.6 c0,255.7-208,463.6-463.6,463.6C474.4,755.7,266.4,547.7,266.4,292.1z M451,710.1c0.1,0.1,0.3,0.2,0.4,0.3 C451.3,710.3,451.2,710.2,451,710.1z M456.9,713.9c0.2,0.1,0.4,0.3,0.7,0.4C457.3,714.2,457.1,714.1,456.9,713.9z M463.1,717.9 c0.1,0.1,0.2,0.2,0.4,0.2C463.4,718.1,463.2,718,463.1,717.9z M475.8,725.6c0.1,0,0.1,0.1,0.2,0.1 C475.9,725.7,475.8,725.6,475.8,725.6z M481.6,729c0.4,0.2,0.8,0.5,1.2,0.7C482.5,729.5,482.1,729.2,481.6,729z M487.7,732.4 c0.5,0.3,1,0.5,1.5,0.8C488.6,732.9,488.1,732.6,487.7,732.4z M494,735.8c0.4,0.2,0.8,0.4,1.3,0.7C494.8,736.2,494.4,736,494,735.8 z M507.5,742.7c0.5,0.2,1,0.5,1.5,0.7C508.5,743.2,508,743,507.5,742.7z M513.6,745.7c0.7,0.3,1.4,0.7,2.1,1 C515,746.3,514.3,746,513.6,745.7z M519.8,748.6c0.7,0.3,1.5,0.7,2.2,1C521.3,749.3,520.5,748.9,519.8,748.6z M526.3,751.5 c0.6,0.3,1.3,0.6,1.9,0.9C527.6,752.1,526.9,751.8,526.3,751.5z"></path>
+            </svg>
+          </div></a></div>
+      <!-- .container end-->
+    </header>
+    <!-- header end-->
+    <nav class="open">
+      <div class="menu container">
+        <div class="left responsive"><span class="toggle"><i class="fa fa-close"></i></span><a href="/de/">Blog</a>
+          
+          
+          
+          
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+      <a href="/de/about/">Über Mich</a>
+    
+  
+
+  
+    
+      <a href="/de/freebies/">Freebies</a>
+    
+  
+
+  
+    
+      <a href="/de/procreate-brushes/">Procreate Brushes</a>
+    
+  
+
+  
+    
+      <a href="/de/archiv/">Archiv</a>
+    
+  
+
+  
+    
+      <a href="/de/portfolio/">Portfolio</a>
+    
+  
+
+  
+    
+      <a href="/de/kontakt/">Kontakt</a>
+    
+  
+
+
+
+<a href="https://www.etsy.com/shop/halfapx">Shop</a>
+          <!-- .responsive end-->
+        </div>
+        <div class="center"><span class="toggle">Menu</span></div>
+        <div class="right"><a href="https://www.instagram.com/halfapx/"><i class="fa fa-instagram"></i></a><a href="http://youtube.com/halfapx"><i class="fa fa-youtube"></i></a><a href="https://twitter.com/halfapx"><i class="fa fa-twitter"></i></a><a href="https://github.com/mynimi"><i class="fa fa-github"></i></a><a href="http://codepen.io/mynimi/"><i class="fa fa-codepen"></i></a>
+          
+          
+          
+          
+            <a href="/de/responsiver-image-slider-mit-sass/" class="de">
+                de
+            </a>
+          
+            <a href="/responsive-image-slider-with-sass/" class="en">
+                en
+            </a>
+          
+        </div>
+      </div>
+      <!-- .menu end-->
+    </nav>
+    <!-- nav end-->
+    <div class="wrapper">
+      <section class="main_container">
+        <div class="container">
+          <div class="post-header">
+            <div class="title">
+              <div>
+                <h1>Ein responsiver Image-Slider mit Sass</h1><h2 class="subtitle">Mit einem Sass Mixin JavaScript Arbeit machen</h2>
+              </div>
+            </div>
+            <div class="meta"><span class="date">
+                
+
+
+
+    
+    1.
+    September 
+        
+    2015
+</span><span class="tags"><i class="fa fa-tags"></i> <a href="/tag/sass">sass</a>  <a href="/tag/tutorial">tutorial</a>  <a href="/tag/mixin">mixin</a>  <a href="/tag/slider">slider</a>  <a href="/tag/♦♦♦♦">♦♦♦♦</a> </span></div>
+          </div>
+          <div class="content-wrapper">
+            <main>
+              <div class="content"><p>Ich war auf der Suche nach einem schönen responsiven Slider, der minimales Markup und möglichst wenig Code erfordert. Er sollte simpel sein, ohne grossen Schnickschnack und wirklich bloss durch eine Reihe von Bildern scrollen. Auf der Suche bin ich bei <a href="http://codepen.io/dudleystorey/pen/ehKpi/">diesem CodePen</a> gelandet, der genau das gemacht hat, was ich mir gewünscht hatte. Als ich allerdings versuchte die Keyframes für eine andere Anzahl Bilder zu berechnen, ist mir aufgefallen, dass mir das viel zu viel Mathe ist, um jedes Mal neu zu berechnen, wenn sich die Anzahl Bilder für den Slider ändern. Also habe ich die CSS in Sass übersetzt und für die Keyframes ein Mixin geschrieben. Das möchte ich euch heute vorstellen. Die <a href="/demo/responsive-image-slider-with-sass/" target="_blank">Demo</a> könnt ihr euch auch noch separat ansehen.
+<!-- more --></p>
+
+<iframe src="/demo/responsive-image-slider-with-sass/" width="100%" height="900px"></iframe>
+
+<h1 id="markup">Markup</h1>
+<p>In meinem Beispiel habe ich einen Slider mit einem fixen Verhältnis (3:2) gewollt, folglich brauchte ich noch einen Container für den padding hack<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Ansonsten brauchen wir einen Wrapper, dem wir <code class="highlighter-rouge">overflow: hidden</code> geben werden und darin einen “imagestrip” In dem werden alle Bilder nebeneinander angeordnet, und wir scrollen dann durch. Damit die Animation smooth abläuft, platzieren wir das erste Bild am Ende noch einmal. Ich habe die Bilder als Hintergrund von Containern eingefügt, anstelle als imgs, weil ich sie damit einfacher positionieren kann und es ist einfacher ein fixes Format zu haben, auch wenn die verwendeten Bilder verschiedene Formate besitzen.</p>
+
+<p>Markup in jade:</p>
+
+<div class="language-slim highlighter-rouge"><pre class="highlight"><code><span class="nc">.size-control</span>
+    <span class="nf">#slider</span>
+        <span class="nc">.wrap</span>
+            <span class="nc">.img</span>(<span class="na">style</span><span class="p">=</span><span class="s">"background-image: url(1.png)"</span>)
+            <span class="nc">.img</span>(<span class="na">style</span><span class="p">=</span><span class="s">"background-image: url(2.png)"</span>)
+            <span class="nc">.img</span>(<span class="na">style</span><span class="p">=</span><span class="s">"background-image: url(3.png)"</span>)
+            <span class="nc">.img</span>(<span class="na">style</span><span class="p">=</span><span class="s">"background-image: url(4.png)"</span>)
+            <span class="nc">.img</span>(<span class="na">style</span><span class="p">=</span><span class="s">"background-image: url(5.png)"</span>)
+            <span class="nc">.img</span>(<span class="na">style</span><span class="p">=</span><span class="s">"background-image: url(6.png)"</span>)
+            <span class="nc">.img</span>(<span class="na">style</span><span class="p">=</span><span class="s">"background-image: url(1.png)"</span>)
+</code></pre>
+</div>
+
+<p>und HTML davon:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"size-control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"slider"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wrap"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url(1.png)"</span> <span class="na">class=</span><span class="s">"img"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url(2.png)"</span> <span class="na">class=</span><span class="s">"img"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url(3.png)"</span> <span class="na">class=</span><span class="s">"img"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url(4.png)"</span> <span class="na">class=</span><span class="s">"img"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url(5.png)"</span> <span class="na">class=</span><span class="s">"img"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url(6.png)"</span> <span class="na">class=</span><span class="s">"img"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url(1.png)"</span> <span class="na">class=</span><span class="s">"img"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h1 id="grundstyles">Grundstyles</h1>
+<p>Beim Styling brauchen wir auf jeden Fall die Anzahl Bilder. Ich habe hier sechs verschiedene, doch da das erste Bild zwei Mal vorkommt, liegt mein Total von Bildern bei 7. Ausserdem möchte ich, dass jedes Bild 6s angezeigt wird, also müssen wir für die Animationslänge <script type="math/tex">Anzahl Bilder \cdot Bildanzeigedauer</script> rechnen, um den Wert zu bekommen.
+Ausgedrückt habe ich das in zwei Sass Variabeln:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="nv">$amount-slider-imgs</span><span class="p">:</span> <span class="m">7</span><span class="p">;</span>
+<span class="nv">$animation-time</span><span class="p">:</span> <span class="m">6s</span> <span class="o">*</span> <span class="nv">$amount-slider-imgs</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>Sass sollte ansonsten recht selbsterklärend sein, bis auf die Keyframes ist der Slider super einfach zu schreiben:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// paddinghack mixin
+</span><span class="k">@mixin</span> <span class="nf">paddinghack</span><span class="p">(</span><span class="nv">$cw</span><span class="o">,</span> <span class="nv">$rw</span><span class="o">,</span> <span class="nv">$rh</span><span class="o">,</span> <span class="nv">$c</span><span class="o">:</span><span class="n">null</span><span class="p">){</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="nv">$cw</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="p">((</span><span class="nv">$rh</span> <span class="o">/</span> <span class="nv">$rw</span><span class="p">)</span> <span class="o">*</span> <span class="nv">$cw</span><span class="p">)</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+
+    <span class="k">@if</span> <span class="nv">$c</span> <span class="o">!=</span> <span class="n">null</span><span class="p">{</span>
+        <span class="si">#{</span><span class="nv">$c</span><span class="si">}</span> <span class="p">{</span>
+            <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+            <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+            <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+            <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+            <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+            <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+            <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// mittige Positionierung innerhalb des bodys
+</span><span class="nc">.size-control</span><span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">paddinghack</span><span class="p">(</span><span class="m">60%</span><span class="o">,</span> <span class="m">1500</span><span class="o">,</span> <span class="m">1000</span><span class="o">,</span> <span class="s2">"#slider"</span><span class="p">);</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="nf">translate</span><span class="p">(</span><span class="m">-50%</span><span class="o">,</span> <span class="m">-50%</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// slider style
+</span><span class="nn">#slider</span><span class="p">{</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+    <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+
+    <span class="nc">.wrap</span><span class="p">{</span>
+        <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="nv">$amount-slider-imgs</span> <span class="o">*</span> <span class="m">100%</span><span class="p">;</span> <span class="c1">// berechnet die Breite des Bildstrips
+</span>        <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+        <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">animation</span><span class="p">:</span> <span class="nv">$animation-time</span> <span class="n">slidy</span> <span class="n">infinite</span><span class="p">;</span>
+
+        <span class="nc">.img</span><span class="p">{</span>
+            <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span> <span class="o">/</span> <span class="nv">$amount-slider-imgs</span><span class="p">;</span>
+            <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+            <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+            <span class="nl">background</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nl">size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+                <span class="nl">position</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h1 id="keyframe-mixin">Keyframe Mixin</h1>
+<p>Sobald Sass steht, kommen wir zur Keyframes Generation, die überraschenderweise gar nicht so einfach war, wie ich es zuerst gedacht hatte.</p>
+
+<h2 id="gewünschtes-ergebnis">Gewünschtes Ergebnis</h2>
+<p>Das Ziel ist wie folgt. Wir wollen am Ende Keyframes haben, die wie folgt aussehen:
+Auf der Suche werden wir später nach <script type="math/tex">x</script> sein, was unsere Anzeigedauer (in %) ist.</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="nv">$pics-count</span><span class="p">:</span> <span class="nv">$n</span><span class="p">;</span>
+<span class="nv">$img-width</span><span class="p">:</span> <span class="m">100%</span> <span class="o">/</span> <span class="nv">$n</span><span class="p">;</span>
+<span class="nv">$w</span><span class="p">:</span> <span class="nv">$img-width</span><span class="p">;</span>
+
+<span class="k">@keyframes</span> <span class="nt">slider-goal</span> <span class="p">{</span>
+    <span class="o">(</span><span class="nt">0</span> <span class="o">*</span> <span class="err">$</span><span class="nt">w</span><span class="o">)</span> <span class="o">+</span> <span class="o">(</span><span class="nt">0</span> <span class="o">*</span> <span class="nt">x</span><span class="o">)</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="m">0</span> <span class="o">*</span> <span class="m">100%</span> <span class="o">*</span> <span class="m">-1</span><span class="p">;</span> <span class="p">}</span>
+    <span class="o">(</span><span class="nt">1</span> <span class="o">*</span> <span class="err">$</span><span class="nt">w</span><span class="o">)</span> <span class="o">+</span> <span class="o">(</span><span class="nt">0</span> <span class="o">*</span> <span class="nt">x</span><span class="o">)</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="m">0</span> <span class="o">*</span> <span class="m">100%</span> <span class="o">*</span> <span class="m">-1</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="o">(</span><span class="nt">1</span> <span class="o">*</span> <span class="err">$</span><span class="nt">w</span><span class="o">)</span> <span class="o">+</span> <span class="o">(</span><span class="nt">1</span> <span class="o">*</span> <span class="nt">x</span><span class="o">)</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="m">1</span> <span class="o">*</span> <span class="m">100%</span> <span class="o">*</span> <span class="m">-1</span><span class="p">;</span> <span class="p">}</span>
+    <span class="o">(</span><span class="nt">2</span> <span class="o">*</span> <span class="err">$</span><span class="nt">w</span><span class="o">)</span> <span class="o">+</span> <span class="o">(</span><span class="nt">1</span> <span class="o">*</span> <span class="nt">x</span><span class="o">)</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="m">1</span> <span class="o">*</span> <span class="m">100%</span> <span class="o">*</span> <span class="m">-1</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="o">(</span><span class="nt">2</span> <span class="o">*</span> <span class="err">$</span><span class="nt">w</span><span class="o">)</span> <span class="o">+</span> <span class="o">(</span><span class="nt">2</span> <span class="o">*</span> <span class="nt">x</span><span class="o">)</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="m">2</span> <span class="o">*</span> <span class="m">100%</span> <span class="o">*</span> <span class="m">-1</span><span class="p">;</span> <span class="p">}</span>
+    <span class="o">(</span><span class="nt">3</span> <span class="o">*</span> <span class="err">$</span><span class="nt">w</span><span class="o">)</span> <span class="o">+</span> <span class="o">(</span><span class="nt">2</span> <span class="o">*</span> <span class="nt">x</span><span class="o">)</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="m">2</span> <span class="o">*</span> <span class="m">100%</span> <span class="o">*</span> <span class="m">-1</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="nc">...</span>
+
+    <span class="o">((</span><span class="err">$</span><span class="nt">n</span> <span class="nt">-</span> <span class="nt">1</span><span class="o">)</span> <span class="o">*</span> <span class="err">$</span><span class="nt">w</span><span class="o">)</span> <span class="o">+</span> <span class="o">((</span><span class="err">$</span><span class="nt">n</span> <span class="nt">-</span> <span class="nt">1</span><span class="o">)</span> <span class="o">*</span> <span class="nt">x</span><span class="o">)</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="p">(</span><span class="nv">$n</span> <span class="o">-</span> <span class="m">1</span><span class="p">)</span> <span class="o">*</span> <span class="m">100%</span> <span class="o">*</span> <span class="m">-1</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Wie ihr sehen könnt, müssen wir für jedes Bild ein Keyframe-Paar generieren. Das heisst auf jeden Fall, dass wir eine for-Schleife brauchen werden, da der grösste Teil der Werte vom Index (<code class="highlighter-rouge">$i</code>) abhängig ist. Die Wiederholung des gleichen Werts für <code class="highlighter-rouge">left</code> stellt die Zeit dar in der das Bild stillsteht. <script type="math/tex">x</script> repräsentiert also unsere 6s Animationsdauer, die wir dann sozusagen in die Keyframe Prozente übersetzen müssen. Wenn der letzte Keyframe nicht nötig wäre, wäre diese Zahl zu finden nicht schwer, da wir allerdings für das letzte Bild keinen Stillstand möchten, sondern bloss den Slide und dann wieder mit dem ersten Bild beginnen, brauchen wir für das letzte Bild nicht das ganze Paar, sondern nur den ersten Teil davon. Ausserdem muss der Prozentsatz des letzten Keyframes 100% ergeben. Das ist die Lösung. Denn mit einer Gleichung lassen sich Unbekannte einfach finden.</p>
+
+<h2 id="mathe">Mathe</h2>
+<p>Als erstes müssen wir mal festlegen welche Zahlen wir im Allgemeinen für unser Mixin brauchen. Wir können unserem Mixin allerdings nur eine einzige Variable weitergeben. Und das ist unsere Anzahl Bilder. Grundsätzlich müssen wir also unser komplettes Mixin von dieser Variable abhängig machen.</p>
+
+<p>Beginnen wir mit der Deklaration:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// keyframes mixin
+</span><span class="k">@mixin</span> <span class="nf">generate-slide-keyframes</span><span class="p">(</span><span class="nv">$pics</span><span class="p">){</span>
+    <span class="c1">// mixin content
+</span><span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Wir wissen auch, dass wir vom index abhängen, also beginnen wir unser Mixin mit einer for-Schleife:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="m">0</span> <span class="ow">to</span> <span class="nv">$pics</span> <span class="p">{</span>
+    <span class="c1">// content
+</span><span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Nun zu den Dingen, die wir wissen.
+Wir können die Breite des Bildes schnell berechnen. (<script type="math/tex">iw</script> = $img-width | <script type="math/tex">\sum pics</script> = $pics)</p>
+
+<script type="math/tex; mode=display">iw = \frac{100\%}{\sum pics}</script>
+
+<p>Der <code class="highlighter-rouge">left</code>-Wert lässt sich auch schnell berechnen. Dazu rechnen wir</p>
+
+<script type="math/tex; mode=display">l = -(i \cdot 100\%)</script>
+
+<p>Die beiden keyframe Prozente sind auch einfach. Ich nenne sie <code class="highlighter-rouge">$p</code> (percentage) und <code class="highlighter-rouge">$s</code> (step), aber verwendet was auch immer ihr wollt.
+<code class="highlighter-rouge">$dur</code> ist noch immer unsere Unbekannte (<script type="math/tex">x</script>).</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+p &= (i \cdot \frac{100\%}{\sum pics}) + (i \cdot x) \\
+s &=  ((i \cdot \frac{100\%}{\sum pics}) + (i \cdot x)) + \frac{100\%}{\sum pics}
+\end{align*} %]]></script>
+
+<p>Das Ganze lässt sich dann natürlich auch zusammenfassen, wenn wir die Variabeln in der richtigen Reihenfolge schreiben. Folglich ergibt sich auch das Keyframe-Paar.</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="nv">$img-width</span><span class="p">:</span> <span class="p">(</span><span class="m">100</span> <span class="o">/</span> <span class="nv">$pics</span><span class="p">);</span>
+<span class="nv">$dur</span><span class="p">:</span> <span class="n">x</span><span class="p">;</span>
+<span class="nv">$p</span><span class="p">:</span> <span class="p">((</span><span class="nv">$i</span> <span class="o">*</span> <span class="nv">$img-width</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">*</span> <span class="nv">$dur</span><span class="p">));</span>
+<span class="nv">$l</span><span class="p">:</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">*</span> <span class="m">100%</span> <span class="o">*</span> <span class="m">-1</span><span class="p">);</span>
+<span class="nv">$s</span><span class="p">:</span> <span class="nv">$p</span> <span class="o">+</span> <span class="nv">$img-width</span><span class="p">;</span>
+
+<span class="si">#{</span><span class="nv">$p</span><span class="si">}</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="nv">$l</span><span class="p">;</span> <span class="p">}</span>
+<span class="si">#{</span><span class="nv">$s</span><span class="si">}</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="nv">$l</span><span class="p">;</span> <span class="p">}</span>
+</code></pre>
+</div>
+
+<p>So, nun kommen wir zu diesem Sagenumwobenen <script type="math/tex">x</script>. Um es herauszufinden, müssen wir bloss eine Gleichung umformen.</p>
+
+<p>Wenn ihr zurück auf mein Beispiel für das Ziel blickt, haben wir folgendes herausgefunden:</p>
+
+<script type="math/tex; mode=display">iw(\sum pics - 1) + x(\sum pics - 1) = 100\%</script>
+
+<p>Das können wir nun nach <script type="math/tex">x</script> auflösen (damit die Gleichung einfacher verständlich ist, hab ich hier <code class="highlighter-rouge">$pics</code> und <code class="highlighter-rouge">($pics - 1)</code> durch neue Variabeln ersetzt.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+100 &= 100\% \\
+y &= \sum pics \\
+z &= \sum pics - 1 \\[5ex]
+z \cdot \frac{100}{y} + zx &= 100 && \text{(1)} \\
+\frac{100z}{y} + zx &= 100 && \text{(2)} \\
+\frac{100z + y(zx)}{y} &= 100 && \text{(3)} \\
+\frac{z(100 + yx)}{y} &= 100 && \text{(4)} \\
+z(100 + yx) &= 100y && \text{(5)} \\
+zyx + 100z &= 100y && \text{(6)} \\
+zyx &= 100y - 100z && \text{(7)} \\[3ex]
+x &= \frac{100(y - z)}{yz}
+\end{align*} %]]></script>
+
+<p><strong>Legende: Schritte um zur nächsten Formel zu gelangen</strong>
+(1): links <script type="math/tex">z</script> in Bruch aufnehmen
+(2): links <script type="math/tex">zx \to \frac{zx}{1} \xrightarrow{\cdot y} \frac{y(zx)}{1y}</script> und auf einen Bruch
+(3): links <script type="math/tex">z</script> ausklammern
+(4): auf beiden Seiten <script type="math/tex">\cdot y</script>
+(5): links Klammern aufheben
+(6): auf beiden Seiten <script type="math/tex">-100z</script>
+(7): auf beiden Seiten <script type="math/tex">\mathbin{/} yz</script></p>
+
+<p>Was wir dann noch beachten müssen ist, dass wir den <code class="highlighter-rouge">$s</code> keyframe nicht brauchen, da <code class="highlighter-rouge">$p</code> für die letzte Zahl in der for-Schleife 100% ergibt.
+Das heisst wir packen den <code class="highlighter-rouge">$s</code> keyframe einfach in ein <code class="highlighter-rouge">@if</code>.</p>
+
+<p>Und dann ergibt sich folgendes Mixin:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">generate-slide-keyframes</span><span class="p">(</span><span class="nv">$pics</span><span class="p">){</span>
+    <span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="m">0</span> <span class="ow">to</span> <span class="nv">$pics</span><span class="p">{</span>
+        <span class="nv">$img-width</span><span class="p">:</span> <span class="p">(</span><span class="m">100</span> <span class="o">/</span> <span class="nv">$pics</span><span class="p">);</span>
+        <span class="nv">$dur</span><span class="p">:</span> <span class="p">(</span><span class="m">100%</span> <span class="o">*</span> <span class="p">(</span><span class="nv">$pics</span> <span class="nf">-</span> <span class="p">(</span><span class="nv">$pics</span> <span class="o">-</span> <span class="m">1</span><span class="p">)))</span> <span class="o">/</span> <span class="p">(</span><span class="nv">$pics</span> <span class="o">*</span> <span class="p">(</span><span class="nv">$pics</span> <span class="o">-</span> <span class="m">1</span><span class="p">));</span>
+        <span class="nv">$p</span><span class="p">:</span> <span class="p">((</span><span class="nv">$i</span> <span class="o">*</span> <span class="nv">$img-width</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">*</span> <span class="nv">$dur</span><span class="p">));</span>
+        <span class="nv">$l</span><span class="p">:</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">*</span> <span class="m">100%</span> <span class="o">*</span> <span class="m">-1</span><span class="p">);</span>
+        <span class="nv">$s</span><span class="p">:</span> <span class="nv">$p</span> <span class="o">+</span> <span class="nv">$img-width</span><span class="p">;</span>
+
+        <span class="si">#{</span><span class="nv">$p</span><span class="si">}</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="nv">$l</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="k">@if</span> <span class="nv">$s</span> <span class="o">&lt;=</span> <span class="m">100%</span> <span class="p">{</span>
+            <span class="si">#{</span><span class="nv">$s</span><span class="si">}</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="nv">$l</span><span class="p">;</span> <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Und um unser Stylesheet zu beenden, ergänzen wir es um die folgende Stelle:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="k">@keyframes</span> <span class="nt">slidy</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">generate-slide-keyframes</span><span class="p">(</span><span class="nv">$amount-slider-imgs</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Den Code für das Demo könnt ihr euch auch noch ansehen.</p>
+
+<p><a class="btn" href="https://github.com/mynimi/mynimi.github.io/tree/source/demo/responsive-image-slider-with-sass"><i class="fa fa-github"></i> Demo Code</a></p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Der Padding Hack wurde wohl als erstes <a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">hier</a> vorgestellt, wo es darum ging videos responsive einzubetten. Seither ist der Padding Hack allzeit beliebt irgendetwas responsive zu bekommen, das auf ein fixes Seitenverhältnis angewiesen ist.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div><br>
+<div id="disqus_thread"></div>
+<br>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'halfapx';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </main>
+          </div>
+          
+            
+          <div class="sidebar"><div class="widget">
+    <h1>
+        
+        Gefällt dir was du liest?
+        
+    </h1>
+    <div class="content">
+        <p>
+        Erzähl der Welt davon
+        </p>
+        <div class="share">
+            <a href="https://twitter.com/intent/tweet?text=Ein responsiver Image-Slider mit Sass&url=http://localhost:4000/de/responsiver-image-slider-mit-sass/&via=halfapx&related=halfapx" rel="nofollow" target="_blank" title="Share on Twitter">
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/de/responsiver-image-slider-mit-sass/" rel="nofollow" target="_blank" title="Share on Facebook">
+                <i class="fa fa-facebook-official fa-lg"></i>
+            </a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/de/responsiver-image-slider-mit-sass/" rel="nofollow" target="_blank" title="Share on Google+">
+                <i class="fa fa-google-plus-official fa-lg"></i>
+            </a>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/de/responsiver-image-slider-mit-sass/&title=Ein responsiver Image-Slider mit Sass&summary=Ein Tutorial, wie man mit einem Sass Mixin einen flexiblen responsiven Slider baut.&source=http://localhost:4000" rel="nofollow" title="Share on LinkedIN">
+                <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+                
+                <div class="widget">
+                    <h1>
+                        
+                            Ähnliche Beiträge
+                        
+                    </h1>
+                    <div class="content">
+                        <ul>
+                
+                    <li>
+                        <a href="/de/kalligraphie-hilfslinien-mit-adobe-illustrator/" class="related-post">Kalligraphie Hilfslinien in 4 Pfaden</a>
+                    </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </u>
+    </div>
+    </div>
+
+
+
+          </div>
+          <div class="pagination full-width">
+            <a href="/de/schrumpfender-sticky-header/" class="prev">Sticky Header mit Extras</a>
+            <a href="/de/eine-nicht-100-breite-sticky-navbar-fuer-blogger/" class="next">Eine nicht 100% breite sticky navbar f&uuml;r Blogger
+          </div>
+        </div>
+        <!-- .container end-->
+      </section>
+      <!-- section end-->
+    </div>
+    <!-- .wrapper end-->
+    <footer>
+      <div class="foot">
+        <div class="container">
+          <div class="left"><span class="copyright">&copy; content by 1/2 a px.</span>&nbsp;&middot;&nbsp;<span class="year">2017</span></div>
+          <div class="right"><span class="backtotop">back to top</span></div>
+        </div>
+        <!-- .container end-->
+      </div>
+      <!-- .foot end-->
+    </footer>
+    <!-- footer end--><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64184849-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <script src="/js/build/main.min.js"></script>
+  </body>
+  <!-- body end-->
+</html>
+<!-- html end-->
