@@ -16,11 +16,11 @@ This time I promise to cut myself short!
 
 # Intro
 
-> To splurge, or not to splurge, that is the question.
-> Whether 'tis nobler on the page to suffer
-> With bleeding ink and hurting wrists,
-> Or to spend money against an inkwell of troubles,
-> And by splurging end them: to splurge, to save
+> To splurge, or not to splurge, that is the question.<br>
+> Whether 'tis nobler on the page to suffer<br>
+> With bleeding ink and hurting wrists,<br>
+> Or to spend money against an inkwell of troubles,<br>
+> And by splurging end them: to splurge, to save<br>
 > no more; _- not Shakespeare_
 
 I'm sorry, I had to - I know it's overused but I'm a Shakespeare fan. But that's really the neverending question I know a lot of people are battling with. There are so many possibilities to spend a crapton of money in this calligraphy world that at one point it's easy to lose track of how much you spend and to lose track of what is actually worth it.
