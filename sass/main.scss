@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 1.28125em;
+    color: #262732;
+
+    div{
+        width: 80%;
+    }
+
+    img{
+        max-width: 120px;
+        width: 50%;
+    }
+
+    a{
+        color: #2b6296;
+        text-decoration: none;
+        padding-bottom: 30px;
+
+        &:hover{
+            color: #262732;
+        }
+    }
+}

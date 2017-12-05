@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" id="hap-icon" class="logo" viewBox="0 0 478.36136 407.60321">
-    <g transform="translate(-370.26663,-281.64625)">
-        <g transform="translate(2.1898424,0)" class="hap">
-            <path class="icon icon-left" d="M 514.19481,664.8729 590.21786,581.24053 546.2964,472.16361 622.1262,423.78152 605.41204,324.77154 449.38297,293.15295 379.58348,637.59453 Z" />
-            <path class="icon icon-right" d="m 836.64362,678.72265 -214.09408,0.70775 57.57731,-97.25601 -65.03429,-97.96636 64.50319,-62.69229 -36.35501,-93.59836 192.2411,-0.6355 z" />
-        </g>
-    </g>
-</svg>
