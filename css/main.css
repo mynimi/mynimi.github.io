@@ -1,1 +1,110 @@
-body{margin:0;padding:0;position:fixed;top:0;left:0;width:100%;min-height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;font-family:"Karla", sans-serif;font-weight:normal;line-height:1.5;font-size:1.28125em;color:#262732}body div{width:80%}body img{max-width:120px;width:50%}body a{color:#2b6296;text-decoration:none;padding-bottom:30px}body a:hover{color:#262732}
+:root {
+  --_c-white-light:#feffff;
+  --_c-white-dark:#fff;
+  --_c-black-dark:#212124;
+  --_c-black-light: var(--_c-black-dark);
+  --_c-blue-dark:#008DEB;
+  --_c-blue-light:#0d5cdb;
+  --_c-green-dark:#00dea3;
+  --_c-green-light:#04b586;
+  --_c-red-dark:#e3227c;
+  --_c-red-light:#c90651;
+  --_c-yellow-dark:#ffc400;
+  --_c-yellow-light:#dea909;
+  
+  --_c-white: var(--_c-white-light);
+  --_c-black: var(--_c-black-light);
+  --_c-blue: var(--_c-blue-light);
+  --_c-green: var(--_c-green-light);
+  --_c-red: var(--_c-red-light);
+  --_c-yellow: var(--_c-yellow-light);
+
+  --c-text: var(--_c-black);
+  --c-bg: var(--_c-white);
+  --c-interactive: var(--_c-blue);
+  --c-interactive--hover: var(--_c-red);
+  --c-interactive--focus: var(--_c-yellow);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --_c-white: var(--_c-white-dark);
+    --_c-black: var(--_c-black-dark);
+    --_c-blue: var(--_c-blue-dark);
+    --_c-green: var(--_c-green-dark);
+    --_c-red: var(--_c-red-dark);
+    --_c-yellow: var(--_c-yellow-dark);
+
+    --c-text: var(--_c-white);
+    --c-bg: var(--_c-black);
+    color-scheme: dark;
+  }
+}
+
+body {
+  font-family: "Literata", serif;
+  align-content: center;
+  color: var(--c-text);
+  background: var(--c-bg);
+  max-width: 70ch;
+  margin: auto;
+  height: 100dvh;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+a {
+  --_color: var(--c-interactive);
+  --_hover: var(--c-interactive--hover);
+  --_focus: var(--c-interactive--focus);
+
+  color: var(--_color);
+  text-decoration-line: underline;
+  text-decoration-color: var(--c-text);
+  text-decoration-style: solid;
+  text-underline-offset: 0.2em;
+  transition: color 200ms, text-decoration 300ms;
+}
+
+a:hover {
+  color: var(--c-text);
+  text-decoration-color: var(--_hover);
+}
+
+a:focus-visible {
+  text-decoration: none;
+  --_color: var(--_focus);
+}
+
+a .logo {
+  --_c-half: var(--c-text);
+  --_c-a: var(--c-text);
+  --_c-px: var(--c-text);
+  --_c-dot: var(--c-interactive);
+}
+
+a:hover .logo {
+  --_c-half: var(--c-interactive);
+  --_c-a: var(--c-text);
+  --_c-px: var(--c-interactive);
+  --_c-dot: var(--c-interactive--hover);
+}
+
+.logo {
+  width: 80vw;
+  max-width: 15rem;
+}
+
+.logo path {
+  transition: fill 200ms;
+}
+
+footer {
+  font-size: 0.7em;
+  margin-top: 4rem;
+}
